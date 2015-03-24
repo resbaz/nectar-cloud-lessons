@@ -1,10 +1,21 @@
 # NeCTAR cloud lesson plan
 
-This course will aim to teach the basics of the NeCTAR cloud.
+This course aims to teach the basics of the NeCTAR cloud to researchers over a two day workshop.
 
-The notes here are for a 1 hour 30 minute workshop.
+## Motivator
 
-## Part 1: The NeCTAR Dashboard (45 minutes)
+It’s been hyped: but the Cloud does offer serious value in terms of cost and instant availability to researchers.
+However, it’s a complex tool and if you don’t know and understand its constraints trying to make use of it can end
+in painful tears. This course introduces you to the the tools and the underlying concepts of the NeCTAR cloud -
+thus reducing your risk and saving you time and trouble in your journey to the Cloud.
+
+## Delivering the lessons
+
+The lessons assume that participants have both red and green coloured sticky notes and cards lettered from "A" through
+to "E" (in the style of Software Carpentry). These are used to answer questions and to show distress if the students
+aren't keeping up or need help.
+
+## Part 1: The NeCTAR dashboard (45 minutes)
 
 This lesson is contained in the Lesson_I folder.
 It covers the web interface to the NeCTAR cloud in high level.
@@ -28,23 +39,17 @@ There are also three checklists to be used during the lesson
 * [ChecklistCreatingASecurityGroup.pdf](Lesson_II/ChecklistCreatingASecurityGroup.pdf)
 * [ChecklistStartingAnInstance.pdf](Lesson_II/ChecklistStartingAnInstance.pdf)
 
-## Extension Challenge
+It would be helpful if each participant also received a printed copy of each of the checklists, and a printed copy of
+the extension challenge for them to take away to work on if they don't complete the tasks during the lesson.
+
+## Extension challenge
 
 There is also a set of extension challenges, should time permit: [ExtraChallenges.md](Extension/ExtraChallenges.md).
 These cover connecting to the VM.
 
-## Delivering the Lesson
+## Thoughts after delivering the first two lessons as a 1.45 hour workshop.
 
-The lessons assume that participants have both red and green coloured sticky notes and cards lettered from "A" through
-to "E" (in the style of Software Carpentry). These are used to answer questions and to show distress if the students
-aren't keeping up.
-
-It would be helpful if each participant also received a printed copy of each of the checklists, and a printed copy of
-the extension challenge for them to take away to work on if they don't complete the tasks during the lesson.
-
-## Thoughts After Delivering the Two Lessons
-
-### The Questions
+### The questions
 
 The sticky notes as a token of progress didn't work that well. People would leave them up after prior exercises, and
 not take them down when starting new ones. This is after three days of using them! Either I was out of sync with the
@@ -57,7 +62,7 @@ have another go at explaining them. The concepts that were missed in each case w
 of people, so it's probably not worth trying to change the lessons in this regard - however, if a consistent pattern
 builds up then they should be changed.
 
-### Changes to the Notes
+### Changes to the notes
 
 The lecture notes as they stand at the moment don't have a conclusion in them. I just winged one at the end.
 
@@ -76,7 +81,7 @@ although I got the point across this would make it easier and faster.
 It turns out that the new trial projects have security groups added for some of the more common protocols. At the
 very least this should be noted.
 
-### Audience Feedback,
+### Audience feedback,
 
 A couple of people came up after the lecture and stated that they thought that this was a missing piece in the puzzle
 of how to get started on the NeCTAR cloud. They asked if this could be televised or turned into a "MOOC"...
