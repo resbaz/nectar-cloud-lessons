@@ -546,7 +546,7 @@ risk than buying and deploying physical hardware.
 
 To do this effectively you need to understand the application that you are planning to put on the cloud. You need to
 understand the cloud environment that you are putting the application into. You need to be able to work out what
-tradeoffs you are making along the way.
+trade-offs you are making along the way.
 
 In short you need a NeCTAR Driver’s Licence!
 
