@@ -1,12 +1,5 @@
 #The NeCTAR Cloud - 001
 
-**Target Time:** +- 45 minutes
-
-**Overview** This talk is a high level introduction to the conceptual foundations, advantages, disadvantages, and the
-parts of the NeCTAR research cloud. If you understand these then you'll be far less likely to be bitten in your
-journey to the cloud: and given the scale and low price of the research cloud you will, most likely, be making
-that journey.
-
 ## Introduction
 
 I used to be such a doubter. I thought the cloud was all just was just marketing hype. After all, who would let their

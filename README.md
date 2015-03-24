@@ -13,8 +13,8 @@ thus reducing your risk and saving you time and trouble in your journey to the C
 
 The directories that make up this project are as follows:
 
-* Promotion - Promotional material to use in advance of the course
-* Lessons - The lessons themselves
+* [Promotion](Promotion/README.md) - Promotional material to use in advance of the course
+* [Lessons](Lessons/README.md) - The lessons themselves
 * Planning - The materials that were used to create the course
 
 ## Delivering the lessons
