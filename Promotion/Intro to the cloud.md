@@ -125,7 +125,8 @@ technical term is “threading”. Multiple threads of execution.
 Even today, such has the speed up of processors been, most of our computers are just sitting, waiting for input. 
 
 (could show something like activity monitor - my computers load whilst I was working on this document:
-![image alt text](cpu_load.png =250px)
+<img src="cpu_load.png" alt="CPU Load" style="width: 200px;"/>
+)
 
 Now a compiled program is simply a set of instructions for a computer. So couldn’t you write a program that pretended
 to be a computer? A computer emulator in software in other words?
