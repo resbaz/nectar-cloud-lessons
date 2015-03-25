@@ -7,7 +7,8 @@ This course aims to teach the basics of the NeCTAR cloud to researchers over a t
 It’s been hyped: but the Cloud does offer serious value in terms of cost and instant availability to researchers.
 However, it’s a complex tool and if you don’t know and understand its constraints trying to make use of it can end
 in painful tears. This course introduces you to the the tools and the underlying concepts of the NeCTAR cloud -
-thus reducing your risk and saving you time and trouble in your journey to the Cloud.
+thus reducing your risk and saving you time and trouble in your journey to the cloud. And given the scale and low price 
+of the research cloud you will, most likely, be making that journey.
 
 ## Folders
 
