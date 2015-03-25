@@ -1,12 +1,4 @@
-<table>
-  <tr>
-    <td>Introduction to the Research Cloud: The session is going to be a high level introduction to the conceptual 
-    foundations, advantages, disadvantages, and the parts of the research cloud. If you understand these then you’ll 
-    be far less likely to be bitten in your journey to the cloud: and given the scale and low price of the research 
-    cloud you will, most likely, be making that journey.</td>
-  </tr>
-</table>
-
+# Lesson I: An introduction to the dashboard (45min)
 
 "Roll up to the NeCTAR mystery tour!" 
 
