@@ -1,6 +1,4 @@
-#Template
-
-##Lesson XXX Blah blah, (Xmin)
+#Lesson XXX Blah blah, (Xmin)
 
 **Objective:** By the end of this lesson participants will be...
 
