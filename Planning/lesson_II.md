@@ -7,7 +7,12 @@ understand that the resultant machine is virtual.
 
 **Motivation:** 
 
+These are the basic steps required to successfully run a VM on the NeCTAR cloud. 
 
+**Story**
+
+Now knowing the parts of the NeCTAR cloud, Anna decides to see if she can find an image that has RStudio server
+installed on it - and launch it.
 
 **Task**
 

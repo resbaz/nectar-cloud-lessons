@@ -10,6 +10,12 @@ locate them on the dashboard.
 
 The researcher needs to understand the Dashboard and the underlying parts of OpenStack, in order to use it.
 
+**Story**
+
+A researcher, Anna Prentice wants to learn R at home: and use it at work. Not having a laptop, and looking at the 
+RStudio website, she sees that there is a server version. She decides that if she can run it on the NeCTAR cloud it
+would support her needs. But to do this she first needs to be able to understand the parts of the NeCTAR cloud.
+
 **Task:**
 
 To find and map the parts of the dashboard to  their respective OpenStack components. Done as a guided tour of 
