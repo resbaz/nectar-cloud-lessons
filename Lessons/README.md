@@ -28,3 +28,6 @@ There are also three checklists to be used during the lesson
 
 It would be helpful if each participant also received a printed copy of each of the checklists, and a printed copy of
 the extension challenge for them to take away to work on if they don't complete the tasks during the lesson.
+
+The original ODF files of the checklists are included so that they can be edited with [LibreOffice](http://libreoffice.org/) 
+if they need to be changed.
