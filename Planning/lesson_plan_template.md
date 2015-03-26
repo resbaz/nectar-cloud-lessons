@@ -6,7 +6,11 @@ By the end of this lesson participants will be...
 
 **Motivation:** 
 
-Why does the researcher want to learn this?
+Why does the researcher need to learn this?
+
+**Story**
+
+What is the story that we giving our students to help explain the motivation?
 
 **Task**
 
