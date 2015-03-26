@@ -41,10 +41,10 @@ explain the gotcha’s around this small area.
 How I’m going to do this is, is to start with an overview the NeCTAR parts through a very high level drive through of 
 the NeCTAR dashboard. Hence the NeCTAR mystery tour title.
 
-Then we’ll launch and access a machine.
+Then in the following session we’ll launch and access a machine.
 
-By the end of this session you should be able start up and manage your own machines on cloud. You’ll also know where 
-to go for support when things turn to custard! 
+By the end of the first two sessions you should be able start up and manage your own machines on cloud. You’ll also 
+know where to go for support when things turn to custard! 
 
 # Log in to the dashboard
 
@@ -154,7 +154,6 @@ latest updates to the cloud.
 **Activity:** Get everyone to click on the "Getting Started" link of the top bar of the support site.
 
 A menu appears on the left! 
-
 
 **Demonstrate:** This menu to the left of the support site matches the links in the top bar of the support site.
 
@@ -429,7 +428,6 @@ And the answer used by some was ingenious. We’d break a clay seal in half. I�
 emissary would hand me the half of the seal that you’d given me and if it matched mine I’d hand the cash over. 
 Obviously there is quite a lot of trust in the system. And you’d want to keep your half of the seal private: 
 under lock and key. Me? Meh, not so much.
-
 
 Keys are a very similar concept. They have two halves. Anything you encrypt with one half can be decrypted by anyone 
 with the other half.
