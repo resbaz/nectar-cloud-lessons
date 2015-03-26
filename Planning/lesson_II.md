@@ -42,6 +42,7 @@ how they show the message passing architecture of OpenStack
 
 **Links for students:** 
 
+* [An introduction to checklists](http://www.newyorker.com/magazine/2007/12/10/the-checklist)
 
 **Supporting material:** 
 
