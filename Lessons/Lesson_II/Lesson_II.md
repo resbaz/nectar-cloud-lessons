@@ -130,4 +130,5 @@ one server, you might inadvertently break another.
 
 # Launch your own instance
 
-Get students to walk through the creation of an instance, following in Anna's footsteps.
+Get students to walk through the creation of an instance, following in Anna's footsteps. Once they've done this they
+can shut it down again.
