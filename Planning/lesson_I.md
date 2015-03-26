@@ -12,9 +12,7 @@ The researcher needs to understand the Dashboard and the underlying parts of Ope
 
 **Story**
 
-A researcher, Anna Prentice wants to learn R at home: and use it at work. Not having a laptop, and looking at the 
-RStudio website, she sees that there is a server version. She decides that if she can run it on the NeCTAR cloud it
-would support her needs. But to do this she first needs to be able to understand the parts of the NeCTAR cloud.
+Two researchers blow 20K of grant money on computers - that they didn't have to, had NeCTAR been around!
 
 **Task:**
 
