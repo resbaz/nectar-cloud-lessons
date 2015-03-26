@@ -1,5 +1,12 @@
 # Lesson II A VM: up and running (45min)
 
+A researcher, Anna Prentice wants to learn R at home: and use it at work. Not having a laptop, and looking at the 
+RStudio website, she sees that there is a server version. She decides that if she can run it on the NeCTAR cloud it
+would support her needs. 
+
+Having sat through the first part of this course, and know knowing the parts of the NeCTAR cloud, Anna decides to see 
+if she can find an image that has RStudio server installed on it - and launch it.
+
 # The power of Checklists
 
 In 2001 a critical-care specialist at Johns Hopkins Hospital designed a checklist to prevent line infections. 
@@ -29,11 +36,13 @@ Our rate of problems encountered during deployment fell to zero.
  </tr>
 </table>
 
-So I’ve created a checklist for launching a virtual machine.
+Knowing this, I’ve created a checklist for launching a virtual machine that runs RStudio server.
+
+Which Anna has stumbled upon. 
 
 # Walk through of a launch
 
-First you are going to walk me through the process, and then you going to follow it yourselves.
+First you are going to walk me through the process, and then you going to follow in Anna's footsteps yourselves.
 
 (Use the walk through to remind everyone what the key pair and the security group are. 
 Also describe each field as you fill it in.)
@@ -121,4 +130,4 @@ one server, you might inadvertently break another.
 
 # Launch your own instance
 
-Get students to walk through the creation of an instance.
+Get students to walk through the creation of an instance, following in Anna's footsteps.
