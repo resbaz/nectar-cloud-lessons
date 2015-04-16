@@ -60,6 +60,9 @@ Bash guide:
 * http://code.tutsplus.com/tutorials/ssh-what-and-how--net-25138
 * http://software-carpentry.org/v5/novice/shell/index.html
 * http://software-carpentry.org/v4/shell/ssh.html
+* http://en.wikipedia.org/wiki/Secure_Shell
+* [NeCTAR's image catalogue](https://wiki.rc.nectar.org.au/wiki/Image_Catalog)
+* http://en.wikipedia.org/wiki/Superuser
 
 
 **Supporting material:** 
