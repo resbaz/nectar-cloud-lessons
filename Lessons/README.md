@@ -4,8 +4,7 @@ These are the lessons that form the course.
 
 ## Lesson I: The NeCTAR dashboard (45 minutes)
 
-This lesson is contained in the Lesson_I folder.
-It covers the web interface to the NeCTAR cloud in high level.
+This lesson covers the web interface to the NeCTAR cloud in high level.
 
 The main lesson is [here](Lesson_I/Lesson_I.md)
 The supporting questions are [here](Lesson_I/Lesson_I_Questions.pptx)
@@ -13,8 +12,7 @@ There is a PDF version of the supporting questions as well.
 
 ## Lesson II: Firing up a VM (45 minutes)
 
-This lesson is contained in the Lesson_II folder.
-It covers launching a VM.
+This lesson covers the launching of a VM.
 
 The main lesson is [here](Lesson_II/Lesson_II.md)
 The supporting questions are [here](Lesson_II/Lesson_II_Questions.pptx)
@@ -31,3 +29,9 @@ the extension challenge for them to take away to work on if they don't complete 
 
 The original ODF files of the checklists are included so that they can be edited with [LibreOffice](http://libreoffice.org/) 
 if they need to be changed.
+
+# Lesson III Accessing, and moving data to and from the VM (45min)
+
+This lesson covers using `ssh` to access the instance and `scp` to move files to and from the VM.
+
+The main lesson is [here](Lesson_III/Lesson_III.md)
