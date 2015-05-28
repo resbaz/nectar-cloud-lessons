@@ -1,11 +1,11 @@
 # Lesson III Accessing, and moving data to and from the VM (45min)
 
-> Anna Prentice has now had her RStdio server up and running for a few weeks. And she's very happy! 
+> Anna Prentice has now had her web server up and running for a few weeks. And she's very happy! 
 > 
 > But on opening her newspaper one morning, she finds that there's a major Internet scare - hackers have found a 
 > weakness that they are exploiting!
 >
-> Remembering that she is responsible for her RStudio server, she decides that the software running on the machine needs 
+> Remembering that she is responsible for her web server, she decides that the software running on the machine needs 
 > to be urgently updated.
 > 
 > Remembering the checklist used to launch a machine performs an update by issuing the following commands:
@@ -18,8 +18,8 @@
 
 ## The Terminal 
 
-**Q** Anna's virtual machine has no keyboard, monitor or mouse. Does she have any hope of updating the software on her
-machine?
+**Q** Anna's virtual machine in the cloud has no keyboard, monitor or mouse. Does she have any hope of updating the 
+software on her machine?
 
 Hold up a Red sticky note if you think that she is stuck.
 and a Green one if you think that, somehow, somewhere, there is hope for her.
@@ -31,15 +31,35 @@ A terminal was a keyboard and a screen, and many terminals could be attached to 
  
 These terminals supported a basic text based interface that allowed you to do work on the computer it was attached to.
 
-You'll be unsurprised to learn that with the passage of time, people wrote programs that emulated these terminals.
+You'll be unsurprised to learn that with the passage of time, people wrote programs that emulated these terminals. So 
+one computer could act as the terminal for another computer - or even itself!
 
-So you can run a terminal application on your computer to do work on your computer.
+So you can run a terminal application on your computer to do work on your own computer. You might recognize it as the
+"Command Line"
 
-**Exercise 1**
+**Q** Who here is running MS-Windows? 
 
-Find and run the terminal program on your computer.
+Hold up a Red sticky note if you are.
+and a Green one if you are aren't.
 
-Once its running try the following commands:
+**Exercise 1a**
+
+The windows command line doesn't work with the Linux operating system that Anna is using on the NeCTAR cloud.
+
+So we are going to have take a short break for the Windows users to install CygWin (http://cygwin.com/install.html) -
+making sure to include the `openssh` package as part of the installation.
+
+Once that's done hold up a green card.
+
+**Exercise 1b**
+
+Find and run the terminal program, or command line, on your computer.
+
+OSX users can do a Spotlight Search for 'terminal'
+
+**No: this won't work with cygwin!**
+
+Once it's running try the following commands:
 
 ```bash
 pwd
@@ -74,8 +94,8 @@ Commands issued via terminals have the following advantages:
 
 But your terminal program can also be used to connect to another computer.
 
-So Anna's hope comes in the form of this application: She can run it on her local machine, and connect to the remote
-RStudio server.
+So Anna's hope comes in the form of the terminal application: She can run it on her local machine, and connect to 
+her remote RStudio server.
 
 **Exercise 2**
 
@@ -97,7 +117,9 @@ ssh
 ```
 
 `ssh` stands for **s**ecure **sh**ell. It connects a terminal on one machine to another target machine, thus allowing 
-you to use a text based interface on the target machine. It kind of teleports the target machine terminal to yours…
+you to use the text based interface on the target machine. It kind of teleports the target machine terminal to yours…
+
+Think of `ssh` as your cloud login command.
 
 `ssh` uses public key cryptography to connect with the target machine. 
 
@@ -116,12 +138,12 @@ Well, they have problems:
 * Need to be ever more complex
 * Easy to crack (especially social engineering)
 * Prone to being shared
-* Cascade to other devices if *you* use the same password across devices. And if you’re spawning multiple VM’s are  
-  you going to give them all the same password, or somehow ‘remember’ different ones?
+* Cascade to other devices if *you* use the same password across devices. And if you’re spawning multiple computers
+  on the cloud are you going to give them all the same password, or somehow ‘remember’ different ones?
 
-If it’s your machine, what happens if you forget it? There is no higher authority to unlock it for you…
+If it’s your machine, what happens if you forget your password? There is no higher authority to unlock it for you…
 
-And if it’s your machine, it’s access to the whole machine: not just R scripts. If someone hacks it you could find
+And if it’s your machine, it’s granting access to the whole machine. If someone hacks it you could find
 the security services knocking on your door at some early hour. And if that prospect doesn't scare you, you're a 
 better person than I!
 
@@ -131,18 +153,18 @@ Ok. This is the basic form our `ssh` command will take:
 ssh  -i <key> <user_id>@<address>
 ```
 
-In my case that would be:
-
-```bash
-ssh -i .ssh/tut_dev.pem ubuntu@144.6.225.224
-```
-
 So here:
 
 * the `key` is the path to and the key file itself
-* the `ubuntu` user is the name of the user on the remote machine that we are connecting as.  
-  Different operating systems have different default users. For the RStudio server it is this user.
-* the address I'm using is the IP address that we read off of the dashboard.
+* the `user_id` is the name of the user account on the remote machine that we are connecting as.  
+  Different operating systems have different default user accounts.
+* the `address` is the IP address of the Virtual Machine that we read off of the dashboard.
+
+In my case that would be:
+
+```bash
+ssh -i keys/tut_dev.pem ubuntu@144.6.225.224
+```
 
 **Question 1**
 
@@ -218,7 +240,7 @@ So in my case, allowing me (the user) to be able to read and write the file, and
 being able to read, write or try to run (execute) it, the command would be:
 
 ```bash
-chmod u=rw,go-rwx .ssh/tut_dev.pem 
+chmod u=rw,go-rwx keys/tut_dev.pem 
 ```
 
 **Exercise 4**
@@ -244,7 +266,7 @@ And a Red card if you need help.
 
 **Exercise 5**
 
-Finally, we are going try and update our RStudio server. Try to execute the first command in the set:
+Finally, we are going try and update our web server. Try to execute the first command in the set:
 
 ```bash
 apt-get update
@@ -302,10 +324,97 @@ And a Red card if you need help.
 
 Now we've replicated the steps Anna had to undertake in order to run the upgrade on her machine.
 
-> Whilst on the machine, Anna realises that she doesn't have a backup of the scripts that she's created. And thinks
-> that it would be a good time to create some!
+**Exercise 7**
+
+When you are finished working on your virtual machine, do the following:
+
+Type `exit`
+
+You should see the following:
+
+```bash
+logout
+Connection to <some_ip_number> closed
+```
+
+You have now closed the ssh connection to the remote machine. If you are not convinced, type `pwd` to see that your
+terminal is now back on your local machine. The teleportation magic is over!
+
+Hold up a Green card if you are back on your local machine.
+And a Red card if you are not.
+
+**Exercise 8**
+
+Return to the security group in the dashboard and remove the ssh rule.
+
+Now try to ssh into your virtual machine again.
+
+What happens?
+
+Hold up a Green card if you have managed to teleport into your remote machine..
+And a Red card if you haven't.
+
+I'm hoping to see a sea of Red!
+
+**Exercise 9**
+
+Now return to the security group and re-add a rule that allows ssh.
+
+Try to ssh into your virtual machine again.
+
+What happens?
+
+Hold up a Green card if you have managed to teleport into your remote machine..
+And a Red card if you haven't.
+
+I'm hoping to see a sea of Green!
+
+The takeaway: Security groups can stop you from accessing your server if they aren't configured properly. 
+
+It is also a good idea to remove the ssh rule from the security group when you don't kneed it. This stops hackers from 
+trying to access your machine.
+
+> Whilst on the machine, Anna realises that she doesn't have a backup of the site that she's created. And thinks
+> that it would be a good time to create one!
+
+The program we are going to use to do this is called `scp` (**S**ecure **c**o**p**y)
+
+It can move files to, or fetch files from, different machines. It is built on top of `ssh`.
+
+This `scp` command will copy the file named `notes.txt` from the home directory of the remote machine to the local one:
+
+```bash
+$ scp username@remote_machine_address:notes.txt /local/directory 
+```
+
+Where of course `username` is the default account on the remote machine, `remote_machine_address` is the local one
+
+This scp command will copy the file named notes.txt from the local machine to the remote machine:
+
+```bash
+$ scp foobar.txt username@remote_machine_address:/remote/directory 
+```
+
+Looking at the two commands you can see that the source for the transfer is on the left, and the target on the right.
 
 
+**Exercise 8**
+
+I want everyone to 
+
+```bash
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0777 for '.ssh/tut_dev.pem' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+bad permissions: ignore key: .ssh/nectar_dev.pem
+ubuntu@144.6.225.224's password: 
+```
+
+Hold up a Green card when you've reached this error message.
+And a Red card if you need help.
 
 
 

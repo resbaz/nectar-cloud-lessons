@@ -29,9 +29,9 @@ aren't keeping up or need help.
 There is also a set of extension challenges, should time permit: [ExtraChallenges.md](Extension/ExtraChallenges.md).
 These cover connecting to the VM.
 
-## Thoughts after delivering the first two lessons as a 1.45 hour workshop.
+# Thoughts after delivering the first two lessons as a 1.45 hour workshop.
 
-### The questions
+## The questions
 
 The sticky notes as a token of progress didn't work that well. People would leave them up after prior exercises, and
 not take them down when starting new ones. This is after three days of using them! Either I was out of sync with the
@@ -44,7 +44,7 @@ have another go at explaining them. The concepts that were missed in each case w
 of people, so it's probably not worth trying to change the lessons in this regard - however, if a consistent pattern
 builds up then they should be changed.
 
-### Changes to the notes
+## Changes to the notes
 
 The lecture notes as they stand at the moment don't have a conclusion in them. I just winged one at the end.
 
@@ -63,8 +63,11 @@ although I got the point across this would make it easier and faster.
 It turns out that the new trial projects have security groups added for some of the more common protocols. At the
 very least this should be noted.
 
-### Audience feedback,
+## Audience feedback,
 
 A couple of people came up after the lecture and stated that they thought that this was a missing piece in the puzzle
 of how to get started on the NeCTAR cloud. They asked if this could be televised or turned into a "MOOC"...
+
+
+
 
