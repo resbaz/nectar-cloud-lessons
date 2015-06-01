@@ -1,4 +1,4 @@
-# Lesson II A VM: up and running (45min)
+# Lesson II: Your free computer: up and running (45min)
 
 A researcher, Anna Prentice wants to learn R at home: and use it at work. Not having a laptop, and looking at the 
 RStudio website, she sees that there is a server version. She decides that if she can run it on the NeCTAR cloud it
