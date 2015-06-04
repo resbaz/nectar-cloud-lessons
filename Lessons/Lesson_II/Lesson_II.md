@@ -1,11 +1,14 @@
 # Lesson II: Your free computer: up and running (45min)
 
-A researcher, Anna Prentice wants to learn R at home: and use it at work. Not having a laptop, and looking at the 
-RStudio website, she sees that there is a server version. She decides that if she can run it on the NeCTAR cloud it
-would support her needs. 
+A researcher, Anna Prentice wants fire up a website to share some some data with the world. Looking at the 
+NeCTAR image list, she sees that there is a public image with Drupal, a content management system that may allow her 
+to share her data.
 
 Having sat through the first part of this course, and know knowing the parts of the NeCTAR cloud, Anna decides to see 
-if she can find an image that has RStudio server installed on it - and launch it.
+if she can launch the instance to see if meets with her needs.
+
+> This is one of the great things about the NeCTAR cloud: you can just spin up machines, play with them, and then
+> THROW THEM AWAY!
 
 # The power of Checklists
 
@@ -36,9 +39,10 @@ Our rate of problems encountered during deployment fell to zero.
  </tr>
 </table>
 
-Knowing this, I’ve created a checklist for launching a virtual machine that runs RStudio server.
+Knowing this, I’ve created a checklist for launching a virtual machine that runs the Drupal server Anna is interested
+in.
 
-Which Anna has stumbled upon. 
+Which Anna has, by some bizarre and lucky coincidence, stumbled upon. 
 
 # Walk through of a launch
 
@@ -113,7 +117,7 @@ Ok, lets look at the security group checklist.
 (Walk the students through the security group checklist, describing each entry as you go. 
 *CIDR = Classless Internet Domain Routing!*)
 
-**Activity 2:** Now get them to create a security group 
+**Activity 2:** Now get the students to create a security group 
 
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
@@ -126,7 +130,7 @@ one server, you might inadvertently break another.
 
 **Question 2**
 
-**Answer: E.** Yes, it’s true. NeCTAR can experience Network issues from time to time. 
+**Answer: E.** Yes, it’s true. NeCTAR can experience network issues from time to time. 
 
 # Launch your own instance
 

@@ -13,7 +13,7 @@ A researcher needs to understand the Dashboard and the underlying parts of OpenS
 
 Two researchers blow 20K of grant money on computers - that they didn't have to, had NeCTAR been around!
 
-##Task
+##Tasks
 
 To find and map the parts of the dashboard to  their respective OpenStack components. Done as a guided tour of 
 the dashboard, rather like a tour guide would do...

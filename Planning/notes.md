@@ -51,10 +51,6 @@ and data. They have slightly different goals.
 
 ### Q: What's the best example application to use for this course?
 
-Back to WebServer idea, and away from RStudio.
+*A:* Decided on a dead simple web server type of box. Is a pre-configured drupal instance good enough, or is it too 
+complicated?
 
-TPAC have created an RStudio instance!
-http://www.tpac.org.au/resources/nectar-compute-cloud/r-studio-server-in-the-cloud/
-
-Also:
-https://rosannavanhespenresearch.wordpress.com/2015/05/08/tutorial-running-rstudio-in-the-nectar-cloud/

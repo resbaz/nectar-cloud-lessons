@@ -12,15 +12,19 @@ They also need to know how to transfer files between their desktop and their VM.
 
 ##Story
 
-Anna Prentice has been working on her RStudio server instance for a while. And is becoming a little worried that she
-hasn't done any security upgrades. She also knows that there are files on the VM that should be backed up off of the 
-machine. There is also a data set that she wants to move onto the machine. 
+Anna Prentice has found that her Drupal instance is suitable for the publishing that she wants to do. 
 
-##Task
+But she is becoming a little worried that she hasn't done any security upgrades on it since she launched it. 
+She also knows that there are files on the VM that should be backed up off of the machine. Then she  
 
-The students will relaunch the machine that they shut down in the previous example, then they will ssh into it,
-create a 'backup', then scp the backup onto the researchers client machine. Finally they will scp a file from their
-machine onto the VM.
+##Tasks
+
+The students will relaunch the machine that they shut down in the previous example, then they will ssh into it, and
+perform the needed security upgrades.
+
+Then they will move a file to the computer and back onto their local machine.
+
+As an advanced task they will make a backup and move it to their local machine.
 
 ##Covers
 
@@ -67,7 +71,7 @@ Bash guide:
 
 ##Supporting material 
 
-An image that has RStudio server on it.
+An image that has Drupal and a backup script on it.
 
 ##Preconditions 
 

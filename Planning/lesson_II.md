@@ -11,14 +11,12 @@ These are the basic steps required to successfully run a VM on the NeCTAR cloud.
 
 ##Story
 
-A researcher, Anna Prentice wants to learn R at home: and use it at work. Not having a laptop, and looking at the 
-RStudio website, she sees that there is a server version. She decides that if she can run it on the NeCTAR cloud it
-would support her needs. 
+A researcher, Anna Prentice wants to set up a simple website, to share some data with the world. 
 
-Now knowing the parts of the NeCTAR cloud, Anna decides to see if she can find an image that has RStudio server
-installed on it - and launch it.
+Now knowing the parts of the NeCTAR cloud, Anna decides to see if she can find an image available on the 
+NeCTAR cloud can do this for her - and launch and play with it.
 
-##Task
+##Tasks
 
 Create a security group, find the correct image, spin it up, connect to it with a web browser and then take it down
 

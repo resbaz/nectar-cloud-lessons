@@ -1,6 +1,6 @@
 # Lesson III: Accessing, and moving data to and from your new computer (45min)
 
-> Anna Prentice has now had her web server up and running for a few weeks. And she's very happy! 
+> Anna Prentice has now had her Drupal web server up and running for a few weeks. And she's very happy! 
 > 
 > But on opening her newspaper one morning, she finds that there's a major Internet scare - hackers have found a 
 > weakness that they are exploiting!
@@ -45,6 +45,8 @@ and a Green one if you are aren't.
 **Exercise 1a**
 
 The windows command line doesn't work with the Linux operating system that Anna is using on the NeCTAR cloud.
+
+Microsoft are planning to change this, but for the time being Windows users have to follow an alternate path.
 
 So we are going to have take a short break for the Windows users to install CygWin (http://cygwin.com/install.html) -
 making sure to include the `openssh` package as part of the installation.
@@ -95,12 +97,12 @@ Commands issued via terminals have the following advantages:
 But your terminal program can also be used to connect to another computer.
 
 So Anna's hope comes in the form of the terminal application: She can run it on her local machine, and connect to 
-her remote RStudio server.
+her remote Drupal server.
 
 **Exercise 2**
 
 Now in the last session we shut down own servers. If we're going to follow in Anna's footsteps, we need to relaunch
-our RStudio servers.
+our Drupal servers.
 
 Remember, this time round we don't need to create a security group or a key: they are already there. So reuse them
 when launching your VM.
@@ -172,7 +174,7 @@ Nectar have an image catalogue that gives information about the images they prov
 
 https://wiki.rc.nectar.org.au/wiki/Image_Catalog
  
-Have a look at it. What operating system do you think our RStudio server is based on?
+Have a look at it. What operating system do you think our Drupal server is based on?
 
 **Choices**
 
@@ -188,7 +190,7 @@ D
 
 **Question 2**
 
-Ok: a bit of a more challenging question. What is the default user for the Scientific Linux OS?
+Ok: a bit of a more challenging question. What is the default user for the Ubuntu OS?
 
 **Choices**
 
@@ -249,7 +251,7 @@ Modify the permissions on your key file so that only you can read or write it.
 Then issue the `pwd` command to see what directory you are in.
 Retry the ssh command.
 
-Hopefully, you are now met with the following
+Hopefully, you are now met with something along following lines
 
 ```bash
 Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-36-generic x86_64)
@@ -400,18 +402,7 @@ Looking at the two commands you can see that the source for the transfer is on t
 
 **Exercise 8**
 
-I want everyone to 
-
-```bash
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-Permissions 0777 for '.ssh/tut_dev.pem' are too open.
-It is required that your private key files are NOT accessible by others.
-This private key will be ignored.
-bad permissions: ignore key: .ssh/nectar_dev.pem
-ubuntu@144.6.225.224's password: 
-```
+I want everyone to create a file named, say,  to 
 
 Hold up a Green card when you've reached this error message.
 And a Red card if you need help.
