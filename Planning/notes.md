@@ -54,3 +54,12 @@ and data. They have slightly different goals.
 *A:* Decided on a dead simple web server type of box. Is a pre-configured drupal instance good enough, or is it too 
 complicated?
 
+
+### Q: What are some of the downsides of using the cloud?
+
+*A:* 
+
+> "The downside is that you will have limited customization options. Cloud computing is cheaper because of economics 
+> of scale, and -- like any outsourced task -- you tend to get what you get. A restaurant with a limited menu is 
+> cheaper than a personal chef who can cook anything you want. Fewer options at a much cheaper price: it's a 
+> feature, not a bug." - Bruce Schneier 
