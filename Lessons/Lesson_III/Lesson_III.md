@@ -389,7 +389,8 @@ This `scp` command will copy the file named `notes.txt` from the home directory 
 $ scp username@remote_machine_address:notes.txt /local/directory 
 ```
 
-Where of course `username` is the default account on the remote machine, `remote_machine_address` is the local one
+Where of course `username` is the default account on the remote machine, and `remote_machine_address` is either its
+IP number or its domain name.
 
 This scp command will copy the file named notes.txt from the local machine to the remote machine:
 
@@ -398,7 +399,10 @@ $ scp foobar.txt username@remote_machine_address:/remote/directory
 ```
 
 Looking at the two commands you can see that the source for the transfer is on the left, and the target on the right.
+You can use a wildcard denoted by the asterisk character (*) to copy multiple files in one go.
 
+A gotcha to look out for: if copying a file from your machine to a remote machine, your account on the remote machine 
+must have permission to write in the target directory.
 
 **Exercise 8**
 
@@ -407,8 +411,27 @@ I want everyone to create a file named, say,  to
 Hold up a Green card when you've reached this error message.
 And a Red card if you need help.
 
+SCP is a good tool to have around. But a graphical environment is 
 
+Go to [CyberDucks home page](https://cyberduck.io/) and download the client file that is correct for your laptop.
 
+Then run it.
+
+Right click and select "New BookMark"
+
+In the resultant dialogue select SFTP.
+Provide a descriptive nickname for the bookmark.
+
+For the Server provide the ip number of the machine read off of the dashboard.
+Add 'ubuntu' as the Username and 
+
+Expand the 'More Options' drop down.
+
+Select the "Use Public Authentication" checkbox, and in the resultant dialogue select the pem file you used to launch 
+the instance.
+
+Now close the dialogue. To connect to the server right click on the bookmark you've just created and select 
+"Connect to Server". All going well, a ruled plain window should replace the pane showing the bookmarks. 
 
 
 
