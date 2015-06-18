@@ -1,4 +1,6 @@
 
+Damian : book elounge or main meeting room, 3rd floor doug macdonald.
+
 # Notes
 
 We are targeting the power user: but focusing as much as possible on the dashboard.
@@ -18,6 +20,10 @@ Concept maps!
 "My other computer is a data center"
 "A free computer!"
 "Free USB sticks"
+
+## Prerequisites
+
+Can we turn Cygwin installation into a prerequisite for windows users?
 
 ## Questions
 

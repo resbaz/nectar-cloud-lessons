@@ -3,7 +3,7 @@
 ##Learning objectives 
 
 By the end of this lesson, participants will be able to securely access a running VM via ssh (without using passwords), 
-and be able to move files to and from it using scp.
+and be able to move files to and from it using scp and Cyberduck.
 
 ##Motivation 
 
@@ -15,16 +15,17 @@ They also need to know how to transfer files between their desktop and their VM.
 Anna Prentice has found that her Drupal instance is suitable for the publishing that she wants to do. 
 
 But she is becoming a little worried that she hasn't done any security upgrades on it since she launched it. 
-She also knows that there are files on the VM that should be backed up off of the machine. Then she  
+She also knows that there are files on the VM that should be backed up off of the machine. So she uses Cyberduck to
+bring them down to her local desktop.
 
 ##Tasks
 
 The students will relaunch the machine that they shut down in the previous example, then they will ssh into it, and
 perform the needed security upgrades.
 
-Then they will move a file to the computer and back onto their local machine.
+Then they will move a file to the server from their local machine by means of scp.
 
-As an advanced task they will make a backup and move it to their local machine.
+Next they will install Cyberduck, and use it to move files between the two machines.
 
 ##Covers
 

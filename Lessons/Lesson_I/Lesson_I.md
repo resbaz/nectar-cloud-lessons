@@ -230,13 +230,16 @@ and a Green one if the answer is "they are about the same".
 
 **Activity:** Select the "Reset Password" tab
 
-We logged into the NeCTAR dashboard using the AAF. However, the AAF doesn’t work too well with command line 
+We log into the NeCTAR dashboard using the AAF. However, the AAF doesn’t work too well with command line 
 applications. So here you generate a password to use with command line applications.
 
-It’s a little beyond the scope of what we are going to be doing today, but know three things
+**NB:** Do not try to use this password to log into the dashboard. This password has nothing to do with the dashboard!
+You log into the dashboard using your AAF credentials.
+
+It’s a little beyond the scope of what we are going to be doing today, but try to remember three things
 
 1. This is where you generate a password to use with command line applications
-2. This password will work across all projects 
+2. This password works across all projects 
 3. If you want to reset the password, just generate a new one.
 
 So that’s the Settings tab and its children. Site wide changes that work across all projects.
@@ -295,6 +298,8 @@ The top level tabs within on your personal project should be
 **Activity:** Just click around on these tabs and their children seeing how they expand and contract, and how the 
 screens change according which tab is selected. They only change when the leaf tabs are selected.
 
+Please hold up a Green sticky note once you've clicked on all of these tabs and their child tabs.
+
 The *Compute* tab is where you manage all of your computer resources.
 
 **Concept alert:** The *Object Store* is an ideal replacement for the usb sticks that some people tend to carry 
@@ -315,12 +320,14 @@ data store. They are not linked in any way, and can be run without the other.
 
 ## Project -> Object Store -> Containers Tab
 
+**Activity:** Drill down to the containers tab of the ObjectStore.
+
 **Q:** Is everyone on the same tab as me?
 
 Please hold up a Red sticky note if the answer is "No" 
 and a Green one if the answer is "Yes".
 
-As you can see, you create containers, and then put "objects" (or as I like to call them, “files”) into the containers.
+This is where you create containers, and then put "objects" (or as I like to call them, “files”) into the containers.
 
 It is a very simple interface, possibly a bit clunky. 
 
@@ -337,7 +344,9 @@ and a Green one once you are done.
 
 ## Project -> Compute -> Images Tab
 
-Ok. Back to the "Follow my leader game" If you could all join me on the Images subtab of the project tab.
+Ok. Back to the "Follow my leader game" 
+
+**Activity:** If you could all join me on the Images sub-tab of the Project tab.
 
 **Q:** Is everyone on the same tab as me?
 
@@ -383,7 +392,7 @@ have provided. So you have to either do a lot of maintenance on your running mac
 basis.
 
 One common way of working is to start up a machine based on a NeCTAR image, then to install your own software onto it, 
-and then to make a copy of its hard drive as it runs. This process is called "snap shotting". 
+and then to make a copy of its hard drive as it runs. This process is called "snapshotting". 
 
 This saves you from having to reinstall the software next time you launch a machine. 
 
@@ -408,17 +417,36 @@ trust the people behind the image.
 
 ## Project -> Access & Security Tab
 
-The next tab we are going to explore is the Access and Security tab. 
+**Activity:**  Could you all please open the Access and Security tab? 
+
+**Q:** Is everyone on the same tab as me?
+
+Please hold up a Red sticky note if the answer is "No" 
+and a Green one if the answer is "Yes".
 
 This page has three tabs across the top.
 
 ### Project -> Access & Security Tab -> Security Groups
+
+**Activity:**  Could you all please make sure you are on the Security Groups tab. 
+
+**Q:** Is everyone on the same tab as me?
+
+Please hold up a Red sticky note if the answer is "No" 
+and a Green one if the answer is "Yes".
 
 By default a machine brought up can reach out to the world via the network, but the world can’t reach in. 
 
 Security Groups simply allow you to specify what network traffic is allowed in.
 
 ###Project -> Access & Security Tab -> Key Pairs
+
+**Activity:**  Could you all please make sure you are on the Key Pairs tab. 
+
+**Q:** Is everyone on the same tab as me?
+
+Please hold up a Red sticky note if the answer is "No" 
+and a Green one if the answer is "Yes".
 
 Ok way back when, in the olden days, if I borrowed a lot of money from you and then relocated to a remote city, how 
 would I know that the man in front of me claiming to be your emissary, now here to collect your cash for you, was 
@@ -436,11 +464,11 @@ On this tab you create key pairs. NeCTAR will keep one, the public key, and you 
 other half, to your local machine.
 
  When NeCTAR fire up a machine for you, they inject the public key into your machine. Anyone with the private key will 
- be able to communicate and control that machine. Like the clay seals of yesteryear, you want to keep your private key 
- in a secure location. 
+ be able to communicate with and control that machine. Like the clay seals of yesteryear, you want to keep your private
+ key in a secure location. 
 
 **Q:** You fire up your machine. Days later, you realise that you’ve lost your private key. Will you ever be able to 
-communicate and control your machine from that point onward?
+access and control your machine from that point onward?
 
 Please hold up a Red sticky note if the answer is "No" 
 and a Green one if the answer is "Yes".
@@ -449,9 +477,16 @@ and a Green one if the answer is "Yes".
 
 ###Project -> Access & Security Tab -> API Access
 
-NeCTAR infrastructure can be communicated with by more than just the browsers we’re using at the moment. You can 
-write or use other programs to manage your cloud resources. There is also a suite of command line tool that you can 
-use instead of the dashboard.
+**Activity:**  Could you all please make sure you are on the API Access tab. 
+
+**Q:** Is everyone on the same tab as me?
+
+Please hold up a Red sticky note if the answer is "No" 
+and a Green one if the answer is "Yes".
+
+Remember, NeCTAR infrastructure can be communicated with by more than just the browsers we’re using at the moment. 
+You can write or use other programs to manage your cloud resources. There is also a suite of command line tool that 
+you can use instead of the dashboard.
 
 This tab simply gives you all the information you’ll need if you are going to use those tools.
 
@@ -460,6 +495,13 @@ This tab simply gives you all the information you’ll need if you are going to 
 **Answer: C**
 
 ## Project -> Instances Tab
+
+**Activity:**  Could you all please make sure you are on the Instances tab. 
+
+**Q:** Is everyone on the same tab as me?
+
+Please hold up a Red sticky note if the answer is "No" 
+and a Green one if the answer is "Yes".
 
 This is simply the place where you get to see the information about all your running machines.
 
@@ -501,8 +543,8 @@ snapshot. The next time you start up from the snapshot, work with it, snapshot i
 
 This only works for small machines. It’s not the worlds greatest way of doing things, but it works for small machines.
 
-I've seen ephemeral storage take so many people by surprise when they first start using the NeCTAR cloud. Don’t be one 
-of those!
+I've seen ephemeral storage take grown developers by surprise when they first start using the NeCTAR cloud. It has
+just about reduced them to tears. Don’t be like them - trust nothing on the cloud!
 
 **Question 7**
 

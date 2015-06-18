@@ -1,8 +1,8 @@
 # Lesson II: Your free computer: up and running (45min)
 
-A researcher, Anna Prentice wants fire up a website to share some some data with the world. Looking at the 
-NeCTAR image list, she sees that there is a public image with Drupal, a content management system that may allow her 
-to share her data.
+A researcher, Anna Prentice wants fire up a website to share some some information about her project with the world. 
+Looking at the NeCTAR image list, she sees that there is a public image with Drupal, a content management system that
+may allow her to share her data.
 
 Having sat through the first part of this course, and know knowing the parts of the NeCTAR cloud, Anna decides to see 
 if she can launch the instance to see if meets with her needs.
@@ -27,7 +27,7 @@ The ten-day line-infection rate went from eleven per cent to zero.
 
 This story inspired a company that I worked at to introduce a checklist for deploying software into production.
 
-We would do it a pairs, one person playing the role of the nurse, the other performing the actual steps.
+We would do it a pairs, one person playing the role of the nurse, the other the surgeon, performing the actual steps.
 
 We had to sign in the date and our names, and each checklist was filed after a deployment.
 
@@ -41,8 +41,6 @@ Our rate of problems encountered during deployment fell to zero.
 
 Knowing this, I’ve created a checklist for launching a virtual machine that runs the Drupal server Anna is interested
 in.
-
-Which Anna has, by some bizarre and lucky coincidence, stumbled upon. 
 
 # Walk through of a launch
 
@@ -81,7 +79,7 @@ Key pairs are modern analogs used to communicate securely.
 
 **NB:** you can only download your keypair once! Don’t lose it!!
 
-(Walk the students through the key pair checklist, describing each entry)
+Walk the students through the key pair checklist, describing each entry
 
 **Activity 1:** Get students to generate key pairs on their own.
 
@@ -114,8 +112,9 @@ away.
 
 Ok, lets look at the security group checklist.
 
-(Walk the students through the security group checklist, describing each entry as you go. 
-*CIDR = Classless Internet Domain Routing!*)
+Walk the students through the security group checklist, describing each entry as you go. 
+
+*If anyone asks, CIDR = Classless Internet Domain Routing!*
 
 **Activity 2:** Now get the students to create a security group 
 

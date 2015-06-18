@@ -27,7 +27,7 @@ organize the material they learn themselves. [Because...](http://mindhacks.com/2
 10h30am - 11h00am: Morning Tea
 
 * [Lesson III: Accessing, and moving data to and from your new computer (45min)](lesson_III.md)
-* Lesson IX: We can still run our graphical applications (45min)
+* [Lesson IX: We can still run our graphical applications (45min)](lesson_IV.md)
 
 12h30am - 1h30pm: Lunch
 
