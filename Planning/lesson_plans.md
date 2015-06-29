@@ -26,19 +26,20 @@ organize the material they learn themselves. [Because...](http://mindhacks.com/2
 
 10h30am - 11h00am: Morning Tea
 
-* [Lesson III: Accessing, and moving data to and from your new computer (45min)](lesson_III.md)
-* [Lesson IX: We can still run our graphical applications (45min)](lesson_IV.md)
+* [Lesson III: Accessing your new computer (45min)](lesson_III.md)
+* [Lesson IV: Moving data to and from your new computer(45min)](lesson_IV.md)
 
 12h30am - 1h30pm: Lunch
 
-* Lesson IV: Transient storage: don’t rely on it! (30min)
-* Lesson V: Snapshots & vertical scaling (30min)
-* Lesson VI: Sharing snapshots (30min)
+* Lesson V: We can still run our graphical applications (30min)
+* Lesson VI: Transient storage: don’t rely on it! (30min)
+* Lesson VII: Snapshots & vertical scaling (30min)
+* Lesson VIII: Sharing snapshots (30min)
 
 3h00pm - 3h30: Afternoon Tea
 
-* Lesson VII: The object store: in more detail (30min)
-* Lesson VIII: The objects store: a publisher as well… (30min)
+* Lesson IX: The object store: in more detail (30min)
+* Lesson X: The objects store: a publisher as well… (30min)
 
 4h30pm - Day end.
 
