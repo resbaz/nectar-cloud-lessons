@@ -61,7 +61,7 @@ Every machine that is launched on the NeCTAR cloud is given an IP address. This 
 NeCTAR unfortunately only have a small pool of IP address to use.
 
 So when you terminate your instance, the IP address is returned to the pool and allocated to the next machine that 
-starts up. Much like the transient file system, it is not lost during reboots.
+starts up. But like the transient file system, it is not lost during reboots.
 
 **Question 1**
 
@@ -104,7 +104,7 @@ What if each network packet also had an associated number indicating the destina
 could sort them into different trays, for the applications to pick up and work with. 
 
 So these numbers associated with a packet are named the port numbers. And well known applications tend to get well 
-known port numbers. So web browsers use port 80, for example.
+known port numbers. So web servers use port 80, for example.
 
 So a security group allows you to define the ports that packets from the outside world are allowed to reach your VM. 
 Any packets with a different port number don’t even make it to your machine. The security group rules just throw them 
