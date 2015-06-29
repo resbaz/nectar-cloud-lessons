@@ -34,7 +34,7 @@ Select the "Next" button.
 
 In the "Select Packages" page, search for "ssh".
 
-Select openssh and click on it, so that it no longer says "Skip".
+Select `openssh` and click on it, so that it no longer says "Skip".
 
 Select the "Next" button.
 
@@ -48,8 +48,10 @@ On the "Create Icons" panel, allow it to create a desktop icon.
 
 Select, finally, the "Finish" button.
 
-
 ##Using Cygwin
+
+Just double click on the Cygwin icon on your desktop and a shell will be opened.
+
 
 
 
