@@ -68,9 +68,8 @@ These cover connecting to the VM.
 
 The sticky notes as a token of progress didn't work that well. People would leave them up after prior exercises, and
 not take them down when starting new ones. This is after three days of using them! Either I was out of sync with the
-way in which these should be used, or human procrastination kicked in. I got tired of reminding people to take them
-down at the start of each exercise. I wonder if a more aggressive red card for "help" and a general show of hands as
-to if I can continue would be better?
+way in which these should be used, or human procrastination kicked in. I had to repeatedly reminding people to take them
+down at the start of each exercise.
 
 The multi-choice questions worked really well. They let me pick up concepts that had not been conveyed properly, and
 have another go at explaining them. The concepts that were missed in each case were only missed by a very small number
