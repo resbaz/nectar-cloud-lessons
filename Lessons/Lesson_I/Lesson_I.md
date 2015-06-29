@@ -146,9 +146,11 @@ If you select it, you’ll see that there are two options: "Settings" and “Hel
 
 **Activity:** Get everyone to select "help" on the settings drop down.
 
-**Q:** What happens?
+**Q:** Are you all looking at the dashboard - or at something else?
 
-**A:** A new tab opens, taking you to the homepage of the NeCTAR support site. This page gives news on the 
+**A:** Hold up a Red sticky note if you are still looking at the dashboard!
+       
+A new tab has opened, taking you to the homepage of the NeCTAR support site. This page gives news on the 
 latest updates to the cloud. 
 
 **Activity:** Get everyone to click on the "Getting Started" link of the top bar of the support site.
@@ -176,7 +178,18 @@ This process is there to try and save everyone time and effort on the NeCTAR sid
 free. If we can lessen the amount of work that NeCTAR’s staff do we can get more of the cloud to use. 
 It seems fair to me.
 
-Can everyone click on the cunningly disguised link labelled "submit your support email here".
+If you do decide that you need help, next NeCTAR lay out an email template showing the format they would like any 
+support request to follow.
+
+The first piece of information they request is the email shown in the dashboard settings drop down. This is important:
+it lets them know who you are on the cloud - remember, the email you are sending from might not be the same as the one
+the NeCTAR cloud knows you as.
+
+Then they ask you to provide the information describing your problem.
+
+The missing piece is of the puzzle is the address you are going to send that email support request to.
+
+So can everyone click on the cunningly disguised link labelled "submit your support email here".
 
 Please don’t click send! 
 
@@ -240,7 +253,7 @@ It’s a little beyond the scope of what we are going to be doing today, but try
 
 1. This is where you generate a password to use with command line applications
 2. This password works across all projects 
-3. If you want to reset the password, just generate a new one.
+3. If you want to reset an existing command line password, just generate a new one.
 
 So that’s the Settings tab and its children. Site wide changes that work across all projects.
 
@@ -475,25 +488,6 @@ and a Green one if the answer is "Yes".
 
 **A:** No, you’ve lost your machine for good.
 
-###Project -> Access & Security Tab -> API Access
-
-**Activity:**  Could you all please make sure you are on the API Access tab. 
-
-**Q:** Is everyone on the same tab as me?
-
-Please hold up a Red sticky note if the answer is "No" 
-and a Green one if the answer is "Yes".
-
-Remember, NeCTAR infrastructure can be communicated with by more than just the browsers we’re using at the moment. 
-You can write or use other programs to manage your cloud resources. There is also a suite of command line tool that 
-you can use instead of the dashboard.
-
-This tab simply gives you all the information you’ll need if you are going to use those tools.
-
-**Question: 5**
-
-**Answer: C**
-
 ## Project -> Instances Tab
 
 **Activity:**  Could you all please make sure you are on the Instances tab. 
@@ -527,7 +521,7 @@ I love the term used to describe this effect: "Noisy neighbours".
 So here’s a question. You have a virtual machine running. It makes all kinds of changes to its hard drives. Which are 
 simply files on the host server. What happens to those changes when you shut your virtual computer down?
 
-**Question 6:**
+**Question 5:**
 
 **Answer D:** The image is simply wiped.
 
@@ -546,7 +540,7 @@ This only works for small machines. It’s not the worlds greatest way of doing 
 I've seen ephemeral storage take grown developers by surprise when they first start using the NeCTAR cloud. It has
 just about reduced them to tears. Don’t be like them - trust nothing on the cloud!
 
-**Question 7**
+**Question 6**
 
 **Answer: B**
 
