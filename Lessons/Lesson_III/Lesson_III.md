@@ -1,4 +1,4 @@
-# Lesson III: Accessing, and moving data to and from your new computer (45min)
+# Lesson III: Accessing your new computer (45min)
 
 > Anna Prentice has now had her Drupal web server up and running for a few weeks. And she's very happy! 
 > 
