@@ -169,7 +169,7 @@ For our Drupal server the command would be:
 ssh -i ~/keys/tut_dev.pem ubuntu@144.6.225.224
 ```
 
-**Question 2
+**Question 2**
 
 Nectar have an image catalogue that gives information about the images they provide. It can be found at:
 
