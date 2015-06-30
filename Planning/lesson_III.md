@@ -3,10 +3,14 @@
 ##Learning objectives 
 
 By the end of this lesson, participants will be able to securely access a running VM via ssh (without using passwords).
+They will also be able to update their Ubuntu/Debian based VM's to the latest versions of the installed software, and
+know how to add and remove rules to their security groups, hence blocking and allowing access to the VM.
 
 ##Motivation 
 
 In order to work with NeCTAR VM's, researchers need to know to access their VM's so that they can do basic maintenance.
+They will also know the commands to use on Debian and Ubuntu based VM's to keep the installed software up to date. Hence
+improving the security of their VM's.
 This knowledge is also a foundation for securely moving files between a VM and the researchers desktop, which is covered
 in the next lesson, Lesson IV.
 

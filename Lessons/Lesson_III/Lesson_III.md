@@ -39,14 +39,15 @@ So you can run a terminal application on your computer to do work on your own co
 
 **Question 1** 
 
-Who here is running MS-Windows? 
+Who here is running Microsoft Windows? 
 
 Hold up a Red sticky note if you are.
 and a Green one if you are aren't.
 
 **Exercise 1a**
 
-The windows command line doesn't work with the Linux operating system that Anna is using on the NeCTAR cloud.
+To all you Windows users: the Windows command line doesn't work with the Linux operating system that Anna is using on 
+the NeCTAR cloud.
 
 Microsoft are planning to change this, but for the time being Windows users have to follow an alternate path.
 
@@ -162,10 +163,10 @@ So here:
   Different operating systems have different default user accounts.
 * the `address` is the IP address of the Virtual Machine that we read off of the dashboard.
 
-For our Drupal server would be:
+For our Drupal server the command would be:
 
 ```bash
-ssh -i keys/tut_dev.pem ubuntu@144.6.225.224
+ssh -i ~/keys/tut_dev.pem ubuntu@144.6.225.224
 ```
 
 **Question 2
@@ -186,7 +187,7 @@ E Scientific Linux
 
 **Answer 2**
 
-D
+D, Ubuntu
 
 **Exercise 3**
 
@@ -222,8 +223,8 @@ The basic form is
 chmod <mode> <file>
 ```
 
-So in my case, allowing me (the user) to be able to read and write the file, and to exclude the group and others from
-being able to read, write or try to run (execute) it, the command would be:
+So in my case, allowing me (the current **u**ser) to be able to **r**ead and **w**rite the file, and to exclude the 
+**g**roup and **o**thers from being able to **r**ead, **w**rite or try to run (e**x**ecute) it, the command would be:
 
 ```bash
 chmod u=rw,go-rwx keys/tut_dev.pem 
@@ -242,7 +243,7 @@ Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-36-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 Last login: Mon Mar 30 01:27:13 2015 from hqrouter.vpac.org
-ubuntu@rstudio:~$ 
+ubuntu@drupal:~$ 
 ```
 
 Re-issue the `pwd` command to convince yourself that are indeed now teleported into the remote machine.
@@ -357,9 +358,15 @@ I'm hoping to see a sea of Green!
 
 The takeaway: Security groups can stop you from accessing your server if they aren't configured properly. 
 
-It is also a good idea to remove the ssh rule from the security group when you don't kneed it. This stops hackers from 
+It is a good idea to remove the ssh rule from the security group when you don't kneed it. This stops hackers from 
 trying to access your machine.
 
+To recap: in this lesson we learnt how to ssh into a running system, and then how to update the software on the Ubuntu 
+based system. Updating the software keeps your server more secure and thus safe. Each operating system type has its own 
+package management program: so if you aren't on an Ubuntu system, you need to find out what the update command is. Ask a 
+friendly Linux person to show you the right command. And remember to update often!
+
+You also learnt to switch rules on and off on the security group, thus controlling access to the VM. 
 
 
 
