@@ -311,6 +311,9 @@ And a Red card if you need help.
 
 Now we've replicated the steps Anna had to undertake in order to run the upgrade on her machine.
 
+`apt-get` is the front end for a program commonly called a package manager. It allows you to add, remove, and update
+applications under its control. These days, that's most of the software on a linux machine.
+
 **Exercise 7**
 
 When you are finished working on your virtual machine, do the following:
@@ -362,9 +365,11 @@ It is a good idea to remove the ssh rule from the security group when you don't 
 trying to access your machine.
 
 To recap: in this lesson we learnt how to ssh into a running system, and then how to update the software on the Ubuntu 
-based system. Updating the software keeps your server more secure and thus safe. Each operating system type has its own 
-package management program: so if you aren't on an Ubuntu system, you need to find out what the update command is. Ask a 
-friendly Linux person to show you the right command. And remember to update often!
+based system using the package manager. Updating the software keeps your server more secure and thus safe. 
+
+Each operating system type has its own package management program: so if you aren't on an Ubuntu system, you need to 
+find out what the update command is. Ask a friendly Linux person to show you the right command. And remember to 
+update often!
 
 You also learnt to switch rules on and off on the security group, thus controlling access to the VM. 
 
