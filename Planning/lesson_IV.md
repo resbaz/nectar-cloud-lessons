@@ -30,16 +30,14 @@ Using the shell to transfer files, and using Cyberduck to move files.
 
 ##Notes 
 
-Anything that the presenter should be aware of.
+?
 
 ##To discuss 
 
-The points of knowledge that the students should understand in order to master the topic
+
 
 ##Links for students 
 
-Material for students to carry on reviewing in their own time.
-https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding
 
 
 ##Supporting material 

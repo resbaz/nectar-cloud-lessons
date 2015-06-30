@@ -27,11 +27,11 @@ perform the needed security upgrades.
 
 ##Covers
 
-SSH
+SSH, `apt-get`, `sudo`
 
 ##Concepts
 
-The shell.
+The shell, some shell commands, how to update a linux server, and the power of `sudo`
 
 ##Notes 
 

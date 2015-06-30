@@ -17,21 +17,21 @@ organize the material they learn themselves. [Because...](http://mindhacks.com/2
 
 #Day 1
 
-(* Click through for learning objectives *)
+(* Click through the lessons below for learning objectives *)
 
 9am - Start 
 
-* [Lesson I: OpenStack, mapped by the dashboard (45min)](lesson_I.md)
-* [Lesson II: Your free computer: up and running (45min)](lesson_II.md)
+* [Lesson I: OpenStack, mapped by the dashboard (45 min)](lesson_I.md)
+* [Lesson II: Your free computer: up and running (45 min)](lesson_II.md)
 
 10h30am - 11h00am: Morning Tea
 
-* [Lesson III: Accessing your new computer (45min)](lesson_III.md)
-* [Lesson IV: Moving data to and from your new computer(45min)](lesson_IV.md)
+* [Lesson III: Accessing your new computer (30 min)](lesson_III.md)
+* [Lesson IV: Moving data to and from your new computer(30 min)](lesson_IV.md)
+* [Lesson V: We can still run our graphical applications (30 min)](lesson_V.md)
 
 12h30am - 1h30pm: Lunch
 
-* Lesson V: We can still run our graphical applications (30min)
 * Lesson VI: Transient storage: don’t rely on it! (30min)
 * Lesson VII: Snapshots & vertical scaling (30min)
 * Lesson VIII: Sharing snapshots (30min)
