@@ -1,11 +1,10 @@
-#Lesson IV: Moving data to and from your new computer (45min)
+#Lesson IV: Moving data to and from your new computer (30min)
 
 > Whilst on the machine, Anna realises that she doesn't have a backup of the site that she's created. And thinks
 > that it would be a good time to create one!
 
-There is a command line program you can use called `scp` (**S**ecure **c**o**p**y)
-
-It can move files to, or fetch files from, different machines. It is built on top of `ssh`.
+There is a command line program you can use called `scp` (**s**ecure **c**o**p**y) to move files to, or fetch files 
+from, different machines. It is built on top of `ssh`.
 
 This `scp` command will copy the file named `notes.txt` from the home directory of the remote machine to the local one:
 
@@ -25,19 +24,38 @@ $ scp foobar.txt username@remote_machine_address:/remote/directory
 Looking at the two commands you can see that the source for the transfer is on the left, and the target on the right.
 You can use a wildcard denoted by the asterisk character (*) to copy multiple files in one go.
 
-A gotcha to look out for: if copying a file from your machine to a remote machine, your account on the remote machine 
-must have permission to write in the target directory.
+By way of example, I'm going to create a file locally, move it to the remote machine, then bring it back.
+
+```bash
+touch temp.txt
+echo "hello from afar" > temp.txt 
+more temp.txt
+scp -i ~/.ssh/nectar_dev.pem temp.txt debian@115.146.92.130: 
+ssh debian@115.146.92.130 -i ~/.ssh/nectar_dev.pem
+    ls
+    more temp.txt
+    exit
+pwd
+ls
+rm temp.txt
+ls
+scp -i ~/.ssh/nectar_dev.pem debian@115.146.92.130:temp.txt .
+more temp.txt
+rm temp.txt
+```
 
 **Exercise 8**
 
-I want everyone to create a file named, say, `helpme.txt` and then copy it onto the remote server.
+I want everyone to create a file named, say, `helpme.txt` and then copy it onto their remote server.
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
 
+For non existent bonus points, if you finish early, bring it back again!
+
 **Exercise 9**
 
-SCP is a good tool to have around. But a graphical environment is even better.
+SCP is a good tool to have available. But a graphical environment can be much easier to use.
 
 Go to [CyberDucks home page](https://cyberduck.io/) and download the client file that is correct for your laptop.
 
@@ -75,3 +93,6 @@ local machine. You can even edit it in place!
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
+
+In this lesson we've learnt two different ways of moving files between our remote server and our local machine.
+Hence moving data to and from our NeCTAR servers should now not be a problem!

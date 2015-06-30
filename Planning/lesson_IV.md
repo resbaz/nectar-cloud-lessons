@@ -1,9 +1,9 @@
-#Lesson IV: Moving data to and from your new computer (45min)
+#Lesson IV: Moving data to and from your new computer (30min)
 
 ##Learning objectives 
 
 By the end of this lesson, participants will be able to securely move files to and from a running VM using scp and 
-Cyberduck.
+Cyberduck. This knowledge mans that from now on moving data to and from NeCTAR servers should be simple to do!
 
 ##Motivation 
 
