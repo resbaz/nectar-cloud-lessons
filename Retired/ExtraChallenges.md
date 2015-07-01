@@ -34,7 +34,7 @@ If you get asked "are you sure you want to continue connecting..." simply type y
 
 ## For Windows
 
-Download[ https://qriscloud.zendesk.com/hc/en-us/article_attachments/200235864/QRIScloud_Beginners_Guide__ZenDesk_version_.pdf](https://qriscloud.zendesk.com/hc/en-us/article_attachments/200235864/QRIScloud_Beginners_Guide__ZenDesk_version_.pdf)
+Download[https://qriscloud.zendesk.com/hc/en-us/article_attachments/200235864/QRIScloud_Beginners_Guide__ZenDesk_version_.pdf](https://qriscloud.zendesk.com/hc/en-us/article_attachments/200235864/QRIScloud_Beginners_Guide__ZenDesk_version_.pdf)
 
 And follow the instructions on page 14 and 15.
 
