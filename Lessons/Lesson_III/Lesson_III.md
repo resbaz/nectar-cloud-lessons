@@ -92,8 +92,6 @@ Commands issued via terminals have the following advantages:
 * They keep a history of your commands
 * You can easily replay commands
 * It is simple to automate
-* If you can type, you can use it...
-* Easy to communicate how to do things with other people.
 
 But your terminal program can also be used to connect to another computer.
 
