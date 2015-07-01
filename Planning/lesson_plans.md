@@ -33,7 +33,7 @@ organize the material they learn themselves. [Because...](http://mindhacks.com/2
 12h30am - 1h30pm: Lunch
 
 * Lesson VI: Snapshots: Backups, vertical scaling, sharing & transient storage (don’t rely on it!) (45 min)
-* Lesson VII: Securing and maintaining your instance (45 min)
+* Lesson VII: Securing and maintaining your instance (45 min) (possibly include password enabling for sudo)
 
 3h00pm - 3h30: Afternoon Tea
 
