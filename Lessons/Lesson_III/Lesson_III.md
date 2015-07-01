@@ -400,7 +400,9 @@ is also governed by the security group?
 
 **Answer 3**
 
-    C. A server can have multiple security groups, and if anyone of them allows a port, then that port is allowed. 
+    C. A server can have multiple security groups, and if anyone of them allows a port, then that port is allowed.
+
+> (check this answer)
 
 To recap: in this lesson we learnt about terminals and how to use one to connect to a running system using ssh, and 
 then how to update the software on the Ubuntu based system using the package manager. 
