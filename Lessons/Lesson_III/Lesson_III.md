@@ -252,6 +252,8 @@ Modify the permissions on your key file so that only you can read or write it.
 Then issue the `pwd` command to see what directory you are in.
 Retry the ssh command.
 
+If you are asked "Are you sure you want to continue connecting..." simply type "yes".
+
 Hopefully, you are now met with something along following lines
 
 ```bash
