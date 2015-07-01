@@ -387,8 +387,25 @@ The takeaway: Security groups can stop you from accessing your server if they ar
 It is a good idea to remove the ssh rule from the security group when you don't kneed it. This stops hackers from 
 trying to access your machine.
 
-To recap: in this lesson we learnt how to ssh into a running system, and then how to update the software on the Ubuntu 
-based system using the package manager. Updating the software keeps your server more secure and thus safe. 
+**Question 3**
+
+You remove ssh from a security group shared with many other servers. Will you be able to ssh into another server that
+is also governed by the security group?
+
+**Choices**
+
+    A. Yes
+    B. No
+    C. Only if there is another security group applied to the server that has ssh enabled.
+
+**Answer 3**
+
+    C. A server can have multiple security groups, and if anyone of them allows a port, then that port is allowed. 
+
+To recap: in this lesson we learnt about terminals and how to use one to connect to a running system using ssh, and 
+then how to update the software on the Ubuntu based system using the package manager. 
+
+Remember, updating the software keeps your server more secure and thus safe. 
 
 Each operating system type has its own package management program: so if you aren't on an Ubuntu system, you need to 
 find out what the update command is. Ask a friendly Linux person to show you the right command. And remember to 
