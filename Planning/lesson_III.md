@@ -1,4 +1,4 @@
-#Lesson III: Accessing your new computer (45min)
+#Lesson III: Accessing and updating your new computer (30 min)
 
 ##Learning objectives 
 

@@ -26,7 +26,7 @@ organize the material they learn themselves. [Because...](http://mindhacks.com/2
 
 10h30am - 11h00am: Morning Tea
 
-* [Lesson III: Accessing your new computer (30 min)](lesson_III.md)
+* [Lesson III: Accessing and updating your new computer (30 min)](lesson_III.md)
 * [Lesson IV: Moving data to and from your new computer(30 min)](lesson_IV.md)
 * [Lesson V: We can still run our graphical applications (30 min)](lesson_V.md)
 

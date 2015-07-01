@@ -30,8 +30,20 @@ the extension challenge for them to take away to work on if they don't complete 
 The original ODF files of the checklists are included so that they can be edited with [LibreOffice](http://libreoffice.org/) 
 if they need to be changed.
 
-# Lesson III Accessing, and moving data to and from the VM (45min)
+## Lesson III: Accessing and updating your new computer (30 min)
 
-This lesson covers using `ssh` to access the instance and `scp` to move files to and from the VM.
+This lesson covers using `ssh` to access the instance.
 
 The main lesson is [here](Lesson_III/Lesson_III.md)
+
+# Lesson IV: Moving data to and from your new computer(30 min)
+
+This lesson covers using `scp` and CyberDuck to move files to and from the VM
+
+The main lesson is [here](Lesson_IV/Lesson_IV.md)
+
+# Lesson V: We can still run our graphical applications (30 min)
+
+This lesson covers the use of X-Windows to run graphical applications on the remote server.
+
+The main lesson is [here](Lesson_V/Lesson_V.md)
