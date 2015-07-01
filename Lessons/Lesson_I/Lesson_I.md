@@ -344,11 +344,17 @@ This is where you create containers, and then put "objects" (or as I like to cal
 
 It is a very simple interface, possibly a bit clunky. 
 
+Ok: we’re going to abandon the "follow my leader" game for a moment: just watch what I do.
+
+>  (demonstrate creating a container, uploading a file into it)
+
 And the way that you share with the public, is to mark the container as being "public". If you click on the resultant 
 “public” link you get some well formed xml. Just take the name of the object and append it to the url in the title bar 
 to make a public handle that you can share with the world.
 
-Ok: we’re going to abandon the "follow my leader" game for a moment, and do a challenge.
+>  (demonstrate making the container public, and viewing the image in a browser)
+
+Now for a challenge.
 
 ## Activity 1:
 
@@ -544,3 +550,5 @@ just about reduced them to tears. Don’t be like them - trust nothing on the cl
 
 **Answer: B**
 
+So we've explored the dashboard, learnt how to file a support request, and shared data with the world via the object
+store. Not bad for 45 minutes of effort!
