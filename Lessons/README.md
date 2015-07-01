@@ -8,7 +8,7 @@ This lesson covers the web interface to the NeCTAR cloud in high level.
 
 The main lesson is [here](Lesson_I/Lesson_I.md)
 The supporting questions are [here](Lesson_I/Lesson_I_Questions.pptx)
-There is a PDF version of the supporting questions as well.
+There is a [PDF version](Lesson_I/Lesson_I_Questions.pdf) of the supporting questions as well.
 
 ## Lesson II: Firing up a VM (45 minutes)
 
@@ -16,7 +16,7 @@ This lesson covers the launching of a VM.
 
 The main lesson is [here](Lesson_II/Lesson_II.md)
 The supporting questions are [here](Lesson_II/Lesson_II_Questions.pptx)
-There is a PDF version of the supporting questions as well.
+There is a [PDF version](Lesson_II/Lesson_II_Questions.pdf) of the supporting questions as well.
 
 There are also three checklists to be used during the lesson
 
@@ -35,15 +35,23 @@ if they need to be changed.
 This lesson covers using `ssh` to access the instance.
 
 The main lesson is [here](Lesson_III/Lesson_III.md)
+The supporting questions are [here](Lesson_III/Lesson_III_Questions.pptx)
+There is a [PDF version](Lesson_III/Lesson_III_Questions.pdf) of the supporting questions as well.
+
+Instructions for installing CygWin on MS-Windows are [here](Lesson_III/Installing_CygWin.md).
 
 # Lesson IV: Moving data to and from your new computer(30 min)
 
 This lesson covers using `scp` and CyberDuck to move files to and from the VM
 
 The main lesson is [here](Lesson_IV/Lesson_IV.md)
+The supporting questions are [here](Lesson_IV/Lesson_IV_Questions.pptx)
+There is a [PDF version](Lesson_IV/Lesson_IV_Questions.pdf) of the supporting questions as well.
 
 # Lesson V: We can still run our graphical applications (30 min)
 
 This lesson covers the use of X-Windows to run graphical applications on the remote server.
 
 The main lesson is [here](Lesson_V/Lesson_V.md)
+The supporting questions are [here](Lesson_V/Lesson_V_Questions.pptx)
+There is a [PDF version](Lesson_V/Lesson_V_Questions.pdf) of the supporting questions as well
