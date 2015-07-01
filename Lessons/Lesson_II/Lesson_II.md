@@ -142,3 +142,7 @@ and a Green one once you are done.
 
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
+
+So in this lesson we've launched a computer on the cloud, based on an image that has been shared with us. On top of that
+we've created a security group to control access to our running machine. And we've launched it with a keypair which will
+allow us to communicate with the machine in the next lesson.
