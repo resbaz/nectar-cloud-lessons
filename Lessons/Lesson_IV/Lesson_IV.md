@@ -27,26 +27,26 @@ You can use a wildcard denoted by the asterisk character (*) to copy multiple fi
 By way of example, I'm going to create a file locally, move it to the remote machine, then bring it back.
 
 ```bash
-touch temp.txt
-echo "hello from afar" > temp.txt 
+echo "hello from afar"             # just echos the message back to us.
+echo "hello from afar" > temp.txt  # directs the message to a file named temp.txt
 more temp.txt
-scp -i ~/.ssh/nectar_dev.pem temp.txt debian@115.146.92.130: 
-ssh debian@115.146.92.130 -i ~/.ssh/nectar_dev.pem
+scp -i key.pem temp.txt ubuntu@115.146.92.130: 
+ssh -i key.pem ubuntu@115.146.92.130
     ls
     more temp.txt
     exit
 pwd
 ls
-rm temp.txt
-ls
-scp -i ~/.ssh/nectar_dev.pem debian@115.146.92.130:temp.txt .
+rm temp.txt                         # rm = remove!
+ls                                  # file is gone!
+scp -i key.pem ubuntu@115.146.92.130:temp.txt .
 more temp.txt
 rm temp.txt
 ```
 
 **Exercise 8**
 
-I want everyone to create a file named, say, `helpme.txt` and then copy it onto their remote server.
+I want everyone to create a file named, say, `whyme.txt` and then copy it onto their remote server.
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
@@ -57,7 +57,7 @@ For non existent bonus points, if you finish early, bring it back again!
 
 SCP is a good tool to have available. But a graphical environment can be much easier to use.
 
-Go to [CyberDucks home page](https://cyberduck.io/) and download the client file that is correct for your laptop.
+Go to [CyberDuck's home page](https://cyberduck.io/) and download the client file that is correct for your laptop.
 
 Then run it.
 
