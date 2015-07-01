@@ -70,6 +70,13 @@ pwd
 
 `pwd` is shorthand for **p**rint **w**orking **d**irectory
 
+The working directory is simply the folder within your file system that you are currently positioned in.
+
+Remember that Finder or File Explorer gives you a hierarchical tree view of your file system. (Demo)
+
+As the terminal can't give you the same view, it simply has the concept of being positioned in one of those folders. 
+And that's the working directory that you see with the `pwd` command.
+
 ```bash
 ls
 ```
@@ -93,7 +100,18 @@ Commands issued via terminals have the following advantages:
 * You can easily replay commands
 * It is simple to automate
 
-But your terminal program can also be used to connect to another computer.
+**Exercise 1c**
+
+One other command that you need to know is `cd`. `cd` is shorthand for **c**hange working **d**irectory.
+
+In this exercise change your working directory to the one in which you saved your key file.
+The `ls` command should show the key file if you are successful.
+
+As ever, hold up a Green card when you're done
+And a Red card if you need help.
+
+
+But the main advantage for us is that your terminal program can also be used to connect to another computer.
 
 So Anna's hope comes in the form of the terminal application: She can run it on her local machine, and connect to 
 her remote Drupal server.
