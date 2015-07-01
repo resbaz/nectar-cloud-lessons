@@ -6,19 +6,21 @@
 There is a command line program you can use called `scp` (**s**ecure **c**o**p**y) to move files to, or fetch files 
 from, different machines. It is built on top of `ssh`.
 
-This `scp` command will copy the file named `notes.txt` from the home directory of the remote machine to the local one:
+This `scp` command will copy the file named `notes.txt` from the home directory of the USER_NAME user on the remote 
+machine to the local directory in which `scp` is being run:
 
 ```bash
-$ scp username@remote_machine_address:notes.txt /local/directory 
+$ scp USER_NAME@remote_machine_address:notes.txt . 
 ```
 
-Where of course `username` is the default account on the remote machine, and `remote_machine_address` is either its
+Where of course `USER_NAME` is the default account on the remote machine, and `remote_machine_address` is either its
 IP number or its domain name.
 
-This scp command will copy the file named notes.txt from the local machine to the remote machine:
+This scp command will copy the file named notes.txt from the current directory of the local machine to the remote 
+machine's USER_NAME home directory:
 
 ```bash
-$ scp foobar.txt username@remote_machine_address:/remote/directory 
+$ scp notes.txt USER_NAME@remote_machine_address: 
 ```
 
 Looking at the two commands you can see that the source for the transfer is on the left, and the target on the right.
