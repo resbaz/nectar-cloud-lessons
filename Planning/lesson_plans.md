@@ -32,14 +32,15 @@ organize the material they learn themselves. [Because...](http://mindhacks.com/2
 
 12h30am - 1h30pm: Lunch
 
-* Lesson VI: Transient storage: don’t rely on it! (30min)
-* Lesson VII: Snapshots & vertical scaling (30min)
-* Lesson VIII: Sharing snapshots (30min)
+* Lesson VI: Snapshots: Backups, vertical scaling, sharing & transient storage (don’t rely on it!) (45 min)
+* Lesson VII: Securing and maintaining your instance (45 min)
 
 3h00pm - 3h30: Afternoon Tea
 
-* Lesson IX: The object store: in more detail (30min)
-* Lesson X: The objects store: a publisher as well… (30min)
+* Lesson VII: The object store: in more detail (30 min)
+* Lesson VIII: The objects store: a publisher as well… (30 min)
+
+Possibly a "bringing it all together" grand exercise?
 
 4h30pm - Day end.
 
