@@ -93,22 +93,23 @@ Now we’ll move onto security groups.
 By default VM brought up can reach out to the world, but the world can’t reach in. The script in the launch box was 
 reaching out...
 
-Security Groups specify what network traffic is allowed..
+Security Groups specify what network traffic is allowed to reach your machine...
 
-Lets see if I can explain.
+Let's see if I can explain.
 
-Network messages destined for a computer are broken up into packets. Once a packet reaches a computer how does it know 
-which application the packet is destined for? 
+Network messages destined for a computer are broken up into packets. Once a packet reaches a computer how does the
+computer know which application the packet is destined for? 
 
 What if each network packet also had an associated number indicating the destination application? Then the computer 
-could sort them into different trays, for the applications to pick up and work with. 
+could sort them into different "trays", for the applications to pick up and work with. 
 
-So these numbers associated with a packet are named the port numbers. And well known applications tend to get well 
+So the "tray" numbers associated with a packet are named the port numbers. And well known applications get well 
 known port numbers. So web servers use port 80, for example.
 
-So a security group allows you to define the ports that packets from the outside world are allowed to reach your VM. 
-Any packets with a different port number don’t even make it to your machine. The security group rules just throw them 
-away.
+A security group allows you to define the ports that packets from the outside world can have if they are going to
+be allowed to reach your VM. 
+
+Any packets with a different port number don’t even make it to your machine. They are just thrown away.
 
 Ok, lets look at the security group checklist.
 
