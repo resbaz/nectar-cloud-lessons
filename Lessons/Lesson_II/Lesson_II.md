@@ -1,14 +1,14 @@
 # Lesson II: Your free computer: up and running (45min)
 
-A researcher, Anna Prentice wants fire up a website to share some some information about her project with the world. 
-Looking at the NeCTAR image list, she sees that there is a public image with Drupal, a content management system that
-may allow her to share her data.
+> A researcher, Anna Prentice wants fire up a website to share some some information about her project with the world. 
+> Looking at the NeCTAR image list, she sees that there is a public image with Drupal, a content management system that
+> may allow her to share her data.
 
-Having sat through the first part of this course, and know knowing the parts of the NeCTAR cloud, Anna decides to see 
-if she can launch the instance to see if meets with her needs.
+> Having sat through the first part of this course, and know knowing the parts of the NeCTAR cloud, Anna decides to see 
+> if she can launch the instance to see if meets with her needs.
 
-> This is one of the great things about the NeCTAR cloud: you can just spin up machines, play with them, and then
-> THROW THEM AWAY!
+_This is one of the great things about the NeCTAR cloud: you can just spin up machines, play with them, and then
+**THROW THEM AWAY**!_
 
 # The power of Checklists
 
