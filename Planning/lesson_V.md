@@ -18,7 +18,8 @@ This is of use if a researcher wants to
 Anna Prentice wants to view a website that her local institution has blocked. She realizes that she can do this via
 her remote server, so this is what she sets out to do.
 
-Anna then wants to 
+Anna then wants to edit a file she finds on the remote server. Rather than doing this with a command line editor she
+opts to use a one of the nice friendly GUI editors that she is familiar with.
 
 ##Tasks
 
