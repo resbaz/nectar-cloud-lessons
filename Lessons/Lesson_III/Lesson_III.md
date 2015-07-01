@@ -179,15 +179,15 @@ Have a look at it. What operating system do you think the Drupal server is based
 
 **Choices**
 
-A Fedora
-B Debian
-C Centos
-D Ubuntu
-E Scientific Linux
+    A. Fedora
+    B. Debian
+    C. Centos
+    D. Ubuntu
+    E. Scientific Linux
 
 **Answer 2**
 
-D, Ubuntu
+    D. Ubuntu
 
 **Exercise 3**
 
