@@ -72,7 +72,9 @@ pwd
 
 The working directory is simply the folder within your file system that you are currently positioned in.
 
-Remember that Finder or File Explorer gives you a hierarchical tree view of your file system. (Demo)
+Remember that Finder or File Explorer gives you a hierarchical tree view of your file system. 
+
+> (Demonstrate by opening the finder and clicking through on some of the folders)
 
 As the terminal can't give you the same view, it simply has the concept of being positioned in one of those folders. 
 And that's the working directory that you see with the `pwd` command.
@@ -104,12 +106,15 @@ Commands issued via terminals have the following advantages:
 
 One other command that you need to know is `cd`. `cd` is shorthand for **c**hange working **d**irectory.
 
+>  (Demonstrate cd, noting that '/' is the directory separator and that there is tab completion)
+
 In this exercise change your working directory to the one in which you saved your key file.
 The `ls` command should show the key file if you are successful.
 
+Windows users: prefix `/cygdrive/c/` to the directory that you saved your key file in...
+
 As ever, hold up a Green card when you're done
 And a Red card if you need help.
-
 
 But the main advantage for us is that your terminal program can also be used to connect to another computer.
 
@@ -182,7 +187,7 @@ So here:
 For our Drupal server the command would be:
 
 ```bash
-ssh -i ~/keys/tut_dev.pem ubuntu@144.6.225.224
+ssh -i tut_dev.pem ubuntu@144.6.225.224
 ```
 
 **Question 2**
