@@ -133,8 +133,8 @@ one server, you might inadvertently break another.
 **Answer: E.** Yes, it’s true. NeCTAR can experience network issues from time to time. 
 
 **NB:** Under some circumstances, you might find that you already have security groups defined for your project: or that
-the default security group has ports/applications set up for it. So it is wise to review your tenancies security groups
-and to understand what is there.
+the default security group has ports/applications set up for it. So it is wise to review your projects security groups
+and to understand what is provided.
 
 # Launch your own instance
 
