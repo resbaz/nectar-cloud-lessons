@@ -52,7 +52,9 @@ The points of knowledge that the students should understand in order to master t
 
 ##Links for students 
 
-Material for students to carry on reviewing in their own time.
+http://wiki.libvirt.org/page/Snapshots
+http://docs.openstack.org/openstack-ops/content/snapshots.html
+http://physics.stackexchange.com/questions/32663/what-are-the-effects-of-cosmic-rays-on-consumer-electronics
 
 ##Supporting material 
 
