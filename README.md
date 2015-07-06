@@ -83,12 +83,6 @@ The lecture notes as they stand at the moment don't have a conclusion in them. I
 I also forgot to, but should have, reminded everyone to shutdown their virtual machines at the end of the class.
 This should be added to the conclusion.
 
-A large number of people managed to get to the "homework" that I didn't expect them reach. This should hence be
-better documented. In the original scheme of things, this is intended to be its own 45 minute lesson.
-
-The password section and the external access sections should be put into their own lesson. They simply distract from
-the goal of these two, which is to get a VM up and running, and then to access it.
-
 Some diagrams showing the movement of the files as a VM is launched would be a good idea. I just used words, and
 although I got the point across this would make it easier and faster.
 
