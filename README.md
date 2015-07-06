@@ -57,11 +57,6 @@ The lessons assume that participants have both red and green coloured sticky not
 to "E" (in the style of Software Carpentry). These are used to answer questions and to show distress if the students
 aren't keeping up or need help.
 
-## Extension challenge
-
-There is also a set of extension challenges, should time permit: [ExtraChallenges.md](Extension/ExtraChallenges.md).
-These cover connecting to the VM.
-
 # Thoughts after delivering the first two lessons as a 1.45 hour workshop.
 
 ## The questions
@@ -69,22 +64,19 @@ These cover connecting to the VM.
 The sticky notes as a token of progress didn't work that well. People would leave them up after prior exercises, and
 not take them down when starting new ones. This is after three days of using them! Either I was out of sync with the
 way in which these should be used, or human procrastination kicked in. I had to repeatedly reminding people to take them
-down at the start of each exercise.
+down at the start of each exercise. 
+
+To tackle this possibly try to be a bit more authoritarian about the sticky notes the next time the lessons are given?
 
 The multi-choice questions worked really well. They let me pick up concepts that had not been conveyed properly, and
 have another go at explaining them. The concepts that were missed in each case were only missed by a very small number
 of people, so it's probably not worth trying to change the lessons in this regard - however, if a consistent pattern
 builds up then they should be changed.
 
-## Changes to the notes
-
-The lecture notes as they stand at the moment don't have a conclusion in them. I just winged one at the end.
-
-I also forgot to, but should have, reminded everyone to shutdown their virtual machines at the end of the class.
-This should be added to the conclusion.
-
-Some diagrams showing the movement of the files as a VM is launched would be a good idea. I just used words, and
-although I got the point across this would make it easier and faster.
+However, if these lessons are given by multiple people then tracking the answers to the multiple choice questions is 
+going to be hard. Given that all of the students have lap tops, perhaps we could use a clicker like web program to
+ask the questions and gather the data? Read more about the pro's and con's of Clickers
+[here.](http://sciencecases.lib.buffalo.edu/cs/pdfs/Clicker%20Cases-XXXVI-2.pdf)
 
 ## Audience feedback,
 
