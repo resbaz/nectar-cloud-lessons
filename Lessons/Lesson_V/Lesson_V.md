@@ -27,8 +27,8 @@ Using the `man ssh` command, what is the -Y flag adding to the `ssh` command
 
 **Choices**
 
-    A. Forces ssh to use IPv4 addresses only.
-    B. Specifies the user to log in as on the remote machine.
+    A. Forces ssh to use IPv4 addresses only
+    B. Specifies the user to log in as on the remote machine
     C. Enables trusted X11 forwarding
     D. Asks ssh to display the version number and exit
     E. Forces ssh into quiet mode.
