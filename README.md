@@ -92,9 +92,6 @@ the goal of these two, which is to get a VM up and running, and then to access i
 Some diagrams showing the movement of the files as a VM is launched would be a good idea. I just used words, and
 although I got the point across this would make it easier and faster.
 
-It turns out that the new trial projects have security groups added for some of the more common protocols. At the
-very least this should be noted.
-
 ## Audience feedback,
 
 A couple of people came up after the lecture and stated that they thought that this was a missing piece in the puzzle

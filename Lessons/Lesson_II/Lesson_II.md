@@ -115,7 +115,7 @@ Ok, lets look at the security group checklist.
 
 Walk the students through the security group checklist, describing each entry as you go. 
 
-*If anyone asks, CIDR = Classless Internet Domain Routing!*
+*If anyone asks, CIDR = Classless Internet Domain Routing, a flexible way of specifying internet address ranges*
 
 **Activity 2:** Now get the students to create a security group 
 
@@ -126,11 +126,15 @@ and a Green one once you are done.
 machines using that security group.
 
 **NB:** This also means that if you share security groups amongst VM’s, you have to be careful: if you change rules for 
-one server, you might inadvertently break another. 
+one server, you might inadvertently break another.
 
 **Question 2**
 
 **Answer: E.** Yes, it’s true. NeCTAR can experience network issues from time to time. 
+
+**NB:** Under some circumstances, you might find that you already have security groups defined for your project: or that
+the default security group has ports/applications set up for it. So it is wise to review your tenancies security groups
+and to understand what is there.
 
 # Launch your own instance
 
