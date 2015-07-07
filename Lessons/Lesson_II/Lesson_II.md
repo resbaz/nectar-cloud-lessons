@@ -10,7 +10,7 @@
 _This is one of the great things about the NeCTAR cloud: you can just spin up machines, play with them, and then
 **THROW THEM AWAY**!_
 
-# The power of Checklists
+## The power of Checklists
 
 In 2001 a critical-care specialist at Johns Hopkins Hospital designed a checklist to prevent line infections. 
 
@@ -42,7 +42,7 @@ Our rate of problems encountered during deployment fell to zero.
 Knowing this, I’ve created a checklist for launching a virtual machine that runs the Drupal server Anna is interested
 in.
 
-# Walk through of a launch
+## Walk through of a launch
 
 First you are going to walk me through the process, and then you going to follow in Anna's footsteps yourselves.
 
@@ -71,7 +71,7 @@ But before you spin up your own instances, you need to create your key pairs and
 
 And we have checklists for these as well!
 
-# Key Pairs
+## Key Pairs
 
 Remember the clay tablets that we broke in half so that I could repay your emissary?
 
@@ -86,7 +86,7 @@ Walk the students through the key pair checklist, describing each entry
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
 
-# Security Groups
+## Security Groups
 
 Now we’ll move onto security groups.
 
@@ -136,7 +136,7 @@ one server, you might inadvertently break another.
 the default security group has ports/applications set up for it. So it is wise to review your projects security groups
 and to understand what is provided.
 
-# Launch your own instance
+## Launch your own instance
 
 **Activity 3** Get students to walk through the creation of an instance, following in Anna's footsteps.
 
