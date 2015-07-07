@@ -4,6 +4,8 @@
 > IT services has mistakenly blocked the site. Rather than trying to go through the paperwork to sort it out, she
 > wonders if perhaps she can simply use her machine on the NeCTAR cloud to access the site.
 
+## X11
+
 To be able to do this magic Anna needs to install some software on her local machine. 
 
 She is running osx.
@@ -44,6 +46,8 @@ allows an application to run on one machine, and the applications graphical user
 the X refers to X-Windows. 11 refers to the version of X windows. X11 forwarding simply means that `ssh` will allow
 the X11 software installed on your local machine to render the graphical application being run on the remote machine.
 
+## Browsing the web via Firefox
+
 Having connected to her remote server, Anna then needs to install Firefox, a web browser. To do this she simply uses
 the package manager, and asks it to install Firefox for her.
 
@@ -64,6 +68,8 @@ Connect to your running server via ssh, and install and run Firefox.
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
+
+# Editing Files
 
 > Anna noticed that the people who set up her Drupal server have left a file named 'today.txt' in the home directory
 > of the ubuntu user. Curios to know what's in it, she decided to install a graphical editor to view it.
