@@ -1,4 +1,6 @@
-#Snapshots: Backups, vertical scaling, sharing & transient storage (don’t rely on it!) (45 min)
+# Snapshots: Backups, vertical scaling, sharing & transient storage (don’t rely on it!) (45 min)
+
+## Snapshots
 
 > Having updated her site, and made an off site backup of the data, Anna realises that if anything happened to the 
 > machine that her site was on, she would have to go to a lot of effort to restore the site. She mentions this to
@@ -43,6 +45,8 @@ And a Red card if you need help.
 So snapshots look like they might be the answer to Anna's problem, but they will have a short impact on anyone
 who is using her site at the time they taken.
 
+# Backups
+
 > Anna is delighted to have a way of making a convenient backup of the site. But when she tells another friend, Ben,
 > of her discovery he is very dismissive: "Oh, that's just broken" he says.
 
@@ -52,9 +56,9 @@ Why does Ben think snapshots are broken?
 
 **Choices**
 
-    A. They are just too easy to do
-    B. The magic nostrums aren't up to the task
-    C. Ben wants a life more complicated
+    A. They are just too easy to do: suspicious enough!
+    B. The magic nostrums aren't up to the task!
+    C. Ben likes a life more complicated
     D. The state of the machine is not captured
     E. Cosmic rays can flip their bits.
 
@@ -90,7 +94,6 @@ Otherwise a green one when you are done.
 > Ann is depressed. But then she has an epiphany. If she shuts of her instance, then takes a snapshot of the shut
 > off instance, all should be well.
 
-
 **Exercise 4**
 
 Power down your instance by shutting it off, then make a snapshot of it. Remember to wait till your instance is in the
@@ -124,6 +127,8 @@ that you don't want to be down for extended periods create a checklist for this 
 Also, if you have a lot of users, notify them of the outage. It's only polite. Also consider doing it as a regularly
 scheduled event.
 
+## Restore
+
 > Shortly after making her snapshot backup, Anna realizes that her instance is no longer responding to the outside
 > world. After confirming that she didn't leave it in the shut down state, and with some trepidation, she shuts it down 
 > and launches the snapshot backup.
@@ -138,6 +143,8 @@ Once you are done make sure that your site is back up, and that you can ssh into
 
 Hold up a Red sticky note if you need help,
 Otherwise a green one when you are done.
+
+## Vertical Scaling
 
 > Anna's site is becoming increasingly popular, and some of her visitors are complaining that it's getting slow under
 > the load.
@@ -192,6 +199,8 @@ What can you do to remedy this situation?
 **Answer 4**
 
     E. Go to the allocation tab and complete an allocation request
+
+## Transient Storage
 
 > Anna needs some extra disk space over and above the 10 Gig image size. While she's ssh'd into the image she
 > types `df -h` (**d**isplay **f**ile usage). And sees that she has 30 Gig of free space on `/mnt`
@@ -263,6 +272,8 @@ Otherwise a green one if you think all is well.
 *A*
 
 I'm hoping to see a sea of Red...
+
+## Sharing
 
 > Anna has now got quite a cat collection on the go: and would like to share it with a colleague. How would she do this?
  
