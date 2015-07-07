@@ -48,7 +48,10 @@ The points of knowledge that the students should understand in order to master t
 
 [A brief history of ssh](https://servercheck.in/blog/brief-history-ssh-and-remote-access)
 [Securing ssh and sudo on your server](http://lowendbox.com/blog/securing-your-server-ssh-and-sudo/)
-
+[NeCTAR security recommendations](https://support.rc.nectar.org.au/docs/security-guidelines)
+[Fail2ban](http://www.fail2ban.org/wiki/index.php/Main_Page) (is installed by default on NeCTAR images)
+https://en.wikipedia.org/wiki/Fail2ban
+https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-12-04
 
 ##Supporting material 
 
