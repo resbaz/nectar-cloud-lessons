@@ -6,7 +6,7 @@ I’m your tour guide ...
 
 \[First: Do a personal introduction. Who am I, and why am qualified to teach this course?\]
 
-# Why do you care about this?
+## Why do you care about this?
 
 Two researchers at the University of Melbourne, who shall remain nameless, needed to do some fairly complex statistical 
 analysis. So out of their grant money they bought two powerful computers, at a cost of $10 000 per machine to 
@@ -46,7 +46,7 @@ Then in the following session we’ll launch and access a machine.
 By the end of the first two sessions you should be able start up and manage your own machines on cloud. You’ll also 
 know where to go for support when things turn to custard! 
 
-# Log in to the dashboard
+## Log in to the dashboard
 
 **Q:** Has anyone here logged into the NeCTAR dashboard before? 
 
@@ -80,7 +80,7 @@ Please hold up a Green sticky note once you are done!
 
 And a Red one if you need help.
 
-# Follow my leader
+## Follow my leader
 
 Now that everyone has logged in, we are going to play a game of "[follow my leader](http://www.thefreedictionary.com/follow-my-leader)".  
 As I have the big screen, I’m going to be the leader. So there!
@@ -97,7 +97,7 @@ Please hold up a Red sticky not if the answer is "Yes"  and a Green one if the a
 
 **A:** Hoping for a lot of Greens here, as anything else is a problem!
 
-# Project drop down
+## Project drop down
 
 At the top of the dashboard are two drop downs.
 
@@ -136,7 +136,7 @@ Please hold up a Green sticky note if your project is prefaced with the characte
 
 **A:** We are hoping for Green to be shown: otherwise there’s a problem...
 
-# Settings drop down
+## Settings drop down
 
 The drop down on the right is the settings drop down. It’s not exactly the most intuitive of drop downs IMHO.
 
@@ -278,7 +278,7 @@ drop down with your name on it is the way to go!
 
 **Answer: D**
 
-# Overview tab
+## Overview tab
 
 **Q:** Does anyone have anything very different from what’s up on the screen in front of them?
 
@@ -295,7 +295,7 @@ They are colour coded, so problems should stand out.
 The project overview tab is your default home page when you log in. So these limits are put fairly and squarely in 
 front of your face.
 
-# Project Tab
+## Project Tab
 
 Going back to the project tab:
 
@@ -331,7 +331,7 @@ project with enough resources to support your research.
 Remember, Compute and the Object Store are two separate items: one is where you manage your computers, the other is a 
 data store. They are not linked in any way, and can be run without the other.
 
-## Project -> Object Store -> Containers Tab
+### Project -> Object Store -> Containers Tab
 
 **Activity:** Drill down to the containers tab of the ObjectStore.
 
@@ -361,7 +361,7 @@ Now for a challenge.
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
 
-## Project -> Compute -> Images Tab
+### Project -> Compute -> Images Tab
 
 Ok. Back to the "Follow my leader game" 
 
@@ -434,7 +434,7 @@ and a Green one if the answer is "Yes".
 **A:** I wouldn’t. At least, without a lot of digging. You can’t trust the software on an image unless you know and 
 trust the people behind the image. 
 
-## Project -> Access & Security Tab
+### Project -> Access & Security Tab
 
 **Activity:**  Could you all please open the Access and Security tab? 
 
@@ -494,7 +494,7 @@ and a Green one if the answer is "Yes".
 
 **A:** No, you’ve lost your machine for good.
 
-## Project -> Instances Tab
+### Project -> Instances Tab
 
 **Activity:**  Could you all please make sure you are on the Instances tab. 
 
