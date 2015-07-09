@@ -24,7 +24,7 @@ To do this this time they will user CyberDuck
 
 ## Covers
 
-What material is covered?
+Using CyberDuck to connect to the object store.
 
 ## Concepts
 
