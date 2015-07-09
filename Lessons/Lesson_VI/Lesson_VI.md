@@ -11,19 +11,22 @@
 
 **Exercise 1**
 
-Find the snapshot button next to your running instance of drupal, and make a snapshot of it. Give it a useful name
+Find the snapshot button next to your running instance of Drupal, and make a snapshot of it. Give it a useful name
 that will allow you to know what it is when you come back to it weeks later.
 
-Hold up a Green card once your instance has had its snapshot created.
+Hold up a Green card once the creation of the snapshot of your instance has started.
 And a Red card if you need help.
 
 Whilst your snapshots are being taken, lets talk about what has just gone on under the hood.
 
 The running virtual machine is suspended on its host machine for a short while. Whilst it is suspended a copy is made
-of the underlying disk. Then the virtual machine is restarted. Finally the copy of the disk is 
+of the underlying disk. Remember that in this virtual environment disks are just files on the host server. So making
+a copy is just like making a copy of a large file on your desktop.
+
+Once the copy is complete the virtual machine is restarted. Then finally the copy of the disk is 
 transferred to the NeCTAR image store.
 
-When this process is completed your snapshot will appear on the images tab of the project, with a type of "Snapshot". 
+When this process is completed your snapshot will appear on the images tab of your project, with a type of "Snapshot". 
 If all has gone well, the dashboard will take you to this tab automatically.
 
 **Exercise 2**
@@ -34,7 +37,7 @@ count every half second or so. Readjust the windows on your desktop so that you 
 window as you snapshot your running instance. Then make a snapshot, and watch what happens to the output of the 
 loop script.
 
-All going well, you should see the output pause for a few seconds, then resume. On the other hand, the dashboard will 
+All going well, you should see the output pause for a few seconds, then resumes. On the other hand, the dashboard will 
 continue well after the count has resumed, as it writes the copy of the disk to the image store.
 
 To stop `loop.sh` from running, simply press the 'Ctrl' and the 'c' key together.
@@ -77,9 +80,9 @@ might be caught mid write: which means that they won't be correctly captured.
 Hold up a Red sticky note if you agree with Ben, 
 and a Green one if you think that, snapshots are good to go.
 
-**A** Sadly, Ben is right. Snapshots, although seductively easy to do, are prone to occasional failure due to writes
-not being captured. The interesting thing about this is that you might never notice that your data has been corrupted
-in this way.
+**A** The reads have it. Sadly, Ben is right. Snapshots, although seductively easy to do, are prone to occasional 
+failure due to writes not being captured. The interesting thing about this is that you might never notice that your 
+data has been corrupted in this way.
 
 **Exercise 3**
 
@@ -276,17 +279,47 @@ I'm hoping to see a sea of Red...
 ## Sharing
 
 > Anna has now got quite a cat collection on the go: and would like to share it with a colleague. How would she do this?
+
+**Exercise 8**
+
+On the images tab of the dashboard, click the drop down button next to the "Launch" button. Select the 'Edit' option.
+
+In the resultant dialogue give the image a description and check the public flag. Then save it.
+
+Once it's saved go to the list of public images and see if you can find it in there. Yes, that's the whole world who
+can now start an instance based on your image!
+
+Hold up a Red sticky note if you need help,
+and a Green one once you are done.
+
+**Exercise 9**
+
+Delete your snapshot! 
  
 Beware the size ratchet!
 
-> Anna made a snapshot of a 10Gig machine: and is now trying to launch it as a 5Gig flavor. What happens?
+> Anna made a snapshot of a 10Gig machine: and is now trying to launch it as a 5Gig flavor. 
 
-> She gets two errors: "Error: Flavor's disk is too small for requested image... Error: Unable to launch instance named..."
+*Q* What happens?
+
+Hold up a Red sticky note if you think it's going to end in tears.
+And a Green one if you think that it will launch.
+
+*A*
+
+Yep: the tears have it:
+
+> Anna gets the error: "Error: Flavor's disk is too small for requested image..."
+
+You can't cram a bigger snapshot down into a smaller instance.
 
 We have seen that snapshots are convenient. But that they do impact the performance of the VM for a short while. 
 And that without extra steps, snapshots of running instances can be inexact. 
+
 However, if we power the machine off first, then we can get a good snapshot. But run the big risk that we forget to 
 start the machine again.
+
 We have also seen that snapshots allow you to move between different sized machines easily.
+
 And we have learnt that snapshots only save the primary drive of an instance. If you use the secondary drive, for 
-example to put large datasets on, you will not backup that data with a snapshot.
+example to put large data sets on, you will not backup that data with a snapshot.

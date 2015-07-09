@@ -3,7 +3,7 @@
 ##Learning objectives 
 
 By the end of this lesson participants will understand what happens when you make a snapshot of a running instance.
-They will understand why snapshotting is a somewhat imperfect backup medium.
+They will know why snapshots are a somewhat imperfect backup medium.
 
 They will also see how to scale their machine to a larger one, and of course, shrink it down again. 
 They will be able to share their images with others. 
@@ -32,23 +32,29 @@ longer on the replacement instance. Oh woes!
 
 ##Tasks
 
-What will the student do to learn this topic?
+They will make a snapshot of a running VM.
 
 ##Covers
 
-What material is covered?
+Snapshots, vertical scaling, transient storage and sharing snapshots.
 
 ##Concepts
 
-What concepts are covered?
+That a snapshot is simply a copy of the images file system: but that making them does have an impact on the instance.
+Not only that, if there are writes to the drive in progress, they can leave the copy in a faulty state. So to get a
+high quality snapshot, disk activity has to be stopped and any buffers flushed. 
+
+Snapshots can also be shared and used to move to a larger machine (vertical scaling).
+
+Transient storage is not captured as part of the snapshot process.
 
 ##Notes 
 
-Anything that the presenter should be aware of.
+Snapshots can take a fair amount of time depending on the system load. So the lesson might drag out because of this :(
 
 ##To discuss 
 
-The points of knowledge that the students should understand in order to master the topic
+
 
 ##Links for students 
 
@@ -58,9 +64,9 @@ http://physics.stackexchange.com/questions/32663/what-are-the-effects-of-cosmic-
 
 ##Supporting material 
 
-What is needed to do the task
+
 
 ##Preconditions 
 
-What the students need to bring to the table.
+
 
