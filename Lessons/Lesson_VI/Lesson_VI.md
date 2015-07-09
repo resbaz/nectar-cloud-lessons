@@ -1,4 +1,4 @@
-# Snapshots: Backups, vertical scaling, sharing & transient storage (don’t rely on it!) (45 min)
+# Lesson_VI: Snapshots, backups, vertical scaling, sharing & transient storage (don’t rely on it!) (45 min)
 
 ## Snapshots
 
