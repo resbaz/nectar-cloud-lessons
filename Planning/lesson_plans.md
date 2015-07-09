@@ -37,11 +37,12 @@ organize the material they learn themselves. [Because...](http://mindhacks.com/2
 
 3h00pm - 3h30: Afternoon Tea
 
-* Lesson VII: The object store: in more detail (30 min)
-* Lesson VIII: The objects store: a publisher as well… (30 min)
+* [Lesson VIII: The object store: in more detail (30 min)](lesson_VIII.md)
+* [Lesson IX: The objects store: a publisher as well… (30 min)](lesson_IX.md)
 
-Possibly a "bringing it all together" grand exercise?
+If time permits, possibly a "bringing it all together" grand exercise?
 
 4h30pm - Day end.
 
-We have a list of [stretch goals](stretch_goals.md) that we thought we might get to if time permitted. 
+We have a list of [stretch goals](stretch_goals.md) that we thought we might get to if time permitted. It would
+appear that time doesn't permit...
