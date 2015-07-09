@@ -6,17 +6,14 @@ Damian : book elounge or main meeting room, 3rd floor doug macdonald.
 We are targeting the power user: but focusing as much as possible on the dashboard.
 We are creating a course that those who take can then take ownership of and spread the word to others.
 
-The intent is to create a really good 1 day course. The stretch goal is to add a second day for real power users.
+The intent is to create a really good 1 day course. In time we may add a second day for real power users (see stretch
+goals).
 
 Alpha course is set to be delivered in August.
 Beta course is set to be delivered in September.
 
-Development work will be done at MozSprint on the 4th/5th of June.
-We will try to use Hacky Hour as much as is possible to trial the content.
-
-Concept maps!
-
 ## Potential Sales pitches
+
 "My other computer is a data center"
 "A free computer!"
 "Free USB sticks"
@@ -29,7 +26,7 @@ Can we turn Cygwin installation into a prerequisite for windows users?
 
 ### Q: Why not just use Amazon?
 
-*A:* Consider:
+**A:** Consider:
 
 * Amazon is a lot, lot more complex. 
 * Amazon costs: and those costs can climb quite rapidly if you don't take care!
@@ -42,7 +39,7 @@ have to balance your needs. You can, with the right tool choices, use both.
   
 ### Q: Why not just use FigShare?
 
-*A:* Consider:
+**A:** Consider:
  
 * Not all institutions have or use FigShare
 * The NeCTAR cloud offers a uniform interface that many applications can work with.
@@ -52,18 +49,17 @@ have to balance your needs. You can, with the right tool choices, use both.
 
 ### Q: What about RunMyCode.org?
 
-*A:* RunMyCode.org is a great way of sharing your code and data: NeCTAR is a great way of developing/exercising that code
+**A:** RunMyCode.org is a great way of sharing your code and data: NeCTAR is a great way of developing/exercising that code
 and data. They have slightly different goals.
 
 ### Q: What's the best example application to use for this course?
 
-*A:* Decided on a dead simple web server type of box. Is a pre-configured drupal instance good enough, or is it too 
+**A:** Decided on a dead simple web server type of box. Is a pre-configured drupal instance good enough, or is it too 
 complicated?
-
 
 ### Q: What are some of the downsides of using the cloud?
 
-*A:* 
+**A:** 
 
 > "The downside is that you will have limited customization options. Cloud computing is cheaper because of economics 
 > of scale, and -- like any outsourced task -- you tend to get what you get. A restaurant with a limited menu is 
