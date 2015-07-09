@@ -66,6 +66,8 @@ Bash guide:
 * http://en.wikipedia.org/wiki/Secure_Shell
 * [NeCTAR's image catalogue](https://wiki.rc.nectar.org.au/wiki/Image_Catalog)
 * http://en.wikipedia.org/wiki/Superuser
+* http://www.slashroot.in/secure-shell-how-does-ssh-work
+* https://www.digitalocean.com/community/tutorials/understanding-the-ssh-encryption-and-connection-process
 
 
 ##Supporting material 

@@ -153,6 +153,24 @@ This is where they come in to play. Remember:
 
 "When NeCTAR fire up a machine for you, they inject the public key into your machine. Anyone with the private key will 
 be able to communicate and control that machine. ... You want to keep your private key in a secure location."
+
+*Demo*
+
+Ask for two volunteers. Ask the first to write a message to the second on a sticky note, then place it into an envelope. 
+And give it to you. You carry it to the other person. 
+
+Make the point that the envelope is the encryption wrapper. And only someone with the public key can unwrap it and see
+it.
+
+The person on the other side then takes the message out of the envelope, writes a reply, and puts it back in the 
+envelope.
+
+Make the point that they have used the public key to encrypt the message, and only someone with the private key can
+unwrap it.
+
+This is what ssh is doing with the public and private key pairs.
+
+Thank the volunteers.
  
 Why aren't we using passwords?
 
@@ -257,7 +275,7 @@ Modify the permissions on your key file so that only you can read or write it.
 Then issue the `pwd` command to see what directory you are in.
 Retry the ssh command.
 
-If you are asked "Are you sure you want to continue connecting..." simply type "yes".
+When you are asked "Are you sure you want to continue connecting..." simply type "yes".
 
 Hopefully, you are now met with something along following lines
 
@@ -403,6 +421,81 @@ is also governed by the security group?
     C. A server can have multiple security groups, and if anyone of them allows a port, then that port is allowed.
 
 > (check this answer)
+
+## Man in the middle attacks
+
+*Demo*
+
+Ask for three volunteers. Ask the first to write a message to the second on a sticky note, then place it into an envelope. 
+And give it to you. You carry it to the third person (preferably a male). 
+
+Make the point that the envelope is the encryption wrapper. And only someone with the public key can unwrap it and see
+it. But that public keys are widely distributed: and the third person has a copy. And so can read the message.
+
+Get the third person to read the message, perhaps change it a bit, then put it into a different coloured envelop,
+and give it back to you. 
+
+You then take it to the second person, who writes a reply and puts in back into the envelop. You return it to the third
+person, who opens it, reads it, and perhaps changes it again. Then you put it back into the original envelop, and take 
+it back to the orginator.
+
+Make the point that the man in the middle has tricked the two of you, and is listening to everything you say and do.
+
+Thank the volunteers.
+
+How ssh stops this from happening is that in every communication with a server, the first thing the server sends 
+is its own public key to you. That was when you got asked the question:
+
+```bash
+The authenticity of host '144.6.225.224 (144.6.225.224)' can't be established.
+RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
+Are you sure you want to continue connecting (yes/no)?
+```
+
+When you replied 'yes' a unique signature for the server was stored as a line in a file called the known_hosts file.
+
+From this point on, whenever you connect to the server, the servers public key is checked against the entry in
+the known_hosts file. If they remain in sync, then everything is sweet.
+
+But if they change, then ssh will refuse to give you a connection, showing the error:
+
+```bash
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+45:ed:0b:42:16:b7:6c:dd:49:05:8d:b4:2b:16:7c:64.
+Please contact your system administrator.
+Add correct host key in /Users/martinpaulo/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /Users/martinpaulo/.ssh/known_hosts:14
+RSA host key for 115.146.85.98 has changed and you have requested strict checking.
+Host key verification failed.
+```
+
+The error message is very helpful: it even gives you the location of your known hosts file.
+
+*Q*
+
+How likely are you to see this error on the NeCTAR cloud?
+
+Hold up a Red sticky note if you think the answer is 'lots', 
+Otherwise hold up a Green sticky note.
+
+*A*
+
+Lots. The Reds have it correctly. Remember I mentioned that NeCTAR recycle IP numbers? If you kill an instance and
+restart it, then the chances are that new instance will have the same IP number as the old one.
+
+**Exercise 9**
+
+See if you can find and open your known hosts file and delete the line in it that matches the instance that you have
+ssh'd into.
+
+Again, hold up a Red sticky note if you need help, and
+a Green one if you are done.
 
 To recap: in this lesson we learnt about terminals and how to use one to connect to a running system using ssh, and 
 then how to update the software on the Ubuntu based system using the package manager. 
