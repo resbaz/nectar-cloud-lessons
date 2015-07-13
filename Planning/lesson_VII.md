@@ -7,14 +7,17 @@ NeCTAR do a best effort attempt to secure the infrastructure, but that the insta
 of data on them is totally the researchers responsibility. The final responsibility for security lies with the 
 researcher.
 
-They will also have some some insight into how they can best maintain and secure their instances.
+They will be a little more paranoid than they were coming into the lecture.
+
+And will also have some some insight into how they can best maintain and secure their instances.
 
 They can do this by knowing what they are running in the cloud, and they will learn of the need to monitor for 
 updates and patches, that they can then apply.
 
 ## Motivation 
 
-Why does the researcher need to learn this?
+It's a scary world out there. Every new server that goes up is going to have automated scans hitting it regularly, all
+looking for weaknesses.
 
 ## Story
 
@@ -26,17 +29,27 @@ What will the student do to learn this topic?
 
 Configure ssh:
 
-* Check and disable password-based SSH authentication
-* Check and disable root account remote login
-* Explicitly allow/deny SSH for users
-* Use a non-standard port
+* Check and disable password-based SSH authentication (already done on NeCTAR's base images)
+
+* Check and disable root account remote login (why is this not done by default? Why is it set to PermitRootLogin without-password ?)
+
+* Explicitly allow/deny SSH for users (too complex)
+
+* Use a non-standard port  (I'm not sure how valid this is these days?)
 
 Configure sudo:
 
-* Only allow sudo access for specific users
-* Ensure password access for sudo command
+* Only allow sudo access for specific users (too complex)
 
-Possibly enable automated security updates.
+* Ensure password access for sudo command (why is this not enabled? why are there multiple lines)
+
+```bash
+sudo visudo -f /etc/sudoers.d/90-cloud-init-users
+```
+
+And set to `ubuntu ALL=(ALL) ALL`
+
+Enable automated security updates. (why a different command ie: apt-get upgrade vs apt-get dist-upgrade?)
 
 Find the notification mailing lists for the software they are using, and know how to subscribe.
 
@@ -61,9 +74,9 @@ The points of knowledge that the students should understand in order to master t
 [A brief history of ssh](https://servercheck.in/blog/brief-history-ssh-and-remote-access)
 [Securing ssh and sudo on your server](http://lowendbox.com/blog/securing-your-server-ssh-and-sudo/)
 [NeCTAR security recommendations](https://support.rc.nectar.org.au/docs/security-guidelines)
-[Fail2ban](http://www.fail2ban.org/wiki/index.php/Main_Page) (is installed by default on NeCTAR images)
-https://en.wikipedia.org/wiki/Fail2ban
-https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-12-04
+http://askubuntu.com/questions/27559/how-do-i-disable-remote-ssh-login-as-root-from-a-server
+https://help.ubuntu.com/community/SSH/OpenSSH/Configuring
+http://askubuntu.com/questions/81585/what-is-dist-upgrade-and-why-does-it-upgrade-more-than-upgrade
 
 ## Supporting material 
 
