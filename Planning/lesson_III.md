@@ -69,6 +69,9 @@ Bash guide:
 * http://www.slashroot.in/secure-shell-how-does-ssh-work
 * https://www.digitalocean.com/community/tutorials/understanding-the-ssh-encryption-and-connection-process
 
+A great link on debugging ssh issues on the NeCTAR cloud:
+https://espaces.edu.au/vwrangler/nectar-topics/troubleshooting/troubleshooting-ssh-access-to-a-nectar-instance
+
 
 ##Supporting material 
 
