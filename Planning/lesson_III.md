@@ -48,15 +48,15 @@ Bash guide:
 
 ##To discuss 
 
- Password access, its downsides, keys and ssh, encryption of network access (and why) scp. 
- 
- In discussing passwords, do discuss why passwords are deemed acceptable for web sites, but not here. 
- Discuss automated attacks, how passwords are salted, and how they easy they are to reverse engineer these days. 
- Perhaps run a demo password cracking program to frighten them... 
- 
- Also point out that it’s the whole machine at risk here, not just a users account. 
- When discussing ssh access, make sure to point out that we are connecting to the remote machine via the network. 
- That the keyboard isn’t driving the VM locally: that the terminal is more a screen scrape of a remote machine.
+Password access, its downsides, keys and ssh, encryption of network access (and why) scp. 
+
+In discussing passwords, do discuss why passwords are deemed acceptable for web sites, but not here. 
+Discuss automated attacks, how passwords are salted, and how they easy they are to reverse engineer these days. 
+Perhaps run a demo password cracking program to frighten them... 
+
+Also point out that it’s the whole machine at risk here, not just a users account. 
+When discussing ssh access, make sure to point out that we are connecting to the remote machine via the network. 
+That the keyboard isn’t driving the VM locally: that the terminal is more a screen scrape of a remote machine.
 
 ##Links for students 
 
