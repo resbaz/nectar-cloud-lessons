@@ -26,8 +26,7 @@ But that's true of all the computers and software that you use.
 
 ## Be paranoid!
 
->  “Paranoid? Probably. But just because you're paranoid doesn't mean there isn't an invisible demon about to eat your 
-> face.” ― Jim Butcher, Storm Front 
+>  “Just because you're paranoid, don't mean they're not after you” ― Nirvana, [Territorial Pissings](http://www.azlyrics.com/lyrics/nirvana/territorialpissings.html)  
 
 And it is a scary world out there: the minute you put a server onto the internet, automated scanners start probing it 
 for weaknesses.
