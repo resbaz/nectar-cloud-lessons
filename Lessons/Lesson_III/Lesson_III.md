@@ -420,8 +420,6 @@ is also governed by the security group?
 
     C. A server can have multiple security groups, and if anyone of them allows a port, then that port is allowed.
 
-> (check this answer)
-
 ## Man in the middle attacks
 
 **Demo**
