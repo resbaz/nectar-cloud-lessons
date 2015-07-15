@@ -41,7 +41,7 @@ Using the `man ssh` command, what is the -Y flag adding to the `ssh` command
 
 _What on earth is X11 forwarding?_, I hear you ask.
 
-X-Windows is the name of the windows system used on the NeCTAR servers. One of the cool things about it is that it
+X-Windows is the name of the presentation system used on the NeCTAR servers. One of the cool things about it is that it
 allows an application to run on one machine, and the applications graphical user interface to appear on another. Here
 the X refers to X-Windows. 11 refers to the version of X windows. X11 forwarding simply means that `ssh` will allow
 the X11 software installed on your local machine to render the graphical application being run on the remote machine.
@@ -72,7 +72,7 @@ And a Red card if you need help.
 # Editing Files
 
 > Anna noticed that the people who set up her Drupal server have left a file named 'today.txt' in the home directory
-> of the ubuntu user. Curios to know what's in it, she decided to install a graphical editor to view it.
+> of the ubuntu user. Curios to know what's in it, she decided to install a graphical editor to view and edit it.
 
 ```bash
 sudo apt-get install gedit
@@ -96,17 +96,17 @@ more today.txt
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
 
-> Knowing that her server is a small one, Anna decided to remove Firefox before she exits the ssh session.
+> Knowing that her server is a small one, Anna decided to remove gedit before she exits the ssh session.
 
 She does this using 
 
 ```bash
-sudo apt-get remove firefox
+sudo apt-get remove gedit
 ```
 
 **Exercise 3**
 
-Remove firefox from your systems, and exit your ssh sessions.
+Remove gedit from your systems, and exit your ssh sessions.
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
