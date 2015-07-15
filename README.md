@@ -48,8 +48,8 @@ of the research cloud you will, most likely, be making that journey.
 The directories that make up this project are as follows:
 
 * [Promotion](Promotion/README.md) - Promotional material to use in advance of the course
-* [Lessons](Lessons/README.md) - The lessons themselves
-* Planning - The materials that were used to create the course
+* [Lessons](Lessons/) - The lessons themselves
+* [Planning](Planning/lesson_plans.md) - The materials that were used to create the course
 
 ## Delivering the lessons
 
