@@ -5,7 +5,7 @@
 > Having updated her site, and made an off site backup of the data, Anna realises that if anything happened to the 
 > machine that her site was on, she would have to go to a lot of effort to restore the site. She mentions this to
 > a more technically literate friend, Sandy, saying "If only I could make a copy of it! Something like a photograph
-> - quick and easy to do!".  Sandy laughs, and says: "Odd you should say 'photograph', as NeCTAR give you a facility to
+> \- quick and easy to do!".  Sandy laughs, and says: "Odd you should say 'photograph', as NeCTAR give you a facility to
 > make a copy of a running machine. The term they use is 'snapshot'. The button to take it is right up there on the
 > list of running instances in the dashboard. Give it a try next time you are logged in!"
 
