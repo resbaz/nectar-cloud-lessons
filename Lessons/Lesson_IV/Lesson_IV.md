@@ -48,7 +48,7 @@ more temp.txt
 rm temp.txt
 ```
 
-**Exercise 8**
+**Exercise 1**
 
 I want everyone to create a file named, say, `whyme.txt` and then copy it onto their remote server.
 
@@ -57,7 +57,7 @@ And a Red card if you need help.
 
 For non existent bonus points, if you finish early, bring it back again!
 
-**Exercise 9**
+**Exercise 2**
 
 ## CyberDuck
 
@@ -70,7 +70,7 @@ Then run it.
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
 
-**Exercise 10**
+**Exercise 3**
 
 ![First steps in adding a bookmark](images/AddBookmark.png "First steps in adding a bookmark")
 
