@@ -209,12 +209,12 @@ What can you do to remedy this situation?
 > types `df -h` (**d**isplay **f**ile usage). And sees that she has 30 Gig of free space on `/mnt`
 > She decided to put her new files there.
 
-*Q* Has Anna made a mistake?
+**Q** Has Anna made a mistake?
 
 Hold up a Red sticky note if you think she has.
 Otherwise a green one if you think all is well.
 
-*A*
+**A**
 
 We are going to do an experiment to see who's correct.
 
@@ -261,18 +261,18 @@ So where's the missing `file1.txt`?
 When you launch an instance, the instance is given a second hard drive with a fair amount of of space on it.
 That is the extra space that Anna found and used.
 
-*NB* When you make a snapshot, the snapshot is only of the primary drive. Anything on the secondary drive is not
+**NB** When you make a snapshot, the snapshot is only of the primary drive. Anything on the secondary drive is not
 saved. 
 
 You can get and run some fairly grunty machines on the NeCTAR cloud. But snapshots will only save your small primary
 drive. If you use the extra drive space you will not be able to back it up by means of snapshots!
 
-*Q* So to repeat: has Anna made a mistake?
+**Q** So to repeat: has Anna made a mistake?
 
 Hold up a Red sticky note if you think she has.
 Otherwise a green one if you think all is well.
 
-*A*
+**A**
 
 I'm hoping to see a sea of Red...
 
@@ -300,12 +300,12 @@ Beware the size ratchet!
 
 > Anna made a snapshot of a 10Gig machine: and is now trying to launch it as a 5Gig flavor. 
 
-*Q* What happens?
+**Q** What happens?
 
 Hold up a Red sticky note if you think it's going to end in tears.
 And a Green one if you think that it will launch.
 
-*A*
+**A**
 
 Yep: the tears have it:
 
