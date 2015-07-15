@@ -80,7 +80,7 @@ might be caught mid write: which means that they won't be correctly captured.
 Hold up a Red sticky note if you agree with Ben, 
 and a Green one if you think that, snapshots are good to go.
 
-**A** The reads have it. Sadly, Ben is right. Snapshots, although seductively easy to do, are prone to occasional 
+**A** The reds have it. Sadly, Ben is right. Snapshots, although seductively easy to do, are prone to occasional 
 failure due to writes not being captured. The interesting thing about this is that you might never notice that your 
 data has been corrupted in this way.
 
