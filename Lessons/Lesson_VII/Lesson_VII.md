@@ -190,8 +190,8 @@ Lets work through some of them.
 
 ### Mail Servers
 
-If you can avoid running a mail server, then don't run it. It will make your life a lot easier. You can use services
-such as ...
+If you can avoid running a mail server, then don't run it. It will make your life a lot easier. If you can, rather
+use services such as [Mandrill](http://mandrill.com/) 
 
 ### Enable automatic updates
 
