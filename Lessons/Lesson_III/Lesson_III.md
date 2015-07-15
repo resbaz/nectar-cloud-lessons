@@ -154,7 +154,7 @@ This is where they come in to play. Remember:
 "When NeCTAR fire up a machine for you, they inject the public key into your machine. Anyone with the private key will 
 be able to communicate and control that machine. ... You want to keep your private key in a secure location."
 
-*Demo*
+**Demo**
 
 Ask for two volunteers. Ask the first to write a message to the second on a sticky note, then place it into an envelope. 
 And give it to you. You carry it to the other person. 
@@ -424,7 +424,7 @@ is also governed by the security group?
 
 ## Man in the middle attacks
 
-*Demo*
+**Demo**
 
 Ask for three volunteers. Ask the first to write a message to the second on a sticky note, then place it into an envelope. 
 And give it to you. You carry it to the third person (preferably a male). 
@@ -477,14 +477,14 @@ Host key verification failed.
 
 The error message is very helpful: it even gives you the location of your known hosts file.
 
-*Q*
+**Q**
 
 How likely are you to see this error on the NeCTAR cloud?
 
 Hold up a Red sticky note if you think the answer is 'lots', 
 Otherwise hold up a Green sticky note.
 
-*A*
+**A**
 
 Lots. The Reds have it correctly. Remember I mentioned that NeCTAR recycle IP numbers? If you kill an instance and
 restart it, then the chances are that new instance will have the same IP number as the old one.
