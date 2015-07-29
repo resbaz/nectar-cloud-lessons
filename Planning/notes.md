@@ -1,13 +1,11 @@
-
-Damian : book elounge or main meeting room, 3rd floor doug macdonald.
-
 # Notes
 
 We are targeting the power user: but focusing as much as possible on the dashboard.
+
 We are creating a course that those who take can then take ownership of and spread the word to others.
 
-The intent is to create a really good 1 day course. In time we may add a second day for real power users (see stretch
-goals).
+The intent is to create a really good 1 day course. In time we may add a second day for real power users (see [stretch
+goals](stretch_goals.md)).
 
 Alpha course is set to be delivered in August.
 Beta course is set to be delivered in September.
