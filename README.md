@@ -1,6 +1,6 @@
 # NeCTAR cloud lesson plan
 
-This course aims to teach the basics of the NeCTAR cloud to researchers over a one to two day workshop.
+This course aims to teach the basics of the NeCTAR cloud to researchers over a one day workshop.
 
 > "We are ... looking to find (and train) what we are calling a "power (researcher) users".  
 >
