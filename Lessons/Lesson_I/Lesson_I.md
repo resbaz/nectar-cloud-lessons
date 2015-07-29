@@ -66,7 +66,8 @@ The first time you log on to the NeCTAR dashboard, you get given a **free** tria
 time if you run it to the maximum. 
 
 But if you keep your machines on the cloud as small as possible, you can get up to six months before your trial project 
-is suspended.
+exhausts its initial quota. But you can still log in to the dashboard to view and request allocations. You can even
+fill in an allocation request to extend your trial project!
 
 If you only use your small machines for short periods of time, and shut them down religiously after each run, you will 
 find that your trial project should last far longer. 
@@ -199,17 +200,6 @@ What should happen is that some form of email client opens up with you just havi
 
 **Answer: A**
 
-**Activity:** Get everyone to click on the "Status" link of the top bar of the support site.
-
-This link takes you to a new site. It’s a very useful site, as the front page gives the status of all the major 
-NeCTAR parts. If you see anything other than a green tick mark on this page, you know that a service is down. That 
-means some parts of the NeCTAR cloud might not work as you would want them to.
-
-**Activity:** Get people to click around at the top of this site. 
-
-In addition to the status, this site also shows several interesting graphs about the NeCTAR cloud. Click around and 
-have a look at them. Admire the growth!
-
 **Activity:** Get people to close the tab and return to the dashboard.
 
 **Q:** Does anyone have anything very different from what’s up on the big screen in front of them?
@@ -326,7 +316,7 @@ NeCTAR cloud!
 
 *Allocations* is an important tab: Once you’ve messed around in your personal project, and found that it’s not big 
 enough for serious work, this is where you come. It’s basically an online form that allows you to apply for a proper 
-project with enough resources to support your research. 
+project with enough resources to support your research.  You can also request to have your trial project extended.
 
 Remember, Compute and the Object Store are two separate items: one is where you manage your computers, the other is a 
 data store. They are not linked in any way, and can be run without the other.
