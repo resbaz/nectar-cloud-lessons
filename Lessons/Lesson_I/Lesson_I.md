@@ -4,7 +4,7 @@
 
 I’m your tour guide ...
 
-\[First: Do a personal introduction. Who am I, and why am qualified to teach this course?\]
+(First: Do a personal introduction. Who am I, and why am qualified to teach this course?)
 
 ## Why do you care about this?
 
