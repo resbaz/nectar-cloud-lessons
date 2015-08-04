@@ -72,20 +72,22 @@ By example, here's a persona that I developed:
 
 Once you, as a group, have agreed on your persona, hold up a green sticky note.
 
-For our purposes today, the persona's that you have developed represent the people that you will be explaining 
+Ok: for our purposes today, the persona's that you have developed represent the people that you will be explaining 
 our ResOS to.
 
-So as we go through today I want each group to ask themselves just what it would
-take to communicate the concepts or activities we are doing to this persona. 
+So as we go through today I want each group to ask themselves just what it would take to communicate the concepts or 
+activities we are doing to this persona. 
+
 If you find you can't do it, then stop me, and we will all discuss it and see if we can come up with a better approach.
 
-And I'll be following up and asking you for a demonstration of how you would do this...
+And I'll occasionally be asking you for a demonstration of how you would do this...
 
 The course itself consists of 7 different segments, each addressing a different aspect of ResOS.
 
 It's all kept in an online repository, so you can revisit it at any time, use it as a stand alone course if you want to,
 and even, hopefully, contributes changes and extensions back!
 
+So, without further ado, on to the first lesson.
 
 For more on personas, there is the [wikipedia entry](http://en.wikipedia.org/wiki/Persona_%28user_experience%29) and of
 course, the book [The Inmates are Running the Asylum](http://www.amazon.com/The-Inmates-Are-Running-Asylum/dp/0672326140).
