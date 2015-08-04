@@ -84,5 +84,7 @@ A couple of people came up after the lecture and stated that they thought that t
 of how to get started on the NeCTAR cloud. They asked if this could be televised or turned into a "MOOC"...
 
 
+## Notes
 
-
+10d
+AWS::AutoScaling::AutoScalingGroup¶
