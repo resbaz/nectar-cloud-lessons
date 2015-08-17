@@ -1,4 +1,4 @@
-# Lesson VIII: The object store: in more detail (30 min)
+# Lesson VIII: The object store (30 min)
 
 ##Learning objectives 
 
@@ -17,7 +17,7 @@ she decides to put her data there.
 
 ##Tasks
 
-The students need to encrypt (?) and then upload their backup that they downloaded to their desktop to the Swift 
+The students need to upload their backup that they downloaded to their desktop to the Swift 
 object repository. 
 
 To do this this time they will user CyberDuck
@@ -31,8 +31,6 @@ Using CyberDuck to connect to the object store.
 Object Storage, redundancy etc..
 
 ## Notes 
-
-This is a reprise of the exercise done in lesson one. But now with extra added detail around Swift.
 
 ## To discuss 
 
