@@ -1,6 +1,5 @@
 #Sample Persona
 
-
 ## An Astronomer at a University
 
 **Name:**     Associate Professor Glenn Bording

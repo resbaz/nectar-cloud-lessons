@@ -70,13 +70,14 @@ By example, here's a persona that I developed:
 
 * Now keen to learn about ResOS to see if it solves this problem.
 
-Once you, as a group, have agreed on your persona, hold up a green sticky note. (Make sure this is time limited)
+Once you, as a group, have agreed on your persona, hold up a green sticky note. But you'd better be quick, because
+I'm giving you only 5 minutes!
 
 Ok: for our purposes today, the persona's that you have developed represent the people that you will be explaining 
 our ResOS to.
 
 So as we go through today I want each group to ask themselves just what it would take to communicate the concepts or 
-activities we are doing to this persona. 
+activities we are covering to this persona. 
 
 If you find you can't do it, then stop me, and we will all discuss it and see if we can come up with a better approach.
 
