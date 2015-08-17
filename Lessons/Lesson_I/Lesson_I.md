@@ -247,20 +247,6 @@ It’s a little beyond the scope of what we are going to be doing today, but try
 
 So that’s the Settings tab and its children. Site wide changes that work across all projects.
 
-Here’s a usability oddity.
-
-**Demonstrate:**
-
-Click on the Project tab. See how the settings tab collapses, and the project tab opens up?
-
-Click on the Settings tab. See how we’re back to where we started?
-
-Click on the Project tab. Click on the Compute tab. See how it all collapses, but the Settings tab is still there?
-
-Click on the Compute tab, to open it up. Now click on the Overview entry. Where’s the Settings tab?
-
-**Answer:** All gone!
-
 So remember: if you want to change things do with your personal details, such as language and password: the top right 
 drop down with your name on it is the way to go!
 
@@ -317,39 +303,10 @@ NeCTAR cloud!
 *Allocations* is an important tab: Once you’ve messed around in your personal project, and found that it’s not big 
 enough for serious work, this is where you come. It’s basically an online form that allows you to apply for a proper 
 project with enough resources to support your research.  You can also request to have your trial project extended.
+You do this by selecting the "Convert trial project" option.
 
 Remember, Compute and the Object Store are two separate items: one is where you manage your computers, the other is a 
 data store. They are not linked in any way, and can be run without the other.
-
-### Project -> Object Store -> Containers Tab
-
-**Activity:** Drill down to the containers tab of the ObjectStore.
-
-**Q:** Is everyone on the same tab as me?
-
-Please hold up a Red sticky note if the answer is "No" 
-and a Green one if the answer is "Yes".
-
-This is where you create containers, and then put "objects" (or as I like to call them, “files”) into the containers.
-
-It is a very simple interface, possibly a bit clunky. 
-
-Ok: we’re going to abandon the "follow my leader" game for a moment: just watch what I do.
-
->  (demonstrate creating a container, uploading a file into it)
-
-And the way that you share with the public, is to mark the container as being "public". If you click on the resultant 
-“public” link you get some well formed xml. Just take the name of the object and append it to the url in the title bar 
-to make a public handle that you can share with the world.
-
->  (demonstrate making the container public, and viewing the image in a browser)
-
-Now for a challenge.
-
-## Activity 1:
-
-Please hold up a Red sticky note if you need help
-and a Green one once you are done.
 
 ### Project -> Compute -> Images Tab
 
