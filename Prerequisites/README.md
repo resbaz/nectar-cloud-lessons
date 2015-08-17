@@ -11,4 +11,4 @@ These are the steps you need to have taken before arriving at the course.
 1. [ ] Install the [CyberDuck](https://cyberduck.io/) client that is correct for your laptop.
 
 If you have any problems, or need any help with any of these steps, simply create an 
-[issue](https://github.com/resbaz/nectar-cloud-lessons/issues) and ask for help.
+[issue](https://github.com/resbaz/nectar-cloud-lessons/issues).
