@@ -21,40 +21,49 @@ The following table contains a guided tour of a
 in the [NeCTAR sample template repository](https://github.com/NeCTAR-RC/heat-templates)
 that install the Apache web server on a single Ubuntu instance.
 
-| Meaning                            | Template content                      |
+| Section                            | Template content                      |
 |------------------------------------|---------------------------------------|
-| The first line of a YAML template  | ![version info](images/heat_template_version.png)|
-| should list a version indicator.   |                                       |
-| If present Heat will parse the file |                                      |
-| appropriately. If not present then |                                       |
-| Heat will assume that the file     |                                       |
-| adheres to the most recent         |                                       |
-| specification.                     |                                       |
+|  Version indicator                 | ![version info](images/heat_template_version.png)|
+
+The first line of a YAML template should list a version indicator.
+If present Heat will parse the file  appropriately. If not present then
+Heat will assume that the file adheres to the most recent specification.
+
+| Section                            | Template content                      |
 |------------------------------------|---------------------------------------|
-| An optional section that allows    | ![description](images/heat_description.png)|
-| you to provide a description of the |                                      |
-| template.                          |                                       |
+| Description                        | ![description](images/heat_description.png)|
+  
+Description is optional section that allows you to provide a description of 
+the template.
+
+| Section                            | Template content                      |
 |------------------------------------|---------------------------------------|
-| An optional section that allows    | ![parameters](images/heat_parameters.png)  |
-| you to specify any input parameters |                                      |
-| that might be required when the    |                                       |
-| configuration described in the     |                                       |
-| template is built.                 |                                       |
+| Parameters                         | ![parameters](images/heat_parameters.png)|
+
+Parameters is an optional section that allows you to specify any input 
+parameters that might be required when the configuration described in the
+template is built.
+
+
+| Section                            | Template content                      |
 |------------------------------------|---------------------------------------|
-| Each parameter is in its own nested | ![key name](images/heat_key_name.png)     |
-| block, with the name appearing in  |                                       |
-| the first line, and attributes as  |                                       |
-| further nested elements            |                                       |
+| Parameters                         | ![key name](images/heat_key_name.png) |
+
+Each parameter is in its own nested block, with the name appearing in
+the first line, and attributes as further nested elements          
+
+| Section                            | Template content                      |
 |------------------------------------|---------------------------------------|
-| * `type` is a mandatory element    | ![instance type](images/heat_instance_type.png)|
-|    for a parameter that can be one of: |                                   |
-|    `string`, `number`, `json` or   |                                       |
-|    `comma_delimited_list`          |                                       |
-| * `description` is an optional     |                                       |
-|    attribute that provided         |                                       |
-|    guidance to people using the    |                                       |
-|    template                        |                                       |
-|------------------------------------|---------------------------------------|
+| Parameters                         | ![instance type](images/heat_instance_type.png)|
+ 
+ * `type` is a mandatory element for a parameter that can be one of: 
+    `string`, `number`, `json` or `comma_delimited_list`       
+ * `description` is an optional attribute that provided guidance to people 
+    using the template
+    
+    nectar-ci 
+    
+------------------------------------|---------------------------------------|
 | * `default` is an optional         | ![image name](images/heat_image_name.png)  |
 |   attribute that provides a default |                                      |
 |   value for the parameter.         |                                       |
