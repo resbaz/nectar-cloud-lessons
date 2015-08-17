@@ -1,4 +1,4 @@
-# Introduction
+# Introduction to "Train the Trainer"
 
 Hello, and welcome one and all to this train the trainer workshop.
 
@@ -70,7 +70,7 @@ By example, here's a persona that I developed:
 
 * Now keen to learn about ResOS to see if it solves this problem.
 
-Once you, as a group, have agreed on your persona, hold up a green sticky note.
+Once you, as a group, have agreed on your persona, hold up a green sticky note. (Make sure this is time limited)
 
 Ok: for our purposes today, the persona's that you have developed represent the people that you will be explaining 
 our ResOS to.
