@@ -1,10 +1,10 @@
-# Installing and using Cygwin
+#Cygwin on MS-Windows
 
-#Installing Cygwin
+## Installing Cygwin
 
 Go to: http://cygwin.com/install.html
 
-Select the correct setup-x86.exe/setup-x86_64.exe to match your version of Windows and run it.
+Select the 32 bit version, `setup-x86.exe`, and download and run it.
 
 When asked "Do you want to allow the following program ... to make changes to this computer" select "Yes".
 
@@ -35,6 +35,8 @@ Select the "Next" button.
 In the "Select Packages" page, search for "ssh".
 
 Select `openssh` and click on it, so that it no longer says "Skip".
+
+Then repeat for `xorg-server`, `xinit`, `xterm` and `vim` 
 
 Select the "Next" button.
 
