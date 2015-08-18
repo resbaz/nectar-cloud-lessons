@@ -218,16 +218,16 @@ and a Green one if the answer is "they are about the same".
 **Q:** Notice how the "Project" tabbed pane on the left side of the dashboard has been collapsed and a new “Settings” 
 tabbed pane has been added below it? 
 
-With "User Settings" as the currently selected tab?
+With "User Settings" as the currently selected tab.
 
 The settings on the "User Settings" tab affect your dashboard interface. You can set your preferred language and 
 the timezone you are in. 
 
 These changes affect only you, as a user, but they do cover all projects! 
 
-We can change the language to chinese (to see the effect).
+**Activity** Go ahead, and change the language to, oh say Chinese! (to see the effect).
 
-For the purposes of the rest of this lecture, change your language and time settings to match mine. 
+The so that we will all see the same interface today, change your language and time settings to match mine. 
 "British English (en-au)" and “Australia/Melbourne (UTC + 11:00) 
 
 **Q:** Does anyone have anything very different from what’s up on the screen in front of them?
@@ -237,17 +237,9 @@ and a Green one if the answer is "they are about the same".
 
 **Activity:** Select the "Reset Password" tab
 
-We log into the NeCTAR dashboard using the AAF. However, the AAF doesn’t work too well with command line 
-applications. So here you generate a password to use with command line applications.
-
 **NB:** Do not try to use this password to log into the dashboard. This password has nothing to do with the dashboard!
-You log into the dashboard using your AAF credentials.
-
-It’s a little beyond the scope of what we are going to be doing today, but try to remember three things
-
-1. This is where you generate a password to use with command line applications
-2. This password works across all projects 
-3. If you want to reset an existing command line password, just generate a new one.
+You log into the dashboard using your AAF credentials. However, the AAF doesn’t work too well with command line 
+applications. So here you generate a password to use with command line applications.
 
 So that’s the Settings tab and its children. Site wide changes that work across all projects.
 
@@ -293,7 +285,7 @@ The *Compute* tab is where you manage all of your computer resources.
 
 The *Object Store* is an ideal replacement for the usb sticks that some people tend to carry 
 around with them: any file that you give it is backed up in at least triplicate. You can upload and download 
-files via your browser: and you can share them with the world.
+files from any browser: and you can share the files with the world.
 
 *Allocations* is an important tab: Once you’ve messed around in your personal project, and found that it’s not big 
 enough for serious work, this is where you come. It’s basically an online form that allows you to apply for a proper 
@@ -314,10 +306,11 @@ Ok. Back to the "Follow my leader game"
 Please hold up a Red sticky note if the answer is "No" 
 and a Green one if the answer is "Yes".
 
-**Concept alert:** What we have here are essentially files that are copies of hard drive contents.
+**Concept alert:** What we have here is simply a listing of files, each being a copy of a hard drives contents. Each 
+file is termed an "image".
 
 How the NeCTAR cloud works is that you select a file that is a copy of the contents of a hard drive when you launch 
-your machine. That file is copied across to wherever your machine is going to be launched and then it becomes the 
+your machine. That file is copied across to wherever your machine is going to be run and becomes the 
 basis of your new machines hard drive.
 
 Across the top of the list of images are four filters that are reasonably self explanatory.
