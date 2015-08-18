@@ -15,3 +15,6 @@ These are the steps you need to have taken before arriving at the course.
 
 If you have any problems, or need any help with any of these steps, simply create an 
 [issue](https://github.com/resbaz/nectar-cloud-lessons/issues).
+
+
+[Is there an issue with spaces?](Test with spaces.md) 
