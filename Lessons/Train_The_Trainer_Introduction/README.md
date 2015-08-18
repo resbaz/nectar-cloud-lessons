@@ -74,7 +74,7 @@ Once you, as a group, have agreed on your persona, hold up a green sticky note. 
 I'm giving you only 5 minutes!
 
 Ok: for our purposes today, the persona's that you have developed represent the people that you will be explaining 
-our ResOS to.
+our ResOS training course to.
 
 So as we go through today I want each group to ask themselves just what it would take to communicate the concepts or 
 activities we are covering to this persona. 
@@ -83,15 +83,19 @@ If you find you can't do it, then stop me, and we will all discuss it and see if
 
 And I'll occasionally be asking you for a demonstration of how you would do this...
 
-The course itself consists of 7 different segments, each addressing a different aspect of ResOS.
+What we will be working with is a software carpentry style course that consists of 7 different segments, each 
+addressing a different aspect of ResOS.
 
 It's all kept in an online repository, so you can revisit it at any time, use it as a stand alone course if you want to,
 and even, hopefully, contributes changes and extensions back!
 
-So, without further ado, on to the first lesson.
+But because this is a "Train the trainers" event, I am not going to give you this course. Instead, we are going to do
+a higher level walk through.
+
+The repository can be found at: https://github.com/resbaz/nectar-cloud-lessons
+
+So, without further ado, on to the first lesson. Find it in your browsers!
 
 For more on personas, there is the [wikipedia entry](http://en.wikipedia.org/wiki/Persona_%28user_experience%29) and of
 course, the book [The Inmates are Running the Asylum](http://www.amazon.com/The-Inmates-Are-Running-Asylum/dp/0672326140).
 Also, the blog posting [Perfecting Your Persona's](http://www.cooper.com/journal/2001/08/perfecting_your_personas)
-
-The online material we are about to cover can be found at: https://github.com/resbaz/nectar-cloud-lessons

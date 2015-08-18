@@ -63,3 +63,21 @@ complicated?
 > of scale, and -- like any outsourced task -- you tend to get what you get. A restaurant with a limited menu is 
 > cheaper than a personal chef who can cook anything you want. Fewer options at a much cheaper price: it's a 
 > feature, not a bug." - Bruce Schneier 
+
+
+From michael:
+
+On VM enable X11Forwarding in sshd server config and restart sshd
+
+install Cygwin with packages: openssh, xorg-server, xinit, xterm, vim 
+
+start cygwin
+
+#startxwin
+wait for icons to load in taskbar.
+
+open xterm from taskbar icon "X aplications menu" (looks like a black C with a green X)
+
+#ssh -Y user@host
+
+#xclock

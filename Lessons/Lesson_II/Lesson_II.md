@@ -1,4 +1,4 @@
-# Lesson II: Your free computer: up and running (45min)
+# Lesson II: Your free computer: up and running (30 min)
 
 > A researcher, Anna Prentice wants fire up a website to share some some information about her project with the world. 
 > Looking at the NeCTAR image list, she sees that there is a public image with Drupal, a content management system that
@@ -34,48 +34,17 @@ We had to sign in the date and our names, and each checklist was filed after a d
 Our rate of problems encountered during deployment fell to zero.
 
 <table>
- <tr>
- <td>Further reading: http://www.newyorker.com/magazine/2007/12/10/the-checklist</td>
- </tr>
+  <tr>
+  <td>Further reading: http://www.newyorker.com/magazine/2007/12/10/the-checklist</td>
+  </tr>
 </table>
 
-Knowing this, I’ve created a checklist for launching a virtual machine that runs the Drupal server Anna is interested
-in.
-
-## Walk through of a launch
-
-First you are going to walk me through the process, and then you going to follow in Anna's footsteps yourselves.
-
-(Use the walk through to remind everyone what the key pair and the security group are. 
-Also describe each field as you fill it in.)
-
-Once you hit the "Launch" button there might be a delay, as it can take quite some time to get the machine started.
-
-(So here you can discuss that image data is possibly being moved across the country. Also that the target data center 
-is shared, and might be very busy: hence taking a long time to respond. Discuss noisy neighbours once again…)
-
-(Once the machine is launched, point out the IP address in the dashboard)
-
-Every machine that is launched on the NeCTAR cloud is given an IP address. This is it’s location on the internet.
-
-NeCTAR unfortunately only have a small pool of IP address to use.
-
-So when you terminate your instance, the IP address is returned to the pool and allocated to the next machine that 
-starts up. But like the transient file system, it is not lost during reboots.
-
-**Question 1**
-
-**Answer: B**
-
-But before you spin up your own instances, you need to create your key pairs and security groups. 
-
-And we have checklists for these as well!
+Knowing this, I’ve created a set of checklists for launching a virtual machine that runs the Drupal server Anna is 
+interested in.
 
 ## Key Pairs
 
-Remember the clay tablets that we broke in half so that I could repay your emissary?
-
-Key pairs are modern analogs used to communicate securely.
+We'll start by creating our key pair.
 
 **NB:** you can only download your keypair once! Don’t lose it!!
 
@@ -90,12 +59,7 @@ and a Green one once you are done.
 
 Now we’ll move onto security groups.
 
-By default VM brought up can reach out to the world, but the world can’t reach in. The script in the launch box was 
-reaching out...
-
-Security Groups specify what network traffic is allowed to reach your machine...
-
-Let's see if I can explain.
+Let's see if I can explain them in a bit more detail.
 
 Network messages destined for a computer are broken up into packets. Once a packet reaches a computer how does the
 computer know which application the packet is destined for? 

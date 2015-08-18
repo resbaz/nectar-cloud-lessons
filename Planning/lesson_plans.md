@@ -21,16 +21,16 @@ organize the material they learn themselves. [Because...](http://mindhacks.com/2
 
 > 9am - Start 
 
-* [Lesson I: OpenStack, mapped by the dashboard (45 min)](lesson_I.md)
-* [Lesson II: Your free computer: up and running (45 min)](lesson_II.md)
+* [Lesson I: OpenStack, mapped by the dashboard (30 min)](lesson_I.md)
+* [Lesson II: Your free computer: up and running (30 min)](lesson_II.md)
+* [Lesson III: Accessing and updating your new computer (30 min)](lesson_III.md)
 
 > 10h30am - 11h00am: Morning Tea
 
-* [Lesson III: Accessing and updating your new computer (30 min)](lesson_III.md)
 * [Lesson IV: Moving data to and from your new computer(30 min)](lesson_IV.md)
 * [Lesson V: We can still run our graphical applications (30 min)](lesson_V.md)
 
-> 12h30am - 1h30pm: Lunch
+> 12h00am - 1h00pm: Lunch
 
 * [Lesson VI: Snapshots: Backups, vertical scaling, sharing & transient storage (don’t rely on it!) (45 min)](lesson_VI.md)
 * [Lesson VII: Securing and maintaining your instance (45 min)](lesson_VII.md)

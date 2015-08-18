@@ -1,4 +1,4 @@
-# Lesson I: An introduction to the dashboard (45min)
+# Lesson I: An introduction to the dashboard (30 min)
 
 "Roll up to the NeCTAR mystery tour!" 
 
@@ -48,14 +48,17 @@ know where to go for support when things turn to custard!
 
 ## Log in to the dashboard
 
-**Q:** Has anyone here logged into the NeCTAR dashboard before? 
+**Q:** It's part of the prerequisites, but just to check: has everyone here logged into the NeCTAR dashboard before
+today? 
 
-Please hold up a Red sticky note if you have
+Please hold up a Red sticky note if you haven't
 
-**A:** You are hoping for Greens here, as people who have logged on before might have exhausted their trial 
-projects. It would be good to have another project hand that these people can move to
+**A:** You are hoping to see nothing here, as this means that you are going to have to walk these people through the
+process. If you do see nothing, skip through to the [follow my leader](#Follow my leader) section.
 
-**Q:** Does everyone here have AAF credentials?
+## For those who haven't performed the prerequisites, some special instructions on logging into the dashboard.
+
+**Q:** Those of your who didn't log into the NeCTAR dashboard: Do you have AAF credentials?
 
 Please hold up a Red sticky not if the answer is "No" and a Green one if the answer is "Yes".
 
@@ -74,6 +77,8 @@ find that your trial project should last far longer.
 
 Regardless of your path,  your trial project should give you the time to learn the NeCTAR cloud ropes!
 
+## Follow my leader
+
 **Question 2:** Get everyone to log into [https://dashboard.rc.nectar.org.au](https://dashboard.rc.nectar.org.au) using 
 their AAF credentials.
 
@@ -81,9 +86,7 @@ Please hold up a Green sticky note once you are done!
 
 And a Red one if you need help.
 
-## Follow my leader
-
-Now that everyone has logged in, we are going to play a game of "[follow my leader](http://www.thefreedictionary.com/follow-my-leader)".  
+Now that everyone has logged in, we are going to play a short game of "[follow my leader](http://www.thefreedictionary.com/follow-my-leader)".  
 As I have the big screen, I’m going to be the leader. So there!
 
 What I’d like you all to do is to follow along in your browsers, trying to do what I do. If you have any problems, 
@@ -121,7 +124,8 @@ To the left of the dashboard is a tabbed menu system giving access to the operat
 Dependent on your project, and your rights within the project, the menu system will expand and contract as you switch 
 between the projects. The project panes to the left control your access to the resources of the cloud.
 
-**Demonstrate:** Toggle between them to show changes in the menu system to the left of the page.
+**Demonstrate:** If you belong to more than one project, toggle between them to show changes in the menu 
+system to the left of the page.
 
 As mentioned, everyone who logs into the NeCTAR cloud via the AAF gets a small time limited trial project. This project 
 is prefaced by the words "pt" ([project trial](http://support.rc.nectar.org.au/docs/allocations)) and followed by a 
@@ -262,11 +266,7 @@ Please hold up a Red sticky not if the answer is "Yes"
 and a Green one if the answer is "they are about the same".
 
 The overview tab simply gives an overview of your projects usage of its allocated resources. When a pie chart is full, 
-your project has exceeded its quota for that resource type. 
-
-**Demonstrate:** by swapping through projects
-
-They are colour coded, so problems should stand out.
+your project has exceeded its quota for that resource type. And they are colour coded, so problems should stand out.
 
 The project overview tab is your default home page when you log in. So these limits are put fairly and squarely in 
 front of your face.
@@ -291,14 +291,9 @@ Please hold up a Green sticky note once you've clicked on all of these tabs and 
 
 The *Compute* tab is where you manage all of your computer resources.
 
-**Concept alert:** The *Object Store* is an ideal replacement for the usb sticks that some people tend to carry 
-around with them: any file that you give it is backed up in at least triplicate, and the copies are monitored for 
-degradation. Any bit rot, and the faulty file is replaced with a good one. You can upload and download files via your 
-browser: and you can share them with the world. Some people have published whole websites from the object store!
-
-*Orchestration* is quite advanced: it’s to do with automating your cloud infrastructure. It allows you to repeatedly 
-and reliably build up and tear down your machines. We'll save exploring this tab until we know our way around the 
-NeCTAR cloud!
+The *Object Store* is an ideal replacement for the usb sticks that some people tend to carry 
+around with them: any file that you give it is backed up in at least triplicate. You can upload and download 
+files via your browser: and you can share them with the world.
 
 *Allocations* is an important tab: Once you’ve messed around in your personal project, and found that it’s not big 
 enough for serious work, this is where you come. It’s basically an online form that allows you to apply for a proper 
@@ -325,11 +320,6 @@ How the NeCTAR cloud works is that you select a file that is a copy of the conte
 your machine. That file is copied across to wherever your machine is going to be launched and then it becomes the 
 basis of your new machines hard drive.
 
-This architecture has huge advantages: you can create and share these images easily with lots of people, you can 
-quickly spin up identical copies of the same machine.
-
-But it also has drawbacks, which we’ll get to.
-
 Across the top of the list of images are four filters that are reasonably self explanatory.
 
 1. Project - the images that are visible only to your project. 
@@ -338,9 +328,6 @@ Across the top of the list of images are four filters that are reasonably self e
 3. Shared with me - the images that other users have opted to share with you
 4. Public - the list of images that others have shared with the world. This mostly already have applications installed  
    on them, ready to run.
-
-BTW, a ‘Snapshot’ is an image. But its one that has been created on the NeCTAR cloud by simply copying the disk of a 
-running machine.
 
 As new users to the NeCTAR cloud it is unlikely that you’ll have either project or shared images. Those come with time. 
 
@@ -368,12 +355,13 @@ Please hold up a Red sticky note if the answer is "No"
 and a Green one if the answer is "Yes".
 
 **A:** No, the files are not linked in any way. 
+
 (NOTE:  Once you make snapshot, you need to update it regularly and re-save it. Otherwise it just won’t get all the 
 security upgrades that are released for the software on it. Also, its a good habit to immediately update all the 
 software on a newly created machine. You can never be too paranoid!)
 
-**Q:** And lets be paranoid: if you launch a machine based on a public image, and the software on it asks for your 
-credit card info, do you type it in?
+**Q:** And lets be paranoid: if you launch a machine based on a public image about which you know nothing, and the 
+software on it asks for your credit card info, do you type it in?
 
 Please hold up a Red sticky note if the answer is "No" 
 and a Green one if the answer is "Yes".
@@ -381,38 +369,40 @@ and a Green one if the answer is "Yes".
 **A:** I wouldn’t. At least, without a lot of digging. You can’t trust the software on an image unless you know and 
 trust the people behind the image. 
 
+## Walk through of a launch
+
+Let's stop the game of "follow my leader".
+
+I'm going to demonstrate the steps required to turn one of those images into a running machine. As I do so, I'm going
+to describe what's going on. So just watch what I do.
+
 ### Project -> Access & Security Tab
 
-**Activity:**  Could you all please open the Access and Security tab? 
+First, I need to set the environment that will control access to the the machine. To do this I go to the 
+"Access & Security"
 
-**Q:** Is everyone on the same tab as me?
-
-Please hold up a Red sticky note if the answer is "No" 
-and a Green one if the answer is "Yes".
-
-This page has three tabs across the top.
+This page has a further three tabs across the top.
 
 ### Project -> Access & Security Tab -> Security Groups
 
-**Activity:**  Could you all please make sure you are on the Security Groups tab. 
-
-**Q:** Is everyone on the same tab as me?
-
-Please hold up a Red sticky note if the answer is "No" 
-and a Green one if the answer is "Yes".
+The first one of these child tabs I'm going to visit is the security group tab. 
 
 By default a machine brought up can reach out to the world via the network, but the world can’t reach in. 
 
 Security Groups simply allow you to specify what network traffic is allowed in.
 
+So I create a security group that specifies what network traffic is allowed in. In this case, I want to create one
+that allows both ssh and http. 
+
+HTTP is required to allow web browsers to access the running instance.
+
+SSH is required to allow us to access the instance to manage it.
+
 ###Project -> Access & Security Tab -> Key Pairs
 
-**Activity:**  Could you all please make sure you are on the Key Pairs tab. 
+The next tab I'm going to visit on this page is the key pair tab.
 
-**Q:** Is everyone on the same tab as me?
-
-Please hold up a Red sticky note if the answer is "No" 
-and a Green one if the answer is "Yes".
+"What's a key pair?" I hear you not ask.
 
 Ok way back when, in the olden days, if I borrowed a lot of money from you and then relocated to a remote city, how 
 would I know that the man in front of me claiming to be your emissary, now here to collect your cash for you, was 
@@ -429,9 +419,11 @@ with the other half.
 On this tab you create key pairs. NeCTAR will keep one, the public key, and you will download the private key, the 
 other half, to your local machine.
 
- When NeCTAR fire up a machine for you, they inject the public key into your machine. Anyone with the private key will 
- be able to communicate with and control that machine. Like the clay seals of yesteryear, you want to keep your private
- key in a secure location. 
+When NeCTAR fire up a machine for you, they inject the public key into your machine. Anyone with the private key will 
+be able to communicate with and control that machine. Like the clay seals of yesteryear, you want to keep your private
+key in a secure location. 
+
+Now I'm going to generate the keypair that I'm going to use to access the instance to manage it.
 
 **Q:** You fire up your machine. Days later, you realise that you’ve lost your private key. Will you ever be able to 
 access and control your machine from that point onward?
@@ -439,37 +431,32 @@ access and control your machine from that point onward?
 Please hold up a Red sticky note if the answer is "No" 
 and a Green one if the answer is "Yes".
 
-**A:** No, you’ve lost your machine for good.
+**A:** No, the chances are extremely high that you've lost your machine for good.
 
 ### Project -> Instances Tab
 
-**Activity:**  Could you all please make sure you are on the Instances tab. 
+Having set up the environment that controls access to the the machine I'm now going to launch it.
 
-**Q:** Is everyone on the same tab as me?
-
-Please hold up a Red sticky note if the answer is "No" 
-and a Green one if the answer is "Yes".
+I do this by going back to the instances tab.
 
 This is simply the place where you get to see the information about all your running machines.
 
-Lets just walk through what’s going to happen when you launch a machine.
+It is also one of the places that you can use to launch your free computer.
 
-The file that you’ve chosen to be the basis of your hard drive is copied from where it is being stored to the physical 
-machine which is going to host your machine. 
+Which I now do by clicking on the "Launch Instance" button.
 
-And I say "host" because the machine you are launching is ordinarily going to be a “virtual machine”. 
+**Action** Do a walk through of the dialogue, remembering to add your keypair and security groups! Then launch it.
+
+Ok, while that starts up, lets walk through what’s happening behind the scenes.
+
+The image file that I’ve chosen to be the basis of my hard drive is copied from where it is being stored to the 
+physical machine on which it is going to be used. This physical machine is called the host. 
+
+We say "host" because the free machine you are launching is ordinarily going to be a “virtual machine”. 
 
 A virtual machine is one that is simply software and hardware working in concert to emulate a real machine. You can 
 think of it as being a program pretending to be a computer. Much like your desktop computer can run many applications 
 at the same time, such as ms-word, and excel, etc, a NeCTAR server can run many virtual machines at the same time.
-
-The advantages of emulation, or virtualization as its properly called are many. But it does have a downside.
-
-If you think about it, having all those virtual machines sharing one physical machine means that your application 
-running on one of those virtual machines may well be impacted by what's happening in the other virtual machines – 
-especially with regard to input and output. Because you are all sharing the same narrow pipes to the world beyond the CPU.
-
-I love the term used to describe this effect: "Noisy neighbours".
 
 So here’s a question. You have a virtual machine running. It makes all kinds of changes to its hard drives. Which are 
 simply files on the host server. What happens to those changes when you shut your virtual computer down?
@@ -497,5 +484,21 @@ just about reduced them to tears. Don’t be like them - trust nothing on the cl
 
 **Answer: B**
 
-So we've explored the dashboard, learnt how to file a support request, and shared data with the world via the object
-store. Not bad for 45 minutes of effort!
+(Once the machine is finally launched, point out the IP address in the dashboard)
+
+Every machine that is launched on the NeCTAR cloud is given an IP address. This is it’s location on the internet.
+
+NeCTAR unfortunately only have a small pool of IP address to use.
+
+So when you terminate your instance, the IP address is returned to the pool and allocated to the next machine that 
+starts up. But like the transient file system, it is not lost during reboots.
+
+**Question 7**
+
+**Answer: B**
+
+Now knowing what's going on under the hood, you can understand why once you hit the "Launch" button there might be a 
+delay before the machine runs - there's quite a lot going on.
+
+So we've explored the dashboard, learnt how to file a support request, and done a dive into the architecture of the
+cloud, and watched me launch a VM. Not bad for 30 minutes of effort!
