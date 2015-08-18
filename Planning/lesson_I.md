@@ -1,15 +1,15 @@
-#Lesson I: OpenStack, mapped by the dashboard (45min)
+# Lesson I: OpenStack, mapped by the dashboard (30 mins)
 
-##Learning objectives 
+## Learning objectives 
 
 By the end of this lesson participants will be familiar with the basic parts of OpenStack and be able to 
 locate them on the dashboard.
 
-##Motivation
+## Motivation
 
 A researcher needs to understand the Dashboard and the underlying parts of OpenStack, in order to use it.
 
-##Story
+## Story
 
 Two researchers blow 20K of grant money on computers - that they didn't have to, had NeCTAR been around!
 
@@ -18,9 +18,9 @@ Two researchers blow 20K of grant money on computers - that they didn't have to,
 To find and map the parts of the dashboard to  their respective OpenStack components. Done as a guided tour of 
 the dashboard, rather like a tour guide would do...
  
-##Covers
+## Covers
 
-All OpenStack Components, Horizon, esp. Keystone and the AAF & Allocations 
+All OpenStack Components, Horizon, the AAF & Allocations 
 
 ##Concepts
 
