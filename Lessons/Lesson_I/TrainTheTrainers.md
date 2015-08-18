@@ -1,4 +1,4 @@
-# Motivation to use the NeCTAR cloud?
+## Motivation to use the NeCTAR cloud?
 
 *As an aside, after each volunteer description, have a vote with Green == good & Red == bad. Ask people as to why
 they voted the way they did...*
@@ -70,5 +70,9 @@ Could someone please describe what's going under the hood?
 ## Transient storage/ephemeral drives
 
 An explanation, suitable for your persona please!
+
+## Finally
+
+Run through the lessons questions, using the A-E answer cards.
 
 
