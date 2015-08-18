@@ -83,18 +83,22 @@ If you find you can't do it, then stop me, and we will all discuss it and see if
 
 And I'll occasionally be asking you for a demonstration of how you would do this...
 
-What we will be working with is a software carpentry style course that consists of 7 different segments, each 
-addressing a different aspect of ResOS.
+What we will be working with is a [software carpentry](https://software-carpentry.org/) style course that consists of a 
+number of segments, each addressing a different aspect of ResOS.
 
 It's all kept in an online repository, so you can revisit it at any time, use it as a stand alone course if you want to,
 and even, hopefully, contributes changes and extensions back!
 
-But because this is a "Train the trainers" event, I am not going to give you this course. Instead, we are going to do
-a higher level walk through.
+So as you can see, its a fairly formal course intended to be delivered by a person standing in front of a class.
+
+But because this is a "Train the trainers" event, I am not going to give you this course. 
+Instead, we are going to do a higher level walk through. Of course, if you want to give this course yourself, feel free!
 
 The repository can be found at: https://github.com/resbaz/nectar-cloud-lessons
 
 So, without further ado, on to the first lesson. Find it in your browsers!
+
+If you can't find it, hold up a Red sticky note, otherwise, a Green one to let me know you're ready to continue.
 
 For more on personas, there is the [wikipedia entry](http://en.wikipedia.org/wiki/Persona_%28user_experience%29) and of
 course, the book [The Inmates are Running the Asylum](http://www.amazon.com/The-Inmates-Are-Running-Asylum/dp/0672326140).
