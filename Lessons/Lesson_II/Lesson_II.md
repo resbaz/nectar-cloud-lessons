@@ -92,7 +92,7 @@ machines using that security group.
 **NB:** This also means that if you share security groups amongst VM’s, you have to be careful: if you change rules for 
 one server, you might inadvertently break another.
 
-**Question 2**
+**Question 1**
 
 **Answer: E.** Yes, it’s true. NeCTAR can experience network issues from time to time. 
 
