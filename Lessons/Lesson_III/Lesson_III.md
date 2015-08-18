@@ -44,17 +44,19 @@ Who here is running Microsoft Windows?
 Hold up a Red sticky note if you are.
 and a Green one if you are aren't.
 
-**Exercise 1a**
-
 To all you Windows users: the Windows command line doesn't work with the Linux operating system that Anna is using on 
 the NeCTAR cloud.
 
 Microsoft are planning to change this, but for the time being Windows users have to follow an alternate path.
 
-So we are going to have take a short break for the Windows users to install CygWin (http://cygwin.com/install.html) -
-making sure to include the `openssh` package as part of the installation.
+That's why in the prerequisites we asked Windows users to install Cygwin.
 
-Once that's done hold up a green card.
+**Exercise 1a**
+
+**Q** All you Windows users who haven't installed Cygwin: hold up a Red sticky note!
+
+**A** We are hoping to see none. If there are some, well. Sigh.  So we are going to have take a 5 minute break for the 
+Windows users to install Cygwin following the instructions in the prerequisites. Wait find 
 
 **Exercise 1b**
 
