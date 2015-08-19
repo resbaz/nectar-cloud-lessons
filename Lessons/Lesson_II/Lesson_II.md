@@ -38,8 +38,9 @@ We had to sign in the date and our names, and each checklist was filed after a d
 
 Our rate of problems encountered during deployment fell to zero.
 
-| Further reading |
-| http://www.newyorker.com/magazine/2007/12/10/the-checklist |
+| Further reading | url |
+|-----------------|-----|
+| "The Checklist" | http://www.newyorker.com/magazine/2007/12/10/the-checklist |
 
 Knowing this, I’ve created a set of checklists for launching a virtual machine that runs the Drupal server Anna is 
 interested in.
