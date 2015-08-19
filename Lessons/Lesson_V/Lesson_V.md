@@ -2,7 +2,7 @@
 
 > Anna Prentice needs to view a remote web site. However, on trying to access it, she finds that her institutions
 > IT services has mistakenly blocked the site. Rather than trying to go through the paperwork to sort it out, she
-> wonders if perhaps she can simply use her machine on the NeCTAR cloud to access the site.
+> wonders if perhaps she can simply use her machine on the Research Cloud to access the site.
 
 ## X11
 
@@ -41,7 +41,7 @@ Using the `man ssh` command, what is the -Y flag adding to the `ssh` command
 
 _What on earth is X11 forwarding?_, I hear you ask.
 
-X-Windows is the name of the presentation system used on the NeCTAR servers. One of the cool things about it is that it
+X-Windows is the name of the presentation system used on the Research Cloud servers. One of the cool things about it is that it
 allows an application to run on one machine, and the applications graphical user interface to appear on another. Here
 the X refers to X-Windows. 11 refers to the version of X windows. X11 forwarding simply means that `ssh` will allow
 the X11 software installed on your local machine to render the graphical application being run on the remote machine.

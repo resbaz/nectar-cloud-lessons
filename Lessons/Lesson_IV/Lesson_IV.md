@@ -101,4 +101,4 @@ Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
 
 In this lesson we've learnt two different ways of moving files between our remote server and our local machine.
-Hence moving data to and from our NeCTAR servers should now not be a problem!
+Hence moving data to and from our Research Cloud servers should now not be a problem!

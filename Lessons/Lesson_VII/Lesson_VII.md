@@ -12,7 +12,8 @@ When it comes to security, NeCTAR follow the shared responsibility model.
 That is:
 
 * NeCTAR will make a best effort attempt to look after the security of the cloud
-* You will look after the security of the instances, images applications and content that you put onto the NeCTAR cloud.
+* You will look after the security of the instances, images, applications and content that you put onto the Research 
+  Cloud.
 
 Or put another way: NeCTAR manages the security **of** their cloud, you manage the security of the stuff you choose 
 to put **in** that cloud. Hence the term "shared responsibility model"
@@ -285,7 +286,7 @@ of the cloud. You look after anything you put up on that cloud.
 
 But if you are a good scout/girl guide, and have a plan, you should be able to cope when you are hacked.
 
-And when you put an instance up into the NeCTAR cloud, there are some basic steps you can take to protect yourself.
+And when you put an instance up into the Research Cloud, there are some basic steps you can take to protect yourself.
 
 
 

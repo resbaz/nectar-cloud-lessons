@@ -24,7 +24,7 @@ of the underlying disk. Remember that in this virtual environment disks are just
 a copy is just like making a copy of a large file on your desktop.
 
 Once the copy is complete the virtual machine is restarted. Then finally the copy of the disk is 
-transferred to the NeCTAR image store.
+transferred to the Research Cloud image store.
 
 When this process is completed your snapshot will appear on the images tab of your project, with a type of "Snapshot". 
 If all has gone well, the dashboard will take you to this tab automatically.
@@ -170,8 +170,9 @@ load. What can Anna do to solve this problem?
     B. Upgrade to a more powerful machine
 
 Remember the two nameless researchers whom I told you about at the start of these lessons, the two who spent over 
-$20000 of their grant money on buying and upgrading their machines to complete their research? Well, if NeCTAR had
-been around when they were doing their research, this is how simply they would have been able to resolve their prolbem.
+$20000 of their grant money on buying and upgrading their machines to complete their research? Well, if the 
+Research Cloud had been around when they were doing their research, this is how simply they would have been able to 
+resolve their problem.
 
 **Exercise 6**
 
@@ -264,8 +265,8 @@ That is the extra space that Anna found and used.
 **NB** When you make a snapshot, the snapshot is only of the primary drive. Anything on the secondary drive is not
 saved. 
 
-You can get and run some fairly grunty machines on the NeCTAR cloud. But snapshots will only save your small primary
-drive. If you use the extra drive space you will not be able to back it up by means of snapshots!
+You can get and run some fairly grunty machines on the Research Cloud cloud. But snapshots will only save your small 
+primary drive. If you use the extra drive space you will not be able to back it up by means of snapshots!
 
 **Q** So to repeat: has Anna made a mistake?
 

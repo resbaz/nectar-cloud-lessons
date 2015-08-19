@@ -45,7 +45,7 @@ Hold up a Red sticky note if you are.
 and a Green one if you are aren't.
 
 To all you Windows users: the Windows command line doesn't work with the Linux operating system that Anna is using on 
-the NeCTAR cloud.
+the Research Cloud.
 
 Microsoft are planning to change this, but for the time being Windows users have to follow an alternate path.
 
@@ -212,9 +212,9 @@ ssh -i tut_dev.pem ubuntu@144.6.225.224
 
 **Question 2**
 
-Nectar have an image catalogue that gives information about the images they provide. It can be found at:
+Research Cloud have an image catalogue that gives information about the images they provide. It can be found at:
 
-https://wiki.rc.nectar.org.au/wiki/Image_Catalog
+https://wiki.rc.Research Cloud.org.au/wiki/Image_Catalog
  
 Have a look at it. What operating system do you think the Drupal server is based on?
 
@@ -479,7 +479,7 @@ The error message is very helpful: it even gives you the location of your known 
 
 **Q**
 
-How likely are you to see this error on the NeCTAR cloud?
+How likely are you to see this error on the Research Cloud?
 
 Hold up a Red sticky note if you think the answer is 'lots', 
 Otherwise hold up a Green sticky note.

@@ -1,6 +1,6 @@
 # Lesson I: An introduction to the dashboard (45 min)
 
-"Roll up to the NeCTAR mystery tour!" 
+"Roll up to the Research Cloud mystery tour!" 
 
 I’m your tour guide ...
 
@@ -23,23 +23,23 @@ If it was underpowered, they would have been able to upgrade it to a larger mach
 They probably wouldn’t even have had to re-install the software.  
 
 The really good news for researchers is that everyone with an AAF login can experience this game changer for themselves, 
-at no cost: through the National eResearch Collaboration Tools And Resources (NeCTAR) project.
+at no cost: through the national Research Cloud (NeCTAR) project.
 
-If NeCTAR had been around with their current funding model in place when those two researchers were setting up their 
-project that’s $20 000 of grant money that could have been used elsewhere!
+If Research Cloud had been around with their current funding model in place when those two researchers were setting up 
+their project that’s $20 000 of grant money that could have been used elsewhere!
 
 **Question 1:**
 
 **Answer: E**
 
-But before you go rushing to the NeCTAR cloud, there are some important gotchas that you have to understand. The cloud 
-environment is a not the same as dedicated computer! 
+But before you go rushing to the Research Cloud, there are some important gotchas that you have to understand. 
+The cloud environment is a not the same as dedicated computer! 
 
-What I hope to do is to give you enough information to get your own machines up and running on the NeCTAR cloud, and to 
-explain the gotcha’s around this small area.
+What I hope to do is to give you enough information to get your own machines up and running on the Research Cloud, 
+and to explain the gotcha’s around this small area.
 
-How I’m going to do this is, is to start with an overview the NeCTAR parts through a very high level drive through of 
-the NeCTAR dashboard. Hence the NeCTAR mystery tour title.
+How I’m going to do this is, is to start with an overview the Research Cloud parts through a very high level drive 
+through of the Research Cloud dashboard. Hence the Research Cloud mystery tour title.
 
 Then in the following session we’ll launch and access a machine.
 
@@ -48,8 +48,8 @@ know where to go for support when things turn to custard!
 
 ## Log in to the dashboard
 
-**Q:** It's part of the prerequisites, but just to check: has everyone here logged into the NeCTAR dashboard before
-today? 
+**Q:** It's part of the prerequisites, but just to check: has everyone here logged into the Research Cloud dashboard 
+before today? 
 
 Please hold up a Red sticky note if you haven't
 
@@ -58,15 +58,15 @@ process. If you do see nothing, skip through to the [follow my leader](#Follow m
 
 ## For those who haven't performed the prerequisites, some special instructions on logging into the dashboard.
 
-**Q:** Those of your who didn't log into the NeCTAR dashboard: Do you have AAF credentials?
+**Q:** Those of your who didn't log into the Research Cloud dashboard: Do you have AAF credentials?
 
 Please hold up a Red sticky not if the answer is "No" and a Green one if the answer is "Yes".
 
 **Answer:** You are hoping for Greens, as people without AAF credentials can’t log in to the dashboard. One way around
 this is to get those who don't have AAF credentials to pair with someone who does…
 
-The first time you log on to the NeCTAR dashboard, you get given a **free** trial project, with three-months worth of 
-time if you run it to the maximum. 
+The first time you log on to the Research Cloud dashboard, you get given a **free** trial project, with three-months 
+worth of time if you run it to the maximum. 
 
 But if you keep your machines on the cloud as small as possible, you can get up to six months before your trial project 
 exhausts its initial quota. But you can still log in to the dashboard to view and request allocations. You can even
@@ -75,7 +75,7 @@ fill in an allocation request to extend your trial project!
 If you only use your small machines for short periods of time, and shut them down religiously after each run, you will 
 find that your trial project should last far longer. 
 
-Regardless of your path,  your trial project should give you the time to learn the NeCTAR cloud ropes!
+Regardless of your path,  your trial project should give you the time to learn the Research Cloud ropes!
 
 ## Follow my leader
 
@@ -114,7 +114,7 @@ In OpenStack parlance, a project is:
 And every project has a project ID: A "[User-defined alphanumeric string in Compute; the name of a project.](http://docs.openstack.org/glossary/content/glossary.html#project-id )"
 
 So a project is really just a way to set group people together and to set constraints on what operations they can do on 
-the NeCTAR cloud.
+the Research Cloud.
 
 But here’s the interesting thing: you can belong to one or more projects. That’s why a drop down is used. By using it 
 you can toggle between the different projects that you belong to, and work collaboratively within the constraints of 
@@ -127,7 +127,7 @@ between the projects. The project panes to the left control your access to the r
 **Demonstrate:** If you belong to more than one project, toggle between them to show changes in the menu 
 system to the left of the page.
 
-As mentioned, everyone who logs into the NeCTAR cloud via the AAF gets a small time limited trial project. This project 
+As mentioned, everyone who logs into the Research Cloud via the AAF gets a small time limited trial project. This project 
 is prefaced by the words "pt" ([project trial](http://support.rc.nectar.org.au/docs/allocations)) and followed by a 
 number. So mine is, for example, pt-30.
 
@@ -155,7 +155,7 @@ If you select it, you’ll see that there are two options: "Settings" and “Hel
 
 **A:** Hold up a Red sticky note if you are still looking at the dashboard!
        
-A new tab has opened, taking you to the homepage of the NeCTAR support site. This page gives news on the 
+A new tab has opened, taking you to the homepage of the Research Cloud support site. This page gives news on the 
 latest updates to the cloud. 
 
 **Activity:** Get everyone to click on the "Getting Started" link of the top bar of the support site.
@@ -172,23 +172,23 @@ do it now. You know where to go when you want to find some helpful documentation
 
 **Activity:** Get everyone to click on the "Get Support" link in the resultant page.
 
-This is the important page if you want to reach out and get help. There is documented a process that NeCTAR would like 
-you to follow when you reach out to get help.
+This is the important page if you want to reach out and get help. There is documented a process that Research Cloud 
+would like you to follow when you reach out to get help.
 
-1. Check to see if NeCTAR is OK
+1. Check to see if the Research Cloud is OK
 2. Check to see if anyone else has experienced your problem
 3. Finally, try to get help.
 
-This process is there to try and save everyone time and effort on the NeCTAR side. We are getting a lot of cloud for 
-free. If we can lessen the amount of work that NeCTAR’s staff do we can get more of the cloud to use. 
+This process is there to try and save everyone time and effort on the Research Cloud side. We are getting a lot of cloud for 
+free. If we can lessen the amount of work that Research Cloud’s staff do we can get more of the cloud to use. 
 It seems fair to me.
 
-If you do decide that you need help, next NeCTAR lay out an email template showing the format they would like any 
+If you do decide that you need help, next Research Cloud lay out an email template showing the format they would like any 
 support request to follow.
 
 The first piece of information they request is the email shown in the dashboard settings drop down. This is important:
 it lets them know who you are on the cloud - remember, the email you are sending from might not be the same as the one
-the NeCTAR cloud knows you as.
+the Research Cloud knows you as.
 
 Then they ask you to provide the information describing your problem.
 
@@ -309,22 +309,23 @@ and a Green one if the answer is "Yes".
 **Concept alert:** What we have here is simply a listing of files, each being a copy of a hard drives contents. Each 
 file is termed an "image".
 
-How the NeCTAR cloud works is that you select a file that is a copy of the contents of a hard drive when you launch 
-your machine. That file is copied across to wherever your machine is going to be run and becomes the 
+How the Research Cloud works is that you select a file that is a copy of the contents of a hard drive when you 
+launch your machine. That file is copied across to wherever your machine is going to be run and becomes the 
 basis of your new machines hard drive.
 
 Across the top of the list of images are four filters that are reasonably self explanatory.
 
 1. Project - the images that are visible only to your project. 
-2. NeCTAR official - the images that NeCTAR share with the world. These are simply images of operating systems.  
-   Whilst on this list NeCTAR is keeping them current. 
+2. NeCTAR official - the images that Research Cloud share with the world. These are simply images of operating 
+   systems.  Whilst on this list NeCTAR is keeping them current. 
 3. Shared with me - the images that other users have opted to share with you
 4. Public - the list of images that others have shared with the world. This mostly already have applications installed  
    on them, ready to run.
 
-As new users to the NeCTAR cloud it is unlikely that you’ll have either project or shared images. Those come with time. 
+As new users to the Research Cloud it is unlikely that you’ll have either project or shared images. Those come 
+with time. 
 
-So the image you’ll start your adventure on the NeCTAR cloud with is most likely to be a NeCTAR one.
+So the image you’ll start your adventure on the Research Cloud with is most likely to be a NeCTAR one.
 
 **Q:** So here’s a thought experiment: you fire up a machine that uses a NeCTAR image as it’s base. NeCTAR then 
 release a new copy of the image with a security update applied. Remember, your machine is based on a copy of that older 
@@ -449,7 +450,8 @@ We say "host" because the free machine you are launching is ordinarily going to 
 
 A virtual machine is one that is simply software and hardware working in concert to emulate a real machine. You can 
 think of it as being a program pretending to be a computer. Much like your desktop computer can run many applications 
-at the same time, such as ms-word, and excel, etc, a NeCTAR server can run many virtual machines at the same time.
+at the same time, such as ms-word, and excel, etc, a Research Cloud server can run many virtual machines at the same 
+time.
 
 So here’s a question. You have a virtual machine running. It makes all kinds of changes to its hard drives. Which are 
 simply files on the host server. What happens to those changes when you shut your virtual computer down?
@@ -470,8 +472,8 @@ snapshot. The next time you start up from the snapshot, work with it, snapshot i
 
 This only works for small machines. It’s not the worlds greatest way of doing things, but it works for small machines.
 
-I've seen ephemeral storage take grown developers by surprise when they first start using the NeCTAR cloud. It has
-just about reduced them to tears. Don’t be like them - trust nothing on the cloud!
+I've seen ephemeral storage take grown developers by surprise when they first start using the Research Cloud. 
+It has just about reduced them to tears. Don’t be like them - trust nothing on the cloud!
 
 **Question 6**
 
@@ -479,7 +481,8 @@ just about reduced them to tears. Don’t be like them - trust nothing on the cl
 
 (Once the machine is finally launched, point out the IP address in the dashboard)
 
-Every machine that is launched on the NeCTAR cloud is given an IP address. This is it’s location on the internet.
+Every machine that is launched on the Research Cloud is given an IP address. This is it’s location on the 
+internet.
 
 NeCTAR unfortunately only have a small pool of IP address to use.
 
