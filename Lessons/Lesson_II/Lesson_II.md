@@ -38,7 +38,7 @@ We had to sign in the date and our names, and each checklist was filed after a d
 
 Our rate of problems encountered during deployment fell to zero.
 
-| Further reading | url |
+| Further reading | Url |
 |-----------------|-----|
 | "The Checklist" | http://www.newyorker.com/magazine/2007/12/10/the-checklist |
 
@@ -65,18 +65,24 @@ Now we’ll move onto security groups.
 Let's see if I can explain them in a bit more detail.
 
 Network messages destined for a computer are broken up into packets. Once a packet reaches a computer how does the
-computer know which application the packet is destined for? 
+computer know which application the packet is intended for? 
 
-What if each network packet also had an associated number indicating the destination application? Then the computer 
-could sort them into different "trays", for the applications to pick up and work with. 
+Imagine that Australia was a computer: and that containers on ships heading to Australia were the network packets.
+And stretching the metaphor even more, that cities were applications. 
 
-So the "tray" numbers associated with a packet are named the port numbers. And well known applications get well 
-known port numbers. So web servers use port 80, for example.
+If you can get your head around that tortured metaphor, then its easy. Each container has a port number painted on it.
+Then when the ship docks, customs will only allow those containers with the correct port number off of it.
 
-A security group allows you to define the ports that packets from the outside world can have if they are going to
-be allowed to reach your VM. 
+So what if each network packet also had an associated number indicating the destination application? Then the security
+group, acting as a customs officer, could reject all the packets that were not acceptable for a given application!
 
-Any packets with a different port number don’t even make it to your machine. They are just thrown away.
+Well, strange to say, each packet on the network gets given a port number, indicating the application it is intended
+to go to. And well known applications get well known port numbers. So web servers use port 80, for example.
+
+So simply put a security group allows you to define the port numbers that packets from the outside world must have if 
+they are going to be allowed to reach your VM. 
+
+Any packets with a different port number don’t even make it to your machine. They are just thrown overboard!
 
 Ok, lets look at the security group checklist.
 
@@ -118,3 +124,8 @@ and a Green one once you are done.
 So in this lesson we've launched a computer on the cloud, based on an image that has been shared with us. On top of that
 we've created a security group to control access to our running machine. And we've launched it with a keypair which will
 allow us to communicate with the machine in the next lesson.
+
+These are the three essential skills for building any cloud application for you and all your research colleagues to 
+use!!! When these three steps fail you, the fourth step is the HELP menu item.
+ 
+Do you remember where it is?
