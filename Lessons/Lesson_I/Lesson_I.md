@@ -1,4 +1,4 @@
-# Lesson I: An introduction to the dashboard (30 min)
+# Lesson I: An introduction to the dashboard (45 min)
 
 "Roll up to the NeCTAR mystery tour!" 
 

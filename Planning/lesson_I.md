@@ -1,4 +1,4 @@
-# Lesson I: OpenStack, mapped by the dashboard (30 mins)
+# Lesson I: OpenStack, mapped by the dashboard (45 mins)
 
 ## Learning objectives 
 
