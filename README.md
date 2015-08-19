@@ -88,12 +88,25 @@ of how to get started on the NeCTAR cloud. They asked if this could be televised
 #### Must do
 
 1. [ ] Complete the porting of the checklists to pdf's with fields in them.
+1. [ ] Add note about the id on the settings dashboard being the one you have to give NeCTAR if you want support!
 1. [ ] Complete the "Train-the-trainers" additions
 1. [ ] Update this document to reflect the two in one
 1. [ ] Move the "Experiences in Delivering" this into a separate document.
 1. [ ] Bring the Kanban stuff into this "todo" list.
+1. [ ] In lesson 2, before launching an image, explain what are apps / images / instances / containers....
+       how are these apps are different than mobile apps, but even more cool!
 
 #### Nice to have
 
+1. [ ] Get sample clay seal?
 1. [ ] Migrate the slides to html, and see if they can't automatically be generated from the course documentation.
 1. [ ] As in Software Carpentry, should people who submit a GitHub correction get a certificate?
+1. [ ] Possibly add an FAQ of synonym's? Have things like drive, PC, server, IP, Web address, HTTP, link etc...
+1. [ ] As a Chromebook user can I have an online SSH like resbaz.cloud.edu shell tool?
+
+### Concepts to possibly use
+
+"The NeCTAR Dashboard is like sitting down in the cockpit for drivers seat for an entire Data Centre - 
+BUT best of all it is a car/plane you can crash!!! And we want you to crash it and restart it regularly #failfast"
+
+Would "Virtual machine" = "cloud application"? <-- how the end user would understand the image/instance/machine idea?
