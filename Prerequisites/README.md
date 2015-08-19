@@ -14,5 +14,9 @@ These are the steps you need to have taken before arriving at the course.
        1. [ ] If you are running a Mac, install [X11](OSX.md) (the link gives instructions).
 1. [ ] If not running Linux, install the correct [CyberDuck](https://cyberduck.io/) client that is correct for your laptop.
 
+If you are taking part in the "Train the Trainer" course, it would be good if you:  
+
+1. [ ] A [GitHub account](https://github.com/join).
+
 If you have any problems, or need any help with any of these steps, simply create an 
 [issue](https://github.com/resbaz/nectar-cloud-lessons/issues).

@@ -96,6 +96,10 @@ Instead, we are going to do a higher level walk through. Of course, if you want 
 
 The repository can be found at: https://github.com/resbaz/nectar-cloud-lessons
 
+As we work through this, I want you all to note any errors or changes that need to be done to the course material. 
+At the end of the day you are going to get a chance to make changes by editing the files directly in the GitHub
+repository.
+
 So, without further ado, on to the first lesson. Find it in your browsers!
 
 If you can't find it, hold up a Red sticky note, otherwise, a Green one to let me know you're ready to continue.
