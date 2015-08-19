@@ -65,17 +65,17 @@ Please hold up a Red sticky not if the answer is "No" and a Green one if the ans
 **Answer:** You are hoping for Greens, as people without AAF credentials can’t log in to the dashboard. One way around
 this is to get those who don't have AAF credentials to pair with someone who does…
 
-The first time you log on to the Research Cloud dashboard, you get given a **free** trial project, with three-months 
+The first time you log on to the Research Cloud dashboard, you get given a **free** project/tenant, with three-months 
 worth of time if you run it to the maximum. 
 
-But if you keep your machines on the cloud as small as possible, you can get up to six months before your trial project 
+But if you keep your machines on the cloud as small as possible, you can get up to six months before your project/tenant 
 exhausts its initial quota. But you can still log in to the dashboard to view and request allocations. You can even
-fill in an allocation request to extend your trial project!
+fill in an allocation request to extend your project/tenant!
 
 If you only use your small machines for short periods of time, and shut them down religiously after each run, you will 
-find that your trial project should last far longer. 
+find that your project/tenant should last far longer. 
 
-Regardless of your path,  your trial project should give you the time to learn the Research Cloud ropes!
+Regardless of your path,  your project/tenant should give you the time to learn the Research Cloud ropes!
 
 ## Follow my leader
 
@@ -127,8 +127,8 @@ between the projects. The project panes to the left control your access to the r
 **Demonstrate:** If you belong to more than one project, toggle between them to show changes in the menu 
 system to the left of the page.
 
-As mentioned, everyone who logs into the Research Cloud via the AAF gets a small time limited trial project. This project 
-is prefaced by the words "pt" ([project trial](http://support.rc.nectar.org.au/docs/allocations)) and followed by a 
+As mentioned, everyone who logs into the Research Cloud via the AAF gets a small time limited project/tenant. This project 
+is prefaced by the words "pt" ([project/tenant](http://support.rc.nectar.org.au/docs/allocations)) and followed by a 
 number. So mine is, for example, pt-30.
 
 **NB:** If you have multiple projects, get into the habit of always looking at the entry shown in this drop down 
@@ -289,8 +289,8 @@ files from any browser: and you can share the files with the world.
 
 *Allocations* is an important tab: Once you’ve messed around in your personal project, and found that it’s not big 
 enough for serious work, this is where you come. It’s basically an online form that allows you to apply for a proper 
-project with enough resources to support your research.  You can also request to have your trial project extended.
-You do this by selecting the "Convert trial project" option.
+project with enough resources to support your research.  You can also request to have your project/tenant extended.
+You do this by selecting the "Convert project trial" option.
 
 Remember, Compute and the Object Store are two separate items: one is where you manage your computers, the other is a 
 data store. They are not linked in any way, and can be run without the other.
