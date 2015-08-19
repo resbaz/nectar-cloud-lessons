@@ -96,3 +96,4 @@ of how to get started on the NeCTAR cloud. They asked if this could be televised
 #### Nice to have
 
 1. [ ] Migrate the slides to html, and see if they can't automatically be generated from the course documentation.
+1. [ ] As in Software Carpentry, should people who submit a GitHub correction get a certificate?
