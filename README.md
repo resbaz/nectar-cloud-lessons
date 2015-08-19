@@ -92,3 +92,7 @@ of how to get started on the NeCTAR cloud. They asked if this could be televised
 1. [ ] Update this document to reflect the two in one
 1. [ ] Move the "Experiences in Delivering" this into a separate document.
 1. [ ] Bring the Kanban stuff into this "todo" list.
+
+#### Nice to have
+
+1. [ ] Migrate the slides to html, and see if they can't automatically be generated from the course documentation.
