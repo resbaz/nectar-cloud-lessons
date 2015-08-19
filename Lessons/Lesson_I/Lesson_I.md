@@ -250,6 +250,10 @@ drop down with your name on it is the way to go!
 
 **Answer: D**
 
+**Question 5**
+
+**Answer: D**
+
 ## Overview tab
 
 **Q:** Does anyone have anything very different from what’s up on the screen in front of them?
@@ -456,7 +460,7 @@ time.
 So here’s a question. You have a virtual machine running. It makes all kinds of changes to its hard drives. Which are 
 simply files on the host server. What happens to those changes when you shut your virtual computer down?
 
-**Question 5:**
+**Question 6:**
 
 **Answer D:** The image is simply wiped.
 
@@ -475,7 +479,7 @@ This only works for small machines. It’s not the worlds greatest way of doing 
 I've seen ephemeral storage take grown developers by surprise when they first start using the Research Cloud. 
 It has just about reduced them to tears. Don’t be like them - trust nothing on the cloud!
 
-**Question 6**
+**Question 7**
 
 **Answer: B**
 
