@@ -394,7 +394,8 @@ that allows both ssh and http.
 
 HTTP is required to allow web browsers to access the running instance.
 
-SSH is required to allow us to access the instance to manage it.
+SSH is required to allow us to access the instance to manage it. You can see it as access to the administrator
+interface.
 
 ###Project -> Access & Security Tab -> Key Pairs
 
@@ -402,12 +403,14 @@ The next tab I'm going to visit on this page is the key pair tab.
 
 "What's a key pair?" I hear you not ask.
 
-Ok way back when, in the olden days, if I borrowed a lot of money from you and then relocated to a remote city, how 
-would I know that the man in front of me claiming to be your emissary, now here to collect your cash for you, was 
+Ok way back when, in the olden days, say when Greece ruled the known universe, and say you were a wealthy merchant 
+named Pem, lets agree that I borrowed a lot of money from you and then relocated to a remote city.
+
+How would I know that the man in front of me claiming to be your emissary, now here to collect your cash for you, was 
 the correct person?
 
-And the answer used by some was ingenious. We’d break a clay seal in half. I’d take half, you’d keep half. Your 
-emissary would hand me the half of the seal that you’d given me and if it matched mine I’d hand the cash over. 
+And the answer used by some was ingenious. We’d take a clay seal and break it in half. I’d take half, you’d keep half. 
+Your emissary would hand me the half of the seal that you’d given me and if it matched mine I’d hand the cash over. 
 Obviously there is quite a lot of trust in the system. And you’d want to keep your half of the seal private: 
 under lock and key. Me? Meh, not so much.
 
