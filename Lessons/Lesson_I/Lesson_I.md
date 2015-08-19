@@ -385,16 +385,17 @@ This page has a further three tabs across the top.
 
 The first one of these child tabs I'm going to visit is the security group tab. 
 
-By default a machine brought up can reach out to the world via the network, but the world can’t reach in. 
+By default a machine brought up on the Research Cloud can reach out to the world via the network, but the world 
+can’t reach in. 
 
-Security Groups simply allow you to specify what network traffic is allowed in.
+Security Groups simply allow you to specify what network traffic is allowed to reach your machine in the cloud..
 
-So I create a security group that specifies what network traffic is allowed in. In this case, I want to create one
-that allows both ssh and http. 
+So I create a security group that specifies what network traffic is going to reach it. In this case, I want to create 
+one that allows both ssh and http. 
 
 HTTP is required to allow web browsers to access the running instance.
 
-SSH is required to allow us to access the instance to manage it. You can see it as access to the administrator
+SSH is required to allow us to access the instance to manage it. You can see it giving us access to the administrator
 interface.
 
 ###Project -> Access & Security Tab -> Key Pairs
@@ -470,21 +471,21 @@ simply files on the host server. What happens to those changes when you shut you
 So your virtual machine has what is termed "ephemeral" drives. Anything written to these drives will be lost if it’s 
 associated virtual machine is terminated.
 
-Rebooting or restarting its associated virtual machine does not cause the ephemeral data to vanish. But if you 
-terminate it, then, whatever you wrote to this ephemeral storage will be lost the minute your virtual machine exits. 
-All upgrades, security patches, whatever data you wrote, all will be lost.
+Rebooting or restarting its associated virtual machine does not cause your data to vanish. But if you 
+terminate it, then, whatever you wrote to this drive will be lost the minute your virtual machine exits. 
+All upgrades, security patches, whatever data you wrote, everything is lost.
 
 This is one of the reasons why people like snapshot images so much. You work with your machine a little, you make a 
 snapshot. The next time you start up from the snapshot, work with it, snapshot it when you are done.
 
 This only works for small machines. It’s not the worlds greatest way of doing things, but it works for small machines.
 
-I've seen ephemeral storage take grown developers by surprise when they first start using the Research Cloud. 
+I've seen this ephemeral storage take grown developers by surprise when they first start using the Research Cloud. 
 It has just about reduced them to tears. Don’t be like them - trust nothing on the cloud!
 
 **Question 7**
 
-**Answer: B**
+**Answer: B** (Pick out the wrong answers first to provide explanations of what they are.)
 
 (Once the machine is finally launched, point out the IP address in the dashboard)
 
@@ -496,9 +497,9 @@ NeCTAR unfortunately only have a small pool of IP address to use.
 So when you terminate your instance, the IP address is returned to the pool and allocated to the next machine that 
 starts up. But like the transient file system, it is not lost during reboots.
 
-**Question 7**
+**Question 8**
 
-**Answer: B**
+**Answer: B** 
 
 Now knowing what's going on under the hood, you can understand why once you hit the "Launch" button there might be a 
 delay before the machine runs - there's quite a lot going on.
