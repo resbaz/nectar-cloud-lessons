@@ -10,6 +10,11 @@
 _This is one of the great things about the Research Cloud: you can just spin up machines, play with them, and then
 **THROW THEM AWAY**!_
 
+    Now stop, and ask the audience to introduce themselves to the person on either side of them (if they don't
+    know that person). Then let them know that these are the people that they will turn to first for help if they
+    have any problems with the lesson. Only put up red cards if neither person on either side can't help them.
+    So if a read card goes up, you are expecting to see a row of red cards!
+
 ## The power of Checklists
 
 In 2001 a critical-care specialist at Johns Hopkins Hospital designed a checklist to prevent line infections. 
@@ -33,11 +38,8 @@ We had to sign in the date and our names, and each checklist was filed after a d
 
 Our rate of problems encountered during deployment fell to zero.
 
-<table>
-  <tr>
-  <td>Further reading: http://www.newyorker.com/magazine/2007/12/10/the-checklist</td>
-  </tr>
-</table>
+| Further reading |
+| http://www.newyorker.com/magazine/2007/12/10/the-checklist |
 
 Knowing this, I’ve created a set of checklists for launching a virtual machine that runs the Drupal server Anna is 
 interested in.
