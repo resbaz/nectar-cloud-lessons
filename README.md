@@ -83,8 +83,12 @@ ask the questions and gather the data? Read more about the pro's and con's of Cl
 A couple of people came up after the lecture and stated that they thought that this was a missing piece in the puzzle
 of how to get started on the NeCTAR cloud. They asked if this could be televised or turned into a "MOOC"...
 
+### Todo
 
-## Notes
+#### Must do
 
-10d
-AWS::AutoScaling::AutoScalingGroup¶
+1. [ ] Complete the porting of the checklists to pdf's with fields in them.
+1. [ ] Complete the "Train-the-trainers" additions
+1. [ ] Update this document to reflect the two in one
+1. [ ] Move the "Experiences in Delivering" this into a separate document.
+1. [ ] Bring the Kanban stuff into this "todo" list.
