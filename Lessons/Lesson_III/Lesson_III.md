@@ -10,9 +10,17 @@
 > 
 > Remembering the checklist used to launch a machine performs an update by issuing the following commands:
 > 
-> ```bash
-> apt-get update && apt-get -y upgrade
-> ```
+
+<!-- Slide -->
+
+## Anna wants to run
+
+```bash
+apt-get update && apt-get -y upgrade
+```
+
+<!-- Slide End -->
+
 > 
 > She knows that she has to issue this set of commands again - this time on the instance.
 
@@ -37,40 +45,55 @@ one computer could act as the terminal for another computer - or even itself!
 So you can run a terminal application on your computer to do work on your own computer. You might recognize it as the
 "Command Line"
 
-**Question 1** 
+<!-- Slide -->
 
-Who here is running Microsoft Windows? 
+## Question 1
 
-Hold up a Red sticky note if you are.
-and a Green one if you are aren't.
+Those running Microsoft Windows...
+
+Yes, You!
+
+Did you install Cygwin?
+
+<!-- Slide End -->
+
+Hold up a Red sticky note if you didn't.
+
+**A** We are hoping to see none. If there are some, well. Sigh.  Get them to install it whilst we plough on.
 
 To all you Windows users: the Windows command line doesn't work with the Linux operating system that Anna is using on 
 the Research Cloud.
 
 Microsoft are planning to change this, but for the time being Windows users have to follow an alternate path.
 
-That's why in the prerequisites we asked Windows users to install Cygwin.
+That's why in the prerequisites we asked Windows users to install Cygwin. It's a tool that gives you a terminal you
+can use on Linux computers.
 
-**Exercise 1a**
+<!-- Slide -->
 
-**Q** All you Windows users who haven't installed Cygwin: hold up a Red sticky note!
-
-**A** We are hoping to see none. If there are some, well. Sigh.  So we are going to have take a 5 minute break for the 
-Windows users to install Cygwin following the instructions in the prerequisites. Wait find 
-
-**Exercise 1b**
+## Exercise 1
 
 Find and run the terminal program, or command line, on your computer.
 
-OSX users can do a Spotlight Search for 'terminal'. Cygwin users simply click on the Cygwin desktop icon.
+OSX users can do a Spotlight Search for 'terminal'. 
 
-Once it's running try the following commands:
+Cygwin users simply click on the Cygwin desktop icon.
+
+<!-- Slide End -->
+
+<!-- Slide -->
+
+## Exercise 2
+
+Once you've opened it, try the following commands:
 
 ```bash
 pwd
 ```
 
 `pwd` is shorthand for **p**rint **w**orking **d**irectory
+
+<!-- Slide End -->
 
 The working directory is simply the folder within your file system that you are currently positioned in.
 
@@ -81,17 +104,29 @@ Remember that Finder or File Explorer gives you a hierarchical tree view of your
 As the terminal can't give you the same view, it simply has the concept of being positioned in one of those folders. 
 And that's the working directory that you see with the `pwd` command.
 
+<!-- Slide -->
+
+## Exercise 3
+
 ```bash
 ls
 ```
 
 `ls` is shorthand for **l**i**s**t directory contents
 
+<!-- Slide End -->
+
+<!-- Slide -->
+
+## Exercise 4
+
 ```bash
 man ls
 ```
 
 man is shorthand for ***man***ual. Arrow keys scroll, and the 'q' key closes the help.
+
+<!-- Slide End -->
 
 As ever, hold up a Green card when you're done
 And a Red card if you need help.
@@ -104,9 +139,19 @@ Commands issued via terminals have the following advantages:
 * You can easily replay commands
 * It is simple to automate
 
-**Exercise 1c**
+One other command that you need to know is `cd`.
 
-One other command that you need to know is `cd`. `cd` is shorthand for **c**hange working **d**irectory.
+<!-- Slide -->
+
+## Exercise 5
+
+```bash
+cd
+```
+
+`cd` is shorthand for **c**hange working **d**irectory.
+
+<!-- Slide End -->
 
 >  (Demonstrate cd, noting that '/' is the directory separator and that there is tab completion)
 
@@ -123,16 +168,24 @@ But the main advantage for us is that your terminal program can also be used to 
 So Anna's hope comes in the form of the terminal application: She can run it on her local machine, and connect to 
 her remote Drupal server.
 
-**Exercise 2**
-
 Now in the last session we shut down own servers. If we're going to follow in Anna's footsteps, we need to relaunch
 our Drupal servers.
+
+<!-- Slide -->
+
+## Exercise 6
+
+Gentle people, start your servers!
+
+<!-- Slide End -->
 
 Remember, this time round we don't need to create a security group or a key: they are already there. So reuse them
 when launching your VM.
 
 Hold up a Green Card when you're ready to move on,
 And a Red card if you need help.
+
+<!-- Slide -->
 
 ## ssh
 
@@ -142,7 +195,11 @@ The program we are going to connect to the server with is:
 ssh
 ```
 
-`ssh` stands for **s**ecure **sh**ell. It connects a terminal on one machine to another target machine, thus allowing 
+`ssh` stands for **s**ecure **sh**ell. 
+
+<!-- Slide End -->
+
+It connects a terminal on one machine to another target machine, thus allowing 
 you to use the text based interface on the target machine. It kind of teleports the target machine terminal to yours…
 
 Think of `ssh` as your cloud login command.
@@ -193,9 +250,21 @@ better person than I!
 
 Ok. This is the basic form our `ssh` command will take:
 
+<!-- Slide -->
+
+## ssh
+
 ```bash
 ssh  -i <key> <user_id>@<address>
 ```
+
+Eg: Along the lines of:
+
+```bash
+ssh -i tut_dev.pem ubuntu@144.6.225.224
+```
+
+<!-- Slide End -->
 
 So here:
 
@@ -204,27 +273,23 @@ So here:
   Different operating systems have different default user accounts.
 * the `address` is the IP address of the Virtual Machine that we read off of the dashboard.
 
-For our Drupal server the command would be:
+<!-- Slide -->
 
-```bash
-ssh -i tut_dev.pem ubuntu@144.6.225.224
-```
-
-**Question 2**
+## Question 2
 
 Research Cloud have an image catalogue that gives information about the images they provide. It can be found at:
 
-https://wiki.rc.Research Cloud.org.au/wiki/Image_Catalog
+https://wiki.rc.nectar.org.au/wiki/Image_Catalog
  
 Have a look at it. What operating system do you think the Drupal server is based on?
 
-**Choices**
+1. Fedora
+1. Debian
+1. Centos
+1. Ubuntu
+1. Scientific Linux
 
-    A. Fedora
-    B. Debian
-    C. Centos
-    D. Ubuntu
-    E. Scientific Linux
+<!-- Slide End -->
 
 **Answer 2**
 
@@ -234,6 +299,10 @@ Have a look at it. What operating system do you think the Drupal server is based
 
 If everyone could try to connect to their server using the ssh command, that would be wonderful.
 BTW, I'm hoping that you all fail - with the error message along the lines of: 
+
+<!-- Slide -->
+
+## Is this your error message?
 
 ```bash
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -246,6 +315,8 @@ bad permissions: ignore key: .ssh/nectar_dev.pem
 ubuntu@144.6.225.224's password: 
 ```
 
+<!-- Slide End -->
+
 Hold up a Green card when you've reached this error message.
 And a Red card if you need help.
 
@@ -256,6 +327,10 @@ machine can read it. You need to tighten up the permissions on this file so that
 
 Hit control-c to exit the password prompt.
 
+<!-- Slide -->
+
+## chmod
+
 The command ```chmod``` **ch**ange file **mod**e allows you to set the permissions on your files.
 
 The basic form is
@@ -264,22 +339,48 @@ The basic form is
 chmod <mode> <file>
 ```
 
+<!-- Slide End -->
+
 So in my case, allowing me (the current **u**ser) to be able to **r**ead and **w**rite the file, and to exclude the 
 **g**roup and **o**thers from being able to **r**ead, **w**rite or try to run (e**x**ecute) it, the command would be:
+
+<!-- Slide -->
+
+## Exercise 7
+
+This works for me:
 
 ```bash
 chmod u=rw,go-rwx keys/tut_dev.pem 
 ```
 
-**Exercise 4**
-
 Modify the permissions on your key file so that only you can read or write it.
+
+<!-- Slide End -->
+
 Then issue the `pwd` command to see what directory you are in.
+
 Retry the ssh command.
 
-When you are asked "Are you sure you want to continue connecting..." simply type "yes".
+<!-- Slide -->
+
+## When you are asked:
+
+```bash
+The authenticity of host '144.6.225.224 (144.6.225.224)' can't be established.
+RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
+Are you sure you want to continue connecting (yes/no)?
+```
+
+simply type "yes".
+
+<!-- Slide End -->
 
 Hopefully, you are now met with something along following lines
+
+<!-- Slide -->
+
+## Does this look familiar?
 
 ```bash
 Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-36-generic x86_64)
@@ -289,18 +390,26 @@ Last login: Mon Mar 30 01:27:13 2015 from hqrouter.vpac.org
 ubuntu@drupal:~$ 
 ```
 
+<!-- Slide End -->
+
 Re-issue the `pwd` command to convince yourself that are indeed now teleported into the remote machine.
 
 Hold up a Green card when you are convinced you have a shell into the remote machine.
 And a Red card if you need help.
 
-**Exercise 5**
+<!-- Slide -->
+
+## Exercise 8
 
 Finally, we are going try and update our web server. Try to execute the first command in the set:
 
 ```bash
 apt-get update
 ```
+<!-- Slide End -->
+<!-- Slide -->
+
+## Help!
 
 Again, something dread full has gone wrong! You should be met with the message:
 
@@ -311,6 +420,8 @@ E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
 E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
 ```
 
+<!-- Slide End -->
+
 Hold up a Green card when you've reached this error message.
 And a Red card if you need help.
 
@@ -319,10 +430,12 @@ as is not the super user normally allowed to do system administration.
 
 But don't panic!
 
+<!-- Slide -->
+
+## Exercise 8
+
 The `sudo` command (**s**uper **u**ser **do**) comes to your help. It allows the ubuntu user to run commands with
 the security privileges of the super user.
-
-**Exercise 6**
 
 Try to execute the command again, this time with `sudo`:
 
@@ -330,10 +443,16 @@ Try to execute the command again, this time with `sudo`:
 sudo apt-get update
 ```
 
+<!-- Slide End -->
+
 You should now see a whole lot of gets scrolling by, as the operating system updates its lists of installed and 
 available software.
 
 Once done, execute the command:
+
+<!-- Slide -->
+
+## Exercise 9
 
 ```bash
 sudo apt-get upgrade
@@ -346,6 +465,7 @@ like:
 After this operation, 4,096 B of additional disk space will be used.
 Do you want to continue? [Y/n]
 ```
+<!-- Slide End -->
 
 In this case, reply, 'Y'.
 
@@ -354,12 +474,14 @@ And a Red card if you need help.
 
 Now we've replicated the steps Anna had to undertake in order to run the upgrade on her machine.
 
-`apt-get` is the front end for a program commonly called a package manager. It allows you to add, remove, and update
-applications under its control. These days, that's most of the software on a linux machine.
-
-**Exercise 7**
+`apt-get` is the front end for a program called a package manager. Its rather like the appstore on your phone, and
+allows you to add, remove, and update applications.
 
 When you are finished working on your virtual machine, do the following:
+
+<!-- Slide -->
+
+## Exercise 10
 
 Type `exit`
 
@@ -369,6 +491,7 @@ You should see the following:
 logout
 Connection to <some_ip_number> closed
 ```
+<!-- Slide End -->
 
 You have now closed the ssh connection to the remote machine. If you are not convinced, type `pwd` to see that your
 terminal is now back on your local machine. The teleportation magic is over!
@@ -376,7 +499,7 @@ terminal is now back on your local machine. The teleportation magic is over!
 Hold up a Green card if you are back on your local machine.
 And a Red card if you are not.
 
-**Exercise 8**
+**Exercise 11**
 
 Return to the security group in the dashboard and remove the ssh rule.
 
@@ -407,16 +530,20 @@ The takeaway: Security groups can stop you from accessing your server if they ar
 It is a good idea to remove the ssh rule from the security group when you don't kneed it. This stops hackers from 
 trying to access your machine.
 
-**Question 3**
+<!-- Slide -->
+
+## Question 3
 
 You remove ssh from a security group shared with many other servers. Will you be able to ssh into another server that
 is also governed by the security group?
 
 **Choices**
 
-    A. Yes
-    B. No
-    C. Only if there is another security group applied to the server that has ssh enabled.
+1. Yes
+1. No
+1. Only if there is another security group applied to the server that has ssh enabled.
+
+<!-- Slide End -->
 
 **Answer 3**
 
@@ -446,11 +573,17 @@ Thank the volunteers.
 How ssh stops this from happening is that in every communication with a server, the first thing the server sends 
 is its own public key to you. That was when you got asked the question:
 
+<!-- Slide -->
+
+## Remember this?
+
 ```bash
 The authenticity of host '144.6.225.224 (144.6.225.224)' can't be established.
 RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
 Are you sure you want to continue connecting (yes/no)?
 ```
+
+<!-- Slide End -->
 
 When you replied 'yes' a unique signature for the server was stored as a line in a file called the known_hosts file.
 
@@ -458,6 +591,10 @@ From this point on, whenever you connect to the server, the servers public key i
 the known_hosts file. If they remain in sync, then everything is sweet.
 
 But if they change, then ssh will refuse to give you a connection, showing the error:
+
+<!-- Slide -->
+
+## There is possibly a man in the middle!
 
 ```bash
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -475,6 +612,8 @@ RSA host key for 115.146.85.98 has changed and you have requested strict checkin
 Host key verification failed.
 ```
 
+<!-- Slide End -->
+
 The error message is very helpful: it even gives you the location of your known hosts file.
 
 **Q**
@@ -489,10 +628,18 @@ Otherwise hold up a Green sticky note.
 Lots. The Reds have it correctly. Remember I mentioned that NeCTAR recycle IP numbers? If you kill an instance and
 restart it, then the chances are that new instance will have the same IP number as the old one.
 
-**Exercise 9**
+<!-- Slide -->
 
-See if you can find and open your known hosts file and delete the line in it that matches the instance that you have
+## Exercise 12
+
+Ssh into your instance again, and confirm no questions were asked.
+
+The find and open your known hosts file and delete the line in it that matches the instance that you have
 ssh'd into.
+
+Then ssh into your instance again and confirm you get asked if you want to continue connecting.
+
+<!-- Slide End -->
 
 Again, hold up a Red sticky note if you need help, and
 a Green one if you are done.
