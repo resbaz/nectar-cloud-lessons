@@ -110,12 +110,13 @@ more today.txt
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
 
-> Knowing that her server is a small one, Anna decided to remove gedit before she exits the ssh session.
+> Knowing that her server is a small one, Anna decided to remove gedit and firefox before she exits the ssh session.
 
 She does this using 
 
 ```bash
 sudo apt-get remove gedit
+sudo apt-get remove firefox
 ```
 
 <!-- Slide -->
