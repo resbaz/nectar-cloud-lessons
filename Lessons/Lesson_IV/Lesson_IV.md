@@ -8,24 +8,62 @@
 There is a command line program you can use called `scp` (**s**ecure **c**o**p**y) to move files to, or fetch files 
 from, different machines. It is built on top of `ssh`.
 
-This `scp` command will copy the file named `notes.txt` from the home directory of the USER_NAME user on the remote 
-machine to the local directory in which `scp` is being run:
+
+<!-- Slide -->
+
+## Example 1
 
 ```bash
 $ scp USER_NAME@remote_machine_address:notes.txt . 
 ```
 
+`scp` is shorthand for **s**ecure **c**o**p**y
+
+<!-- Slide End -->
+
+This `scp` command will copy the file named `notes.txt` from the home directory of the USER_NAME user on the remote 
+machine to the local directory in which `scp` is being run:
+
 Where of course `USER_NAME` is the default account on the remote machine, and `remote_machine_address` is either its
 IP number or its domain name.
 
-This scp command will copy the file named notes.txt from the current directory of the local machine to the remote 
-machine's USER_NAME home directory:
+<!-- Slide -->
+
+## Example 2
 
 ```bash
 $ scp notes.txt USER_NAME@remote_machine_address: 
 ```
 
+<!-- Slide End -->
+
+This scp command will copy the file named notes.txt from the current directory of the local machine to the remote 
+machine's USER_NAME home directory:
+
+<!-- Slide -->
+
+## Question 1
+
+```bash
+# From remote machine to local machine
+$ scp USER_NAME@remote_machine_address:notes.txt . 
+
+# From local machine to remote machine
+$ scp notes.txt USER_NAME@remote_machine_address: 
+```
+
+Do files move from 
+
+1. left to right 
+1. right to left?
+
+<!-- Slide End -->
+
+**Answer**
+
 Looking at the two commands you can see that the source for the transfer is on the left, and the target on the right.
+So the answer is A.
+
 You can use a wildcard denoted by the asterisk character (*) to copy multiple files in one go.
 
 By way of example, I'm going to create a file locally, move it to the remote machine, then bring it back.
@@ -48,16 +86,20 @@ more temp.txt
 rm temp.txt
 ```
 
-**Exercise 1**
+<!-- Slide -->
+
+## Exercise 1
 
 I want everyone to create a file named, say, `whyme.txt` and then copy it onto their remote server.
 
+## Exercise 2
+
+For non existent bonus points, bring it back again!
+
+<!-- Slide End -->
+
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
-
-For non existent bonus points, if you finish early, bring it back again!
-
-**Exercise 2**
 
 ## CyberDuck
 
@@ -70,11 +112,14 @@ Then run it.
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
 
-**Exercise 3**
+## Connecting with CyberDuck
+
+Now I'm going to show you how to connect with CyberDuck. But make notes, because you are going to be doing it next.
 
 ![First steps in adding a bookmark](images/AddBookmark.png "First steps in adding a bookmark")
 
 Right click and select "New Bookmark"
+
 
 ![Basic bookmark dialogue](images/BasicBookmark.png "Basic bookmark dialogue")
 
@@ -94,8 +139,20 @@ launched the server. If in doubt, you can have a look at the server information 
 Now close the dialogue. To connect to the server right click on the bookmark you've just created and select 
 "Connect to Server". All going well, a ruled plain window should replace the pane showing the bookmarks. 
 
-You should now be able to drag and drop files between the two machines! See if you can drag `helpme.txt` back to your
-local machine. You can even edit it in place!
+You should now be able to drag and drop files between the two machines!
+
+<!-- Slide -->
+
+## Exercise 3
+
+See if you can configure CyberDuck and then drag `helpme.txt` back to your
+local machine. 
+
+### More imaginary bonus points
+
+See if you can edit it in place!
+
+<!-- Slide End -->
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
