@@ -76,8 +76,9 @@ scp -i key.pem temp.txt ubuntu@115.146.92.130:
 ssh -i key.pem ubuntu@115.146.92.130
     ls
     more temp.txt
+    pwd                             # to show that we are not on our local machine
     exit
-pwd
+pwd                                 # just to prove we are back on our local machine
 ls
 rm temp.txt                         # rm = remove!
 ls                                  # file is gone!
