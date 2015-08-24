@@ -18,22 +18,29 @@ Once that's installed, she will need to connect to the server once again via ssh
 
 This time however, she's going to add -Y to the `ssh` command.
 
+<!-- Slide -->
+
+# Anna's ssh command
 
 ```bash
 ssh -i key.pem -Y ubuntu@115.146.84.207
 ```
 
-**Question 1**
+<!-- Slide End -->
 
-Using the `man ssh` command, what is the -Y flag adding to the `ssh` command
+<!-- Slide -->
 
-**Choices**
+## Question 1
 
-    A. Forces ssh to use IPv4 addresses only
-    B. Specifies the user to log in as on the remote machine
-    C. Enables trusted X11 forwarding
-    D. Asks ssh to display the version number and exit
-    E. Forces ssh into quiet mode.
+Using the `man ssh` command, what is the -Y flag adding to the `ssh` command?
+
+1. Forces ssh to use IPv4 addresses only
+1. Specifies the user to log in as on the remote machine
+1. Enables trusted X11 forwarding
+1. Asks ssh to display the version number and exit
+1. Forces ssh into quiet mode.
+
+<!-- Slide End -->
 
 **Answer 2**
 
@@ -61,13 +68,16 @@ the interface appears on her local machine!
 ```bash
 firefox
 ```
+<!-- Slide -->
 
-**Exercise 1**
+## Exercise 1
 
 Connect to your running server via ssh, and install and run Firefox.
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
+
+<!-- Slide End -->
 
 # Editing Files
 
@@ -77,8 +87,9 @@ And a Red card if you need help.
 ```bash
 sudo apt-get install gedit
 ```
+<!-- Slide -->
 
-**Exercise 2**
+## Exercise 2
 
 Install gedit and edit today.txt as you see fit using the command:
 
@@ -89,9 +100,12 @@ gedit today.txt
 Once you've done this, save the file and exit gedit. Confirm that your changes have have been saved by using the 
 `more` command:
 
+<!-- Slide End -->
+
 ```bash
 more today.txt
 ```
+
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
@@ -104,9 +118,13 @@ She does this using
 sudo apt-get remove gedit
 ```
 
-**Exercise 3**
+<!-- Slide -->
+
+## Exercise 3
 
 Remove gedit from your systems, and exit your ssh sessions.
+
+<!-- Slide End -->
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
