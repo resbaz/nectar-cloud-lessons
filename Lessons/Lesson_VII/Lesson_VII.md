@@ -198,9 +198,11 @@ use services such as [Mandrill](http://mandrill.com/)
 Its funny: in the old days, when I was just getting started as a software developer, updating software was strongly
 resisted because of the fear of something breaking. "If it's working, why change it" was the mantra.
 
-But now, if you don't update your software with security updates, the chances are you will be hacked.
+But now, if you don't update your software with security updates, the chances are you will be hacked. 
 
-So the lessor of the two evils is to perform security updates as soon as is possible.
+So the lessor of the two evils is to perform security updates as soon as is possible. 
+
+**I believe that this is the most important step that you need to take in terms of security.**
 
 But there was wisdom in that old timer mantra of not rocking the boat. Every time you make a change to your system you
 run the risk of breaking it. So remember to make sure you have a regular backup to hand.
