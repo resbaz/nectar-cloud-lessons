@@ -5,7 +5,15 @@
 >
 > That security expert is you!
 
+<!-- Slide -->
+
 ## Shared Responsibility Model
+
+NeCTAR look after the cloud
+
+**You** look after the stuff you put in that cloud
+
+<!-- Slide End -->
 
 When it comes to security, NeCTAR follow the shared responsibility model.
 
@@ -25,14 +33,20 @@ This means that you have a fair amount of responsibility.
  
 But that's true of all the computers and software that you use. 
 
+<!-- Slide -->
+
 ## Be paranoid!
 
 >  “Just because you're paranoid, don't mean they're not after you” ― Nirvana, [Territorial Pissings](http://www.azlyrics.com/lyrics/nirvana/territorialpissings.html)  
 
+<!-- Slide End -->
+
 And it is a scary world out there: the minute you put a server onto the internet, automated scanners start probing it 
 for weaknesses.
 
-**Exercise 1**
+<!-- Slide -->
+
+## Exercise 1
 
 Reinstall and run firefox on your server.
 
@@ -40,7 +54,11 @@ Then in the browser go to:
 
 Shields up: https://www.grc.com/shieldsup
 
-Click on the 'Proceed' button, then select 'All Service Ports' and stand back. What you are witnessing is a real time
+Click on the 'Proceed' button, then select 'All Service Ports' and stand back.
+
+<!-- Slide End -->
+ 
+What you are witnessing is a real time
 scan of the first 1053 ports of your computer. Hopefully in our case it will only find 2 ports open.
 
 The scan doesn't take long, does it?
@@ -73,7 +91,18 @@ and a Green one if you think that they want to be found out.
 **A** I don't actually know the answer, as I'm not sure what motives hackers, but I think that most don't want to be 
 found. And so what worries me is just how much successful hacking is actually going on...
 
-## Be prepared
+<!-- Slide -->
+
+## Be prepared!
+
+A good scout always:
+
+* Knows what's the worst that can happen
+* Takes steps to contain the fallout
+* Knows what do in an emergency
+* Makes sure they have a first aid kit!
+ 
+<!-- Slide End -->
 
 So always have a plan that prepares for the worst. Ask yourself the following:
 
@@ -81,6 +110,7 @@ So always have a plan that prepares for the worst. Ask yourself the following:
 2. What I can do to minimize or contain the fallout when the machine does get hacked?
 3. What steps do I have to take when the machine does get hacked?
 4. Will I have the resources to take those steps?
+
 
 ### The worst thing can happen
 
@@ -159,7 +189,17 @@ dead hot keen on research data (or movie companies on proof of piracy).
 
 ### Hide the ssh port 
 
-**Exercise 2**
+<!-- Slide -->
+
+##Exercise 2 
+
+* Remove ssh from the security group on your VM
+* Try to ssh in – and fail!
+* Create a special ssh only security group
+* Add it to your running VM
+* Try to ssh in: success?
+
+<!-- Slide End -->
 
 Remove ssh from the security group currently in force on your instance.
 
@@ -177,14 +217,29 @@ as the change is propagated to the VM)
 Hold up a Red sticky note if you need help.
 A Green one if you've managed to leap through all these hoops.
 
-So here's a recommendation: have a dedicated security group for ssh. Only enable it for a VM if you want to ssh into
-the machine. **AND REMOVE IT ONCE YOU ARE DONE**
+<!-- Slide -->
+
+# A recommendation
+ 
+Have a dedicated security group for ssh. 
+
+Only enable it for a VM if you want to ssh into the machine. 
+
+**AND THEN REMOVE IT ONCE YOU ARE DONE**
+
+<!-- Slide End -->
 
 That way scanners automated scanners won't ordinarily see the port, and also won't have a window to attack it.
 
+<!-- Slide -->
+
 ## NeCTAR's security guidelines
 
-NeCTAR has a set of security guidelines that can be found at https://support.rc.nectar.org.au/docs/security-guidelines .
+NeCTAR has a set of security guidelines that can be found at:
+ 
+* https://support.rc.nectar.org.au/docs/security-guidelines
+
+<!-- Slide End -->
 
 Lets work through some of them.
 
@@ -192,6 +247,15 @@ Lets work through some of them.
 
 If you can avoid running a mail server, then don't run it. It will make your life a lot easier. If you can, rather
 use services such as [Mandrill](http://mandrill.com/) 
+
+<!-- Slide -->
+
+# Avoid mail servers
+
+* Use a service such as Mandrill
+  http://mandrill.com/
+
+<!-- Slide End -->
 
 ### Enable automatic updates
 
@@ -207,15 +271,21 @@ So the lessor of the two evils is to perform security updates as soon as is poss
 But there was wisdom in that old timer mantra of not rocking the boat. Every time you make a change to your system you
 run the risk of breaking it. So remember to make sure you have a regular backup to hand.
 
-**Exercise 3**
-
 Automatically install security upgrades on our drupal site by ssh'ing in and doing the following:
+
+<!-- Slide -->
+
+## Exercise 3
+
+Enable automatic updates:
 
 ``` bash
 sudo dpkg-reconfigure unattended-upgrades
 ```
 
 And answer yes.
+
+<!-- Slide End -->
 
 Hold up a Red sticky note if you need help,
 And a green one when you are done.
@@ -229,9 +299,13 @@ By default, the unattended upgrades software will not reboot your system.
 
 So you will need to do this.
 
-**Exercise 4**
+<!-- Slide -->
+
+## Exercise 4
 
 Using the dashboard, reboot the running VM.
+
+<!-- Slide End -->
 
 Hold up a Red sticky note if you need help,
 And a green one when you are done.
@@ -242,9 +316,13 @@ So how do you know if you need to reboot your VM?
 
 Most popular software issue security advisories.
 
-**Exercise 5**
+<!-- Slide -->
+
+## Exercise 5
 
 Can you find the security advisories for the Ubuntu operating system?
+
+<!-- Slide End -->
 
 Hold up a Red sticky note if you are stumped,
 And a green one if you think you've found the page.
@@ -253,19 +331,25 @@ We should all be on the [Ubuntu security notices](http://www.ubuntu.com/usn/) we
 list of all Ubuntu security advisories. You can filter down to a particular release of Ubuntu, and you can opt to
 get the advisories sent to you via email.
 
-**Exercise 6**
+<!-- Slide -->
 
-Can you find a kernel advisory, and click through to it..
+## Exercise 6
+
+On http://www.ubuntu.com/usn/ can you find a kernel advisory, and click through to it?
+
+<!-- Slide End -->
 
 Hold up a Red sticky note if you are lost,
 And a green one if you've found one.
 
 There you will see that if a reboot is needed it is stated in the advisory. There's also a handy link telling you how
-to apply the advisory. So:
+to apply the advisory. So: Lets apply the advisory!
 
-**Exercise 5**
+<!-- Slide -->
 
-Lets apply the advisory! Follow the link to the instructions and apply the advisory.
+## Exercise 5
+
+Follow the link to the instructions and apply the advisory.
 
 At the end, reboot your instance from inside the ssh shell by issuing the command:
 
@@ -273,11 +357,24 @@ At the end, reboot your instance from inside the ssh shell by issuing the comman
 sudo reboot
 ```
 
+<!-- Slide End -->
+
 BTW, Anna used `apt-get upgrade` to update her machine. As her local security expert you doubtless know that 
 `upgrade` simply updates installed software, whereas `dist-upgrade` will try to intelligently handle any clashes
 that might result from the new software being installed. If you perform an `upgrade` and see a message that packages
-have been held back, that's your cue to run the `dist-upgrade`. Basically `dist-upgrade` is make deeper and riskier
+have been held back, that's your cue to run the `dist-upgrade`. Basically `dist-upgrade` makes deeper and riskier
 changes. Double down on your policy of having a backup before you run this command!
+
+<!-- Slide -->
+
+## upgrade vs dist-upgrade
+
+```bash
+apt-get upgrade
+apt-get dist-upgrade
+```
+
+<!-- Slide End -->
 
 ## Summary
 
