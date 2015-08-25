@@ -1,4 +1,4 @@
-## Motivation to use the NeCTAR cloud?
+## Motivation to use the Research Cloud cloud?
 
 *As an aside, after each volunteer description, have a vote with Green == good & Red == bad. Ask people as to why
 they voted the way they did...*
@@ -22,7 +22,7 @@ my story!
 
 Get everyone to log into the dashboard, just to confirm that they can log in.
 
-## What's a NeCTAR project?
+## What's a Research Cloud project?
 
 A volunteer description - that their persona's can understand!
 
@@ -57,6 +57,7 @@ A volunteer description
 ## Why do you need a security group?
 
 A volunteer description
+Can you come up with a better tortured metaphor?
 
 ## Keypairs
 
