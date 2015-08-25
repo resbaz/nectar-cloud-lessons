@@ -1,8 +1,12 @@
 # Lesson I: An introduction to the dashboard (45 min)
 
-"Roll up to the Research Cloud mystery tour!" 
+-- *Slide* --
 
-I’m your tour guide ...
+# Roll up to the Research Cloud mystery tour!
+
+your tour guide is ...
+
+-- *Slide End* --
 
 (First: Do a personal introduction. Who am I, and why am qualified to teach this course?)
 
@@ -28,7 +32,19 @@ at no cost: through the national Research Cloud (NeCTAR) project.
 If Research Cloud had been around with their current funding model in place when those two researchers were setting up 
 their project that’s $20 000 of grant money that could have been used elsewhere!
 
-**Question 1:**
+-- *Slide* --
+
+## Question 1
+
+Currently, how much does it cost a researcher to use the Research Cloud?
+
+1. Gazillions!
+1. Squillions!
+1. Billions!
+1. Some unknown $$!
+1. It’s currently free **at the point of service**
+
+-- *Slide End* --
 
 **Answer: E**
 
@@ -79,8 +95,13 @@ Regardless of your path,  your project/tenant should give you the time to learn 
 
 ## Follow my leader
 
-**Question 2:** Get everyone to log into [https://dashboard.rc.nectar.org.au](https://dashboard.rc.nectar.org.au) using 
-their AAF credentials.
+-- *Slide* --
+
+## Question 2
+
+Can you log into: [https://dashboard.rc.nectar.org.au](https://dashboard.rc.nectar.org.au)? 
+
+-- *Slide End* --
 
 Please hold up a Green sticky note once you are done!
 
@@ -200,7 +221,18 @@ Please don’t click send!
 
 What should happen is that some form of email client opens up with you just having to provide the required details…
 
-**Question: 3**
+-- *Slide* --
+
+## Question: 3
+
+Which one is the support email address?
+
+1. support@rc.nectar.org.au
+1. help_me@rc.nectar.org.au
+1. do_not_reply@rc.nectar.org.au 
+1. the_big_boss@rc.nectar.org.au
+
+-- *Slide End* --
 
 **Answer: A**
 
@@ -246,11 +278,35 @@ So that’s the Settings tab and its children. Site wide changes that work acros
 So remember: if you want to change things do with your personal details, such as language and password: the top right 
 drop down with your name on it is the way to go!
 
-**Question 4**
+-- *Slide* --
+
+## Question 4
+
+Which one of these can’t you do with your settings dropdown?
+
+1. Change your command line password
+1. Change your dashboard language
+1. Change your time zone
+1. Change your current project
+1. Find the documentation site
+
+-- *Slide End* --
 
 **Answer: D**
 
-**Question 5**
+-- *Slide* --
+
+## Question 5
+
+If you change your password under the settings drop down, which is correct?
+
+1. You are free of the AAF requirement!
+1. Your AAF password is changed
+1. Your institutions password is changed!
+1. Tools that interface with the cloud will be affected 
+1. None of the above
+  
+-- *Slide End* --
 
 **Answer: D**
 
@@ -464,7 +520,18 @@ time.
 So here’s a question. You have a virtual machine running. It makes all kinds of changes to its hard drives. Which are 
 simply files on the host server. What happens to those changes when you shut your virtual computer down?
 
-**Question 6:**
+-- *Slide* --
+
+## Question 6
+
+What happens to your hard drive when you terminate your Virtual Machine (VM)?
+
+1. It gets copied back to the image store
+1. It gets ‘snapshotted’ for me to use again
+1. It’s left on the host server, for me to use when I next launch a machine
+1. It gets destroyed. Wiped. Cleaned. Gone!
+
+-- *Slide End* --
 
 **Answer D:** The image is simply wiped.
 
@@ -483,7 +550,19 @@ This only works for small machines. It’s not the worlds greatest way of doing 
 I've seen this ephemeral storage take grown developers by surprise when they first start using the Research Cloud. 
 It has just about reduced them to tears. Don’t be like them - trust nothing on the cloud!
 
-**Question 7**
+-- *Slide* --
+
+## Question 7
+
+When does my free PC on the Research Cloud get destroyed (along with all its data)?
+
+1. When I do a soft reboot on my VM
+1. When I terminate my VM
+1. When I pause my VM
+1. When I stop my VM
+1. When I do a hard reboot on my VM
+
+-- *Slide End* --
 
 **Answer: B** (Pick out the wrong answers first to provide explanations of what they are.)
 
@@ -497,7 +576,19 @@ NeCTAR unfortunately only have a small pool of IP address to use.
 So when you terminate your instance, the IP address is returned to the pool and allocated to the next machine that 
 starts up. But like the transient file system, it is not lost during reboots.
 
-**Question 8**
+-- *Slide* --
+
+## Question 8
+
+When do I lose my IP number?
+ 
+1. When I do a soft reboot on my VM
+1. When I terminate my VM
+1. When I pause my VM
+1. When I stop my VM
+1. When I do a hard reboot on my VM
+ 
+-- *Slide End* --
 
 **Answer: B** 
 
