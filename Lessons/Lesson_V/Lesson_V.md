@@ -18,7 +18,7 @@ Once that's installed, she will need to connect to the server once again via ssh
 
 This time however, she's going to add -Y to the `ssh` command.
 
-<!-- Slide -->
+-- *Slide* --
 
 # Anna's ssh command
 
@@ -26,9 +26,9 @@ This time however, she's going to add -Y to the `ssh` command.
 ssh -i key.pem -Y ubuntu@115.146.84.207
 ```
 
-<!-- Slide End -->
+-- *Slide End* --
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Question 1
 
@@ -40,7 +40,7 @@ Using the `man ssh` command, what is the -Y flag adding to the `ssh` command?
 1. Asks ssh to display the version number and exit
 1. Forces ssh into quiet mode.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 **Answer 2**
 
@@ -68,7 +68,7 @@ the interface appears on her local machine!
 ```bash
 firefox
 ```
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 1
 
@@ -77,7 +77,7 @@ Connect to your running server via ssh, and install and run Firefox.
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 # Editing Files
 
@@ -87,7 +87,7 @@ And a Red card if you need help.
 ```bash
 sudo apt-get install gedit
 ```
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 2
 
@@ -100,7 +100,7 @@ gedit today.txt
 Once you've done this, save the file and exit gedit. Confirm that your changes have have been saved by using the 
 `more` command:
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ```bash
 more today.txt
@@ -119,13 +119,13 @@ sudo apt-get remove gedit
 sudo apt-get remove firefox
 ```
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 3
 
 Remove gedit from your systems, and exit your ssh sessions.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.

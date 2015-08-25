@@ -9,7 +9,7 @@
 > make a copy of a running machine. The term they use is 'snapshot'. The button to take it is right up there on the
 > list of running instances in the dashboard. Give it a try next time you are logged in!"
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 1
 
@@ -18,7 +18,7 @@ Can you make a snapshot of your running VM?
 Find the snapshot button next to your running instance of Drupal, and make a snapshot of it. Give it a useful name
 that will allow you to know what it is when you come back to it weeks later.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -39,7 +39,7 @@ transferred to the Research Cloud image store.
 When this process is completed your snapshot will appear on the images tab of your project, with a type of "Snapshot". 
 If all has gone well, the dashboard will take you to this tab automatically.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 2
 
@@ -53,7 +53,7 @@ Watch the output as you make a snapshot of your instance!
 
 When done kill the script by hitting the `Ctrl` and `C` keys together. 
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -81,7 +81,7 @@ who is using her site at the time they taken.
 > of her discovery he is very dismissive: "Oh, that's just broken" he says.
 
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Question 1 
 
@@ -93,7 +93,7 @@ Why does Ben think snapshots are broken?
 1. The state of the machine is not captured
 1. Cosmic rays can flip their bits.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -118,13 +118,13 @@ and a Green one if you think that, snapshots are good to go.
 failure due to writes not being captured. The interesting thing about this is that you might never notice that your 
 data has been corrupted in this way.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 3
 
 Delete your older, possibly unreliable, snapshot.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -139,7 +139,7 @@ Otherwise a green one when you are done.
 > Ann is depressed. But then she has an epiphany. If she shuts of her instance, then takes a snapshot of the shut
 > off instance, all should be well.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 4
 
@@ -149,7 +149,7 @@ Power down your vm *by shutting it off!*
  
 Then when it is in the shutoff state, make a snapshot of it.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -161,7 +161,7 @@ Otherwise a green one when you are done.
 
 ---
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Question 2 
 
@@ -173,7 +173,7 @@ What's a big problem with Anna's new approach?
 1. The process overhead is too high
 1. How can you make a copy of a powered off disk?
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -201,7 +201,7 @@ scheduled event.
 
 This is where the rubber meets the road. 
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 5
 
@@ -210,7 +210,7 @@ and launch a new instance using the snapshot that you have just created.
  
 Once you are done make sure that your site is back up, and that you can ssh into the instance again.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -226,7 +226,7 @@ Otherwise a green one when you are done.
 > Anna's site is becoming increasingly popular, and some of her visitors are complaining that it's getting slow under
 > the load.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Question 3
 
@@ -239,7 +239,7 @@ load. What can Anna do to solve this problem?
 1. Make a support call to NeCTAR
 1. Pay NeCTAR for more network
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -254,7 +254,7 @@ $20000 of their grant money on buying and upgrading their machines to complete t
 Research Cloud had been around when they were doing their research, this is how simply they would have been able to 
 resolve their problem.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 6
 
@@ -264,7 +264,7 @@ using the snapshot that you have just created.
 But this time round, use the largest flavor
 that your project will allow you.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -277,7 +277,7 @@ Otherwise a green one when you are done.
 
 ---
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Question 4 
 
@@ -290,7 +290,7 @@ What can you do to remedy this situation?
 1. Make a support call to NeCTAR
 1. Go to the allocation tab and complete an allocation request
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -300,7 +300,7 @@ What can you do to remedy this situation?
 
 ---
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Transient Storage
 
@@ -317,7 +317,7 @@ And sees that she has 30 Gig of free space on `/mnt`
 
 She decided to put her new files there. Has Anna made a mistake?
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -334,7 +334,7 @@ Do as Anna did and issue a `df -h`. You should see the same result as her.
 
 ---
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 7, part 1
 
@@ -351,7 +351,7 @@ more file2.txt
 
 When done, make a snapshot of this machine.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -363,7 +363,7 @@ When it is complete then delete the original instance.
 
 ---
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 7, part 2
 
@@ -379,7 +379,7 @@ more /mnt/file1.txt
 
 What's missing?
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -416,7 +416,7 @@ I'm hoping to see a sea of Red...
 > How would she do this?
 
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 8
 
@@ -424,7 +424,7 @@ On the images tab of the dashboard, click the drop down button next to the "Laun
 
 In the resultant dialogue give the image a description and check the public flag. Then save it.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 
@@ -436,7 +436,7 @@ and a Green one once you are done.
 
 ---
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 9
 
@@ -446,7 +446,7 @@ Beware the size ratchet!
 
 What happens?
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ---
 

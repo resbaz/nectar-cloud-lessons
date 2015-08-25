@@ -1,5 +1,9 @@
 # Lesson VIII: The object store (30 min)
 
+[Ideas](https://developer.rackspace.com/blog/openstack-swift-use-cases-in-rackspace-private-cloud/)
+[Test](https://developer.rackspace.com/blog/backing-up-cinder-volumes-to-swift/)
+[Borrow?](https://developer.rackspace.com/blog/mysql-backup-to-rackspace-cloud-files/)
+
 Remember in Lesson 1 that we said the  *Object Store* is an ideal replacement for the usb sticks that some 
 people tend to carry around?
  

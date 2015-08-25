@@ -9,7 +9,7 @@ There is a command line program you can use called `scp` (**s**ecure **c**o**p**
 from, different machines. It is built on top of `ssh`.
 
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Example 1
 
@@ -19,7 +19,7 @@ $ scp USER_NAME@remote_machine_address:notes.txt .
 
 `scp` is shorthand for **s**ecure **c**o**p**y
 
-<!-- Slide End -->
+-- *Slide End* --
 
 This `scp` command will copy the file named `notes.txt` from the home directory of the USER_NAME user on the remote 
 machine to the local directory in which `scp` is being run:
@@ -27,7 +27,7 @@ machine to the local directory in which `scp` is being run:
 Where of course `USER_NAME` is the default account on the remote machine, and `remote_machine_address` is either its
 IP number or its domain name.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Example 2
 
@@ -35,12 +35,12 @@ IP number or its domain name.
 $ scp notes.txt USER_NAME@remote_machine_address: 
 ```
 
-<!-- Slide End -->
+-- *Slide End* --
 
 This scp command will copy the file named notes.txt from the current directory of the local machine to the remote 
 machine's USER_NAME home directory:
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Question 1
 
@@ -57,7 +57,7 @@ Do files move from
 1. left to right 
 1. right to left?
 
-<!-- Slide End -->
+-- *Slide End* --
 
 **Answer**
 
@@ -87,7 +87,7 @@ more temp.txt
 rm temp.txt
 ```
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 1
 
@@ -97,7 +97,7 @@ I want everyone to create a file named, say, `whyme.txt` and then copy it onto t
 
 For non existent bonus points, bring it back again!
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
@@ -142,7 +142,7 @@ Now close the dialogue. To connect to the server right click on the bookmark you
 
 You should now be able to drag and drop files between the two machines!
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 3
 
@@ -153,7 +153,7 @@ local machine.
 
 See if you can edit it in place!
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.

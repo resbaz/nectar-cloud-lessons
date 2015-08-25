@@ -11,7 +11,7 @@
 > Remembering the checklist used to launch a machine performs an update by issuing the following commands:
 > 
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Anna wants to run
 
@@ -19,7 +19,7 @@
 apt-get update && apt-get -y upgrade
 ```
 
-<!-- Slide End -->
+-- *Slide End* --
 
 > 
 > She knows that she has to issue this set of commands again - this time on the instance.
@@ -45,7 +45,7 @@ one computer could act as the terminal for another computer - or even itself!
 So you can run a terminal application on your computer to do work on your own computer. You might recognize it as the
 "Command Line"
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Question 1
 
@@ -55,7 +55,7 @@ Yes, You!
 
 Did you install Cygwin?
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Hold up a Red sticky note if you didn't.
 
@@ -69,7 +69,7 @@ Microsoft are planning to change this, but for the time being Windows users have
 That's why in the prerequisites we asked Windows users to install Cygwin. It's a tool that gives you a terminal you
 can use on Linux computers.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 1
 
@@ -79,9 +79,9 @@ OSX users can do a Spotlight Search for 'terminal'.
 
 Cygwin users simply click on the Cygwin desktop icon.
 
-<!-- Slide End -->
+-- *Slide End* --
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 2
 
@@ -93,7 +93,7 @@ pwd
 
 `pwd` is shorthand for **p**rint **w**orking **d**irectory
 
-<!-- Slide End -->
+-- *Slide End* --
 
 The working directory is simply the folder within your file system that you are currently positioned in.
 
@@ -104,7 +104,7 @@ Remember that Finder or File Explorer gives you a hierarchical tree view of your
 As the terminal can't give you the same view, it simply has the concept of being positioned in one of those folders. 
 And that's the working directory that you see with the `pwd` command.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 3
 
@@ -114,9 +114,9 @@ ls
 
 `ls` is shorthand for **l**i**s**t directory contents
 
-<!-- Slide End -->
+-- *Slide End* --
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 4
 
@@ -126,7 +126,7 @@ man ls
 
 man is shorthand for ***man***ual. Arrow keys scroll, and the 'q' key closes the help.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 As ever, hold up a Green card when you're done
 And a Red card if you need help.
@@ -141,7 +141,7 @@ Commands issued via terminals have the following advantages:
 
 One other command that you need to know is `cd`.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 5
 
@@ -151,7 +151,7 @@ cd
 
 `cd` is shorthand for **c**hange working **d**irectory.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 >  (Demonstrate cd, noting that '/' is the directory separator and that there is tab completion)
 
@@ -171,13 +171,13 @@ her remote Drupal server.
 Now in the last session we shut down own servers. If we're going to follow in Anna's footsteps, we need to relaunch
 our Drupal servers.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 6
 
 Gentle people, start your servers!
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Remember, this time round we don't need to create a security group or a key: they are already there. So reuse them
 when launching your VM.
@@ -185,7 +185,7 @@ when launching your VM.
 Hold up a Green Card when you're ready to move on,
 And a Red card if you need help.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## ssh
 
@@ -197,7 +197,7 @@ ssh
 
 `ssh` stands for **s**ecure **sh**ell. 
 
-<!-- Slide End -->
+-- *Slide End* --
 
 It connects a terminal on one machine to another target machine, thus allowing 
 you to use the text based interface on the target machine. It kind of teleports the target machine terminal to yours…
@@ -250,7 +250,7 @@ better person than I!
 
 Ok. This is the basic form our `ssh` command will take:
 
-<!-- Slide -->
+-- *Slide* --
 
 ## ssh
 
@@ -264,7 +264,7 @@ Eg: Along the lines of:
 ssh -i tut_dev.pem ubuntu@144.6.225.224
 ```
 
-<!-- Slide End -->
+-- *Slide End* --
 
 So here:
 
@@ -273,7 +273,7 @@ So here:
   Different operating systems have different default user accounts.
 * the `address` is the IP address of the Virtual Machine that we read off of the dashboard.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Question 2
 
@@ -289,7 +289,7 @@ Have a look at it. What operating system do you think the Drupal server is based
 1. Ubuntu
 1. Scientific Linux
 
-<!-- Slide End -->
+-- *Slide End* --
 
 **Answer 2**
 
@@ -300,7 +300,7 @@ Have a look at it. What operating system do you think the Drupal server is based
 If everyone could try to connect to their server using the ssh command, that would be wonderful.
 BTW, I'm hoping that you all fail - with the error message along the lines of: 
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Is this your error message?
 
@@ -315,7 +315,7 @@ bad permissions: ignore key: .ssh/nectar_dev.pem
 ubuntu@144.6.225.224's password: 
 ```
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Hold up a Green card when you've reached this error message.
 And a Red card if you need help.
@@ -327,7 +327,7 @@ machine can read it. You need to tighten up the permissions on this file so that
 
 Hit control-c to exit the password prompt.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## chmod
 
@@ -339,12 +339,12 @@ The basic form is
 chmod <mode> <file>
 ```
 
-<!-- Slide End -->
+-- *Slide End* --
 
 So in my case, allowing me (the current **u**ser) to be able to **r**ead and **w**rite the file, and to exclude the 
 **g**roup and **o**thers from being able to **r**ead, **w**rite or try to run (e**x**ecute) it, the command would be:
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 7
 
@@ -356,13 +356,13 @@ chmod u=rw,go-rwx keys/tut_dev.pem
 
 Modify the permissions on your key file so that only you can read or write it.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Then issue the `pwd` command to see what directory you are in.
 
 Retry the ssh command.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## When you are asked:
 
@@ -374,11 +374,11 @@ Are you sure you want to continue connecting (yes/no)?
 
 simply type "yes".
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Hopefully, you are now met with something along following lines
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Does this look familiar?
 
@@ -390,14 +390,14 @@ Last login: Mon Mar 30 01:27:13 2015 from hqrouter.vpac.org
 ubuntu@drupal:~$ 
 ```
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Re-issue the `pwd` command to convince yourself that are indeed now teleported into the remote machine.
 
 Hold up a Green card when you are convinced you have a shell into the remote machine.
 And a Red card if you need help.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 8
 
@@ -406,8 +406,8 @@ Finally, we are going try and update our web server. Try to execute the first co
 ```bash
 apt-get update
 ```
-<!-- Slide End -->
-<!-- Slide -->
+-- *Slide End* --
+-- *Slide* --
 
 ## Help!
 
@@ -420,7 +420,7 @@ E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
 E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
 ```
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Hold up a Green card when you've reached this error message.
 And a Red card if you need help.
@@ -430,7 +430,7 @@ as is not the super user normally allowed to do system administration.
 
 But don't panic!
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 8
 
@@ -443,14 +443,14 @@ Try to execute the command again, this time with `sudo`:
 sudo apt-get update
 ```
 
-<!-- Slide End -->
+-- *Slide End* --
 
 You should now see a whole lot of gets scrolling by, as the operating system updates its lists of installed and 
 available software.
 
 Once done, execute the command:
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 9
 
@@ -465,7 +465,7 @@ like:
 After this operation, 4,096 B of additional disk space will be used.
 Do you want to continue? [Y/n]
 ```
-<!-- Slide End -->
+-- *Slide End* --
 
 In this case, reply, 'Y'.
 
@@ -479,7 +479,7 @@ allows you to add, remove, and update applications.
 
 When you are finished working on your virtual machine, do the following:
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 10
 
@@ -491,7 +491,7 @@ You should see the following:
 logout
 Connection to <some_ip_number> closed
 ```
-<!-- Slide End -->
+-- *Slide End* --
 
 You have now closed the ssh connection to the remote machine. If you are not convinced, type `pwd` to see that your
 terminal is now back on your local machine. The teleportation magic is over!
@@ -530,7 +530,7 @@ The takeaway: Security groups can stop you from accessing your server if they ar
 It is a good idea to remove the ssh rule from the security group when you don't kneed it. This stops hackers from 
 trying to access your machine.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Question 3
 
@@ -543,7 +543,7 @@ is also governed by the security group?
 1. No
 1. Only if there is another security group applied to the server that has ssh enabled.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 **Answer 3**
 
@@ -573,7 +573,7 @@ Thank the volunteers.
 How ssh stops this from happening is that in every communication with a server, the first thing the server sends 
 is its own public key to you. That was when you got asked the question:
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Remember this?
 
@@ -583,7 +583,7 @@ RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
 Are you sure you want to continue connecting (yes/no)?
 ```
 
-<!-- Slide End -->
+-- *Slide End* --
 
 When you replied 'yes' a unique signature for the server was stored as a line in a file called the known_hosts file.
 
@@ -592,7 +592,7 @@ the known_hosts file. If they remain in sync, then everything is sweet.
 
 But if they change, then ssh will refuse to give you a connection, showing the error:
 
-<!-- Slide -->
+-- *Slide* --
 
 ## There is possibly a man in the middle!
 
@@ -612,7 +612,7 @@ RSA host key for 115.146.85.98 has changed and you have requested strict checkin
 Host key verification failed.
 ```
 
-<!-- Slide End -->
+-- *Slide End* --
 
 The error message is very helpful: it even gives you the location of your known hosts file.
 
@@ -628,7 +628,7 @@ Otherwise hold up a Green sticky note.
 Lots. The Reds have it correctly. Remember I mentioned that NeCTAR recycle IP numbers? If you kill an instance and
 restart it, then the chances are that new instance will have the same IP number as the old one.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 12
 
@@ -639,7 +639,7 @@ ssh'd into.
 
 Then ssh into your instance again and confirm you get asked if you want to continue connecting.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Again, hold up a Red sticky note if you need help, and
 a Green one if you are done.

@@ -5,7 +5,7 @@
 >
 > That security expert is you!
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Shared Responsibility Model
 
@@ -13,7 +13,7 @@ NeCTAR look after the cloud
 
 **You** look after the stuff you put in that cloud
 
-<!-- Slide End -->
+-- *Slide End* --
 
 When it comes to security, NeCTAR follow the shared responsibility model.
 
@@ -33,18 +33,18 @@ This means that you have a fair amount of responsibility.
  
 But that's true of all the computers and software that you use. 
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Be paranoid!
 
 >  “Just because you're paranoid, don't mean they're not after you” ― Nirvana, [Territorial Pissings](http://www.azlyrics.com/lyrics/nirvana/territorialpissings.html)  
 
-<!-- Slide End -->
+-- *Slide End* --
 
 And it is a scary world out there: the minute you put a server onto the internet, automated scanners start probing it 
 for weaknesses.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 1
 
@@ -56,7 +56,7 @@ Shields up: https://www.grc.com/shieldsup
 
 Click on the 'Proceed' button, then select 'All Service Ports' and stand back.
 
-<!-- Slide End -->
+-- *Slide End* --
  
 What you are witnessing is a real time
 scan of the first 1053 ports of your computer. Hopefully in our case it will only find 2 ports open.
@@ -91,7 +91,7 @@ and a Green one if you think that they want to be found out.
 **A** I don't actually know the answer, as I'm not sure what motives hackers, but I think that most don't want to be 
 found. And so what worries me is just how much successful hacking is actually going on...
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Be prepared!
 
@@ -102,7 +102,7 @@ A good scout always:
 * Knows what do in an emergency
 * Makes sure they have a first aid kit!
  
-<!-- Slide End -->
+-- *Slide End* --
 
 So always have a plan that prepares for the worst. Ask yourself the following:
 
@@ -189,7 +189,7 @@ dead hot keen on research data (or movie companies on proof of piracy).
 
 ### Hide the ssh port 
 
-<!-- Slide -->
+-- *Slide* --
 
 ##Exercise 2 
 
@@ -199,7 +199,7 @@ dead hot keen on research data (or movie companies on proof of piracy).
 * Add it to your running VM
 * Try to ssh in: success?
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Remove ssh from the security group currently in force on your instance.
 
@@ -217,7 +217,7 @@ as the change is propagated to the VM)
 Hold up a Red sticky note if you need help.
 A Green one if you've managed to leap through all these hoops.
 
-<!-- Slide -->
+-- *Slide* --
 
 # A recommendation
  
@@ -227,11 +227,11 @@ Only enable it for a VM if you want to ssh into the machine.
 
 **AND THEN REMOVE IT ONCE YOU ARE DONE**
 
-<!-- Slide End -->
+-- *Slide End* --
 
 That way scanners automated scanners won't ordinarily see the port, and also won't have a window to attack it.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## NeCTAR's security guidelines
 
@@ -239,7 +239,7 @@ NeCTAR has a set of security guidelines that can be found at:
  
 * https://support.rc.nectar.org.au/docs/security-guidelines
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Lets work through some of them.
 
@@ -248,14 +248,14 @@ Lets work through some of them.
 If you can avoid running a mail server, then don't run it. It will make your life a lot easier. If you can, rather
 use services such as [Mandrill](http://mandrill.com/) 
 
-<!-- Slide -->
+-- *Slide* --
 
 # Avoid mail servers
 
 * Use a service such as Mandrill
   http://mandrill.com/
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ### Enable automatic updates
 
@@ -273,7 +273,7 @@ run the risk of breaking it. So remember to make sure you have a regular backup 
 
 Automatically install security upgrades on our drupal site by ssh'ing in and doing the following:
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 3
 
@@ -285,7 +285,7 @@ sudo dpkg-reconfigure unattended-upgrades
 
 And answer yes.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Hold up a Red sticky note if you need help,
 And a green one when you are done.
@@ -299,13 +299,13 @@ By default, the unattended upgrades software will not reboot your system.
 
 So you will need to do this.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 4
 
 Using the dashboard, reboot the running VM.
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Hold up a Red sticky note if you need help,
 And a green one when you are done.
@@ -316,13 +316,13 @@ So how do you know if you need to reboot your VM?
 
 Most popular software issue security advisories.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 5
 
 Can you find the security advisories for the Ubuntu operating system?
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Hold up a Red sticky note if you are stumped,
 And a green one if you think you've found the page.
@@ -331,13 +331,13 @@ We should all be on the [Ubuntu security notices](http://www.ubuntu.com/usn/) we
 list of all Ubuntu security advisories. You can filter down to a particular release of Ubuntu, and you can opt to
 get the advisories sent to you via email.
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 6
 
 On http://www.ubuntu.com/usn/ can you find a kernel advisory, and click through to it?
 
-<!-- Slide End -->
+-- *Slide End* --
 
 Hold up a Red sticky note if you are lost,
 And a green one if you've found one.
@@ -345,7 +345,7 @@ And a green one if you've found one.
 There you will see that if a reboot is needed it is stated in the advisory. There's also a handy link telling you how
 to apply the advisory. So: Lets apply the advisory!
 
-<!-- Slide -->
+-- *Slide* --
 
 ## Exercise 5
 
@@ -357,7 +357,7 @@ At the end, reboot your instance from inside the ssh shell by issuing the comman
 sudo reboot
 ```
 
-<!-- Slide End -->
+-- *Slide End* --
 
 BTW, Anna used `apt-get upgrade` to update her machine. As her local security expert you doubtless know that 
 `upgrade` simply updates installed software, whereas `dist-upgrade` will try to intelligently handle any clashes
@@ -365,7 +365,7 @@ that might result from the new software being installed. If you perform an `upgr
 have been held back, that's your cue to run the `dist-upgrade`. Basically `dist-upgrade` makes deeper and riskier
 changes. Double down on your policy of having a backup before you run this command!
 
-<!-- Slide -->
+-- *Slide* --
 
 ## upgrade vs dist-upgrade
 
@@ -374,7 +374,7 @@ apt-get upgrade
 apt-get dist-upgrade
 ```
 
-<!-- Slide End -->
+-- *Slide End* --
 
 ## Summary
 
