@@ -19,7 +19,19 @@ _This is one of the great things about the Research Cloud: you can just spin up 
 
 In 2001 a critical-care specialist at Johns Hopkins Hospital designed a checklist to prevent line infections. 
 
-**Slide 1:** The checklist
+-- *Slide* --
+
+## A line infection checklist
+
+<div align="left">
+▢ wash hands with soap, <br/>
+▢ clean the patient’s skin with chlorhexidine antiseptic, <br/>
+▢ put sterile drapes over the entire patient, <br/>
+▢ put on a sterile mask, hat, gown, and gloves, <br/>
+▢ put a sterile dressing over the catheter site once the line is in
+</div>
+
+-- *Slide End* --
 
 These steps have been known and taught for years. 
 
@@ -53,7 +65,15 @@ We'll start by creating our key pair.
 
 Walk the students through the key pair checklist, describing each entry
 
-**Activity 1:** Get students to generate key pairs on their own.
+-- *Slide* --
+
+## Key Pairs
+
+Complete the key pair checklist
+
+(Expected time, 5 minutes)
+
+-- *Slide End* --
 
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
@@ -90,7 +110,15 @@ Walk the students through the security group checklist, describing each entry as
 
 *If anyone asks, CIDR = Classless Internet Domain Routing, a flexible way of specifying internet address ranges*
 
-**Activity 2:** Now get the students to create a security group 
+-- *Slide* --
+
+## Security Groups
+
+Complete the security group checklist
+
+(Expected time, 5 minutes)
+
+-- *Slide End* --
 
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
@@ -101,7 +129,20 @@ machines using that security group.
 **NB:** This also means that if you share security groups amongst VM’s, you have to be careful: if you change rules for 
 one server, you might inadvertently break another.
 
-**Question 1**
+-- *Slide* --
+
+## Question 1
+
+I change the rules in a security group by removing port 80 (http). Mysteriously a web server on another VM in the 
+project stops “working”. Could it be because:
+
+1. The security group was shared with the other machine?
+1. The web server inexplicably broke?
+1. The other machine itself failed?
+1. NeCTAR are experiencing a network problem?
+1. All of the above... ☹
+
+-- *Slide End* --
 
 **Answer: E.** Yes, it’s true. NeCTAR can experience network issues from time to time. 
 
@@ -111,12 +152,26 @@ and to understand what is provided.
 
 ## Launch your own instance
 
-**Activity 3** Get students to walk through the creation of an instance, following in Anna's footsteps.
+-- *Slide* --
+
+## Launch an instance
+
+Complete the launch an instance checklist
+ 
+(expected time 15 minutes)
+
+-- *Slide End* --
 
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
 
-**Activity 4** Once they've done this challenge them to terminate it.
+-- *Slide* --
+
+## Terminate an instance
+
+Terminate the instance you launched!
+
+-- *Slide End* --
 
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
