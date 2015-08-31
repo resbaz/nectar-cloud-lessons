@@ -71,6 +71,8 @@ Walk the students through the key pair checklist, describing each entry
 
 Complete the key pair checklist
 
+http://tinyurl.com/creating-a-keypair
+
 (Expected time, 5 minutes)
 
 -- *Slide End* --
@@ -116,6 +118,8 @@ Walk the students through the security group checklist, describing each entry as
 
 Complete the security group checklist
 
+http://tinyurl.com/creating-a-security-group
+
 (Expected time, 5 minutes)
 
 -- *Slide End* --
@@ -157,6 +161,8 @@ and to understand what is provided.
 ## Launch an instance
 
 Complete the launch an instance checklist
+
+http://tinyurl.com/starting-an-instance
  
 (expected time 15 minutes)
 
@@ -215,7 +221,7 @@ Secure Shell. We'll cover it in the next lesson. Patience!
 
 -- *Slide End* --
 
-Classless Inter-Domain Routing: it's just a snazzy way of specifying a set of addresses with one basic expression.
+Classless Internet Domain Routing, a snazzy way of specifying internet address ranges.
 
 So in this lesson we've launched a computer on the cloud, based on an image that has been shared with us. On top of that
 we've created a security group to control access to our running machine. And we've launched it with a keypair which will
