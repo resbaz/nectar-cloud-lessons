@@ -176,6 +176,47 @@ Terminate the instance you launched!
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
 
+-- *Slide* --
+## Count of less than 20 security groups
+
+Did anyone find out why this is in the checklist?
+
+-- *Slide End*--
+
+It's in the list because NeCTAR limit you to a maximum of 20. Which means that you have to share them around if
+you have lots of instances!
+
+-- *Slide* --
+## HTTP vs HTTPS
+
+Can anyone tell us about these two?
+
+-- *Slide End*--
+
+HTTP is Hypertext Transfer Protocol. All you need to know is that it is the way in which web pages are requested
+from the server and transferred back to your computer. HTTPS simply appends "Secure" to the end of HTTP. It gives you
+the guarantee that the communications between you and the server are encrypted. So HTTP means anyone between you and
+the server can see what pages you are looking at, and their contents. HTTPS means that they only will know what site
+you are visiting.
+
+-- *Slide* --
+## What is SSH?
+
+Anyone? Please?
+
+-- *Slide End* --
+
+Secure Shell. We'll cover it in the next lesson. Patience!
+
+-- *Slide* --
+## And CIDR?
+
+(And no, it's not a drink!)
+
+-- *Slide End* --
+
+Classless Inter-Domain Routing: it's just a snazzy way of specifying a set of addresses with one basic expression.
+
 So in this lesson we've launched a computer on the cloud, based on an image that has been shared with us. On top of that
 we've created a security group to control access to our running machine. And we've launched it with a keypair which will
 allow us to communicate with the machine in the next lesson.
