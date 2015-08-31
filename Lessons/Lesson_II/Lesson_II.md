@@ -148,7 +148,7 @@ project stops “working”. Could it be because:
 
 -- *Slide End* --
 
-**Answer: E.** Yes, it’s true. NeCTAR can experience network issues from time to time. 
+**Answer: E.** Yes, it’s true. The research cloud can experience network issues from time to time. 
 
 **NB:** Under some circumstances, you might find that you already have security groups defined for your project: or that
 the default security group has ports/applications set up for it. So it is wise to review your projects security groups
