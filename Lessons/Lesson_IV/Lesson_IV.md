@@ -72,6 +72,7 @@ By way of example, I'm going to create a file locally, move it to the remote mac
 echo "hello from afar"             # just echos the message back to us.
 echo "hello from afar" > temp.txt  # directs the message to a file named temp.txt
 more temp.txt
+scp -i key.pem temp.txt ubuntu@115.146.92.130 # Does not work: needs colons!
 scp -i key.pem temp.txt ubuntu@115.146.92.130: 
 ssh -i key.pem ubuntu@115.146.92.130
     ls
@@ -99,6 +100,31 @@ For non existent bonus points, bring it back again!
 
 -- *Slide End* --
 
+-- *Slide* --
+
+# PS: if it helps...
+
+```bash
+echo "hello from afar"             # just echos the message back to us.
+echo "hello from afar" > temp.txt  # directs the message to a file named temp.txt
+more temp.txt
+scp -i key.pem temp.txt ubuntu@115.146.92.130: 
+ssh -i key.pem ubuntu@115.146.92.130
+    ls
+    more temp.txt
+    pwd                             # to show that we are not on our local machine
+    exit
+pwd                                 # just to prove we are back on our local machine
+ls
+rm temp.txt                         # rm = remove!
+ls                                  # file is gone!
+scp -i key.pem ubuntu@115.146.92.130:temp.txt .
+more temp.txt
+rm temp.txt
+```
+
+-- *Slide End* --
+
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
 
@@ -106,12 +132,10 @@ And a Red card if you need help.
 
 SCP is a good tool to have available. But a graphical environment can be much easier to use.
 
-Go to [CyberDuck's home page](https://cyberduck.io/) and download the client file that is correct for your laptop.
+As part of the prerequisites, you were supposed to have installed [CyberDuck's home page](https://cyberduck.io/).
 
-Then run it.
-
-Hold up a Green card when you've managed to do this.
-And a Red card if you need help.
+Hold up a Green card if you've managed to do this.
+And a Red card if you are going to be playing catchup!
 
 ## Connecting with CyberDuck
 
@@ -120,7 +144,6 @@ Now I'm going to show you how to connect with CyberDuck. But make notes, because
 ![First steps in adding a bookmark](images/AddBookmark.png "First steps in adding a bookmark")
 
 Right click and select "New Bookmark"
-
 
 ![Basic bookmark dialogue](images/BasicBookmark.png "Basic bookmark dialogue")
 
@@ -146,7 +169,7 @@ You should now be able to drag and drop files between the two machines!
 
 ## Exercise 3
 
-See if you can configure CyberDuck and then drag `helpme.txt` back to your
+See if you can configure CyberDuck and then drag `today.txt` back to your
 local machine. 
 
 ### More imaginary bonus points
