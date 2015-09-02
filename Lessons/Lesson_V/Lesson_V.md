@@ -6,15 +6,12 @@
 
 ## X11
 
-To be able to do this magic Anna needs to install some software on her local machine. 
+As part of the prerequisites, you were supposed to have installed X11 or Cygwin with X11 on your machine.
 
-She is running osx.
+Hold up a Green card if you've managed to do this.
+And a Red card if you are going to be playing catchup!
 
-Go to https://support.apple.com/downloads/X11_for_Mac_OS_X_1_0 and select the **X11 for Mac OS X 1.0** package.
-
-Download and install the package.
-
-Once that's installed, she will need to connect to the server once again via ssh.
+Now Anna will need to connect to the server once again via ssh.
 
 This time however, she's going to add -Y to the `ssh` command.
 
@@ -82,7 +79,7 @@ And a Red card if you need help.
 # Editing Files
 
 > Anna noticed that the people who set up her Drupal server have left a file named 'today.txt' in the home directory
-> of the ubuntu user. Curios to know what's in it, she decided to install a graphical editor to view and edit it.
+> of the ubuntu user. Curious to know what's in it, she decided to install a graphical editor to view and edit it.
 
 ```bash
 sudo apt-get install gedit
@@ -105,7 +102,6 @@ Once you've done this, save the file and exit gedit. Confirm that your changes h
 ```bash
 more today.txt
 ```
-
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
