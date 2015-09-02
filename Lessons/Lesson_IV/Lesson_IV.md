@@ -169,7 +169,7 @@ You should now be able to drag and drop files between the two machines!
 
 ## Exercise 3
 
-See if you can configure CyberDuck and then drag `today.txt` back to your
+See if you can configure CyberDuck and then drag `whyme.txt` (the file you created earlier) back to your
 local machine. 
 
 ### More imaginary bonus points
