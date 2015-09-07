@@ -636,12 +636,13 @@ restart it, then the chances are that new instance will have the same IP number 
 
 ## Exercise 12
 
-Ssh into your instance again, and confirm no questions were asked.
+The command to fix this problem is:
 
-The find and open your known hosts file and delete the line in it that matches the instance that you have
-ssh'd into.
+```bash
+ssh-keygen -R <hostname>
+```
 
-Then ssh into your instance again and confirm you get asked if you want to continue connecting.
+Where `<hostname>` can also be the IP number of your affected machine.
 
 -- *Slide End* --
 
