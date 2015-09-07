@@ -57,41 +57,12 @@ The lessons assume that participants have both red and green coloured sticky not
 to "E" (in the style of Software Carpentry). These are used to answer questions and to show distress if the students
 aren't keeping up or need help.
 
-# Thoughts after delivering the first two lessons as a 1.45 hour workshop.
-
-## The questions
-
-The sticky notes as a token of progress didn't work that well. People would leave them up after prior exercises, and
-not take them down when starting new ones. This is after three days of using them! Either I was out of sync with the
-way in which these should be used, or human procrastination kicked in. I had to repeatedly reminding people to take them
-down at the start of each exercise. 
-
-To tackle this possibly try to be a bit more authoritarian about the sticky notes the next time the lessons are given?
-
-The multi-choice questions worked really well. They let me pick up concepts that had not been conveyed properly, and
-have another go at explaining them. The concepts that were missed in each case were only missed by a very small number
-of people, so it's probably not worth trying to change the lessons in this regard - however, if a consistent pattern
-builds up then they should be changed.
-
-However, if these lessons are given by multiple people then tracking the answers to the multiple choice questions is 
-going to be hard. Given that all of the students have lap tops, perhaps we could use a clicker like web program to
-ask the questions and gather the data? Read more about the pro's and con's of Clickers
-[here.](http://sciencecases.lib.buffalo.edu/cs/pdfs/Clicker%20Cases-XXXVI-2.pdf)
-
-## Audience feedback,
-
-A couple of people came up after the lecture and stated that they thought that this was a missing piece in the puzzle
-of how to get started on the NeCTAR cloud. They asked if this could be televised or turned into a "MOOC"...
-
 ### Todo
 
 #### Must do
 
 1. [ ] Complete the porting of the checklists to pdf's with fields in them.
 1. [ ] Add note about the id on the settings dashboard being the one you have to give NeCTAR if you want support!
-1. [ ] Complete the "Train-the-trainers" additions
-1. [ ] Update this document to reflect the two in one
-1. [ ] Move the "Experiences in Delivering" this into a separate document.
 1. [ ] Bring the Kanban stuff into this "todo" list.
 1. [ ] In lesson 2, before launching an image, explain what are apps / images / instances / containers....
        how are these apps are different than mobile apps, but even more cool!
@@ -103,6 +74,11 @@ of how to get started on the NeCTAR cloud. They asked if this could be televised
 1. [ ] As in Software Carpentry, should people who submit a GitHub correction get a certificate?
 1. [ ] Possibly add an FAQ of synonym's? Have things like drive, PC, server, IP, Web address, HTTP, link etc...
 1. [ ] As a Chromebook user can I have an online SSH like resbaz.cloud.edu shell tool?
+
+### For "Train the Trainer
+
+1. [ ] Update this document to reflect the two in one
+1. [ ] Complete the "Train-the-trainers" additions
 
 ### Concepts to possibly use
 
