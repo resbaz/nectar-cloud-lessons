@@ -69,8 +69,6 @@ aren't keeping up or need help.
 #### Nice to have
 
 1. [ ] Get sample clay seal?
-1. [ ] Migrate the slides to html, and see if they can't automatically be generated from the course documentation.
-1. [ ] As in Software Carpentry, should people who submit a GitHub correction get a certificate?
 1. [ ] Possibly add an FAQ of synonym's? Have things like drive, PC, server, IP, Web address, HTTP, link etc...
 1. [ ] As a Chromebook user can I have an online SSH like resbaz.cloud.edu shell tool?
 
@@ -78,6 +76,7 @@ aren't keeping up or need help.
 
 1. [ ] Update this document to reflect the two in one
 1. [ ] Complete the "Train-the-trainers" additions
+1. [ ] As in Software Carpentry, should trainers who submit a GitHub correction get a certificate?
 
 ### Concepts to possibly use
 
