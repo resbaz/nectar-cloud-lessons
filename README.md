@@ -48,8 +48,11 @@ of the research cloud you will, most likely, be making that journey.
 The directories that make up this project are as follows:
 
 * [Promotion](Promotion/README.md) - Promotional material to use in advance of the course
+* [Prerequisites](Prerequisites/) - What we would like students and trainers to do before they step through the door
 * [Lessons](Lessons/) - The lessons themselves
 * [Planning](Planning/lesson_plans.md) - The materials that were used to create the course
+* [Resources](Resources/) - The resources that students will be using during the course
+* [Diary](Dairy/) - Notes made from giving the course.
 
 ## Delivering the lessons
 
