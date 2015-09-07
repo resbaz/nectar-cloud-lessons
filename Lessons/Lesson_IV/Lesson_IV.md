@@ -1,4 +1,8 @@
+-- *Slide* --
+
 # Lesson IV: Moving data to and from your new computer (30min)
+
+-- *Slide End* --
 
 > Whilst on the machine, Anna realises that she doesn't have a backup of the data that she has on her site. And thinks
 > that it would be a good time to create one!

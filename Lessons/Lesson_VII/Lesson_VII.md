@@ -1,4 +1,8 @@
+-- *Slide* --
+
 # Lesson VII: Securing and maintaining your instance (45 min)
+
+-- *Slide End* --
 
 > Anna Prentice finds that there is yet another security scare: realizing that she is out of her depth, she turns to her 
 > local security expert to help her tighten up the security on her machine.

@@ -1,4 +1,8 @@
+-- *Slide* --
+
 # Lesson VIII: The object store (30 min)
+
+-- *Slide End* --
 
 [Ideas](https://developer.rackspace.com/blog/openstack-swift-use-cases-in-rackspace-private-cloud/)
 [Test](https://developer.rackspace.com/blog/backing-up-cinder-volumes-to-swift/)

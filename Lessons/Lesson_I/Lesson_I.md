@@ -1,4 +1,8 @@
+-- *Slide* --
+
 # Lesson I: An introduction to the dashboard (45 min)
+
+-- *Slide End* --
 
 -- *Slide* --
 

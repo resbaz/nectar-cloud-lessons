@@ -1,4 +1,8 @@
+-- *Slide* --
+
 # Lesson II: Your free computer: up and running (35 min)
+
+-- *Slide End* --
 
 > A researcher, Anna Prentice wants fire up a website to share some some information about her project with the world. 
 > Looking at the NeCTAR image list, she sees that there is a public image with Drupal, a content management system that
