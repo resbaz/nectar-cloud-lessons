@@ -64,7 +64,6 @@ aren't keeping up or need help.
 
 #### Must do
 
-1. [ ] Add note about the id on the settings dashboard being the one you have to give NeCTAR if you want support!
 1. [ ] Bring the Kanban stuff into this "todo" list.
 1. [ ] In lesson 2, before launching an image, explain what are apps / images / instances / containers....
        how are these apps are different than mobile apps, but even more cool!
