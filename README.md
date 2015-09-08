@@ -65,6 +65,10 @@ aren't keeping up or need help.
 #### Must do
 
 1. [ ] Bring the Kanban stuff into this "todo" list.
+1. [ ] Complete lesson 2's play
+1. [ ] Complete lesson 2's command line cheat sheet
+1. [ ] Either work out how to use the command line cheat sheet with the play, or produce a new checklist.
+1. [ ] Work through the lesson 2 defects in github
 
 #### Nice to have
 
@@ -77,10 +81,3 @@ aren't keeping up or need help.
 1. [ ] Update this document to reflect the two in one
 1. [ ] Complete the "Train-the-trainers" additions
 1. [ ] As in Software Carpentry, should trainers who submit a GitHub correction get a certificate?
-
-### Concepts to possibly use
-
-"The NeCTAR Dashboard is like sitting down in the cockpit for drivers seat for an entire Data Centre - 
-BUT best of all it is a car/plane you can crash!!! And we want you to crash it and restart it regularly #failfast"
-
-Would "Virtual machine" = "cloud application"? <-- how the end user would understand the image/instance/machine idea?
