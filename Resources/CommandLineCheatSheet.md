@@ -4,21 +4,21 @@
 | Command   | Abbreviation For                        | Is/Does |
 |-----------|-----------------------------------------|---------|
 | [`apt-get`](#apt-get) | **A**dvanced **P**ackage **T**ool - get | the command line app store |
-| `cd`      | **C**hange working **D**irectory        | changes directory |
-| `chmod`   | **Ch**ange file **MOD**e                | protects your junk |
-| `echo`    | **ECHO**                                | just echoes a string |
-| `exit`    | EXIT                                    | terminates the current process |
-| `ls`      | **L**i**S**t directory contents         | lets you see whats in the directory |
-| `man`     | **MAN**ual                              | gives help |
-| `mkdir`   | **M**a**K**e **DIR**ectory              | create a directory |
-| `more`    | **MORE**                                | list the contents of a file |
-| `pwd`     | **P**rint **W**orking **D**irectory     | shows where you are |
-| `rm`      | **R**e**M**ove                          | remove a file |
-| `rmdir`   | **R**e**M**ove **DIR**irectory          | remove a file |
-| `scp`     | **S**ecure **C**o**P**y                 | copy files securely between computers |
-| `ssh`     | **S**ecure **Sh**ell                    | teleports you to another machine |
-| `ssh-keygen` | **S**ecure **Sh**ell - **KEY** **GEN**erate | Allows you manage your keys |
-| `sudo`    | **S**uper **U**ser **DO**               | lets you run administrative commands |
+| [`cd`](#cd)       | **C**hange working **D**irectory        | changes directory |
+| [`chmod`](#chmod) | **Ch**ange file **MOD**e                | protects your junk |
+| [`echo`](#echo)   | **ECHO**                                | just echoes a string |
+| [`exit`](#exit)   | EXIT                                    | terminates the current process |
+| [`ls`](#ls)       | **L**i**S**t directory contents         | lets you see whats in the directory |
+| [`man`](#man)     | **MAN**ual                              | gives help |
+| [`mkdir`](#mkdir) | **M**a**K**e **DIR**ectory              | create a directory |
+| [`more`](#more)   | **MORE**                                | list the contents of a file |
+| [`pwd`](#pwd)     | **P**rint **W**orking **D**irectory     | shows where you are |
+| [`rm`](#rm)       | **R**e**M**ove                          | remove a file |
+| [`rmdir`](#rmdir) | **R**e**M**ove **DIR**irectory          | remove a file |
+| [`scp`](#scp)     | **S**ecure **C**o**P**y                 | copy files securely between computers |
+| [`ssh`](#ssh)     | **S**ecure **Sh**ell                    | teleports you to another machine |
+| [`ssh-keygen`](#ssh-keygen`) | **S**ecure **Sh**ell - **KEY** **GEN**erate | Allows you manage your keys |
+| [`sudo`](#sudo)   | **S**uper **U**ser **DO**               | lets you run administrative commands |
 
 ## Useful keyboard short cuts
 
