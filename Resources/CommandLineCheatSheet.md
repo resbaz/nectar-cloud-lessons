@@ -6,17 +6,53 @@
 | `apt-get` | **A**dvanced **P**ackage **T**ool - get | the command line app store |
 | `cd`      | **C**hange working **D**irectory        | changes directory |
 | `chmod`   | **Ch**ange file **MOD**e                | protects your junk |
-| `echo`    | **ECHO**                                | just echos a string |
+| `echo`    | **ECHO**                                | just echoes a string |
 | `exit`    | EXIT                                    | terminates the current process |
 | `ls`      | **L**i**S**t directory contents         | lets you see whats in the directory |
 | `man`     | **MAN**ual                              | gives help |
+| `mkdir`   | **M**a**K**e **DIR**ectory              | create a directory |
 | `more`    | **MORE**                                | list the contents of a file |
 | `pwd`     | **P**rint **W**orking **D**irectory     | shows where you are |
-| `rm`      | **R**e**M**ove                          | remove a file or directory |
+| `rm`      | **R**e**M**ove                          | remove a file |
+| `rmdir`   | **R**e**M**ove **DIR**irectory          | remove a file |
 | `scp`     | **S**ecure **C**o**P**y                 | copy files securely between computers |
 | `ssh`     | **S**ecure **Sh**ell                    | teleports you to another machine |
 | `ssh-keygen` | **S**ecure **Sh**ell - **KEY** **GEN**erate | Allows you manage your keys |
 | `sudo`    | **S**uper **U**ser **DO**               | lets you run administrative commands |
+
+## Useful keyboard short cuts
+
+`TAB`       When entering paths and file names will autocomplete. If does not work, there is more than one choice.
+            In this situation hit twice to see all possible matches, and type a few more characters to resolve ambiguity.
+
+`CTRL+A`    Move the caret to the beginning of the line<br />
+`CTRL+E`    Move the caret to the end of the line<br />
+`CTRL+K`    Delete all characters after the caret<br />
+`CTRL+J`    Delete all characters before the caret<br />
+`CTRL+L`    Clear the screen<br />
+`CTRL+C`    Cancel the running command<br />
+
+`ARROW-UP` and `ARROW-DOWN` Step through your previous commands
+
+## Directing output
+
+The `>` character can be used to direct output to a file. So to copy a string to file, the command would be along
+the lines of:
+
+```bash
+echo "hello" > temp.txt    # will copy "hello" into the file named temp.text
+```
+
+If the file doesn't exist it will be created. If it does exist, its contents will be overwritten.
+
+The character set `>>` can be used to append output to a file. So to append text to a file, the command would be
+along the lines of:
+
+```bash
+echo "goodbye" >> temp.txt  # will appends the line "goodbye" to the contents of temp.txt
+```
+
+If the file doesn't exist, it will be created. If it does exist, its contents will be appended to.
 
 ## Examples
 
@@ -88,6 +124,12 @@ pwd         # show the current directory I'm positioned in
 rm notes.txt    # delete the file named notes.txt
 ```
 
+### rmdir <directory>
+
+```bash
+rmdir temp  # remove the directory named temp
+```
+
 ### scp <from> <to>
 
 ```bash
@@ -97,7 +139,7 @@ scp notes.txt ubuntu@144.6.226.144:   # copy the file named notes.txt from the c
                                       # to the home directory of the ubuntu user on the remote machine 
 ```
 
-### ssh <user@address>
+### ssh <user>@<address>
 
 ```bash
 ssh ec2-user@144.6.226.144                          # ssh into the machine at IP 144.6.226.144 as the ec2-user user
@@ -109,26 +151,10 @@ ssh -i ~/.ssh/some_key.pem ubuntu@144.6.226.144     # ssh into the machine at IP
 
 ```bash
 ssh-keygen -R 144.6.226.144 # remove all keys belonging to the machine 144.6.226.144 from the known hosts file
-````
+```
 
 ### sudo <command>
 
 ```bash
 sudo apt-get update # run the apt-get update command as the super user
 ```
-
-## Useful keyboard short cuts
-
-`TAB`       When entering paths and file names will autocomplete. If not working, hit twice to see all posible matches.
-
-`CTRL+A`    Move the caret to the beginning of the line<br />
-`CTRL+E`    Move the caret to the end of the line<br />
-`CTRL+K`    Delete all characters after the caret<br />
-`CTRL+J`    Delete all characters before the caret<br />
-`CTRL+L`    Clear the screen<br />
-`CTRL+C`    Cancel the running command<br />
-
-`ARROW-UP` and `ARROW-DOWN` Step through your previous commands
-
-
-
