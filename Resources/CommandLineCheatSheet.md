@@ -121,12 +121,12 @@ sudo apt-get update # run the apt-get update command as the super user
 
 `TAB`       When entering paths and file names will autocomplete. If not working, hit twice to see all posible matches.
 
-`CTRL+A`    Move the caret to the beginning of the line
-`CTRL+E`    Move the caret to the end of the line
-`CTRL+K`    Delete all characters after the caret
-`CTRL+J`    Delete all characters before the caret.
-`CTRL+L`    Clear the screen
-`CTRL+C`    Cancel the running command
+`CTRL+A`    Move the caret to the beginning of the line<br />
+`CTRL+E`    Move the caret to the end of the line<br />
+`CTRL+K`    Delete all characters after the caret<br />
+`CTRL+J`    Delete all characters before the caret<br />
+`CTRL+L`    Clear the screen<br />
+`CTRL+C`    Cancel the running command<br />
 
 `ARROW-UP` and `ARROW-DOWN` Step through your previous commands
 
