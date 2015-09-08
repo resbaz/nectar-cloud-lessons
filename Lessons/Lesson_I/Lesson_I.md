@@ -49,6 +49,12 @@ Currently, how much does it cost a researcher to use the Research Cloud?
 
 **Answer: E**
 
+There's another powerful reason to use the Research Cloud: access to storage which is kept locally in Australia and 
+available on the high speed [AARNET](https://www.aarnet.edu.au/about-us) backbone. Think of it as a USB stick on
+steroids!
+
+And all of this is backed by a research facing organization that is not driven by profit.
+
 But before you go rushing to the Research Cloud, there are some important gotchas that you have to understand. 
 The cloud environment is a not the same as dedicated computer! 
 
