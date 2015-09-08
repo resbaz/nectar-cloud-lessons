@@ -3,7 +3,7 @@
 
 | Command   | Abbreviation For                        | Is/Does |
 |-----------|-----------------------------------------|---------|
-| `apt-get` | **A**dvanced **P**ackage **T**ool - get | the command line app store |
+| [`apt-get`][] | **A**dvanced **P**ackage **T**ool - get | the command line app store |
 | `cd`      | **C**hange working **D**irectory        | changes directory |
 | `chmod`   | **Ch**ange file **MOD**e                | protects your junk |
 | `echo`    | **ECHO**                                | just echoes a string |
