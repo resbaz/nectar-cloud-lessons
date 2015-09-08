@@ -600,4 +600,12 @@ Now knowing what's going on under the hood, you can understand why once you hit 
 delay before the machine runs - there's quite a lot going on.
 
 So we've explored the dashboard, learnt how to file a support request, and done a dive into the architecture of the
-cloud, and watched me launch a VM. Not bad for 45 minutes of effort!
+cloud, and watched me launch a VM.
+
+-- *Slide* --
+
+You can think of the Dashboard we've just explored  as the cockpit/drivers seat for an entire Data Centre - 
+BUT best of all it is a car/plane you can crash!!! And we want you to crash it and restart it regularly #failfast!
+
+-- *Slide End* --
+

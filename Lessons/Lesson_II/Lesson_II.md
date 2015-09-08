@@ -164,6 +164,8 @@ Remember that an image is simply a file on the cloud somewhere. When we launch o
 select the image that we are going to be using, and then a copy of that file becomes the hard drive of the computer 
 we are launching. And that that computer is called an 'instance'. The instance will in turn run our applications!
 
+So you can think of instances as someone else's computers, and cloud applications simply as applications that run
+on someone else's computers.
 
 -- *Slide* --
 
