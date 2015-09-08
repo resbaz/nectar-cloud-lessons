@@ -82,6 +82,12 @@ more temp.txt   # display the contents of more.txt
 pwd         # show the current directory I'm positioned in
 ```
 
+### rm <filename>
+
+```bash
+rm notes.txt    # delete the file named notes.txt
+```
+
 ### scp <from> <to>
 
 ```bash
