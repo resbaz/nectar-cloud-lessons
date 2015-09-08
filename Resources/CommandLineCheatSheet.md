@@ -7,7 +7,7 @@
 | [`cd`](#cd)       | **C**hange working **D**irectory        | changes directory |
 | [`chmod`](#chmod) | **Ch**ange file **MOD**e                | protects your junk |
 | [`echo`](#echo)   | **ECHO**                                | just echoes a string |
-| [`exit`](#exit)   | EXIT                                    | terminates the current process |
+| `exit`            | EXIT                                    | terminates the current process |
 | [`ls`](#ls)       | **L**i**S**t directory contents         | lets you see whats in the directory |
 | [`man`](#man)     | **MAN**ual                              | gives help |
 | [`mkdir`](#mkdir) | **M**a**K**e **DIR**ectory              | create a directory |
@@ -112,6 +112,14 @@ Form: `man <command>`
 ```bash
 man ls      # display the manual for the ls command
 man man     # display the manual for the man command
+```
+
+### mkdir
+
+Form: `mkdir <directory name>`
+
+```bash
+mkdir temp  # makes the directory named temp
 ```
 
 ### more
