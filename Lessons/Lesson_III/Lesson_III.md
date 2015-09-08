@@ -259,7 +259,7 @@ Ok. This is the basic form our `ssh` command will take:
 ## ssh
 
 ```bash
-ssh  -i <key> <user_id>@<address>
+ssh  -i <key> <user>@<address>
 ```
 
 Eg: Along the lines of:
@@ -273,7 +273,7 @@ ssh -i tut_dev.pem ubuntu@144.6.225.224
 So here:
 
 * the `key` is the path to and the key file itself
-* the `user_id` is the name of the user account on the remote machine that we are connecting as.  
+* the `user` is the name of the user account on the remote machine that we are connecting as.  
   Different operating systems have different default user accounts.
 * the `address` is the IP address of the Virtual Machine that we read off of the dashboard.
 
@@ -658,12 +658,4 @@ Each operating system type has its own package management program: so if you are
 find out what the update command is. Ask a friendly Linux person to show you the right command. And remember to 
 update often!
 
-You also learnt to switch rules on and off on the security group, thus controlling access to the VM. 
-
-
-
-
-
-
-
-
+You also learnt to switch rules on and off on the security group, thus controlling access to the VM.
