@@ -568,7 +568,7 @@ When does my free PC on the Research Cloud get destroyed (along with all its dat
 
 -- *Slide End* --
 
-**Answer: B** (Pick out the wrong answers first to provide explanations of what they are.)
+**Answer: B** (Pick out the wrong answers first to provide explanations of what they are!)
 
 (Once the machine is finally launched, point out the IP address in the dashboard)
 
@@ -600,4 +600,4 @@ Now knowing what's going on under the hood, you can understand why once you hit 
 delay before the machine runs - there's quite a lot going on.
 
 So we've explored the dashboard, learnt how to file a support request, and done a dive into the architecture of the
-cloud, and watched me launch a VM. Not bad for 30 minutes of effort!
+cloud, and watched me launch a VM. Not bad for 45 minutes of effort!
