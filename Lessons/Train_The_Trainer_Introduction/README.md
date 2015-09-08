@@ -80,7 +80,8 @@ So as we go through today I want each group to ask themselves just what it would
 activities we are covering to this persona. 
 
 If you find you can't do it, then stop me, and we will all discuss it and see if we can come up with a better approach.
-
+*Ask for one or two persona's to be read out*
+*Objectives for the day.*
 And I'll occasionally be asking you for a demonstration of how you would do this...
 
 What we will be working with is a [software carpentry](https://software-carpentry.org/) style course that consists of a 
@@ -96,7 +97,10 @@ Instead, we are going to do a higher level walk through. Of course, if you want 
 
 The repository can be found at: https://github.com/resbaz/nectar-cloud-lessons
 
-As we work through this, I want you all to note any errors or changes that need to be done to the course material. 
+As we work through this, I want you all to note any errors or changes that need to be done to the course material.
+ 
+By raising issues!
+
 At the end of the day you are going to get a chance to make changes by editing the files directly in the GitHub
 repository.
 
