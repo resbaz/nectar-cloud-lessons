@@ -73,7 +73,7 @@ Walk the students through the key pair checklist, describing each entry
 
 ## Key Pairs
 
-Complete the key pair checklist
+Create a Keypair with the help of the key pair checklist
 
 http://tinyurl.com/creating-a-keypair
 
@@ -120,7 +120,7 @@ Walk the students through the security group checklist, describing each entry as
 
 ## Security Groups
 
-Complete the security group checklist
+Create a Security Group with the help of the security group checklist
 
 http://tinyurl.com/creating-a-security-group
 
@@ -160,11 +160,16 @@ and to understand what is provided.
 
 ## Launch your own instance
 
+Remember that an image is simply a file on the cloud somewhere. When we launch our computer in the cloud, we
+select the image that we are going to be using, and then a copy of that file becomes the hard drive of the computer 
+we are launching. And that that computer is called an 'instance'. The instance will in turn run our applications!
+
+
 -- *Slide* --
 
 ## Launch an instance
 
-Complete the launch an instance checklist
+Use the launch an instance checklist to launch an instance.
 
 http://tinyurl.com/starting-an-instance
  
@@ -187,6 +192,7 @@ Please hold up a Red sticky note if you need help
 and a Green one once you are done.
 
 -- *Slide* --
+
 ## Count of less than 20 security groups
 
 Did anyone find out why this is in the checklist?
@@ -197,6 +203,7 @@ It's in the list because NeCTAR limit you to a maximum of 20. Which means that y
 you have lots of instances!
 
 -- *Slide* --
+
 ## HTTP vs HTTPS
 
 Can anyone tell us about these two?
@@ -210,6 +217,7 @@ the server can see what pages you are looking at, and their contents. HTTPS mean
 you are visiting.
 
 -- *Slide* --
+
 ## What is SSH?
 
 Anyone? Please?
@@ -219,6 +227,7 @@ Anyone? Please?
 Secure Shell. We'll cover it in the next lesson. Patience!
 
 -- *Slide* --
+
 ## And CIDR?
 
 (And no, it's not a drink!)
@@ -235,3 +244,4 @@ These are the three essential skills for building any cloud application for you 
 use!!! When these three steps fail you, the fourth step is the HELP menu item.
  
 Do you remember where it is?
+And where do you find the user name that NeCTAR are going to request?
