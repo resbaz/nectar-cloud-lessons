@@ -17,7 +17,7 @@
 | [`rmdir`](#rmdir) | **R**e**M**ove **DIR**irectory          | remove a file |
 | [`scp`](#scp)     | **S**ecure **C**o**P**y                 | copy files securely between computers |
 | [`ssh`](#ssh)     | **S**ecure **Sh**ell                    | teleports you to another machine |
-| [`ssh-keygen`](#ssh-keygen`) | **S**ecure **Sh**ell - **KEY** **GEN**erate | Allows you manage your keys |
+| [`ssh-keygen`](#ssh-keygen) | **S**ecure **Sh**ell - **KEY** **GEN**erate | Allows you manage your keys |
 | [`sudo`](#sudo)   | **S**uper **U**ser **DO**               | lets you run administrative commands |
 
 ## Useful keyboard short cuts
@@ -174,7 +174,7 @@ ssh -i ~/.ssh/some_key.pem ubuntu@144.6.226.144     # ssh into the machine at IP
 ```
 
 ### ssh-keygen
- 
+
  Form: `ssh-keygen -R <hostname>` (this is not the general form: just for our specific usage)
 
 ```bash
