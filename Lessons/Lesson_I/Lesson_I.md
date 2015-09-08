@@ -1,8 +1,5 @@
--- *Slide* --
 
 # Lesson I: An introduction to the dashboard (45 min)
-
--- *Slide End* --
 
 -- *Slide* --
 
@@ -604,8 +601,10 @@ cloud, and watched me launch a VM.
 
 -- *Slide* --
 
-You can think of the Dashboard we've just explored  as the cockpit/drivers seat for an entire Data Centre - 
-BUT best of all it is a car/plane you can crash!!! And we want you to crash it and restart it regularly #failfast!
+You can think of the Dashboard we've just explored as the cockpit/drivers seat for an entire Data Centre - <br /> 
+BUT it is a car/plane you can crash!!! <br />
+And we *want* you to crash it and restart it regularly...<br />
+\#failfast!
 
 -- *Slide End* --
 
