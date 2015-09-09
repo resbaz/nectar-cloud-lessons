@@ -10,9 +10,6 @@ And now, our cast will introduce themselves:
 *LS* - My name is List, but call me by my nickname, LS. As Batman is to Robin, so am I to PWD. I simply lists 
 everything I see.
 
-*MAN* - I am MAN - the annoying friend who knows everything, and insists on going on and on about it if 
-accidentally asked…
-
 *MKDIR* - I am MKDIR - a tradesman who can add rooms to your house at the drop of a hat!.
 
 *CD* - Know me as CD: the Segway in the house. Hitch a ride with me when you want to go to a different room! 
@@ -36,11 +33,7 @@ I can’t remember much more. PWD, where am I?
 
 *PWD* - You are in the lounge of the home known as computer.
 
-*OTHER* - MAN, I can't remember the introductions: what does LS do again?
-
-*MAN* - LS simply lists everything in the room you are currently in.
-
-*OTHER* - LS, I'm struggling to focus. What's here with me?
+*OTHER* - LS, I'm struggling to focus. What's in here with me?
 
 *LS* - Some beer crate chairs, cushions, and lots of empty bottles.
 
@@ -61,7 +54,7 @@ other.
 
 *PWD* - You are in the writing room, just off of the lounge in the home known as computer.
 
-*USER* - I'm going to echo my thoughts about other into this new Diary.
+*USER* - I'm going to echo my thoughts about OTHER into this new Diary.
 
 *OTHER* - Hm: I want to know what USER wrote about me! I think I'll take a peek.
 

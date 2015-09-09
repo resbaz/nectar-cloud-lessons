@@ -120,6 +120,9 @@ ls
 
 -- *Slide End* --
 
+`man` is the annoying friend who knows everything, and insists on going on and on about it if 
+accidentally asked…
+
 -- *Slide* --
 
 ## Exercise 4
@@ -219,19 +222,25 @@ be able to communicate and control that machine. ... You want to keep your priva
 
 **Demo**
 
-Ask for two volunteers. Ask the first to write a message to the second on a sticky note, then place it into an envelope. 
-And give it to you. You carry it to the other person. 
+Ask for two volunteers. Give the second one the two envelopes, one inside the other. 
 
-Make the point that the envelope is the encryption wrapper. And only someone with the public key can unwrap it and see
-it.
+The first volunteer is going to shout at the second "Oi - I want to talk to you!"
 
-The person on the other side then takes the message out of the envelope, writes a reply, and puts it back in the 
-envelope.
+The second volunteer then passes the two envelopes to the first volunteer. 
 
 Make the point that they have used the public key to encrypt the message, and only someone with the private key can
-unwrap it.
+unwrap it. Hence only the first volunteer can!
 
-This is what ssh is doing with the public and private key pairs.
+Which he/she does. And then puts a message into the second envelop: which is then passed back to the second volunteer.
+
+They read the message and put a new one in and pass it back. 
+
+Make it clear that they are the only two people who can read what's in that inner envelop. Edward Snowden tells us
+that this is still true!
+
+And they can go on using that inner envelope for the rest of the conversation.
+
+This is essentially what ssh is doing with the public and private key pairs.
 
 Thank the volunteers.
  
@@ -558,10 +567,12 @@ is also governed by the security group?
 **Demo**
 
 Ask for three volunteers. Ask the first to write a message to the second on a sticky note, then place it into an envelope. 
-And give it to you. You carry it to the third person (preferably a male). 
+And give it to you. Place the third person, (preferably male) in between the first and the second person.
 
-Make the point that the envelope is the encryption wrapper. And only someone with the public key can unwrap it and see
-it. But that public keys are widely distributed: and the third person has a copy. And so can read the message.
+You then carry it to the third person. 
+
+Make the point that as before, the envelope is the encryption wrapper. And only someone with the private key can 
+unwrap it and see it. But that the third person has actually convinced the first person that he is the second person.
 
 Get the third person to read the message, perhaps change it a bit, then put it into a different coloured envelop,
 and give it back to you. 
@@ -570,12 +581,13 @@ You then take it to the second person, who writes a reply and puts in back into 
 person, who opens it, reads it, and perhaps changes it again. Then you put it back into the original envelop, and take 
 it back to the orginator.
 
-Make the point that the man in the middle has tricked the two of you, and is listening to everything you say and do.
+Make the point that the man in the middle has tricked the two on either side, and is listening to everything they say 
+and do.
 
 Thank the volunteers.
 
 How ssh stops this from happening is that in every communication with a server, the first thing the server sends 
-is its own public key to you. That was when you got asked the question:
+is a unique fingerprint to you. That was when you got asked the question:
 
 -- *Slide* --
 
@@ -589,9 +601,9 @@ Are you sure you want to continue connecting (yes/no)?
 
 -- *Slide End* --
 
-When you replied 'yes' a unique signature for the server was stored as a line in a file called the known_hosts file.
+When you replied 'yes' that fingerprint for the server was stored as a line in a file called the known_hosts file.
 
-From this point on, whenever you connect to the server, the servers public key is checked against the entry in
+From this point on, whenever you connect to the server, that fingerprint checked against the entry in
 the known_hosts file. If they remain in sync, then everything is sweet.
 
 But if they change, then ssh will refuse to give you a connection, showing the error:
@@ -646,8 +658,7 @@ Where `<hostname>` can also be the IP number of your affected machine.
 
 -- *Slide End* --
 
-Again, hold up a Red sticky note if you need help, and
-a Green one if you are done.
+This command is in your cheat sheet: remember it - because you will need it!
 
 To recap: in this lesson we learnt about terminals and how to use one to connect to a running system using ssh, and 
 then how to update the software on the Ubuntu based system using the package manager. 
