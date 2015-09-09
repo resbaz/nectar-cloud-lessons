@@ -1,132 +1,80 @@
 # A play in one act
 
-*Narrator:*  
-
-The play takes place inside a dodgy sharehouse in brunswick, cunningly named with great foresight by the 
-victorian builders: “computer”
+*Narrator* - Our fine play takes place inside a dodgy sharehouse in brunswick, cunningly named with great foresight 
+by the victorian builders: “computer”
 
 And now, our cast will introduce themselves:
 
-*PWD*
+*PWD* - I'm PWD - my great power is to simply tell you where you are. You can think of me as the godfather to Siri.
 
-I'm PWD - my great power is to simply tell you where you are. You can think of me as the godfather to Siri.
+*LS* - My name is List, but call me by my nickname, LS. As Batman is to Robin, so am I to PWD. I simply lists 
+everything I see.
 
-*LS*
+*MAN* - I am MAN - the annoying friend who knows everything, and insists on going on and on about it if 
+accidentally asked…
 
-My name is List, but call by my nickname, LS. As Batman is to Robin, so am I to PWD. I simply lists everything I see.
+*MKDIR* - I am MKDIR - a tradesman who can add rooms to your house at the drop of a hat!.
 
-*MAN*
+*CD* - Know me as CD: the Segway in the house. Hitch a ride with me when you want to go to a different room! 
+I don's say much, but I do a lot of heavy lifting!
 
-I am MAN - the annoying friend who knows everything, and insists on going on and on about it if accidentally asked…
+*CHMOD* - CHMOD am I. See me as the houses personal guardian. I control access to the documents in the house.
 
-*MKDIR*
+*OTHER* - I'm other: a drunken stranger who wandered in off of the street when I was walking past and saw this 
+great party on the go.
 
-I am MKDIR - a tradesman who can add rooms to your house at the drop of a hat!.
+*USER* - Hi everyone: I'm user, the housemate who hosted this party!
 
-*CD*
+*GROUP* - And we are group, the other housemates who suffered the party…
 
-Know me as CD: the Segway in the house. Hitch a ride with me when you want to go to a different room! I don's say 
-much, but I do a lot of heavy lifting!
+*Narrator* -And without further ado, we'll get our short play about nothing started.
 
-*CHMOD*
-
-CHMOD am I. See me as the houses personal guardian. I stop others from reading or scribbling in the housemates stuff.
-
-*OTHER*
-
-I'm other: a drunken stranger who wandered in off of the street when I was walking past and saw this great party on the
-go.
-
-*USER*
-
-Hi everyone: I'm user, the housemate who hosted this party!
-
-*GROUP*
-
-And we are group, the other housemates who suffered the party…
-
-*Narrator:*  
-
-And without further ado, we'll get our short play about nothing started.
-
-*OTHER*
-
-I'm so hung over.
+*OTHER* - I'm so hung over.
 
 What a night. Just waking down the road when I saw this huge party. So I decided to join in. 
 I can’t remember much more. PWD, where am I?
 
-*PWD*
+*PWD* - You are in the lounge of the home known as computer.
 
-You are in the lounge of the home known as computer.
+*OTHER* - MAN, I can't remember the introductions: what does LS do again?
 
-*OTHER*
+*MAN* - LS simply lists everything in the room you are currently in.
 
-LS, I'm struggling to focus. What's around me?
+*OTHER* - LS, I'm struggling to focus. What's here with me?
 
-*LS* 
+*LS* - Some beer crate chairs, cushions, and lots of empty bottles.
 
-Some beer crate chairs, cushions, and lots of empty bottles.
-
-*USER*
-
-Gosh, OTHER you're very strange. 
+*USER* - Gosh, OTHER you're very strange. 
 
 **Then as an aside**
 
 MKDIR create for me a writing room, and there I'll write down my true thoughts about
 other.
 
-*MKDIR*
- 
-Doesn't talk, but makes building motions to one side of the room
+*MKDIR* - **Doesn't talk, but makes building motions to one side of the room**
 
-*USER*
+*USER* - CD, take me to my new writing room.
 
-CD, take me to my new writing room.
+*CD* - **Doesn't talk, but escorts USER to where the room was created by mkdir**
 
-*CD*
- 
-Doesn't talk, but escorts USER to where the room was created by mkdir.
+*USER* - PWD, where am I now?
 
-*USER*
+*PWD* - You are in the writing room, just off of the lounge in the home known as computer.
 
-PWD, where am I now?
+*USER* - I'm going to echo my thoughts about other into this new Diary.
 
-*PWD*
+*OTHER* - Hm: I want to know what USER wrote about me! I think I'll take a peek.
 
-You are in the writing room, just off of the lounge in the home known as computer.
+*GROUP* - We do to! We want to peek as well!
 
-*USER*
+*USER* - Oops, CHMOD, protect my diary so that only I can read and write it!
 
-I'm going to echo my thoughts about other into this new Diary.
+*CHMOD* - Your wish is my command! Abracadabra - your diary is protected.
 
-*OTHER*
+*USER* - LS: what's in this room?
 
-Hm: I want to know what USER wrote about me! I think I'll take a peek.
+*LS* - Only your diary USER. Protected so that only you can read and write it!
 
-*GROUP*
-
-We do to! We want to peek as well!
-
-*USER*
-
-Oops! CHMOD, protect my diary so that only I can read and write it!
-
-*CHMOD*
-
-Your wish is my command! Abracadabra - your diary is protected.
-
-*USER*
-
-LS: what's in this room?
-
-*LS*
-
-Only your diary USER. Protected so that only you can read and write it!
-
-*GROUP and OTHER*
-
-Awww!
+*GROUP and OTHER* - Awww!
 
 
