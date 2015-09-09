@@ -19,9 +19,13 @@ My name is List, but call by my nickname, LS. As Batman is to Robin, so am I to 
 
 I am MAN - the annoying friend who knows everything, and insists on going on and on about it if accidentally asked…
 
+*MKDIR*
+
+I am MKDIR - a tradesman who can add rooms to your house at the drop of a hat!.
+
 *CD*
 
-Know me as CD: the segway in the house. Hitch a ride with me when you want to go to a different room! I don's say 
+Know me as CD: the Segway in the house. Hitch a ride with me when you want to go to a different room! I don's say 
 much, but I do a lot of heavy lifting!
 
 *CHMOD*
@@ -39,13 +43,18 @@ Hi everyone: I'm user, the housemate who hosted this party!
 
 *GROUP*
 
-And we are group, the 7 other housemates who suffered the party…
+And we are group, the other housemates who suffered the party…
+
+*Narrator:*  
+
+And without further ado, we'll get our short play about nothing started.
 
 *OTHER*
 
-Oh, what a night. Just waking down the road when I saw this huge party. So I decided to join in. 
-I can’t remember much more. PWD, where am I?
+I'm so hung over.
 
+What a night. Just waking down the road when I saw this huge party. So I decided to join in. 
+I can’t remember much more. PWD, where am I?
 
 *PWD*
 
@@ -59,24 +68,65 @@ LS, I'm struggling to focus. What's around me?
 
 Some beer crate chairs, cushions, and lots of empty bottles.
 
-*OTHER*
+*USER*
 
-Oh, no one is here! Maybe I can find something lying around to fund my next drink! CD, take me to the house library! 
+Gosh, OTHER you're very strange. 
 
-*CD doesn't talk, but escorts OTHER somewhere else in the room*
+**Then as an aside**
 
-*OTHER*
+MKDIR create for me a writing room, and there I'll write down my true thoughts about
+other.
 
-PWD, I'm still struggling to see. Where am I now?
+*MKDIR*
+ 
+Doesn't talk, but makes building motions to one side of the room
+
+*USER*
+
+CD, take me to my new writing room.
+
+*CD*
+ 
+Doesn't talk, but escorts USER to where the room was created by mkdir.
+
+*USER*
+
+PWD, where am I now?
 
 *PWD*
 
-You are in the house library.
+You are in the writing room, just off of the lounge in the home known as computer.
+
+*USER*
+
+I'm going to echo my thoughts about other into this new Diary.
 
 *OTHER*
 
-And LS, what's around me?
+Hm: I want to know what USER wrote about me! I think I'll take a peek.
+
+*GROUP*
+
+We do to! We want to peek as well!
+
+*USER*
+
+Oops! CHMOD, protect my diary so that only I can read and write it!
+
+*CHMOD*
+
+Your wish is my command! Abracadabra - your diary is protected.
+
+*USER*
+
+LS: what's in this room?
 
 *LS*
 
-Why, its 
+Only your diary USER. Protected so that only you can read and write it!
+
+*GROUP and OTHER*
+
+Awww!
+
+
