@@ -294,7 +294,7 @@ Which one of these can’t you do with your settings dropdown?
 1. Change your command line password
 1. Change your dashboard language
 1. Change your time zone
-1. Change your current project
+1. Change your currently selected project
 1. Find the documentation site
 
 -- *Slide End* --
@@ -525,7 +525,7 @@ at the same time, such as ms-word, and excel, etc, a Research Cloud server can r
 time.
 
 So here’s a question. You have a virtual machine running. It makes all kinds of changes to its hard drives. Which are 
-simply files on the host server. What happens to those changes when you shut your virtual computer down?
+simply files on the host server. What happens to those changes when you terminate your virtual computer?
 
 -- *Slide* --
 
@@ -571,7 +571,14 @@ When does my free PC on the Research Cloud get destroyed (along with all its dat
 
 -- *Slide End* --
 
-**Answer: B** (Pick out the wrong answers first to provide explanations of what they are!)
+Pick out the wrong answers first to provide explanations of what they are!
+
+A paused VM is simply halted in memory, ready to be started again.
+A stopped VM has its state written to the host machines disk, ready to be resumed from there.
+A soft reboot tries to do a graceful reboot.
+A hard reboot just reboots the machine!
+
+**Answer: B** 
 
 (Once the machine is finally launched, point out the IP address in the dashboard)
 
