@@ -92,9 +92,6 @@ You will need to write the following words onto cards in big print, one word per
 #### Must do
 
 1. [ ] Bring the Kanban stuff into this "todo" list.
-1. [ ] Complete lesson 2's play
-1. [ ] Complete lesson 2's command line cheat sheet
-1. [ ] Either work out how to use the command line cheat sheet with the play, or produce a new checklist.
 1. [ ] Work through the lesson 2 defects in github
 
 #### Nice to have
