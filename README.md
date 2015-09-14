@@ -60,6 +60,33 @@ The lessons assume that participants have both red and green coloured sticky not
 to "E" (in the style of Software Carpentry). These are used to answer questions and to show distress if the students
 aren't keeping up or need help.
 
+## Instructors notes
+
+### In general
+
+Each person being taught needs to be given 
+    
+* a red sticky note 
+* a green sticky note.
+* A set of answer cards, lettered 'A', 'B', 'C', 'D' and 'E' respectively.
+
+### Preparation for lesson III
+
+You will need a few copies of the [play](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Play.md) for lesson 3.
+People will have to crowd round and share. The goal here is to get people moving and interacting, as they become 
+familiar with some concepts.
+
+You will need to write the following words onto cards in big print, one word per card:
+
+* PWD
+* LS
+* MKDIR
+* CD
+* CHMOD
+* OTHER
+* USER
+* GROUP
+
 ### Todo
 
 #### Must do
