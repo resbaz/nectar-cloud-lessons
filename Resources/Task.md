@@ -1,5 +1,7 @@
 # Relive the play!
 
+Using the [Command Line Cheat Sheet](CommandLineCheatSheet.md) to the following steps in the [play](Play.md)
+
 1. [ ] Open a terminal
 1. [ ] Establish where you are in the file system
 1. [ ] Create a directory named "reading_room"
