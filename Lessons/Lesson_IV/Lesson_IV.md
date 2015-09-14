@@ -56,17 +56,17 @@ $ scp USER_NAME@remote_machine_address:notes.txt .
 $ scp notes.txt USER_NAME@remote_machine_address: 
 ```
 
-Do files move from 
+Is the **origin**al file 
 
-1. left to right 
-1. right to left?
+1. Named on the left
+1. Named on the right
 
 -- *Slide End* --
 
 **Answer**
 
 Looking at the two commands you can see that the source for the transfer is on the left, and the target on the right.
-So the answer is A.
+So the answer is A. The original file is on the left, the target machine on the right.
 
 You can use a wildcard denoted by the asterisk character (*) to copy multiple files in one go.
 
@@ -186,4 +186,11 @@ Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
 
 In this lesson we've learnt two different ways of moving files between our remote server and our local machine.
-Hence moving data to and from our Research Cloud servers should now not be a problem!
+
+This means that you know know how to make your data available to whatever "cloud app" you build, such as Anna's
+Drupal website which is showcasing her kitten research.
+
+Or, perhaps if you use RStudio to do data analysis on it, you can get it onto the that server.. 
+
+In short, with your new found ability to move your data to and from your server in the cloud, 
+you can now use multiple research apps with it!
