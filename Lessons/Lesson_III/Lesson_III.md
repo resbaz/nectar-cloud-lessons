@@ -75,6 +75,13 @@ can use on Linux computers.
 
 Ok: Before we go any further, we are going to perform a very bad play.
 
+-- *Slide* --
+
+# A Play!
+
+-- *Slide End* --
+
+
 I need at least 8 volunteers. 
 
 **Activity** Hand out copies of the [play](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Play.md)
@@ -181,7 +188,7 @@ ssh
 It connects a terminal on one machine to another target machine, thus allowing 
 you to use the text based interface on the target machine. It kind of teleports the target machine terminal to yours…
 
-Think of `ssh` as your cloud login command.
+You can think of `ssh` as your cloud login command.
 
 `ssh` uses public key cryptography to connect with the target machine. 
 
@@ -262,7 +269,7 @@ So here:
 
 ## Question 2
 
-Research Cloud have an image catalogue that gives information about the images they provide. It can be found at:
+Research Cloud have a catalogue that gives information about the images that they provide. It can be found at:
 
 https://wiki.rc.nectar.org.au/wiki/Image_Catalog
  
@@ -284,13 +291,13 @@ Have a look at it. What operating system do you think the Drupal server is based
 
 -- *Slide* --
 
-# Connect to your remote instance via ssh. E.G.:
+## Connect to your remote instance via ssh. E.G.:
 
 ```bash
 ssh -i tut_dev.pem ubuntu@144.6.225.224
 ```
 
-## Windows users... 
+### PS: Windows users... 
 
 To find your key file, 
 prefix `/cygdrive/c/` to the directory 
