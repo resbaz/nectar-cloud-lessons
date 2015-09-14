@@ -89,7 +89,7 @@ Please hold up a Red sticky not if the answer is "No" and a Green one if the ans
 this is to get those who don't have AAF credentials to pair with someone who does…
 
 The first time you log on to the Research Cloud dashboard, you get given a **free** project/tenant, with three-months 
-worth of time if you run it to the maximum. 
+worth of time if you run it all the time. If you don't, it should last a bit longer! 
 
 But if you keep your machines on the cloud as small as possible, you can get up to six months before your project/tenant 
 exhausts its initial quota. But you can still log in to the dashboard to view and request allocations. You can even
