@@ -533,8 +533,8 @@ trying to access your machine.
 
 ## Question 3
 
-You remove ssh from a security group shared with many other servers. Will you be able to ssh into another server that
-is also governed by the security group?
+You remove ssh from a security group shared by many servers. 
+Will you be able to ssh into any of the servers?
 
 **Choices**
 
