@@ -73,6 +73,14 @@ Microsoft are planning to change this, but for the time being Windows users have
 That's why in the prerequisites we asked Windows users to install Cygwin. It's a tool that gives you a terminal you
 can use on Linux computers.
 
+Ok: Before we go any further, we are going to perform a very bad play.
+
+I need at least 8 volunteers. 
+
+**Activity** Hand out copies of the [play](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Play.md)
+
+Run through the play.
+
 -- *Slide* --
 
 ## Exercise 1
@@ -89,7 +97,9 @@ Cygwin users simply click on the Cygwin desktop icon.
 
 ## Exercise 2
 
-Once you've opened it, try the following commands:
+Once you've opened it, remember PWD in our play?
+
+Try the following command:
 
 ```bash
 pwd
@@ -112,31 +122,17 @@ And that's the working directory that you see with the `pwd` command.
 
 ## Exercise 3
 
-```bash
-ls
-```
+We are going to replay our play!
 
-`ls` is shorthand for **l**i**s**t directory contents
+There's a command line cheat sheet at: http://tinyurl.com/command-line-cheat-sheet
 
--- *Slide End* --
-
-`man` is the annoying friend who knows everything, and insists on going on and on about it if 
-accidentally asked…
-
--- *Slide* --
-
-## Exercise 4
-
-```bash
-man ls
-```
-
-man is shorthand for ***man***ual. Arrow keys scroll, and the 'q' key closes the help.
+Use it to step the through the following tasks:  http://tinyurl.com/play-task
 
 -- *Slide End* --
 
-As ever, hold up a Green card when you're done
-And a Red card if you need help.
+As ever, hold up a Green card when you're done.
+
+And a Red card if you need help. But remember to ask your neighbours first!
 
 Commands issued via terminals have the following advantages:
 
@@ -145,30 +141,6 @@ Commands issued via terminals have the following advantages:
 * They keep a history of your commands
 * You can easily replay commands
 * It is simple to automate
-
-One other command that you need to know is `cd`.
-
--- *Slide* --
-
-## Exercise 5
-
-```bash
-cd
-```
-
-`cd` is shorthand for **c**hange working **d**irectory.
-
--- *Slide End* --
-
->  (Demonstrate cd, noting that '/' is the directory separator and that there is tab completion)
-
-In this exercise change your working directory to the one in which you saved your key file.
-The `ls` command should show the key file if you are successful.
-
-Windows users: prefix `/cygdrive/c/` to the directory that you saved your key file in...
-
-As ever, hold up a Green card when you're done
-And a Red card if you need help.
 
 But the main advantage for us is that your terminal program can also be used to connect to another computer.
 
@@ -310,8 +282,27 @@ Have a look at it. What operating system do you think the Drupal server is based
 
 **Exercise 3**
 
+-- *Slide* --
+
+# Connect to your remote instance via ssh. E.G.:
+
+```bash
+ssh -i tut_dev.pem ubuntu@144.6.225.224
+```
+
+## Windows users... 
+
+To find your key file, 
+prefix `/cygdrive/c/` to the directory 
+that you saved your key file in...
+
+-- *Slide End* --
+
 If everyone could try to connect to their server using the ssh command, that would be wonderful.
-BTW, I'm hoping that you all fail - with the error message along the lines of: 
+BTW, I'm hoping that you all fail - with the error message!
+ 
+ Hold up a Green card when you've reached this error message.
+ And a Red card if you need help
 
 -- *Slide* --
 
@@ -340,21 +331,9 @@ machine can read it. You need to tighten up the permissions on this file so that
 
 Hit control-c to exit the password prompt.
 
--- *Slide* --
+This is where `chmod` comes to the rescue!
 
-## chmod
-
-The command `chmod` **ch**ange file **mod**e allows you to set the permissions on your files.
-
-The basic form is
-
-```bash
-chmod <mode> <file>
-```
-
--- *Slide End* --
-
-So in my case, allowing me (the current **u**ser) to be able to **r**ead and **w**rite the file, and to exclude the 
+In my case, allowing me (the current **u**ser) to be able to **r**ead and **w**rite the file, and to exclude the 
 **g**roup and **o**thers from being able to **r**ead, **w**rite or try to run (e**x**ecute) it, the command would be:
 
 -- *Slide* --
