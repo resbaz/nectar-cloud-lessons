@@ -16,7 +16,7 @@ by the victorian builders: “computer”
 **LS**
 
 > My name is List, but call me by my nickname, LS. As Batman is to Robin, so am I to PWD. I simply lists 
-everything I see.
+everything I see. If instructed, I can be quite detailed!
 
 **MKDIR**
 
