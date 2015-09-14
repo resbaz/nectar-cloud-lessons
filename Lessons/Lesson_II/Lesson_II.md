@@ -4,7 +4,9 @@
 
 -- *Slide End* --
 
-> A researcher, Anna Prentice wants fire up a website to share some some information about her project with the world. 
+> A researcher, Anna Prentice wants fire up a website to share some some information about her kitten project with the 
+> world. 
+
 > Looking at the NeCTAR image list, she sees that there is a public image with Drupal, a content management system that
 > may allow her to share her data.
 
@@ -246,4 +248,5 @@ These are the three essential skills for building any cloud application for you 
 use!!! When these three steps fail you, the fourth step is the HELP menu item.
  
 Do you remember where it is?
+
 And where do you find the user name that NeCTAR are going to request?
