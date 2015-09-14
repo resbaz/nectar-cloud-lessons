@@ -56,7 +56,7 @@ steroids!
 And all of this is backed by a research facing organization that is not driven by profit.
 
 But before you go rushing to the Research Cloud, there are some important gotchas that you have to understand. 
-The cloud environment is a not the same as dedicated computer! 
+The cloud environment is a not quite the same as dedicated computer on your desktop! 
 
 What I hope to do is to give you enough information to get your own machines up and running on the Research Cloud, 
 and to explain the gotcha’s around this small area.
