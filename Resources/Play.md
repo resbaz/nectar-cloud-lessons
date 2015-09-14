@@ -56,7 +56,9 @@ in the sharehouse named 'computer' started.
 > I'm so hung over.
 
 > What a night. Just waking down the road when I saw this huge party. So I decided to join in. 
-I can’t remember much more. PWD, where am I?
+I can’t remember much more. There is too much blood in my alcohol system! 
+
+> PWD, where am I?
 
 **PWD**
 
@@ -72,7 +74,7 @@ I can’t remember much more. PWD, where am I?
 
 **USER** 
 
-> Gosh, OTHER you're very strange. 
+> Gosh, OTHER You're a drunk - you know if we see you with a water bottle, there's probably vodka in it! 
 
 *Then as an aside*
 
@@ -97,11 +99,11 @@ OTHER.
 
 **PWD**
 
-> Forgetful, aren't you? You are in the writing room, just off of the lounge in the home known as computer.
+> Forgetful, aren't you USER? You are in the writing room, just off of the lounge in the home known as computer.
 
 **USER**
 
-> I'm going to ECHO my thoughts about OTHER into this new Diary.
+> I'm going to ECHO my thoughts about OTHER into this new Diary...
 
 **OTHER**
 
@@ -118,11 +120,12 @@ OTHER.
 **CHMOD** 
 
 > Your wish is my command! Abracadabra - Not GROUP, NOT OTHER, but only USER can read!
-USER, your diary is protected.
+
+> USER, your diary is protected.
 
 **USER**
  
-> LS: what's in this room?
+> LS: what's in this new room of mine?
 
 **LS** 
 
