@@ -201,7 +201,7 @@ and a Green one once you are done.
 
 Did anyone find out why this is in the checklist?
 
--- *Slide End*--
+-- *Slide End* --
 
 It's in the list because NeCTAR limit you to a maximum of 20. Which means that you have to share them around if
 you have lots of instances!
@@ -212,7 +212,7 @@ you have lots of instances!
 
 Can anyone tell us about these two?
 
--- *Slide End*--
+-- *Slide End* --
 
 HTTP is Hypertext Transfer Protocol. All you need to know is that it is the way in which web pages are requested
 from the server and transferred back to your computer. HTTPS simply appends "Secure" to the end of HTTP. It gives you

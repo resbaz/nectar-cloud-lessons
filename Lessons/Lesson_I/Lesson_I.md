@@ -200,14 +200,14 @@ do it now. You know where to go when you want to find some helpful documentation
 
 **Activity:** Get everyone to click on the "Get Support" link in the resultant page.
 
-This is the important page if you want to reach out and get help. There is documented a process that Research Cloud 
+This is the important page if you want to reach out and get help. Here NeCTAR document the process that they 
 would like you to follow when you reach out to get help.
 
 1. Check to see if the Research Cloud is OK
 2. Check to see if anyone else has experienced your problem
 3. Finally, try to get help.
 
-This process is there to try and save everyone time and effort on the Research Cloud side. We are getting a lot of cloud for 
+This process is there to try and save everyone time and effort on the NeCTAR side. We are getting a lot of cloud for 
 free. If we can lessen the amount of work that Research Cloud’s staff do we can get more of the cloud to use. 
 It seems fair to me.
 
@@ -534,8 +534,8 @@ simply files on the host server. What happens to those changes when you terminat
 What happens to your hard drive when you terminate your Virtual Machine (VM)?
 
 1. It gets copied back to the image store
-1. It gets ‘snapshotted’ for me to use again
-1. It’s left on the host server, for me to use when I next launch a machine
+1. It gets ‘snapshotted’ for you to use again
+1. It’s left on the host server, for you to use when you next launch a machine
 1. It gets destroyed. Wiped. Cleaned. Gone!
 
 -- *Slide End* --
