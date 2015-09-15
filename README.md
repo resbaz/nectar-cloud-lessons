@@ -93,10 +93,11 @@ You will need to write the following words onto cards in big print, one word per
 
 1. [ ] Bring the Kanban stuff into this "todo" list.
 1. [ ] Work through the lesson 2 defects in github
+1. [ ] Add some more images to checklists
+1. [ ] Investigate the use of MobaXTerm or Babun instead of CygWin...
 
 #### Nice to have
 
-1. [ ] Get sample clay seal?
 1. [ ] Possibly add an FAQ of synonym's? Have things like drive, PC, server, IP, Web address, HTTP, link etc...
 1. [ ] As a Chromebook user can I have an online SSH like resbaz.cloud.edu shell tool?
 
