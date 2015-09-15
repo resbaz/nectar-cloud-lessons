@@ -89,14 +89,13 @@ Please hold up a Red sticky not if the answer is "No" and a Green one if the ans
 this is to get those who don't have AAF credentials to pair with someone who does…
 
 The first time you log on to the Research Cloud dashboard, you get given a **free** project/tenant, with three-months 
-worth of time if you run it all the time. If you don't, it should last a bit longer! 
-
-But if you keep your machines on the cloud as small as possible, you can get up to six months before your project/tenant 
-exhausts its initial quota. But you can still log in to the dashboard to view and request allocations. You can even
-fill in an allocation request to extend your project/tenant!
+worth of time if you run it all the time. 
 
 If you only use your small machines for short periods of time, and shut them down religiously after each run, you will 
 find that your project/tenant should last far longer. 
+
+But even if your trial project has expired, you can still log in to the dashboard to view and request 
+allocations. You can even fill in an allocation request to extend your existing project/tenant!
 
 Regardless of your path,  your project/tenant should give you the time to learn the Research Cloud ropes!
 
@@ -117,8 +116,12 @@ And a Red one if you need help.
 Now that everyone has logged in, we are going to play a short game of "[follow my leader](http://www.thefreedictionary.com/follow-my-leader)".  
 As I have the big screen, I’m going to be the leader. So there!
 
-What I’d like you all to do is to follow along in your browsers, trying to do what I do. If you have any problems, 
-simply hold up a red sticky note, I’ll stop, and someone will come to help you.
+What I’d like you all to do is to follow along in your browsers, trying to do what I do. 
+
+    Now stop, and ask the audience to introduce themselves to the person on either side of them (if they don't
+    know that person). Then let them know that these are the people that they will turn to first for help if they
+    have any problems with the lesson. Only put up red cards if neither person on either side can't help them.
+    So if a read card goes up, you are expecting to see a row of red cards!
 
 And I’m going to be asking questions as we go long, just to see how well I’m doing!
 
@@ -192,9 +195,9 @@ A menu appears on the left!
 
 **Demonstrate:** This menu to the left of the support site matches the links in the top bar of the support site.
 
-The support site has loads of useful documentation. It has how to get started guides, tutorials, knowledge bases, and 
-more importantly it has information showing you how to get support. It’s well worth exploring. But we are not going to 
-do it now. You know where to go when you want to find some helpful documentation.
+The support site has loads of useful documentation. It has how to get started guides, tutorials and knowledge bases.
+It’s well worth exploring. But we are not going to do it now. You know where to go when you want to find some helpful 
+documentation.
 
 **Activity:** Get everyone to click on the "Get Help" link of the top bar of the support site.
 
@@ -208,13 +211,13 @@ would like you to follow when you reach out to get help.
 3. Finally, try to get help.
 
 This process is there to try and save everyone time and effort on the NeCTAR side. We are getting a lot of cloud for 
-free. If we can lessen the amount of work that Research Cloud’s staff do we can get more of the cloud to use. 
-It seems fair to me.
+very little cost. If we can lessen the amount of work that Research Cloud’s staff do we can get more of the cloud to 
+use. It seems fair to me.
 
 If you do decide that you need help, next Research Cloud lay out an email template showing the format they would like any 
 support request to follow.
 
-The first piece of information they request is the email shown in the dashboard settings drop down. This is important:
+The **first piece of information they request is the email shown in the dashboard settings drop down**. This is important:
 it lets them know who you are on the cloud - remember, the email you are sending from might not be the same as the one
 the Research Cloud knows you as.
 
@@ -380,6 +383,8 @@ How the Research Cloud works is that you select a file that is a copy of the con
 launch your machine. That file is copied across to wherever your machine is going to be run and becomes the 
 basis of your new machines hard drive.
 
+**Demonstrate:** Create a whiteboard drawing of this.
+
 Across the top of the list of images are four filters that are reasonably self explanatory.
 
 1. Project - the images that are visible only to your project. 
@@ -398,6 +403,8 @@ So the image you’ll start your adventure on the Research Cloud with is most li
 release a new copy of the image with a security update applied. Remember, your machine is based on a copy of that older 
 image. Is it likely to have that update applied to it as well?
 
+**Demonstrate:** Create a whiteboard drawing of this.
+
 Please hold up a Red sticky note if the answer is "No" 
 and a Green one if the answer is "Yes".
 
@@ -409,6 +416,8 @@ One common way of working is to start up a machine based on a NeCTAR image, then
 and then to make a copy of its hard drive as it runs. This process is called "snapshotting". 
 
 This saves you from having to reinstall the software next time you launch a machine. 
+
+**Demonstrate:** Create a whiteboard drawing of this.
 
 **Q:** Again, if you build your own image like this will it benefit from NeCTAR’s updates to the original file you copied?
 
@@ -539,6 +548,8 @@ What happens to your hard drive when you terminate your Virtual Machine (VM)?
 1. It gets destroyed. Wiped. Cleaned. Gone!
 
 -- *Slide End* --
+
+**Demonstrate:** Refer to earlier whiteboard drawing of this.
 
 **Answer D:** The image is simply wiped.
 

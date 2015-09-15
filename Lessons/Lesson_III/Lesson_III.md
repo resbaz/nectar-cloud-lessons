@@ -1,6 +1,6 @@
 -- *Slide* --
 
-# Lesson III: Accessing and updating your new computer (30 min)
+# Lesson III: Accessing and updating your new computer (45 min)
 
 -- *Slide End* --
 
@@ -406,6 +406,7 @@ Finally, we are going try and update our web server. Try to execute the first co
 apt-get update
 ```
 -- *Slide End* --
+
 -- *Slide* --
 
 ## Help!
@@ -431,7 +432,7 @@ But don't panic!
 
 -- *Slide* --
 
-## Exercise 8
+## Exercise 9
 
 The `sudo` command (**s**uper **u**ser **do**) comes to your help. It allows the ubuntu user to run commands with
 the security privileges of the super user.
@@ -451,7 +452,7 @@ Once done, execute the command:
 
 -- *Slide* --
 
-## Exercise 9
+## Exercise 10
 
 ```bash
 sudo apt-get upgrade
@@ -480,7 +481,7 @@ When you are finished working on your virtual machine, do the following:
 
 -- *Slide* --
 
-## Exercise 10
+## Exercise 11
 
 Type `exit`
 
@@ -498,7 +499,7 @@ terminal is now back on your local machine. The teleportation magic is over!
 Hold up a Green card if you are back on your local machine.
 And a Red card if you are not.
 
-**Exercise 11**
+**Exercise 12**
 
 Return to the security group in the dashboard and remove the ssh rule.
 
@@ -511,7 +512,7 @@ And a Red card if you haven't.
 
 I'm hoping to see a sea of Red!
 
-**Exercise 9**
+**Exercise 13**
 
 Now return to the security group and re-add a rule that allows ssh.
 
@@ -632,7 +633,7 @@ restart it, then the chances are that new instance will have the same IP number 
 
 -- *Slide* --
 
-## Exercise 12
+## Exercise 14
 
 The command to fix this problem is:
 

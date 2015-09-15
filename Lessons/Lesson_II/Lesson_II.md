@@ -4,6 +4,8 @@
 
 -- *Slide End* --
 
+**Note:** Introduce Anna, our persona who will be guiding the rest of the course.
+
 > A researcher, Anna Prentice wants fire up a website to share some some information about her kitten project with the 
 > world. 
 
@@ -16,10 +18,8 @@
 _This is one of the great things about the Research Cloud: you can just spin up machines, play with them, and then
 **THROW THEM AWAY**!_
 
-    Now stop, and ask the audience to introduce themselves to the person on either side of them (if they don't
-    know that person). Then let them know that these are the people that they will turn to first for help if they
-    have any problems with the lesson. Only put up red cards if neither person on either side can't help them.
-    So if a read card goes up, you are expecting to see a row of red cards!
+> Remember, if you have any problems during this session, turn to your neighbors before you lift up your red sticky
+notes!
 
 ## The power of Checklists
 
@@ -67,9 +67,12 @@ interested in.
 
 We'll start by creating our key pair.
 
-**NB:** you can only download your keypair once! Don’t lose it!!
-
 Walk the students through the key pair checklist, describing each entry
+
+**NB:** you can only download this file once! Don’t lose it!!
+
+**Note:** The checklists are online: so do as we did in our software deployments. One person will use the checklist
+to instruct the other, remembering to fill in the checklists as you go through it. Then swap!
 
 -- *Slide* --
 
