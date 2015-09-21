@@ -87,6 +87,14 @@ You will need to write the following words onto cards in big print, one word per
 * USER
 * GROUP
 
+### When giving the lessons:
+
+Try to engage the audience. You can do this by asking questions of them. So for, example, 
+
+* each time a previous bash command is used in lesson 4 point to people randomly to ask them what the command means...
+* when you are typing bash commands ask for participants to tell you what to type at each space and slash in 
+  the bash script...
+
 ### Todo
 
 #### Must do
@@ -100,6 +108,8 @@ You will need to write the following words onto cards in big print, one word per
 
 1. [ ] Possibly add an FAQ of synonym's? Have things like drive, PC, server, IP, Web address, HTTP, link etc...
 1. [ ] As a Chromebook user can I have an online SSH like resbaz.cloud.edu shell tool?
+1. [ ] Could you use three cup game, three card monty, etc. as example of moving data files around on your local and 
+       remote server?
 
 ### For "Train the Trainer
 

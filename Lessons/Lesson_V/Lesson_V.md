@@ -31,21 +31,19 @@ ssh -i key.pem -Y ubuntu@115.146.84.207
 
 -- *Slide* --
 
-## Question 1
+## Pop quiz: first answers wins... 
 
-Using the `man ssh` command, what is the -Y flag adding to the `ssh` command?
-
-1. Forces ssh to use IPv4 addresses only
-1. Specifies the user to log in as on the remote machine
-1. Enables trusted X11 forwarding
-1. Asks ssh to display the version number and exit
-1. Forces ssh into quiet mode.
+Who can use their friend `man` the quickest to find out what the `-Y` is doing?
 
 -- *Slide End* --
 
-**Answer 2**
+-- *Slide* --
 
-    C. Enables trusted X11 forwarding.
+## Answer
+
+The `-Y` enables trusted X11 forwarding when using the `man` command
+
+-- *Slide End* --
 
 _What on earth is X11 forwarding?_, I hear you ask.
 

@@ -14,7 +14,7 @@
 | [`more`](#more)   | **MORE**                                | list the contents of a file |
 | [`pwd`](#pwd)     | **P**rint **W**orking **D**irectory     | shows where you are |
 | [`rm`](#rm)       | **R**e**M**ove                          | remove a file |
-| [`rmdir`](#rmdir) | **R**e**M**ove **DIR**irectory          | remove a file |
+| [`rmdir`](#rmdir) | **R**e**M**ove **DIR**irectory          | remove a directory |
 | [`scp`](#scp)     | **S**ecure **C**o**P**y                 | copy files securely between computers |
 | [`ssh`](#ssh)     | **S**ecure **Sh**ell                    | teleports you to another machine |
 | [`ssh-keygen`](#ssh-keygen) | **S**ecure **Sh**ell - **KEY** **GEN**erate | Allows you manage your keys |
@@ -55,6 +55,8 @@ echo "goodbye" >> temp.txt  # will appends the line "goodbye" to the contents of
 If the file doesn't exist, it will be created. If it does exist, its contents will be appended to.
 
 ## Examples
+
+Note: A hash in the examples marks the start of a note. So: `# this is a note`
 
 ### apt-get
 
@@ -139,6 +141,8 @@ pwd         # show the current directory I'm positioned in
 ### rm
  
 Form: `rm <filename>`
+
+Be warned: there is no trash bin! Once something is removed, it's gone!
 
 ```bash
 rm notes.txt    # delete the file named notes.txt
