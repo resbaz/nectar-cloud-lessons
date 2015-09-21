@@ -39,7 +39,19 @@ to make a public handle that you can share with the world.
 
 Now for a challenge.
 
+-- *Slide* --
+
 ## Activity 1:
+
+Can you create a container named **resbaz**
+in the Object Store and upload a picture to it? 
+
+**NB:** preserve the file extension as you name it.
+**Challenge:** Can you make it public and access the url in your browser?
+
+Once your done, can you delete it all?
+
+-- *Slide End* --
 
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
