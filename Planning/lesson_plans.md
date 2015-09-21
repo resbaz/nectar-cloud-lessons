@@ -1,4 +1,4 @@
-# The lesson plan for a two day NeCTAR "train the researcher" event.
+# The lesson plan for a one day NeCTAR "train the researcher" event.
 
 ## Target Audience
 
