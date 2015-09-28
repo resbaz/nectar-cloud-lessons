@@ -516,7 +516,9 @@ Having set up the environment that controls access to the the machine I'm now go
 
 I do this by going back to the instances tab.
 
-This is simply the place where you get to see the information about all your running machines.
+This is simply the place where you get to see the information about all your running machines. 
+Note that I say "machines", as you can run more than one computer should you so choose. The only
+limit is the one defined by your allocation.
 
 It is also one of the places that you can use to launch your free computer.
 
