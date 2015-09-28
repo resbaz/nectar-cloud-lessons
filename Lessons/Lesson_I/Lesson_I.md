@@ -285,8 +285,9 @@ applications. So here you generate a password to use with command line applicati
 
 So that’s the Settings tab and its children. Site wide changes that work across all projects.
 
-So remember: if you want to change things do with your personal details, such as language and **command line password**: 
-the top right drop down with your name on it is the way to go!
+So remember: if you want to change your personal details, the top right drop down with your name on it is the way to go!
+
+And that the password is for **applications only**!
 
 -- *Slide* --
 
