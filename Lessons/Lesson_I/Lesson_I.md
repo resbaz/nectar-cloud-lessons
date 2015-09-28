@@ -573,6 +573,9 @@ This only works for small machines. It’s not the worlds greatest way of doing 
 I've seen this ephemeral storage take grown developers by surprise when they first start using the Research Cloud. 
 It has just about reduced them to tears. Don’t be like them - trust nothing on the cloud!
 
+Now, I've been saying "terminating", but if you look at the running instance you can see that you have many different
+options for halting it. Which begs the question:
+
 -- *Slide* --
 
 ## Question 7
