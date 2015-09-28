@@ -391,7 +391,9 @@ Across the top of the list of images are four filters that are reasonably self e
 1. Project - the images that are visible only to your project. 
 2. NeCTAR official - the images that Research Cloud share with the world. These are simply images of operating 
    systems.  Whilst on this list NeCTAR is keeping them current. 
-3. Shared with me - the images that other users have opted to share with you
+3. Shared with me - the images that other users have opted to share with you. 
+   Sharing images with others requires the use of command line tools, so it's a more advanced topic that you will
+   have to leave till you are more familiar with the research cloud.
 4. Public - the list of images that others have shared with the world. This mostly already have applications installed  
    on them, ready to run.
 
