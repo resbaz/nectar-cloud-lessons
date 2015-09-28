@@ -89,10 +89,10 @@ Please hold up a Red sticky not if the answer is "No" and a Green one if the ans
 this is to get those who don't have AAF credentials to pair with someone who does…
 
 The first time you log on to the Research Cloud dashboard, you get given a **free** project/tenant, with three-months 
-worth of time if you run it all the time. 
+worth of time if you run the largest computer you can on it all the time. 
 
-If you only use your small machines for short periods of time, and shut them down religiously after each run, you will 
-find that your project/tenant should last far longer. 
+If you only use your smallest computer for short periods of time, and terminate them religiously after each run, you 
+will find that your project/tenant should last far longer. 
 
 But even if your trial project has expired, you can still log in to the dashboard to view and request 
 allocations. You can even fill in an allocation request to extend your existing project/tenant!
@@ -624,6 +624,9 @@ When do I lose my IP number?
 -- *Slide End* --
 
 **Answer: B** 
+
+Also know that if you **don't terminate your computer** then it will still be running down your allocation clock!
+Stopped and paused computers are still consuming resources on the host computer!
 
 Now knowing what's going on under the hood, you can understand why once you hit the "Launch" button there might be a 
 delay before the machine runs - there's quite a lot going on.
