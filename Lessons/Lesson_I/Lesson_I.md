@@ -140,9 +140,9 @@ The one on the left shows the projects that you belong to.
 
 In OpenStack parlance, a project is: 
 
-"*A logical grouping of users within Compute; defines quotas and access to VM images*."
+"*A logical grouping of users; it defines quotas and access to computers*."
 
-And every project has a project ID: A "[User-defined alphanumeric string in Compute; the name of a project.](http://docs.openstack.org/glossary/content/glossary.html#project-id )"
+And every project has a project ID: A "[User-defined alphanumeric string; the name of a project.](http://docs.openstack.org/glossary/content/glossary.html#project-id )"
 
 So a project is really just a way to set group people together and to set constraints on what operations they can do on 
 the Research Cloud.
