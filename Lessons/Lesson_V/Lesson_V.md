@@ -103,11 +103,11 @@ gedit today.txt
 Once you've done this, save the file and exit gedit. Confirm that your changes have have been saved by using the 
 `more` command:
 
--- *Slide End* --
-
 ```bash
 more today.txt
 ```
+
+-- *Slide End* --
 
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
