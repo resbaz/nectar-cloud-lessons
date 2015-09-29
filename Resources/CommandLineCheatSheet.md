@@ -116,6 +116,8 @@ man ls      # display the manual for the ls command
 man man     # display the manual for the man command
 ```
 
+Pressing the 'q' key quits (quietens?) man
+
 ### mkdir
 
 Form: `mkdir <directory name>`
