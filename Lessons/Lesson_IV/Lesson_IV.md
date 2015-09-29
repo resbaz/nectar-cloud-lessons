@@ -2,10 +2,21 @@
 
 # Lesson IV: Moving data to and from your new computer (30min)
 
+http://tinyurl.com/rc-issue-12
+
 -- *Slide End* --
 
 > Whilst on the machine, Anna realises that she doesn't have a backup of the data that she has on her site. And thinks
 > that it would be a good time to create one!
+
+**Drawing**
+
+Create a drawing showing the two computers: then during the following, refer to it!
+
+e.g.:
+
+    local   |   remote
+      []    |     []
 
 ## scp
 
@@ -31,6 +42,8 @@ machine to the local directory in which `scp` is being run:
 Where of course `USER_NAME` is the default account on the remote machine, and `remote_machine_address` is either its
 IP number or its domain name.
 
+The dot on its own simply means the current directory in your machine.
+
 -- *Slide* --
 
 ## Example 2
@@ -49,6 +62,40 @@ machine's USER_NAME home directory:
 ## Question 1
 
 ```bash
+$ scp USER_NAME@remote_machine_address:notes.txt . 
+```
+
+Is the file: 
+
+1. Being copied from the remote machine to the local machine
+1. Being copied from the local machine to the remote machine
+
+-- *Slide End* --
+
+**Answer** from the remote machine to the local machine
+
+-- *Slide* --
+
+## Question 2
+
+```bash
+$ scp notes.txt USER_NAME@remote_machine_address: 
+```
+
+Is the file: 
+
+1. Being copied from the remote machine to the local machine
+1. Being copied from the local machine to the remote machine
+
+-- *Slide End* --
+
+**Answer** from the local machine to the remote machine
+
+-- *Slide* --
+
+## Question 3
+
+```bash
 # From remote machine to local machine
 $ scp USER_NAME@remote_machine_address:notes.txt . 
 
@@ -56,7 +103,7 @@ $ scp USER_NAME@remote_machine_address:notes.txt .
 $ scp notes.txt USER_NAME@remote_machine_address: 
 ```
 
-Is the **origin**al file 
+Is the source file 
 
 1. Named on the left
 1. Named on the right
@@ -71,6 +118,11 @@ So the answer is A. The original file is on the left, the target machine on the 
 You can use a wildcard denoted by the asterisk character (*) to copy multiple files in one go.
 
 By way of example, I'm going to create a file locally, move it to the remote machine, then bring it back.
+
+**PS** 
+
+As you work through the following ask the audience where the file is now...
+Also ask questions, such as "how do I list files?"
 
 ```bash
 echo "hello from afar"             # just echos the message back to us.
