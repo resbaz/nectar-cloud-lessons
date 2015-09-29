@@ -2,6 +2,8 @@
 
 # Lesson III: Accessing and updating your new computer (45 min)
 
+http://tinyurl.com/rc-issue-9
+
 -- *Slide End* --
 
 > Anna Prentice has now had her Drupal web server up and running for a few weeks. And she's very happy! 
@@ -537,11 +539,10 @@ trying to access your machine.
 You remove ssh from a security group shared by many servers. 
 Will you be able to ssh into any of the servers?
 
-**Choices**
-
 1. Yes
 1. No
-1. Only if there is another security group applied to the server that has ssh enabled.
+1. Only if there is another security group applied to the server
+   that has ssh enabled.
 
 -- *Slide End* --
 
