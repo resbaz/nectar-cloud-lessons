@@ -98,22 +98,31 @@ Let's see if I can explain them in a bit more detail.
 Network messages destined for a computer are broken up into packets. Once a packet reaches a computer how does the
 computer know which application the packet is intended for? 
 
-Imagine that Australia was a computer: and that containers on ships heading to Australia were the network packets.
-And stretching the metaphor even more, that cities were applications. 
+Well, the operating system allocates a different number to each running application. Then all network packets that
+carry that number are sent to that application. This number is called a port number.
 
-If you can get your head around that tortured metaphor, then its easy. Each container has a port number painted on it.
-Then when the ship docks, customs will only allow those containers with the correct port number off of it.
+A security group is a firewall that allows all outgoing network packets to pass, but blocks all incoming network 
+packets by default. But you can open "ports" in the security group, hence allowing inbound network packets with a 
+matching port number through to the application on the instance.
 
-So what if each network packet also had an associated number indicating the destination application? Then the security
-group, acting as a customs officer, could reject all the packets that were not acceptable for a given application!
-
-Well, strange to say, each packet on the network gets given a port number, indicating the application it is intended
-to go to. And well known applications get well known port numbers. So web servers use port 80, for example.
-
-So simply put a security group allows you to define the port numbers that packets from the outside world must have if 
-they are going to be allowed to reach your VM. 
-
-Any packets with a different port number don’t even make it to your machine. They are just thrown overboard!
+    If you get lots of blank looks, the following twisted metaphor might help:
+    
+    Imagine that Australia was a computer: and that containers on ships heading to Australia were the network packets.
+    And stretching the metaphor even more, that cities were applications. 
+    
+    If you can get your head around that tortured metaphor, then its easy. Each container has a port number painted on it.
+    Then when the ship docks, customs will only allow those containers with the correct port number off of it.
+    
+    So what if each network packet also had an associated number indicating the destination application? Then the security
+    group, acting as a customs officer, could reject all the packets that were not acceptable for a given application!
+    
+    Well, strange to say, each packet on the network gets given a port number, indicating the application it is intended
+    to go to. And well known applications get well known port numbers. So web servers use port 80, for example.
+    
+    So simply put a security group allows you to define the port numbers that packets from the outside world must have if 
+    they are going to be allowed to reach your VM. 
+    
+    Any packets with a different port number don’t even make it to your machine. They are just thrown overboard!
 
 Ok, lets look at the security group checklist.
 
@@ -156,6 +165,8 @@ project stops “working”. Could it be because:
 1. All of the above... ☹
 
 -- *Slide End* --
+
+Walk through each option, describing how it could affect the instance you are trying to reach.
 
 **Answer: E.** Yes, it’s true. The research cloud can experience network issues from time to time. 
 
