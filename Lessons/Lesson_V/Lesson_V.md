@@ -2,6 +2,8 @@
 
 # Lesson V: We can still run our graphical applications (30min)
 
+http://tinyurl.com/rc-issue-13
+
 -- *Slide End* --
 
 > Anna Prentice needs to view a remote web site. However, on trying to access it, she finds that her institutions
@@ -51,6 +53,8 @@ X-Windows is the name of the presentation system used on the Research Cloud serv
 allows an application to run on one machine, and the applications graphical user interface to appear on another. Here
 the X refers to X-Windows. 11 refers to the version of X windows. X11 forwarding simply means that `ssh` will allow
 the X11 software installed on your local machine to render the graphical application being run on the remote machine.
+
+It's kind of like TV: the server is broadcasting the user interface to your local machine.
 
 ## Browsing the web via Firefox
 
