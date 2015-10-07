@@ -628,6 +628,12 @@ When do I lose my IP number?
 Also know that if you **don't terminate your computer** then it will still be running down your allocation clock!
 Stopped and paused computers are still consuming resources on the host computer!
 
+    "An instance in shutdown state is still consuming resources on the
+    compute node (disk space, ip address). The vcpus and ram to run this
+    instance are also reserved (as the instance could start at any time).
+    This is why an instance in shutdown state would count against an
+    allocation."
+
 Now knowing what's going on under the hood, you can understand why once you hit the "Launch" button there might be a 
 delay before the machine runs - there's quite a lot going on.
 
