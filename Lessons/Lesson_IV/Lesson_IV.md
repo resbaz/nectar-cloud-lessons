@@ -117,7 +117,27 @@ So the answer is A. The original file is on the left, the target machine on the 
 
 You can use a wildcard denoted by the asterisk character (*) to copy multiple files in one go.
 
-By way of example, I'm going to create a file locally, move it to the remote machine, then bring it back.
+-- *Slide* --
+
+## A gotcha!
+
+```bash
+scp -i key.pem temp.txt ubuntu@115.146.92.130 
+```
+# Does not work: it needs the colon!
+
+e.g.:
+
+```bash
+scp -i key.pem temp.txt ubuntu@115.146.92.130:
+```
+
+-- *Slide End* --
+
+The colon is used by scp to indicate that this is a remote transfer. If you dont include it, the chances are
+that you have a file named "ubuntu@115.146.92.130" on your local machine!
+
+Ok: by way of example, I'm going to create a file locally, move it to the remote machine, then bring it back.
 
 **PS** 
 
