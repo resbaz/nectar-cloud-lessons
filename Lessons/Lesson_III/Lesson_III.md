@@ -607,18 +607,22 @@ But if they change, then ssh will refuse to give you a connection, showing the e
 IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
 Someone could be eavesdropping on you right now (man-in-the-middle attack)!
 It is also possible that a host key has just been changed.
-The fingerprint for the RSA key sent by the remote host is
-45:ed:0b:42:16:b7:6c:dd:49:05:8d:b4:2b:16:7c:64.
+The fingerprint for the ECDSA key sent by the remote host is
+20:db:ea:9c:66:9a:ee:07:e6:1b:d8:a4:9d:d0:99:bc.
 Please contact your system administrator.
-Add correct host key in /Users/martinpaulo/.ssh/known_hosts to get rid of this message.
-Offending RSA key in /Users/martinpaulo/.ssh/known_hosts:14
-RSA host key for 115.146.85.98 has changed and you have requested strict checking.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /root/.ssh/known_hosts:87
+  remove with: ssh-keygen -f "/root/.ssh/known_hosts" -R mdcs-256-w14
+ECDSA host key for mdcs-256-w14 has changed and you have requested strict checking.
 Host key verification failed.
 ```
 
 -- *Slide End* --
 
-The error message is very helpful: it even gives you the location of your known hosts file.
+The error message is very helpful: it even gives you the location of your known hosts file, and the
+exact command required to fix it!
+
+Note that earlier versions of the ssh software don't show the command required to fix this warning!
 
 **Q**
 
