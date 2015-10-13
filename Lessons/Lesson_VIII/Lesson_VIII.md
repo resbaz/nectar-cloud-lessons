@@ -1,6 +1,6 @@
 -- *Slide* --
 
-# Lesson VIII: The object store (30 min)
+# Lesson VIII: The object store (15 min)
 
 -- *Slide End* --
 
