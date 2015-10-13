@@ -308,10 +308,25 @@ that you saved your key file in...
 -- *Slide End* --
 
 If everyone could try to connect to their server using the ssh command, that would be wonderful.
-BTW, I'm hoping that you all fail - with the error message!
+
+-- *Slide* --
+
+## When you are asked:
+
+```bash
+The authenticity of host '144.6.225.224 (144.6.225.224)' can't be established.
+RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
+Are you sure you want to continue connecting (yes/no)?
+```
+
+simply type "yes".
+
+-- *Slide End* --
+
+BTW, I'm hoping that you all fail - with an error message!
  
- Hold up a Green card when you've reached this error message.
- And a Red card if you need help
+Hold up a Green card when you've reached this error message.
+And a Red card if you need help
 
 -- *Slide* --
 
@@ -362,20 +377,6 @@ Modify the permissions on your key file so that only you can read or write it.
 Then issue the `pwd` command to see what directory you are in.
 
 Retry the ssh command.
-
--- *Slide* --
-
-## When you are asked:
-
-```bash
-The authenticity of host '144.6.225.224 (144.6.225.224)' can't be established.
-RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
-Are you sure you want to continue connecting (yes/no)?
-```
-
-simply type "yes".
-
--- *Slide End* --
 
 Hopefully, you are now met with something along following lines
 
