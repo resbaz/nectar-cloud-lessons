@@ -236,6 +236,8 @@ and launch a new instance using the snapshot that you have just created.
  
 Once you are done make sure that your site is back up, and that you can ssh into the instance again.
 
+Confirm that `today.txt` has your edits in it...
+
 -- *Slide End* --
 
 ---
