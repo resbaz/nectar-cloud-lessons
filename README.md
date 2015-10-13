@@ -165,4 +165,10 @@ this demographic and see which is better.
 We are just going to have to get people like this to pair up with others: the only other way to handle this is
 to create a special tenancy for the lesson, and then to add people like this to it...
 
+### Overall
+
+Should we add some scenarios for what you'll need to know when colleagues have found out about your new 
+cloud manager skills, and want you to do different things with their images: one colleague wants things 
+backed up and archived for long term, one one a clean install, one wants... etc?
+
 

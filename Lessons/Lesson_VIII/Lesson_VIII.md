@@ -8,7 +8,7 @@
 [Test](https://developer.rackspace.com/blog/backing-up-cinder-volumes-to-swift/)
 [Borrow?](https://developer.rackspace.com/blog/mysql-backup-to-rackspace-cloud-files/)
 
-Remember in Lesson 1 that we said the  *Object Store* is an ideal replacement for the usb sticks that some 
+Remember in Lesson I that we said the  *Object Store* is an ideal replacement for the usb sticks that some 
 people tend to carry around?
  
 On top of that, any file that you give it is backed up in triplicate, and each of the the copies is monitored for 
