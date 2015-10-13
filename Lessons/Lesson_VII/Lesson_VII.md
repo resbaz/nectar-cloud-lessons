@@ -1,12 +1,22 @@
 -- *Slide* --
 
-# Lesson VII: Transient storage (don’t rely on it!)
+# Lesson VII: Transient storage (don’t rely on it!) and sharing
+
+http://tinyurl.com/rc-issue-15
 
 -- *Slide End * --
 
+In the last lesson, we launched our image based on our snapshot with the largest size possible.
+
+Did any of you notice the ephemeral disk in the flavor details?
+
+**Demonstrate**
+
+That's what we are going to be looking at in this lesson. 
+
 -- *Slide* --
 
-Anna needs some extra disk space over and above the 10G image size. While she's ssh'd into the image she
+Anna needs some extra disk space over and above the 10G image size. While she's ssh'd into her larger instance she
 types 
 
 ```bash
@@ -36,19 +46,24 @@ Do as Anna did and issue a `df -h`. You should see the same result as her.
 
 ---
 
+Hold up a Red sticky note if you don't.
+Otherwise a green one if you do.
+
 -- *Slide* --
 
 ## Exercise 7, part 1
 
 ```bash
 df -h
-# Create two files
+# check file permissions and make usable
+ls -al /mnt/
 sudo chmod a+rw /mnt/  
-echo "This is file one" > /mnt/file1.txt
-echo "This is file two" > file2.txt
+# Create two files
+echo "This is file one" > /mnt/temp.txt
+echo "This is file two" > home.txt
 # Confirm their contents:
-more /mnt/file1.txt
-more file2.txt
+more /mnt/temp.txt
+more home.txt
 ```
 
 When done, make a snapshot of this machine.
@@ -69,14 +84,14 @@ When it is complete then delete the original instance.
 
 ## Exercise 7, part 2
 
-Launch a new instance from your new snapshot.
+Launch a new instance of the same flavor as the last from your new snapshot.
 
 `ssh` into the new instance and run the following commands:
 
 ```bash
 sudo chmod a+rw /mnt/ 
-more file2.txt
-more /mnt/file1.txt
+more home.txt
+more /mnt/temp.txt
 ```
 
 What's missing?
@@ -92,13 +107,13 @@ Otherwise a green one when you are done.
 
 ---
 
-So where's the missing `file1.txt`?
+So where's the missing `temp.txt`?
 
 When you launch an instance, the instance is given a second hard drive with a fair amount of of space on it.
 That is the extra space that Anna found and used.
 
-**NB** When you make a snapshot, the snapshot is only of the primary drive. Anything on the secondary drive is not
-saved. 
+**NB** When you make a snapshot, the snapshot is only of the primary drive. Anything on the secondary 
+ephemeral drive is not saved. 
 
 You can get and run some fairly grunty machines on the Research Cloud cloud. But snapshots will only save your small 
 primary drive. If you use the extra drive space you will not be able to back it up by means of snapshots!
@@ -175,3 +190,15 @@ We have also seen that snapshots allow you to move between different sized machi
 
 And we have learnt that snapshots only save the primary drive of an instance. If you use the secondary drive, for 
 example to put large data sets on, you will not backup that data with a snapshot.
+
+-- *Slide* --
+
+## Exercise 10
+
+Make your shared snapshot private again!
+
+-- *Slide End* --
+
+Hold up a Red sticky note if you run into problems.
+
+And a Green one once you are done.
