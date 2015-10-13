@@ -2,8 +2,6 @@
 
 # Lesson III: Accessing and updating your new computer (45 min)
 
-http://tinyurl.com/rc-issue-9
-
 -- *Slide End* --
 
 > Anna Prentice has now had her Drupal web server up and running for a few weeks. And she's very happy! 

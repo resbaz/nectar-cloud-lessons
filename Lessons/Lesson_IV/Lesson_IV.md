@@ -2,8 +2,6 @@
 
 # Lesson IV: Moving data to and from your new computer (30min)
 
-http://tinyurl.com/rc-issue-12
-
 -- *Slide End* --
 
 > Whilst on the machine, Anna realises that she doesn't have a backup of the data that she has on her site. And thinks
