@@ -82,6 +82,9 @@ Create a Keypair with the help of the key pair checklist
 
 http://tinyurl.com/creating-a-keypair
 
+*Tip:* Preface the security group name with an "kp_" so that you know that
+its part of a keypair when you see the name...
+
 (Expected time, 5 minutes)
 
 -- *Slide End* --
@@ -137,6 +140,9 @@ Walk the students through the security group checklist, describing each entry as
 Create a Security Group with the help of the security group checklist
 
 http://tinyurl.com/creating-a-security-group
+
+*Tip:* Preface the security group name with an "sg_" so that you know that
+its a security group when you see the name...
 
 (Expected time, 5 minutes)
 
