@@ -69,7 +69,7 @@ window as you snapshot your running instance. Then make a snapshot, and watch wh
 loop script.
 
 All going well, you should see the output pause for a few seconds, then resumes. On the other hand, the dashboard will 
-continue well after the count has resumed, as it writes the copy of the disk to the image store.
+continue well after the count has resumed... 
 
 Remember, to stop `loop.sh` from running, simply press the 'Ctrl' and the 'c' key together.
 
@@ -77,6 +77,17 @@ Hold up a Green card once you have seen the output pause.
 And a Red card if you need help.
 
 ---
+
+-- *Slide* --
+
+## Thought experiment
+
+Why does the loop resume well before the dashboard shows the snapshot is complete?
+
+-- *Slide End* --
+
+A: the dashboard takes longer, as it has to write the copy of the disk to the image store.
+
 
 So snapshots look like they might be the answer to Anna's problem, but they will have a short impact on anyone
 who is using her site at the time they taken.
