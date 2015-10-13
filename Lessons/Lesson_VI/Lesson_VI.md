@@ -189,11 +189,22 @@ A. You may forget to start your instance up again
 Yes: not only are you taking your site offline for a longer period than the momentary pause of a regular snapshot,
 you are opening yourself to the possibility of forgetting to start it up again when you are done.
 
-Remember the checklists of lesson II? This is where the power of checklists can help you. If you have an important site
+Remember the checklists of lesson II? This is where the power of checklists can help you. 
+
+If you have an important site
 that you don't want to be down for extended periods create a checklist for this process.
 
 Also, if you have a lot of users, notify them of the outage. It's only polite. Also consider doing it as a regularly
 scheduled event.
+
+-- *Slide* --
+
+## Group Exercise 
+
+Create a checklist for creating a snapshot of a running machine. 
+Don't forget to notify your users!
+
+-- *Slide End* --
 
 ## Restore
 
@@ -272,7 +283,7 @@ that your project will allow you.
 
 Once you are done make sure that your site is back up, and that you can ssh into the instance again.
 
-You can use the checklist from Lesson II as a memory jogger.
+Again, you can use the checklist from Lesson II as a memory jogger.
 
 Hold up a Red sticky note if you need help,
 Otherwise a green one when you are done.
@@ -301,3 +312,12 @@ What can you do to remedy this situation?
     E. Go to the allocation tab and complete an allocation request
 
 ---
+
+
+-- *Slide* --
+
+## Question 5
+
+A volunteer please: to describe an image, an instance, and the difference between the two...
+
+-- *Slide End* --
