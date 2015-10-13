@@ -4,7 +4,7 @@
 
 http://tinyurl.com/rc-issue-15
 
--- *Slide End * --
+-- *Slide End* --
 
 In the last lesson, we launched our image based on our snapshot with the largest size possible.
 
@@ -51,7 +51,7 @@ Otherwise a green one if you do.
 
 -- *Slide* --
 
-## Exercise 7, part 1
+## Exercise 1, part 1
 
 ```bash
 df -h
@@ -82,7 +82,7 @@ When it is complete then delete the original instance.
 
 -- *Slide* --
 
-## Exercise 7, part 2
+## Exercise 1, part 2
 
 Launch a new instance of the same flavor as the last from your new snapshot.
 
@@ -135,7 +135,7 @@ I'm hoping to see a sea of Red...
 
 -- *Slide* --
 
-## Exercise 8
+## Exercise 2
 
 On the images tab of the dashboard, click the drop down button next to the "Launch" button. Select the 'Edit' option.
 
@@ -155,7 +155,7 @@ and a Green one once you are done.
 
 -- *Slide* --
 
-## Exercise 9
+## Exercise 3
 
 Beware the size ratchet!
 
@@ -193,7 +193,7 @@ example to put large data sets on, you will not backup that data with a snapshot
 
 -- *Slide* --
 
-## Exercise 10
+## Exercise 4
 
 Make your shared snapshot private again!
 
