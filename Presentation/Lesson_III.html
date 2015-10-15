@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>NeCTAR Cloud Lessons</title>
+
+    <meta name="description" content="Slides for an introductory course on the NeCTAR cloud.">
+    <meta name="author" content="Martin Paulo">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="revealjs/css/reveal.css">
+    <link rel="stylesheet" href="revealjs/css/theme/solarized.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="revealjs/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+<!-- Slides go here -->
+<style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
+<section data-markdown><script type="text/template">
+
+# Lesson III: Accessing and updating your new computer (45 min)
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Anna wants to run
+
+```bash
+apt-get update && apt-get -y upgrade
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Question 1
+
+Those running Microsoft Windows...
+
+Yes, You!
+
+Did you install Cygwin?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+# A Play!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 1
+
+Find and run the terminal program, or command line, on your computer.
+
+OSX users can do a Spotlight Search for 'terminal'. 
+
+Cygwin users simply click on the Cygwin desktop icon.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 2
+
+Once you've opened it, remember PWD in our play?
+
+Try the following command:
+
+```bash
+pwd
+```
+
+`pwd` is shorthand for **p**rint **w**orking **d**irectory
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 3
+
+We are going to replay our play!
+
+There's a command line cheat sheet at: http://tinyurl.com/command-line-cheat-sheet
+
+Use it to step the through the following tasks:  http://tinyurl.com/play-task
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 4
+
+Gentle people, start your servers!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## ssh
+
+The program we are going to connect to the server with is: 
+
+```bash
+ssh
+```
+
+`ssh` stands for **s**ecure **sh**ell. 
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## ssh
+
+```bash
+ssh  -i <key> <user>@<address>
+```
+
+Eg: Along the lines of:
+
+```bash
+ssh -i tut_dev.pem ubuntu@144.6.225.224
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Question 2
+
+Research Cloud have a catalogue that gives information about the images that they provide. It can be found at:
+
+https://wiki.rc.nectar.org.au/wiki/Image_Catalog
+ 
+Have a look at it. What operating system do you think the Drupal server is based on?
+
+1. Fedora
+1. Debian
+1. Centos
+1. Ubuntu
+1. Scientific Linux
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Connect to your remote instance via ssh. E.G.:
+
+```bash
+ssh -i tut_dev.pem ubuntu@144.6.225.224
+```
+
+### PS: Windows users... 
+
+To find your key file, 
+prefix `/cygdrive/c/` to the directory 
+that you saved your key file in...
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## When you are asked:
+
+```bash
+The authenticity of host '144.6.225.224 (144.6.225.224)' can't be established.
+RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
+Are you sure you want to continue connecting (yes/no)?
+```
+
+simply type "yes".
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Is this your error message?
+
+```bash
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0777 for '.ssh/tut_dev.pem' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+bad permissions: ignore key: .ssh/nectar_dev.pem
+ubuntu@144.6.225.224's password: 
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 5
+
+This works for me:
+
+```bash
+chmod u=rw,go-rwx keys/tut_dev.pem 
+```
+
+Modify the permissions on your key file so that only you can read or write it.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Does this look familiar?
+
+```bash
+Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-36-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+Last login: Mon Mar 30 01:27:13 2015 from hqrouter.vpac.org
+ubuntu@drupal:~$ 
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 6
+
+Finally, we are going try and update our web server. Try to execute the first command in the set:
+
+```bash
+apt-get update
+```
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Help!
+
+Again, something has gone wrong! You should be met with the message:
+
+```bash
+E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+E: Unable to lock directory /var/lib/apt/lists/
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 7
+
+The `sudo` command (**s**uper **u**ser **do**) comes to your help. It allows the ubuntu user to run commands with
+the security privileges of the super user.
+
+Try to execute the command again, this time with `sudo`:
+
+```bash
+sudo apt-get update
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 8
+
+```bash
+sudo apt-get upgrade
+```
+
+If your system has software on it that needs an upgrade you will be met by a request to perform the upgrade. Something
+like:
+
+```bash
+After this operation, 4,096 B of additional disk space will be used.
+Do you want to continue? [Y/n]
+```
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 9
+
+Type `exit`
+
+You should see the following:
+
+```bash
+logout
+Connection to <some_ip_number> closed
+```
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Question 3
+
+You remove ssh from a security group shared by many servers. 
+Will you be able to ssh into any of the servers?
+
+1. Yes
+1. No
+1. Only if there is another security group applied to the server
+   that has ssh enabled.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Remember this?
+
+```bash
+The authenticity of host '144.6.225.224 (144.6.225.224)' can't be established.
+RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
+Are you sure you want to continue connecting (yes/no)?
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## There is possibly a man in the middle!
+
+```bash
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+20:db:ea:9c:66:9a:ee:07:e6:1b:d8:a4:9d:d0:99:bc.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /root/.ssh/known_hosts:87
+  remove with: ssh-keygen -f "/root/.ssh/known_hosts" -R mdcs-256-w14
+ECDSA host key for mdcs-256-w14 has changed and you have requested strict checking.
+Host key verification failed.
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 10
+
+The command to fix this problem is:
+
+```bash
+ssh-keygen -R <hostname>
+```
+
+Where `<hostname>` can also be the IP number of your affected machine.
+
+</script></section>
+    </div>
+
+</div>
+
+<script src="revealjs/lib/js/head.min.js"></script>
+<script src="revealjs/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'revealjs/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'revealjs/plugin/zoom-js/zoom.js', async: true},
+            {src: 'revealjs/plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>

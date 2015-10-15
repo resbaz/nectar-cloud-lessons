@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>NeCTAR Cloud Lessons</title>
+
+    <meta name="description" content="Slides for an introductory course on the NeCTAR cloud.">
+    <meta name="author" content="Martin Paulo">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="revealjs/css/reveal.css">
+    <link rel="stylesheet" href="revealjs/css/theme/solarized.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="revealjs/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+<!-- Slides go here -->
+<style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
+<section data-markdown><script type="text/template">
+
+# Lesson VII: Transient storage (don’t rely on it!) and sharing
+
+http://tinyurl.com/rc-issue-15
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+Anna needs some extra disk space over and above the 10G image size. While she's ssh'd into her larger instance she
+types 
+
+```bash
+df -h
+```
+
+(**d**isplay **f**ile usage)
+
+And sees that she has 30 Gig of free space on `/mnt`
+
+She decided to put her new files there. Has Anna made a mistake?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 1, part 1
+
+```bash
+df -h
+# check file permissions and make usable
+ls -al /mnt/
+sudo chmod a+rw /mnt/  
+# Create two files
+echo "This is file one" > /mnt/temp.txt
+echo "This is file two" > home.txt
+# Confirm their contents:
+more /mnt/temp.txt
+more home.txt
+```
+
+When done, make a snapshot of this machine.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 1, part 2
+
+Launch a new instance of the same flavor as the last from your new snapshot.
+
+`ssh` into the new instance and run the following commands:
+
+```bash
+sudo chmod a+rw /mnt/ 
+more home.txt
+more /mnt/temp.txt
+```
+
+What's missing?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 2
+
+On the images tab of the dashboard, click the drop down button next to the "Launch" button. Select the 'Edit' option.
+
+In the resultant dialogue give the image a description and check the public flag. Then save it.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 3
+
+Beware the size ratchet!
+
+> Anna made a snapshot of a 10Gig machine: and is now trying to launch it as a 5Gig flavor. 
+
+What happens?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 4
+
+Make your shared snapshot private again!
+
+</script></section>
+    </div>
+
+</div>
+
+<script src="revealjs/lib/js/head.min.js"></script>
+<script src="revealjs/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'revealjs/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'revealjs/plugin/zoom-js/zoom.js', async: true},
+            {src: 'revealjs/plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>

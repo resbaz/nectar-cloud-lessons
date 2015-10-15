@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>NeCTAR Cloud Lessons</title>
+
+    <meta name="description" content="Slides for an introductory course on the NeCTAR cloud.">
+    <meta name="author" content="Martin Paulo">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="revealjs/css/reveal.css">
+    <link rel="stylesheet" href="revealjs/css/theme/solarized.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="revealjs/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+<!-- Slides go here -->
+<style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
+<section data-markdown><script type="text/template">
+
+# Lesson IV: Moving data to and from your new computer (30min)
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Example 1
+
+```bash
+$ scp USER_NAME@remote_machine_address:notes.txt . 
+```
+
+`scp` is shorthand for **s**ecure **c**o**p**y
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Example 2
+
+```bash
+$ scp notes.txt USER_NAME@remote_machine_address: 
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Question 1
+
+```bash
+$ scp USER_NAME@remote_machine_address:notes.txt . 
+```
+
+Is the file: 
+
+1. Being copied from the remote machine to the local machine
+1. Being copied from the local machine to the remote machine
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Question 2
+
+```bash
+$ scp notes.txt USER_NAME@remote_machine_address: 
+```
+
+Is the file: 
+
+1. Being copied from the remote machine to the local machine
+1. Being copied from the local machine to the remote machine
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Question 3
+
+```bash
+# From remote machine to local machine
+$ scp USER_NAME@remote_machine_address:notes.txt . 
+
+# From local machine to remote machine
+$ scp notes.txt USER_NAME@remote_machine_address: 
+```
+
+Is the source file 
+
+1. Named on the left
+1. Named on the right
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## A gotcha!
+
+```bash
+scp -i key.pem temp.txt ubuntu@115.146.92.130 
+```
+# Does not work: it needs the colon!
+
+e.g.:
+
+```bash
+scp -i key.pem temp.txt ubuntu@115.146.92.130:
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 1
+
+I want everyone to create a file named, say, `whyme.txt` and then copy it onto their remote server.
+
+## Exercise 2
+
+For non existent bonus points, bring it back again!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+# PS: if it helps...
+
+```bash
+echo "hello from afar"             # just echos the message back to us.
+echo "hello from afar" > temp.txt  # directs the message to a file named temp.txt
+more temp.txt
+scp -i key.pem temp.txt ubuntu@115.146.92.130: 
+ssh -i key.pem ubuntu@115.146.92.130
+    ls
+    more temp.txt
+    pwd                             # to show that we are not on our local machine
+    exit
+pwd                                 # just to prove we are back on our local machine
+ls
+rm temp.txt                         # rm = remove!
+ls                                  # file is gone!
+scp -i key.pem ubuntu@115.146.92.130:temp.txt .
+more temp.txt
+rm temp.txt
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise 3
+
+See if you can configure CyberDuck and then drag `whyme.txt` (the file you created earlier) back to your
+local machine. 
+
+### More imaginary bonus points
+
+See if you can edit it in place!
+
+</script></section>
+    </div>
+
+</div>
+
+<script src="revealjs/lib/js/head.min.js"></script>
+<script src="revealjs/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'revealjs/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'revealjs/plugin/zoom-js/zoom.js', async: true},
+            {src: 'revealjs/plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>

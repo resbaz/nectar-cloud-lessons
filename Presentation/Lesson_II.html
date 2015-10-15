@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>NeCTAR Cloud Lessons</title>
+
+    <meta name="description" content="Slides for an introductory course on the NeCTAR cloud.">
+    <meta name="author" content="Martin Paulo">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="revealjs/css/reveal.css">
+    <link rel="stylesheet" href="revealjs/css/theme/solarized.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="revealjs/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+<!-- Slides go here -->
+<style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
+<section data-markdown><script type="text/template">
+
+# Lesson II: Your free computer: up and running (25 - 35 min)
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## A line infection checklist
+
+<div align="left">
+▢ wash hands with soap, <br/>
+▢ clean the patient’s skin with chlorhexidine antiseptic, <br/>
+▢ put sterile drapes over the entire patient, <br/>
+▢ put on a sterile mask, hat, gown, and gloves, <br/>
+▢ put a sterile dressing over the catheter site once the line is in
+</div>
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Key Pairs
+
+Create a Keypair with the help of the key pair checklist
+
+http://tinyurl.com/creating-a-keypair
+
+*Tip:* Preface the security group name with an "kp_" so that you know that
+its part of a keypair when you see the name...
+
+(Expected time, 5 minutes)
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Security Groups
+
+Create a Security Group with the help of the security group checklist
+
+http://tinyurl.com/creating-a-security-group
+
+*Tip:* Preface the security group name with an "sg_" so that you know that
+its a security group when you see the name...
+
+(Expected time, 5 minutes)
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Question 1
+
+I change the rules in a security group by removing port 80 (http). Mysteriously a web server on another VM in the 
+project stops “working”. Could it be because:
+
+1. The security group was shared with the other machine?
+1. The web server inexplicably broke?
+1. The other machine itself failed?
+1. NeCTAR are experiencing a network problem?
+1. All of the above... ☹
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Launch an instance
+
+Use the launch an instance checklist to launch an instance.
+
+http://tinyurl.com/starting-an-instance
+ 
+(expected time 15 minutes)
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Terminate an instance
+
+Terminate the instance you launched!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Count of less than 20 security groups
+
+Did anyone find out why this is in the checklist?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## HTTP vs HTTPS
+
+Can anyone tell us about these two?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## What is SSH?
+
+Anyone? Please?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## And CIDR?
+
+(And no, it's not a drink!)
+
+</script></section>
+    </div>
+
+</div>
+
+<script src="revealjs/lib/js/head.min.js"></script>
+<script src="revealjs/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'revealjs/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'revealjs/plugin/zoom-js/zoom.js', async: true},
+            {src: 'revealjs/plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>
