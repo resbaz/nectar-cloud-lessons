@@ -1,3 +1,3 @@
 # Delivery Diary
 
-This directory contains notes made after deliving the course: in that way we can improve the course over time.
+This directory contains notes made after delivering the course: in that way we can improve the course over time.
