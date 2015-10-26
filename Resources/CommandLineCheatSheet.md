@@ -1,7 +1,7 @@
 # Command Line Cheat Sheet
 
 
-| Command   | Abbreviation For                        | Is/Does | metaphorical character   |
+| Command   | Abbreviation For                        | Is/Does | likely scenario use   |
 |-----------|-----------------------------------------|---------|--------------------------|
 | [`apt-get`](#apt-get) | **A**dvanced **P**ackage **T**ool - get | the command line app store |
 | [`cd`](#cd)       | **C**hange working **D**irectory        | changes directory |
