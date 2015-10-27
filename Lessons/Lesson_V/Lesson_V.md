@@ -2,8 +2,6 @@
 
 # Lesson V: We can still run our graphical applications (30min)
 
-http://tinyurl.com/rc-issue-13
-
 -- *Slide End* --
 
 > Anna Prentice needs to view a remote web site. However, on trying to access it, she finds that her institutions

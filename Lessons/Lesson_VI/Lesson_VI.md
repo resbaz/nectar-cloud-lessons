@@ -2,8 +2,6 @@
 
 ## Lesson VI: Snapshots, backups and vertical scaling (30 min)
 
-http://tinyurl.com/rc-issue-14
-
 -- *Slide End* --
 
 ## Snapshots

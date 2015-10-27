@@ -2,8 +2,6 @@
 
 # Lesson VII: Transient storage (don’t rely on it!) and sharing
 
-http://tinyurl.com/rc-issue-15
-
 -- *Slide End* --
 
 In the last lesson, we launched our image based on our snapshot with the largest size possible.
