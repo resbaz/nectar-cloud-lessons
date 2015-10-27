@@ -49,10 +49,11 @@ The `-Y` enables trusted X11 forwarding when using the `man` command
 
 _What on earth is X11 forwarding?_, I hear you ask.
 
-X-Windows is the name of the presentation system used on the Research Cloud servers. One of the cool things about it is that it
-allows an application to run on one machine, and the applications graphical user interface to appear on another. Here
-the X refers to X-Windows. 11 refers to the version of X windows. X11 forwarding simply means that `ssh` will allow
-the X11 software installed on your local machine to render the graphical application being run on the remote machine.
+X-Windows is the name of the presentation system used on the Research Cloud servers. One of the cool things about it
+is that it allows an application to run on one machine, and the applications graphical user interface to appear
+on another. Here the X refers to X-Windows. 11 refers to the version of X windows. X11 forwarding simply means
+that `ssh` will allow the X11 software installed on your local machine to render the graphical application
+being run on the remote machine.
 
 It's kind of like TV: the server is broadcasting the user interface to your local machine.
 
