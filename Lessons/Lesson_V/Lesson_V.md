@@ -78,6 +78,8 @@ firefox
 
 Connect to your running server via ssh, and install and run Firefox.
 
+Note that the GLTK errors that are reported are acceptable, and are not of concern. 
+
 Hold up a Green card when you've managed to do this.
 And a Red card if you need help.
 
