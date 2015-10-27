@@ -65,10 +65,15 @@ aren't keeping up or need help.
 ### In general
 
 Each person being taught needs to be given 
-    
+
 * a red sticky note 
 * a green sticky note.
 * A set of answer cards, lettered 'A', 'B', 'C', 'D' and 'E' respectively.
+
+The image used for the lessons is named `mpaulo_drupal7`. Check that it is still around and works
+as expected before the lesson. If you need to rebuild it, there are instructions in the file
+named [CreatingTheImageForTheWorkshop.md](Resources/CreatingTheImageForTheWorkshop.md) in the Resources
+folder.
 
 ### Preparation for lesson III
 
@@ -100,10 +105,7 @@ Try to engage the audience. You can do this by asking questions of them. So for,
 #### Must do
 
 1. [ ] Bring the Kanban stuff into this "todo" list
-1. [ ] Work through the lesson 2 defects in github
-1. [ ] Add some more images to checklists
-1. [ ] Investigate the use of MobaXTerm or Babun instead of CygWin...
-1. [ ] Change for Freshdesk once Freshdesk is launched
+1. [ ] Change guide to help to Freshdesk once Freshdesk is launched
 1. [ ] Update for the new support email (support@nectar.org.au) once Freshdesk is launched
        (confirm email address and process)
 
@@ -168,7 +170,7 @@ to create a special tenancy for the lesson, and then to add people like this to 
 ### Overall
 
 Should we add some scenarios for what you'll need to know when colleagues have found out about your new 
-cloud manager skills, and want you to do different things with their images: one colleague wants things 
+cloud manager skills, and want you to do different things with their images: e.g.: one colleague wants things 
 backed up and archived for long term, one one a clean install, one wants... etc?
 
 
