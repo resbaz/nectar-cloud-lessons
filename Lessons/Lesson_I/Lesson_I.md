@@ -13,13 +13,13 @@ your tour guide is ...
 
 ## Why do you care about this?
 
-Two researchers at the University of Melbourne, who shall remain nameless, needed to do some fairly complex statistical 
-analysis. So out of their grant money they bought two powerful computers, at a cost of $10 000 per machine to 
-run[ MatLab](http://au.mathworks.com/products/matlab/?nocookie=true) on. 
+Two researchers at a well known University, who and which shall remain nameless to protect the innocent, needed to 
+do some fairly complex statistical analysis. So out of their grant money they bought two powerful computers, at a 
+cost of $10 000 per machine to run[ MatLab](http://au.mathworks.com/products/matlab/?nocookie=true) on. 
 
 But on the first run, they found that the machines couldn’t work with their data sets. The machines were underpowered! 
-They were forced to iteratively upgrade those machines, until finally, one was able to perform the required analysis. 
-It had taken them 12 months from the date of purchase to get to this point.
+They were forced to iteratively spend money on upgrading those machines, until finally, one was able to perform the 
+required analysis. It had taken them 12 months from the date of purchase to get to this point.
 
 If, instead of purchasing hardware, they had turned to the cloud, they would have been able to have had their initial 
 machine running within minutes. 
@@ -59,7 +59,7 @@ But before you go rushing to the Research Cloud, there are some important gotcha
 The cloud environment is a not quite the same as dedicated computer on your desktop! 
 
 What I hope to do is to give you enough information to get your own machines up and running on the Research Cloud, 
-and to explain the gotcha’s around this small area.
+and to explain the gotcha’s.
 
 How I’m going to do this is, is to start with an overview the Research Cloud parts through a very high level drive 
 through of the Research Cloud dashboard. Hence the Research Cloud mystery tour title.
@@ -71,25 +71,17 @@ know where to go for support when things turn to custard!
 
 ## Log in to the dashboard
 
-**Q:** It's part of the prerequisites, but just to check: has everyone here logged into the Research Cloud dashboard 
-before today? 
+**Q:** It's part of the [prerequisites](../../Prerequisites/README.md), but just to check: has everyone here logged
+into the Research Cloud dashboard before today? 
 
 Please hold up a Red sticky note if you haven't
 
-**A:** You are hoping to see nothing here, as this means that you are going to have to walk these people through the
-process. If you do see nothing, skip through to the [follow my leader](#Follow my leader) section.
-
-## For those who haven't performed the prerequisites, some special instructions on logging into the dashboard.
-
-**Q:** Those of your who didn't log into the Research Cloud dashboard: Do you have AAF credentials?
-
-Please hold up a Red sticky not if the answer is "No" and a Green one if the answer is "Yes".
-
-**Answer:** You are hoping for Greens, as people without AAF credentials can’t log in to the dashboard. One way around
-this is to get those who don't have AAF credentials to pair with someone who does…
+**A:** You are hoping to see nothing here, as this means helpers are going to have to walk these people through the
+process. If you do see nothing, be happy. Dependent on the the numbers, just move on and leave the helpers to sort
+those who haven't.
 
 The first time you log on to the Research Cloud dashboard, you get given a **free** project/tenant, with three-months 
-worth of time if you run the largest computer you can on it all the time. 
+worth of time if you run the largest computer you are allowed to on it all the time. 
 
 If you only use your smallest computer for short periods of time, and terminate them religiously after each run, you 
 will find that your project/tenant should last far longer. 
