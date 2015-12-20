@@ -32,7 +32,7 @@ Ok: just watch what I do.
 >  (demonstrate creating a container, uploading a file into it)
 
 And the way that you share with the public, is to mark the container as being "public". If you click on the resultant 
-“public” link you get some well formed xml. Just take the name of the object and append it to the url in the title bar 
+"public" link you get some well formed xml. Just take the name of the object and append it to the url in the title bar 
 to make a public handle that you can share with the world.
 
 >  (demonstrate making the container public, and viewing the image in a browser)

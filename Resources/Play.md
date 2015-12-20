@@ -5,7 +5,7 @@
 **Narrator**  
 
 > Our fine play takes place inside a dodgy sharehouse in brunswick, cunningly named with great foresight 
-by the victorian builders: “computer”
+by the victorian builders: "computer"
 
 > And now, our cast will introduce themselves:
 

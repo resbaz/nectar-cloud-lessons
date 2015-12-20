@@ -44,8 +44,8 @@ Inspired by his example I thought "Amazon!"
 
 I phoned my company’s hardware and networking guru to talk it through. 
 
-"Don't worry about Amazon - I've got a big server lying spare" he said. “I'll set up some virtual servers for your team
-on it. How many do you want?”
+"Don't worry about Amazon - I've got a big server lying spare" he said. "I'll set up some virtual servers for your team
+on it. How many do you want?"
 
 30 minutes and $10 later we had all the hardware and software we needed and by the end of the day we were already
 committing code and accepting defect reports.
@@ -113,7 +113,7 @@ though they were running in parallel.
 So successful was this adventure in shared resources, it’s become thoroughly baked into modern computer architecture.
 
 So that’s the first plank of the early foundations of virtualization: "parallel" execution of applications. The
-technical term is “threading”. Multiple threads of execution.
+technical term is "threading". Multiple threads of execution.
 
 Even today, such has the speed up of processors been, most of our computers are just sitting, waiting for input. 
 

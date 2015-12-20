@@ -112,7 +112,7 @@ The researcher wants to make database backups as painless as possible.
 
 DBaaS
 
-A basic intro to trove, and perhaps a “you play along at the command prompt”. Also the realization that Trove
+A basic intro to trove, and perhaps a "you play along at the command prompt". Also the realization that Trove
 now frees the drupal instance up from being a singleton instance.
 
 ## Task

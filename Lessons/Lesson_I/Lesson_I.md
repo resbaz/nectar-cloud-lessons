@@ -112,7 +112,7 @@ What I’d like you all to do is to follow along in your browsers, trying to do 
 
     Now stop, and ask the audience to introduce themselves to the person on either side of them (if they don't
     know that person). Then let them know that these are the people that they will turn to first for help if they
-    have any problems with the lesson. Only put up red cards if neither person on either side can't help them.
+    have any problems with the lesson. They are only to put up red cards if neither person on either side can't help them.
     So if a read card goes up, you are expecting to see a row of red cards!
 
 And I’m going to be asking questions as we go long, just to see how well I’m doing!
@@ -168,7 +168,7 @@ Please hold up a Green sticky note if your project is prefaced with the characte
 
 The drop down on the right is the settings drop down. It’s not exactly the most intuitive of drop downs IMHO.
 
-If you select it, you’ll see that there are two options: "Settings" and “Help”.
+If you select it, you’ll see that there are three options: "Settings", "Help" and "Sign Out".
 
 ### The Help Menu
 
@@ -249,7 +249,7 @@ and a Green one if the answer is "they are about the same".
 
 **Activity:** Get everyone to select "settings" on the settings drop down.
 
-**Q:** Notice how the "Project" tabbed pane on the left side of the dashboard has been collapsed and a new “Settings” 
+**Q:** Notice how the "Project" tabbed pane on the left side of the dashboard has been collapsed and a new "Settings" 
 tabbed pane has been added below it? 
 
 With "User Settings" as the currently selected tab.
@@ -262,7 +262,7 @@ These changes affect only you, as a user, but they do cover all projects!
 **Activity** Go ahead, and change the language to, oh say Chinese! (to see the effect).
 
 The so that we will all see the same interface today, change your language and time settings to match mine. 
-"British English (en-au)" and “Australia/Melbourne (UTC + 11:00) 
+"British English (en-au)" and "Australia/Melbourne (UTC + 11:00) 
 
 **Q:** Does anyone have anything very different from what’s up on the screen in front of them?
 
@@ -523,7 +523,7 @@ Ok, while that starts up, lets walk through what’s happening behind the scenes
 The image file that I’ve chosen to be the basis of my hard drive is copied from where it is being stored to the 
 physical machine on which it is going to be used. This physical machine is called the host. 
 
-We say "host" because the free machine you are launching is ordinarily going to be a “virtual machine”. 
+We say "host" because the free machine you are launching is ordinarily going to be a "virtual machine". 
 
 A virtual machine is one that is simply software and hardware working in concert to emulate a real machine. You can 
 think of it as being a program pretending to be a computer. Much like your desktop computer can run many applications 

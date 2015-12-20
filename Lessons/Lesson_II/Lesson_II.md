@@ -162,7 +162,7 @@ one server, you might inadvertently break another.
 ## Question 1
 
 I change the rules in a security group by removing port 80 (http). Mysteriously a web server on another VM in the 
-project stops “working”. Could it be because:
+project stops "working". Could it be because:
 
 1. The security group was shared with the other machine?
 1. The web server inexplicably broke?

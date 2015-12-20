@@ -41,7 +41,7 @@ But that's true of all the computers and software that you use.
 
 ## Be paranoid!
 
->  “Just because you're paranoid, don't mean they're not after you” ― Nirvana, [Territorial Pissings](http://www.azlyrics.com/lyrics/nirvana/territorialpissings.html)  
+>  "Just because you're paranoid, don't mean they're not after you" ― Nirvana, [Territorial Pissings](http://www.azlyrics.com/lyrics/nirvana/territorialpissings.html)  
 
 -- *Slide End* --
 
