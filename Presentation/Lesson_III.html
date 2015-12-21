@@ -41,8 +41,9 @@
 
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
-<!-- Slides go here -->
+<!-- to give this presentation list items numbered A, B, C etc.. for use in questions -->
 <style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
+<!-- Slides go here -->
 <section data-markdown><script type="text/template">
 
 # Lesson III: Accessing and updating your new computer (45 min)
@@ -59,7 +60,7 @@ apt-get update && apt-get -y upgrade
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Question 1
+## Question
 
 Those running Microsoft Windows...
 
@@ -75,7 +76,7 @@ Did you install Cygwin?
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 1
+## Exercise
 
 Find and run the terminal program, or command line, on your computer.
 
@@ -86,7 +87,7 @@ Cygwin users simply click on the Cygwin desktop icon.
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 2
+## Exercise
 
 Once you've opened it, remember PWD in our play?
 
@@ -101,7 +102,7 @@ pwd
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 3
+## Exercise
 
 We are going to replay our play!
 
@@ -112,7 +113,7 @@ Use it to step the through the following tasks:  http://tinyurl.com/play-task
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 4
+## Exercise
 
 Gentle people, start your servers!
 
@@ -147,7 +148,7 @@ ssh -i tut_dev.pem ubuntu@144.6.225.224
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Question 2
+## Question
 
 Research Cloud have a catalogue that gives information about the images that they provide. It can be found at:
 
@@ -163,6 +164,8 @@ Have a look at it. What operating system do you think the Drupal server is based
 
 </script></section>
 <section data-markdown><script type="text/template">
+
+**Exercise**
 
 ## Connect to your remote instance via ssh. E.G.:
 
@@ -208,7 +211,7 @@ ubuntu@144.6.225.224's password:
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 5
+## Exercise
 
 This works for me:
 
@@ -234,7 +237,7 @@ ubuntu@drupal:~$
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 6
+## Exercise
 
 Finally, we are going try and update our web server. Try to execute the first command in the set:
 
@@ -258,7 +261,7 @@ E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 7
+## Exercise
 
 The `sudo` command (**s**uper **u**ser **do**) comes to your help. It allows the ubuntu user to run commands with
 the security privileges of the super user.
@@ -272,7 +275,7 @@ sudo apt-get update
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 8
+## Exercise
 
 ```bash
 sudo apt-get upgrade
@@ -288,7 +291,7 @@ Do you want to continue? [Y/n]
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 9
+## Exercise
 
 Type `exit`
 
@@ -301,7 +304,7 @@ Connection to <some_ip_number> closed
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Question 3
+## Question
 
 You remove ssh from a security group shared by many servers. 
 Will you be able to ssh into any of the servers?
@@ -347,7 +350,7 @@ Host key verification failed.
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 10
+## Exercise
 
 The command to fix this problem is:
 
