@@ -325,6 +325,8 @@ If you change your password under the settings drop down, which is correct?
 
 ## Overview tab
 
+Ok. Now we'll click on the Project tabbed pane, and then the Comput Overview submenu.
+
 **Q:** Does anyone have anything very different from what’s up on the screen in front of them?
 
 Please hold up a Red sticky not if the answer is "Yes" 
@@ -384,9 +386,9 @@ file is termed an "image".
 
 How the Research Cloud works is that you select a file that is a copy of the contents of a hard drive when you 
 launch your machine. That file is copied across to wherever your machine is going to be run and becomes the 
-basis of your new machines hard drive.
+basis of your new machine's hard drive.
 
-**Demonstrate:** Create a whiteboard drawing of this.
+**Demonstrate:** Do a whiteboard drawing of this.
 
 Across the top of the list of images are four filters that are reasonably self explanatory.
 
@@ -396,8 +398,8 @@ Across the top of the list of images are four filters that are reasonably self e
 3. Shared with me - the images that other users have opted to share with you. 
    Sharing images with others requires the use of command line tools, so it's a more advanced topic that you will
    have to leave till you are more familiar with the research cloud.
-4. Public - the list of images that others have shared with the world. This mostly already have applications installed  
-   on them, ready to run.
+4. Public - the list of images that others have shared with the world. These mostly already have applications
+   installed on them, ready to run.
 
 As new users to the Research Cloud it is unlikely that you’ll have either project or shared images. Those come 
 with time. 
@@ -408,7 +410,7 @@ So the image you’ll start your adventure on the Research Cloud with is most li
 release a new copy of the image with a security update applied. Remember, your machine is based on a copy of that older 
 image. Is it likely to have that update applied to it as well?
 
-**Demonstrate:** Create a whiteboard drawing of this.
+**Demonstrate:** Do a whiteboard drawing of this.
 
 Please hold up a Red sticky note if the answer is "No" 
 and a Green one if the answer is "Yes".
@@ -422,27 +424,28 @@ and then to make a copy of its hard drive as it runs. This process is called "sn
 
 This saves you from having to reinstall the software next time you launch a machine. 
 
-**Demonstrate:** Create a whiteboard drawing of this.
+**Demonstrate:** Do a whiteboard drawing of this.
 
-**Q:** Again, if you build your own image like this will it benefit from NeCTAR’s updates to the original file you copied?
+**Q:** Again, if you build your own image like this will it benefit from NeCTAR’s updates to the original
+file you copied?
 
 Please hold up a Red sticky note if the answer is "No" 
 and a Green one if the answer is "Yes".
 
 **A:** No, the files are not linked in any way. 
 
-(NOTE:  Once you make snapshot, you need to update it regularly and re-save it. Otherwise it just won’t get all the 
-security upgrades that are released for the software on it. Also, its a good habit to immediately update all the 
-software on a newly created machine. You can never be too paranoid!)
+(NOTE:  Once you make snapshot, you need to update it regularly and re-save it. Otherwise it just won’t
+get all the security upgrades that are released for the software on it. Also, its a good habit to
+immediately update all the software on a newly created machine. You can never be too paranoid!)
 
-**Q:** And lets be paranoid: if you launch a machine based on a public image about which you know nothing, and the 
-software on it asks for your credit card info, do you type it in?
+**Q:** And lets be paranoid: if you launch a machine based on a public image about which you know nothing,
+and the software on it asks for your credit card info, do you type it in?
 
 Please hold up a Red sticky note if the answer is "No" 
 and a Green one if the answer is "Yes".
 
-**A:** I wouldn’t. At least, without a lot of digging. You can’t trust the software on an image unless you know and 
-trust the people behind the image. 
+**A:** I wouldn’t. At least, without a lot of digging. You can’t trust the software on an image unless
+you know and trust the people behind the image. 
 
 ## Walk through of a launch
 
