@@ -51,7 +51,7 @@ So you can run a terminal application on your computer to do work on your own co
 
 -- *Slide* --
 
-## Question 1
+## Question
 
 Those running Microsoft Windows...
 
@@ -90,7 +90,7 @@ Run through the play.
 
 -- *Slide* --
 
-## Exercise 1
+## Exercise
 
 Find and run the terminal program, or command line, on your computer.
 
@@ -102,7 +102,7 @@ Cygwin users simply click on the Cygwin desktop icon.
 
 -- *Slide* --
 
-## Exercise 2
+## Exercise
 
 Once you've opened it, remember PWD in our play?
 
@@ -127,7 +127,7 @@ And that's the working directory that you see with the `pwd` command.
 
 -- *Slide* --
 
-## Exercise 3
+## Exercise
 
 We are going to replay our play!
 
@@ -159,7 +159,7 @@ our Drupal servers.
 
 -- *Slide* --
 
-## Exercise 4
+## Exercise
 
 Gentle people, start your servers!
 
@@ -267,7 +267,7 @@ So here:
 
 -- *Slide* --
 
-## Question 2
+## Question
 
 Research Cloud have a catalogue that gives information about the images that they provide. It can be found at:
 
@@ -287,9 +287,9 @@ Have a look at it. What operating system do you think the Drupal server is based
 
     D. Ubuntu
 
-**Exercise 3**
-
 -- *Slide* --
+
+**Exercise**
 
 ## Connect to your remote instance via ssh. E.G.:
 
@@ -360,7 +360,7 @@ In my case, allowing me (the current **u**ser) to be able to **r**ead and **w**r
 
 -- *Slide* --
 
-## Exercise 5
+## Exercise
 
 This works for me:
 
@@ -399,7 +399,7 @@ And a Red card if you need help.
 
 -- *Slide* --
 
-## Exercise 6
+## Exercise
 
 Finally, we are going try and update our web server. Try to execute the first command in the set:
 
@@ -433,7 +433,7 @@ But don't panic!
 
 -- *Slide* --
 
-## Exercise 7
+## Exercise
 
 The `sudo` command (**s**uper **u**ser **do**) comes to your help. It allows the ubuntu user to run commands with
 the security privileges of the super user.
@@ -453,7 +453,7 @@ Once done, execute the command:
 
 -- *Slide* --
 
-## Exercise 8
+## Exercise
 
 ```bash
 sudo apt-get upgrade
@@ -482,7 +482,7 @@ When you are finished working on your virtual machine, do the following:
 
 -- *Slide* --
 
-## Exercise 9
+## Exercise
 
 Type `exit`
 
@@ -533,7 +533,7 @@ trying to access your machine.
 
 -- *Slide* --
 
-## Question 3
+## Question
 
 You remove ssh from a security group shared by many servers. 
 Will you be able to ssh into any of the servers?
@@ -637,7 +637,7 @@ restart it, then the chances are that new instance will have the same IP number 
 
 -- *Slide* --
 
-## Exercise 10
+## Exercise
 
 The command to fix this problem is:
 
