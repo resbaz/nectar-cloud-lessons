@@ -35,7 +35,7 @@ their project that’s $20 000 of grant money that could have been used elsewher
 
 -- *Slide* --
 
-## Question 1
+## Question
 
 Currently, how much does it cost a researcher to use the Research Cloud?
 
@@ -95,7 +95,7 @@ Regardless of your path,  your project/tenant should give you the time to learn 
 
 -- *Slide* --
 
-## Question 2
+## Question
 
 Can you log into: [https://dashboard.rc.nectar.org.au](https://dashboard.rc.nectar.org.au)? 
 
@@ -178,56 +178,22 @@ If you select it, you’ll see that there are three options: "Settings", "Help" 
 
 **A:** Hold up a Red sticky note if you are still looking at the dashboard!
        
-A new tab has opened, taking you to the homepage of the Research Cloud support site. This page gives news on the 
-latest updates to the cloud. 
+A new tab has opened, taking you to the homepage of the Research Cloud support site. 
 
-**Activity:** Get everyone to click on the "Getting Started" link of the top bar of the support site.
+The support site has loads of useful documentation. It has beginners guides, online training,
+and knowledge bases.
 
-A menu appears on the left! 
+Scroll down to see the quick links to all this goodness.
 
-**Demonstrate:** This menu to the left of the support site matches the links in the top bar of the support site.
-
-The support site has loads of useful documentation. It has how to get started guides, tutorials and knowledge bases.
-It’s well worth exploring. But we are not going to do it now. You know where to go when you want to find some helpful 
-documentation.
-
-**Activity:** Get everyone to click on the "Get Help" link of the top bar of the support site.
-
-**Activity:** Get everyone to click on the "Get Support" link in the resultant page.
-
-This is the important page if you want to reach out and get help. Here NeCTAR document the process that they 
-would like you to follow when you reach out to get help.
-
-1. Check to see if the Research Cloud is OK
-2. Check to see if anyone else has experienced your problem
-3. Finally, try to get help.
-
-This process is there to try and save everyone time and effort on the NeCTAR side. We are getting a lot of cloud for 
-very little cost. If we can lessen the amount of work that Research Cloud’s staff do we can get more of the cloud to 
-use. It seems fair to me.
-
-If you do decide that you need help, next Research Cloud lay out an email template showing the format they would like any 
-support request to follow.
-
-The **first piece of information they request is the email shown in the dashboard settings drop down**. This is important:
-it lets them know who you are on the cloud - remember, the email you are sending from might not be the same as the one
-the Research Cloud knows you as.
-
-Then they ask you to provide the information describing your problem.
-
-The missing piece is of the puzzle is the address you are going to send that email support request to.
-
-So can everyone click on the cunningly disguised link labelled "submit your support email here".
-
-Please don’t click send! 
-
-What should happen is that some form of email client opens up with you just having to provide the required details…
+There's also a handy link that if followed tells you how to contact Support.
 
 -- *Slide* --
 
-## Question: 3
+## Question
 
-Which one is the support email address?
+Can you find the support email address?
+
+Is it:
 
 1. support@rc.nectar.org.au
 1. help_me@rc.nectar.org.au
@@ -238,7 +204,51 @@ Which one is the support email address?
 
 **Answer: A**
 
-**Activity:** Get people to close the tab and return to the dashboard.
+The support site is well worth exploring. But we are not going to do it now.
+Remember, you now know where to go when you want to find helpful documentation.
+
+**Activity:** Close the support tab of the browser.
+
+**A:** Hold up a Red sticky note if you are not looking at the dashboard!
+
+Between the two drop downs NeCTAR have placed a new item titled "Support Ticket". This is
+where you should go if you need help.
+
+**Activity:** Get everyone to click on the "Support Ticket" link of the top bar of the dashboard.
+
+This is an important link if you want to reach out and get help!
+
+The dialogue brought up has a search option. This allows you to try to find the answer to your problem
+yourself before you reach out by completing the form.
+
+-- *Slide* --
+
+## Question
+
+Try searching the knowledge base for "allocation".
+
+What does an approved allocation request become?
+
+1. a tenancy
+1. a project
+1. a collaboration
+1. an empire
+1. a task
+
+-- *Slide End* --
+
+**Answer: B**
+
+Once you've done a search, if you still need help, just complete the fields in the dialog and 
+submit your support request.
+
+The one "gotcha" is the **default email address is the one shown in the dashboard settings drop down**. 
+
+If you want responses to go to a different address, change it!
+
+To close the dialogue without sending anything just click on the dashboard behind it.
+
+**Activity:** Get people to close the dialog and return to the dashboard.
 
 **Q:** Does anyone have anything very different from what’s up on the big screen in front of them?
 
@@ -283,7 +293,7 @@ And that the password is for **applications only**!
 
 -- *Slide* --
 
-## Question 4
+## Question
 
 Which one of these can’t you do with your settings dropdown?
 
@@ -299,7 +309,7 @@ Which one of these can’t you do with your settings dropdown?
 
 -- *Slide* --
 
-## Question 5
+## Question
 
 If you change your password under the settings drop down, which is correct?
 
@@ -535,7 +545,7 @@ simply files on the host server. What happens to those changes when you terminat
 
 -- *Slide* --
 
-## Question 6
+## Question
 
 What happens to your hard drive when you terminate your Virtual Machine (VM)?
 
@@ -570,7 +580,7 @@ options for halting it. Which begs the question:
 
 -- *Slide* --
 
-## Question 7
+## Question
 
 When does my free PC on the Research Cloud get destroyed (along with all its data)?
 
@@ -603,7 +613,7 @@ starts up. But like the transient file system, it is not lost during reboots.
 
 -- *Slide* --
 
-## Question 8
+## Question
 
 When do I lose my IP number?
  
