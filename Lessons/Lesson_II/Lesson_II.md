@@ -159,7 +159,7 @@ one server, you might inadvertently break another.
 
 -- *Slide* --
 
-## Question 1
+## Question
 
 I change the rules in a security group by removing port 80 (http). Mysteriously a web server on another VM in the 
 project stops "working". Could it be because:
