@@ -8,11 +8,14 @@ know how to add and remove rules to their security groups, hence blocking and al
 
 ##Motivation 
 
-In order to work with NeCTAR VM's, researchers need to know to access their VM's so that they can do basic maintenance.
-They will also know the commands to use on Debian and Ubuntu based VM's to keep the installed software up to date. Hence
-improving the security of their VM's.
-This knowledge is also a foundation for securely moving files between a VM and the researchers desktop, which is covered
-in the next lesson, Lesson IV.
+In order to work with NeCTAR VM's, researchers need to know to access their VM's so that they can do basic
+maintenance.
+
+They will also know the commands to use on Debian and Ubuntu based VM's to keep the installed software up to date.
+Hence improving the security of their VM's.
+
+This knowledge is also a foundation for securely moving files between a VM and the researchers desktop, which is
+covered in a later lesson.
 
 ##Story
 
@@ -27,7 +30,7 @@ perform the needed security upgrades.
 
 ##Covers
 
-SSH, `apt-get`, `sudo`
+SSH, `apt-get`, `sudo`, bash commands
 
 ##Concepts
 
@@ -45,6 +48,8 @@ Bash guide:
 * http://mywiki.wooledge.org/BashGuide
 * http://steve-parker.org/sh/sh.shtml 
 * http://code.tutsplus.com/articles/10-terminal-commands-that-will-boost-your-productivity--net-14105
+
+Cygwin isn't the best solution: there are possibly other, easier solutions for us to use...
 
 ##To discuss 
 
@@ -72,10 +77,10 @@ That the keyboard isn’t driving the VM locally: that the terminal is more a sc
 A great link on debugging ssh issues on the NeCTAR cloud:
 https://espaces.edu.au/vwrangler/nectar-topics/troubleshooting/troubleshooting-ssh-access-to-a-nectar-instance
 
-
 ##Supporting material 
 
-An image that has Drupal and a backup script on it.
+* An image that will launch Drupal (res_os_drupal7), made by the following recipe:
+  [Creating The Image For The Workshop](../Resources/CreatingTheIMageForTheWorkshop.md)
 
 ##Preconditions 
 
