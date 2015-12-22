@@ -10,6 +10,8 @@ Did any of you notice the ephemeral disk in the flavor details?
 
 **Demonstrate**
 
+Bring up the launch dialogue and show the changing ephemeral disk as different flavors are selected. 
+
 That's what we are going to be looking at in this lesson. 
 
 -- *Slide* --
@@ -49,7 +51,7 @@ Otherwise a green one if you do.
 
 -- *Slide* --
 
-## Exercise 1, part 1
+## A command line torture test
 
 ```bash
 df -h
@@ -80,7 +82,7 @@ When it is complete then delete the original instance.
 
 -- *Slide* --
 
-## Exercise 1, part 2
+# A command line torture test, continued
 
 Launch a new instance of the same flavor as the last from your new snapshot.
 
@@ -174,7 +176,7 @@ And a Green one if you think that it will launch.
 
 Yep: the tears have it:
 
-> Anna gets the error: "Error: Flavor's disk is too small for requested image..."
+> Anna will get the error: "Error: Flavor's disk is too small for requested image..."
 
 You can't cram a bigger snapshot down into a smaller instance.
 

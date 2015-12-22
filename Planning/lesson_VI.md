@@ -1,4 +1,4 @@
-# Lesson VI: Snapshots, backups, vertical scaling, and sharing (30 min)
+# Lesson VI: Snapshots, backups and vertical scaling (30 min)
 
 ##Learning objectives 
 
@@ -6,15 +6,11 @@ By the end of this lesson participants will understand what happens when you mak
 They will know why snapshots are a somewhat imperfect backup medium.
 
 They will also see how to scale their machine to a larger one, and of course, shrink it down again. 
-They will be able to share their images with others. 
-
-Finally, they will understand that transient storage is not to be relied upon.
 
 ##Motivation 
 
 The ability to make a copy of a running instance confers a whole lot of benefits: the ability to switch to a larger
-machine if needed, the ability to share copies with others, and to make somewhat imperfect backups. But there is the
-risk that if you use transient storage you could lose your data or worse. Not something you would desire!
+machine if needed, the ability to share copies with others, and to make somewhat imperfect backups. 
 
 ##Story
 
@@ -24,19 +20,13 @@ not an ideal way of doing this.
 Her kitten picture is taking the internet by storm, and she needs to move to a bigger server to cope with the load.
 She does this by scaling her instance up.
 
-Then a colleague wants to user her site has a foundation for his own kitten extravaganza. Anna gladly shares her backup
-with him.
-
-Disaster strikes: Anna had some notes on the transient file store. When her server dies, she finds that they are no
-longer on the replacement instance. Oh woes!
-
 ##Tasks
 
 They will make a snapshot of a running VM.
 
 ##Covers
 
-Snapshots, vertical scaling, transient storage and sharing snapshots.
+Snapshots, vertical scaling.
 
 ##Concepts
 
@@ -44,9 +34,7 @@ That a snapshot is simply a copy of the images file system: but that making them
 Not only that, if there are writes to the drive in progress, they can leave the copy in a faulty state. So to get a
 high quality snapshot, disk activity has to be stopped and any buffers flushed. 
 
-Snapshots can also be shared and used to move to a larger machine (vertical scaling).
-
-Transient storage is not captured as part of the snapshot process.
+Snapshots can be used to move to a larger or smaller machine (vertical scaling).
 
 ##Notes 
 
