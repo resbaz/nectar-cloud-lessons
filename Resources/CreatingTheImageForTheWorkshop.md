@@ -257,6 +257,12 @@ rm /home/ubuntu/drupal-7.41.tar.gz
 rm -r /home/ubuntu/drupal-7.41/
 ```
 
+Remove the keys you used to launch the instance:
+
+```bash
+> /home/ubuntu/.ssh/authorized_keys
+```
+
 ### Make the snapshot
 
 Then **shut the instance off** (do not terminate it) and make a snapshot of it named `res_os_drupal7`.
