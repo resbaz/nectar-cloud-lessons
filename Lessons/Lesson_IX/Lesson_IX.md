@@ -241,11 +241,17 @@ That way scanners automated scanners won't ordinarily see the port, and also won
 
 NeCTAR has a set of security guidelines that can be found at:
  
-* https://support.rc.nectar.org.au/docs/security-guidelines
+* https://support.nectar.org.au/support/solutions/articles/6000070469-introduction
+
+Ok: that's too long for normal people. Try
+
+* http://tinyurl.com/nectar-security-guidelines
 
 -- *Slide End* --
 
-Lets work through some of them.
+Note that it's a set of pages: not just one page. And they are worth taking the time to read! 
+
+Lets work through some of the "Getting Started" tips.
 
 ### Mail Servers
 
@@ -275,7 +281,7 @@ So the lessor of the two evils is to perform security updates as soon as is poss
 But there was wisdom in that old timer mantra of not rocking the boat. Every time you make a change to your system you
 run the risk of breaking it. So remember to make sure you have a regular backup to hand.
 
-Automatically install security upgrades on our drupal site by ssh'ing in and doing the following:
+Automatically install security upgrades on our Drupal site by ssh'ing in and doing the following:
 
 -- *Slide* --
 
@@ -294,7 +300,7 @@ And answer yes.
 Hold up a Red sticky note if you need help,
 And a green one when you are done.
 
-Remember that we are running on an instance of Ubuntu. The instructions for other operating systems will be 
+*NB:*  Remember that we are running on an instance of Ubuntu. The instructions for other operating systems will be 
 different. So if using a different operating system, find out what they are, and use them!
 
 ### Upgrade your kernel
