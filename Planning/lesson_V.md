@@ -51,7 +51,7 @@ https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding
 
 ##Preconditions 
 
-* Ssh/scp support in a command line shell on the students desktop.
+* ssh/scp support in a command line shell on the students desktop.
 * Some disk space.
 * The ability to install XWindows
 
