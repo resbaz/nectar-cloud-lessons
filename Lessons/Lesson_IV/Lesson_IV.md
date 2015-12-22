@@ -206,7 +206,7 @@ And a Red card if you need help.
 
 SCP is a good tool to have available. But a graphical environment can be much easier to use.
 
-As part of the prerequisites, you were supposed to have installed [CyberDuck's home page](https://cyberduck.io/).
+As part of the prerequisites, you were supposed to have installed [CyberDuck](https://cyberduck.io/).
 
 Hold up a Green card if you've managed to do this.
 And a Red card if you are going to be playing catchup!

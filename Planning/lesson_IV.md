@@ -3,7 +3,7 @@
 ##Learning objectives 
 
 By the end of this lesson, participants will be able to securely move files to and from a running VM using scp and 
-Cyberduck. This knowledge mans that from now on moving data to and from NeCTAR servers should be simple to do!
+Cyberduck. This knowledge means that from now on moving data to and from NeCTAR servers should be simple to do!
 
 ##Motivation 
 
@@ -30,7 +30,7 @@ Using the shell to transfer files, and using Cyberduck to move files.
 
 ##Notes 
 
-?
+
 
 ##To discuss 
 
@@ -38,11 +38,12 @@ Using the shell to transfer files, and using Cyberduck to move files.
 
 ##Links for students 
 
-
+ [CyberDuck](https://cyberduck.io/)
 
 ##Supporting material 
 
-An image that has Drupal and a backup script on it.
+* An image that will launch Drupal (res_os_drupal7), made by the following recipe:
+  [Creating The Image For The Workshop](../Resources/CreatingTheIMageForTheWorkshop.md)
 
 ##Preconditions 
 
