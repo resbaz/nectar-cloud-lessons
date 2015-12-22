@@ -217,13 +217,13 @@ and a Green one once you are done.
 
 -- *Slide* --
 
-## Count of less than 20 security groups
+## Count of less than 30 security groups
 
 Did anyone find out why this is in the checklist?
 
 -- *Slide End* --
 
-It's in the list because NeCTAR limit you to a maximum of 20. Which means that you have to share them around if
+It's in the list because NeCTAR limit you to a maximum of 30. Which means that you have to share them around if
 you have lots of instances!
 
 -- *Slide* --
