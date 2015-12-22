@@ -72,7 +72,7 @@ firefox
 ```
 -- *Slide* --
 
-## Exercise 1
+## Exercise
 
 Connect to your running server via ssh, and install and run Firefox.
 
@@ -93,7 +93,7 @@ sudo apt-get install gedit
 ```
 -- *Slide* --
 
-## Exercise 2
+## Exercise
 
 Install gedit and edit today.txt as you see fit using the command:
 
@@ -124,7 +124,7 @@ sudo apt-get remove firefox
 
 -- *Slide* --
 
-## Exercise 3
+## Exercise
 
 Remove gedit from your systems, and exit your ssh sessions.
 

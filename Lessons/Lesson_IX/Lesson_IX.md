@@ -50,7 +50,7 @@ for weaknesses.
 
 -- *Slide* --
 
-## Exercise 1
+## Exercise
 
 Reinstall and run firefox on your server.
 
@@ -195,7 +195,7 @@ dead hot keen on research data (or movie companies on proof of piracy).
 
 -- *Slide* --
 
-##Exercise 2 
+##Exercise
 
 * Remove ssh from the security group on your VM
 * Try to ssh in – and fail!
@@ -285,7 +285,7 @@ Automatically install security upgrades on our Drupal site by ssh'ing in and doi
 
 -- *Slide* --
 
-## Exercise 3
+## Exercise
 
 Enable automatic updates:
 
@@ -311,7 +311,7 @@ So you will need to do this.
 
 -- *Slide* --
 
-## Exercise 4
+## Exercise
 
 Using the dashboard, reboot the running VM.
 
@@ -328,7 +328,7 @@ Most popular software issue security advisories.
 
 -- *Slide* --
 
-## Exercise 5
+## Exercise
 
 Can you find the security advisories for the Ubuntu operating system?
 
@@ -343,7 +343,7 @@ get the advisories sent to you via email.
 
 -- *Slide* --
 
-## Exercise 6
+## Exercise
 
 On http://www.ubuntu.com/usn/ can you find a kernel advisory, and click through to it?
 
@@ -357,7 +357,7 @@ to apply the advisory. So: Lets apply the advisory!
 
 -- *Slide* --
 
-## Exercise 5
+## Exercise
 
 Follow the link to the instructions and apply the advisory.
 

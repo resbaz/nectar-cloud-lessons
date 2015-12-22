@@ -283,9 +283,7 @@ Have a look at it. What operating system do you think the Drupal server is based
 
 -- *Slide End* --
 
-**Answer 2**
-
-    D. Ubuntu
+**Answer D**  Ubuntu
 
 -- *Slide* --
 
@@ -545,9 +543,7 @@ Will you be able to ssh into any of the servers?
 
 -- *Slide End* --
 
-**Answer 3**
-
-    C. A server can have multiple security groups, and if anyone of them allows a port, then that port is allowed.
+**Answer C** A server can have multiple security groups, and if anyone of them allows a port, then that port is allowed.
 
 ## Man in the middle attacks
 

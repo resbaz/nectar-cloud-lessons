@@ -24,7 +24,7 @@ from, different machines. It is built on top of `ssh`.
 
 -- *Slide* --
 
-## Example 1
+## Example
 
 ```bash
 $ scp USER_NAME@remote_machine_address:notes.txt . 
@@ -44,7 +44,7 @@ The dot on its own simply means the current directory in your machine.
 
 -- *Slide* --
 
-## Example 2
+## Example
 
 ```bash
 $ scp notes.txt USER_NAME@remote_machine_address: 
@@ -57,7 +57,7 @@ machine's USER_NAME home directory:
 
 -- *Slide* --
 
-## Question 1
+## Question
 
 ```bash
 $ scp USER_NAME@remote_machine_address:notes.txt . 
@@ -74,7 +74,7 @@ Is the file:
 
 -- *Slide* --
 
-## Question 2
+## Question
 
 ```bash
 $ scp notes.txt USER_NAME@remote_machine_address: 
@@ -91,7 +91,7 @@ Is the file:
 
 -- *Slide* --
 
-## Question 3
+## Question
 
 ```bash
 # From remote machine to local machine
@@ -164,11 +164,11 @@ rm temp.txt
 
 -- *Slide* --
 
-## Exercise 1
+## Exercise
 
 I want everyone to create a file named, say, `whyme.txt` and then copy it onto their remote server.
 
-## Exercise 2
+## Exercise
 
 For non existent bonus points, bring it back again!
 
@@ -241,7 +241,7 @@ You should now be able to drag and drop files between the two machines!
 
 -- *Slide* --
 
-## Exercise 3
+## Exercise
 
 See if you can configure CyberDuck and then drag `whyme.txt` (the file you created earlier) back to your
 local machine. 

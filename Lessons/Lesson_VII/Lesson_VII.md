@@ -135,7 +135,7 @@ I'm hoping to see a sea of Red...
 
 -- *Slide* --
 
-## Exercise 2
+## Exercise
 
 On the images tab of the dashboard, click the drop down button next to the "Launch" button. Select the 'Edit' option.
 
@@ -155,7 +155,7 @@ and a Green one once you are done.
 
 -- *Slide* --
 
-## Exercise 3
+## Exercise
 
 Beware the size ratchet!
 
@@ -193,7 +193,7 @@ example to put large data sets on, you will not backup that data with a snapshot
 
 -- *Slide* --
 
-## Exercise 4
+## Exercise
 
 Make your shared snapshot private again!
 

@@ -15,7 +15,7 @@
 
 -- *Slide* --
 
-## Exercise 1
+## Exercise
 
 Can you make a snapshot of your running VM?
 
@@ -45,7 +45,7 @@ If all has gone well, the dashboard will take you to this tab automatically.
 
 -- *Slide* --
 
-## Exercise 2
+## Exercise
 
 In home directory, run the script `loop.sh` by:
 
@@ -97,7 +97,7 @@ who is using her site at the time they taken.
 
 -- *Slide* --
 
-## Question 1 
+## Question 
 
 Why does Ben think snapshots are broken?
 
@@ -111,10 +111,7 @@ Why does Ben think snapshots are broken?
 
 ---
 
-**Answer 1**
-
-    Whilst E is a topic for a good debate, the answer is:
-    D. The state of the machine is not captured 
+**Answer D** Whilst E is a topic for a good debate, the answer is: D. The state of the machine is not captured 
 
 ---
 
@@ -134,7 +131,7 @@ data has been corrupted in this way.
 
 -- *Slide* --
 
-## Exercise 3
+## Exercise
 
 Delete your older, possibly unreliable, snapshot.
 
@@ -155,7 +152,7 @@ Otherwise a green one when you are done.
 
 -- *Slide* --
 
-## Exercise 4
+## Exercise
 
 Power down your vm *by shutting it off!*
 
@@ -177,7 +174,7 @@ Otherwise a green one when you are done.
 
 -- *Slide* --
 
-## Question 2 
+## Question 
 
 What's a big problem with Anna's new approach?
 
@@ -191,9 +188,7 @@ What's a big problem with Anna's new approach?
 
 ---
 
-**Answer 2**
-
-A. You may forget to start your instance up again
+**Answer A** You may forget to start your instance up again
 
 ---
 
@@ -227,7 +222,7 @@ This is where the rubber meets the road.
 
 -- *Slide* --
 
-## Exercise 5
+## Exercise
 
 Terminate your running instance, then go to the images tab of your project
 and launch a new instance using the snapshot that you have just created.
@@ -254,7 +249,7 @@ Otherwise a green one when you are done.
 
 -- *Slide* --
 
-## Question 3
+## Question
 
 Anna's raft of kitten photographs has made it to the front page of the internet. Her server is struggling under the 
 load. What can Anna do to solve this problem?
@@ -269,9 +264,7 @@ load. What can Anna do to solve this problem?
 
 ---
 
-**Answer 3**
-
-B. Upgrade to a more powerful machine
+**Answe B** Upgrade to a more powerful machine
 
 ---
 
@@ -282,7 +275,7 @@ resolve their problem.
 
 -- *Slide* --
 
-## Exercise 6
+## Exercise
 
 Terminate your running instance, and launch a new one 
 using the snapshot that you have just created. 
@@ -305,7 +298,7 @@ Otherwise a green one when you are done.
 
 -- *Slide* --
 
-## Question 4 
+## Question 
 
 You'll notice that in your personal tenancy you can't run the largest machine image that you might want to.
 What can you do to remedy this situation?
@@ -320,16 +313,14 @@ What can you do to remedy this situation?
 
 ---
 
-**Answer 4**
-
-    E. Go to the allocation tab and complete an allocation request
+**Answer E** Go to the allocation tab and complete an allocation request
 
 ---
 
 
 -- *Slide* --
 
-## Question 5
+## Question
 
 A volunteer please: to describe an image, an instance, and the difference between the two...
 

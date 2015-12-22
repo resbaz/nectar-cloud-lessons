@@ -5,7 +5,6 @@
 -- *Slide End* --
 
 [Ideas](https://developer.rackspace.com/blog/openstack-swift-use-cases-in-rackspace-private-cloud/)
-[Test](https://developer.rackspace.com/blog/backing-up-cinder-volumes-to-swift/)
 [Borrow?](https://developer.rackspace.com/blog/mysql-backup-to-rackspace-cloud-files/)
 
 Remember in Lesson I that we said the  *Object Store* is an ideal replacement for the usb sticks that some 

@@ -47,7 +47,11 @@ Currently, how much does it cost a researcher to use the Research Cloud?
 
 -- *Slide End* --
 
-**Answer: E**
+---
+
+**Answer E**
+
+---
 
 There's another powerful reason to use the Research Cloud: access to storage which is kept locally in Australia and 
 available on the high speed [AARNET](https://www.aarnet.edu.au/about-us) backbone. Think of it as a USB stick on
@@ -564,9 +568,13 @@ What happens to your hard drive when you terminate your Virtual Machine (VM)?
 
 -- *Slide End* --
 
+---
+
 **Demonstrate:** Refer to earlier whiteboard drawing of this.
 
 **Answer D:** The image is simply wiped.
+
+---
 
 So your virtual machine has what is termed "ephemeral" drives. Anything written to these drives will be lost if it’s 
 associated virtual machine is terminated.
@@ -600,6 +608,8 @@ When does my free PC on the Research Cloud get destroyed (along with all its dat
 
 -- *Slide End* --
 
+---
+
 Pick out the wrong answers first to provide explanations of what they are!
 
 A paused VM is simply halted in memory, ready to be started again.
@@ -608,6 +618,8 @@ A soft reboot tries to do a graceful reboot.
 A hard reboot just reboots the machine!
 
 **Answer: B** 
+
+---
 
 (Once the machine is finally launched, point out the IP address in the dashboard)
 
@@ -633,7 +645,11 @@ When do I lose my IP number?
  
 -- *Slide End* --
 
+---
+
 **Answer: B** 
+
+---
 
 Also know that if you **don't terminate your computer** then it will still be running down your allocation clock!
 Stopped and paused computers are still consuming resources on the host computer!
