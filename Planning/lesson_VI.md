@@ -1,4 +1,4 @@
-# Lesson VI: Snapshots, backups and vertical scaling (30 min)
+# Lesson VI: Snapshots, backups and vertical scaling
 
 ##Learning objectives 
 

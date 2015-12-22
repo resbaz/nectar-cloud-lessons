@@ -1,4 +1,4 @@
-#Lesson V: We can still run our graphical applications (30min)
+#Lesson V: We can still run our graphical applications
 
 ##Learning objectives 
 

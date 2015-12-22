@@ -1,4 +1,4 @@
-# Lesson IX: Securing and maintaining your instance (45 min)
+# Lesson IX: Securing and maintaining your instance
 
 ## Learning objectives 
 

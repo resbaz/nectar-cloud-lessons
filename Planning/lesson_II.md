@@ -1,4 +1,4 @@
-#Lesson II: Your free computer: up and running (25 - 35 min)
+#Lesson II: Your free computer: up and running
 
 ##Learning objectives
 

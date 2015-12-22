@@ -1,4 +1,4 @@
-#Lesson IV: Moving data to and from your new computer (30min)
+#Lesson IV: Moving data to and from your new computer
 
 ##Learning objectives 
 

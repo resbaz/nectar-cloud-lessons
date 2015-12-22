@@ -1,4 +1,4 @@
-# Lesson VIII: The object store (30 min)
+# Lesson VIII: The object store
 
 ##Learning objectives 
 

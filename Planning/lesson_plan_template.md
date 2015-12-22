@@ -1,4 +1,4 @@
-# Lesson XXX: Blah blah, in the domain of the student (Xmin)
+# Lesson XXX: Blah blah, in the domain of the student
 
 ## Learning objectives 
 
