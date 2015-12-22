@@ -1,9 +1,8 @@
-#Lesson II: Your free computer: up and running (45min)
+#Lesson II: Your free computer: up and running (25 - 35 min)
 
 ##Learning objectives
 
-By the end of this lesson, participants will be able to locate and launch an image on the NeCTAR cloud - and 
-understand that the resultant machine is virtual.
+By the end of this lesson, participants will be able to locate and launch an image on the NeCTAR cloud.
 
 ##Motivation 
 
@@ -22,21 +21,20 @@ Create a security group, find the correct image, spin it up, connect to it with 
 
 ##Covers
 
-Glance, Nova, Security Groups
+Glance, Nova, Security Groups, Key Pairs, but now hands on.
 
 ##Concepts
 
-Virtualization, moving an image from Glance to Nova, Security Groups, IP number allocation
+Just goes over Lesson I again, but cover Security Groups in more detail
 
 ##Notes 
 
+We'll do this by creating and using checklists to get the students through the steps.
 
 
 ##To discuss 
 
-Nova and its message passing architecture, Glance and Horizon, how the disk is passed from glance to Nova, 
-networking, security groups and IP number allocation. Note the state changes as the instance is spun up and 
-how they show the message passing architecture of OpenStack
+Security groups and CIDR's 
 
 ##Links for students 
 
@@ -44,10 +42,11 @@ how they show the message passing architecture of OpenStack
 
 ##Supporting material
 
-* An image that will launch a server of some kind
-* A security group that allows access
+* An image that will launch a server of some kind (res_os_drupal7), made by the following recipe:
+  [Creating The Image For The Workshop](../Resources/CreatingTheIMageForTheWorkshop.md)
+* Checklists, placed in the [Resources](../Resources/) directory.
 
 ##Preconditions
 
-* A web browser
+* A web browser. Preferably a modern one that renders the PDF checklists.
 
