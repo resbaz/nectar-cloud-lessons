@@ -221,9 +221,10 @@ Finally, back in your `ssh` shell:
 chmod 644 /var/www/html/sites/default/settings.php
 ```
 
-### Write down the passwords for future use...
+### Write down the password for future use...
 
-Change back to your home directory, and save the passwords that you used above in the file named `info.txt`:
+Change back to your home directory, and save the drupal admin user password that you created above in
+the file named `info.txt`:
 
 ```bash
 cd ~
@@ -232,13 +233,33 @@ nano info.txt
 
 with the contents along the lines of:
 
-    msqlroot: a_big_complex_password
-    # drupal in the mysql database
-    drupaluser: a_big_complex_password
     # the drupal admin user
     drupaladmin: a_big_complex_password
+    
+*NB* Writing down the password like this isn't good practice...  But it does mean that it travels with 
+the image, and so can be accessed and used by students if need be during the lessons.
 
-Then **shut the instance off** (do not terminate it) and make a snapshot of it named `mpaulo_drupal7`.
+Give this password some modicum of decency by restricting its access:
+
+```bash
+chmod 600 info.txt
+```
+
+Anyone who uses this image for anything other than this lesson should change this password the minute they've
+brought the instance up. This can be done via the Drupal web interface.
+    
+### Clean up after yourself
+
+Remove the Drupal gumph that you've downloaded into the home directory...
+
+```bash
+rm /home/ubuntu/drupal-7.41.tar.gz
+rm -r /home/ubuntu/drupal-7.41/
+```
+
+### Make the snapshot
+
+Then **shut the instance off** (do not terminate it) and make a snapshot of it named `res_os_drupal7`.
 
 Go to the snapshot and edit it:
 

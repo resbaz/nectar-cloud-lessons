@@ -4,8 +4,9 @@ This course aims to teach the basics of the NeCTAR cloud to researchers over a o
 
 > "We are ... looking to find (and train) what we are calling a "power (researcher) users".  
 >
-> From our work with the Research Bazaar here in Melbourne we've discovered that there is an increasing number of 
-> researchers who are turning to the Cloud as there "Operating System" of choice, we call this "ResOS".
+> From our work with the [Research Bazaar](http://melbourne.resbaz.edu.au/) here in Melbourne we've discovered that 
+> there is an increasing number of researchers who are turning to the Cloud as their "Operating System"
+>  of choice, we call this "ResOS".
 >
 > Our investigation into these types of users produce the following kind of persona traits (which is whom we are aiming 
 > this "ResOS Train the Trainer curriculum").  "Power (Researcher) Users" are the types of researchers who see 
@@ -70,10 +71,16 @@ Each person being taught needs to be given
 * a green sticky note.
 * A set of answer cards, lettered 'A', 'B', 'C', 'D' and 'E' respectively.
 
-The image used for the lessons is named `mpaulo_drupal7`. Check that it is still around and works
+The image used for the lessons is named `res_os_drupal7`. Check that it is still around and works
 as expected before the lesson. If you need to rebuild it, there are instructions in the file
 named [CreatingTheImageForTheWorkshop.md](Resources/CreatingTheImageForTheWorkshop.md) in the Resources
 folder.
+
+Distribute the [prerequisites](../Prerequisites/README.md) to participants: with an offer to help
+if they have problems in following them.
+
+Contact the allocation approver for the node where the course will be delivered in advance of the course to
+let them know that there might be some people requesting an allocation in order to be able to take part.
 
 ### Preparation for lesson III
 
