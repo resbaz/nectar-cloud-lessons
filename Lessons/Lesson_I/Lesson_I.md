@@ -543,6 +543,11 @@ think of it as being a program pretending to be a computer. Much like your deskt
 at the same time, such as ms-word, and excel, etc, a Research Cloud server can run many virtual machines at the same 
 time.
 
+If that seems complicated, look at it this way: you have a small closet - with clothes in it. AKA, a computer. 
+But you also have a very big closet - the server: into which you can either put clothes, or, perhaps more efficiently, 
+lots of copies of the smaller closet, thus giving you better space utilization, and the ability to have different
+people securely share the larger closet.
+
 So here’s a question. You have a virtual machine running. It makes all kinds of changes to its hard drives. Which are 
 simply files on the host server. What happens to those changes when you terminate your virtual computer?
 

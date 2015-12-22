@@ -11,6 +11,8 @@ A researcher needs to understand the Dashboard and the underlying parts of OpenS
 
 ## Story
 
+To motivate the students:
+
 Two researchers blow 20K of grant money on computers - that they didn't have to, had NeCTAR been around!
 
 ##Tasks
@@ -20,7 +22,7 @@ the dashboard, rather like a tour guide would do...
  
 ## Covers
 
-All OpenStack Components, Horizon, the AAF & Allocations 
+All OpenStack Components, Horizon, the AAF & Allocations, and how to get support if help is needed. 
 
 ##Concepts
 
@@ -32,17 +34,17 @@ Modular nature of OpenStack, Allocations
 ##To discuss
 
 The basics of virtualization, the parts of OpenStack at a very high level, and the allocations screen. 
+
 Its worthwhile driving home that to use the cloud, you do need to get your head around some key concepts; and that they 
 are not difficult
 
-One possible metaphor for virtualization is that you have a small closet: with clothes in it. AKA, a server. But you 
-also have a very big closet: into which you can either put clothes, or, perhaps more efficiently, lots of copies of the 
-smaller closet, thus giving you better space utilization.
+Where to go to get help if you need it.
 
 ##Links for students
 
 
 ##Supporting material
+
 
 ##Preconditions
 
