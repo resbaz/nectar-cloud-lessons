@@ -40,8 +40,7 @@ Also, the importance of an off site copy and the encryption of backups.
 ##Links for students 
 
 * https://trac.cyberduck.io/wiki/help/en/howto/openstack
-
-https://community.runabove.com/kb/en/object-storage/how-to-distribute-static-content-with-object-storage.html
+* https://community.runabove.com/kb/en/object-storage/how-to-distribute-static-content-with-object-storage.html
 
 ##Supporting material 
 
