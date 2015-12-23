@@ -122,7 +122,7 @@ You can use a wildcard denoted by the asterisk character (*) to copy multiple fi
 ```bash
 scp -i key.pem temp.txt ubuntu@115.146.92.130 
 ```
-# Does not work: it needs the colon!
+## Does not work: it needs the colon!
 
 e.g.:
 
