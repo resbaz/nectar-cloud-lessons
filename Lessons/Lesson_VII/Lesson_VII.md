@@ -82,7 +82,7 @@ When it is complete then delete the original instance.
 
 -- *Slide* --
 
-# A command line torture test, continued
+## A command line torture test, continued
 
 Launch a new instance of the same flavor as the last from your new snapshot.
 
@@ -153,9 +153,65 @@ and a Green one once you are done.
 
 ---
 
+
+-- *Slide* --
+
+## Question
+
+Anna's snapshot was made with her public still on the image.
+
+Will she be able to ssh into her colleagues instance once he launches it?
+
+1. No
+1. Yes
+
+-- *Slide End* --
+
+**Answer B**
+
+Yes, she can. Her key is on the image, so she can access it.
+
 -- *Slide* --
 
 ## Exercise
+
+Get someone else to launch your shared snapshot, then ssh into it. Do the same for them.
+
+-- *Slide End* --
+
+-- *Slide* --
+
+## Question
+
+Is having other peoples keys on your instance a potential problem?
+
+1. Yes
+1. Yes
+
+-- *Slide End* --
+
+**Answer: Yes**
+
+**Activity** Ask the audience why: challenge them to think through some of the issues.
+
+The takeaway is that you should be very leery about other peoples images and snapshot: at the very
+least, you should get a technical friend to see who can log on to the snapshot - and possibly remove
+other users for you.
+
+-- *Slide* --
+
+## PS: The keys live in the authorized_keys file
+
+```bash
+more ~/.ssh/authorized_keys
+```
+## *For each user!*
+
+-- *Slide End* --
+
+-- *Slide* --
+
+## Question
 
 Beware the size ratchet!
 
@@ -172,13 +228,17 @@ And a Green one if you think that it will launch.
 
 ---
 
-**A**
+-- *Slide* --
+
+**Answer**
 
 Yep: the tears have it:
 
 > Anna will get the error: "Error: Flavor's disk is too small for requested image..."
 
 You can't cram a bigger snapshot down into a smaller instance.
+
+-- *Slide End* --
 
 We have seen that snapshots are convenient. But that they do impact the performance of the VM for a short while. 
 And that without extra steps, snapshots of running instances can be inexact. 
