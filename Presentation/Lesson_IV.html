@@ -51,7 +51,7 @@
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Example 1
+## Example
 
 ```bash
 $ scp USER_NAME@remote_machine_address:notes.txt . 
@@ -62,7 +62,7 @@ $ scp USER_NAME@remote_machine_address:notes.txt .
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Example 2
+## Example
 
 ```bash
 $ scp notes.txt USER_NAME@remote_machine_address: 
@@ -71,7 +71,7 @@ $ scp notes.txt USER_NAME@remote_machine_address:
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Question 1
+## Question
 
 ```bash
 $ scp USER_NAME@remote_machine_address:notes.txt . 
@@ -85,7 +85,7 @@ Is the file:
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Question 2
+## Question
 
 ```bash
 $ scp notes.txt USER_NAME@remote_machine_address: 
@@ -99,7 +99,7 @@ Is the file:
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Question 3
+## Question
 
 ```bash
 # From remote machine to local machine
@@ -122,7 +122,7 @@ Is the source file
 ```bash
 scp -i key.pem temp.txt ubuntu@115.146.92.130 
 ```
-# Does not work: it needs the colon!
+## Does not work: it needs the colon!
 
 e.g.:
 
@@ -133,11 +133,11 @@ scp -i key.pem temp.txt ubuntu@115.146.92.130:
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 1
+## Exercise
 
 I want everyone to create a file named, say, `whyme.txt` and then copy it onto their remote server.
 
-## Exercise 2
+## Exercise
 
 For non existent bonus points, bring it back again!
 
@@ -168,7 +168,7 @@ rm temp.txt
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 3
+## Exercise
 
 See if you can configure CyberDuck and then drag `whyme.txt` (the file you created earlier) back to your
 local machine. 

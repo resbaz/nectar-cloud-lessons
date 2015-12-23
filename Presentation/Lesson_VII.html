@@ -67,7 +67,7 @@ She decided to put her new files there. Has Anna made a mistake?
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 1, part 1
+## A command line torture test
 
 ```bash
 df -h
@@ -87,7 +87,7 @@ When done, make a snapshot of this machine.
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 1, part 2
+## A command line torture test, continued
 
 Launch a new instance of the same flavor as the last from your new snapshot.
 
@@ -104,7 +104,7 @@ What's missing?
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 2
+## Exercise
 
 On the images tab of the dashboard, click the drop down button next to the "Launch" button. Select the 'Edit' option.
 
@@ -113,7 +113,46 @@ In the resultant dialogue give the image a description and check the public flag
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 3
+## Question
+
+Anna's snapshot was made with her public still on the image.
+
+Will she be able to ssh into her colleagues instance once he launches it?
+
+1. No
+1. Yes
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+Get someone else to launch your shared snapshot, then ssh into it. Do the same for them.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Question
+
+Is having other peoples keys on your instance a potential problem?
+
+1. Yes
+1. Yes
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## PS: The keys live in the authorized_keys file
+
+```bash
+more ~/.ssh/authorized_keys
+```
+## *For each user!*
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Question
 
 Beware the size ratchet!
 
@@ -124,7 +163,18 @@ What happens?
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise 4
+**Answer**
+
+Yep: the tears have it:
+
+> Anna will get the error: "Error: Flavor's disk is too small for requested image..."
+
+You can't cram a bigger snapshot down into a smaller instance.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
 
 Make your shared snapshot private again!
 
