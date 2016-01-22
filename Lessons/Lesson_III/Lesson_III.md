@@ -474,7 +474,7 @@ And a Red card if you need help.
 Now we've replicated the steps Anna had to undertake in order to run the upgrade on her machine.
 
 `apt-get` is the front end for a program called a package manager. Its rather like the appstore on your phone, and
-allows you to add, remove, and update applications.
+allows you to add, remove, and upgrade applications.
 
 When you are finished working on your virtual machine, do the following:
 
@@ -628,8 +628,9 @@ Otherwise hold up a Green sticky note.
 
 **A**
 
-Lots. The Reds have it correctly. Remember I mentioned that NeCTAR recycle IP numbers? If you kill an instance and
-restart it, then the chances are that new instance will have the same IP number as the old one.
+You won't see it that much. The Greens have it correctly. But remember I mentioned that NeCTAR recycle IP numbers? 
+If you kill an instance and restart it, then the chances are that at some stage an instance will have the same IP 
+number as an old one. It's then that you'll see this error message.
 
 -- *Slide* --
 

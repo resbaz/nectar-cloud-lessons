@@ -11,7 +11,11 @@ your tour guide is ...
 
 (First: Do a personal introduction. Who am I, and why am qualified to teach this course?)
 
+-- *Slide* --
+
 ## Why do you care about this?
+
+-- *Slide End* --
 
 Two researchers at a well known University, who and which shall remain nameless to protect the innocent, needed to 
 do some fairly complex statistical analysis. So out of their grant money they bought two powerful computers, at a 
@@ -84,7 +88,7 @@ Please hold up a Red sticky note if you haven't
 process. If you do see nothing, be happy. Dependent on the the numbers, just move on and leave the helpers to sort
 those who haven't.
 
-The first time you log on to the Research Cloud dashboard, you get given a **free** project/tenant, with three-months 
+The first time you log on to the Research Cloud dashboard, you get given a **free** trial project, with three-months 
 worth of time if you run the largest computer you are allowed to on it all the time. 
 
 If you only use your smallest computer for short periods of time, and terminate them religiously after each run, you 
@@ -140,7 +144,7 @@ In OpenStack parlance, a project is:
 
 And every project has a project ID: A "[User-defined alphanumeric string; the name of a project.](http://docs.openstack.org/glossary/content/glossary.html#project-id )"
 
-So a project is really just a way to set group people together and to set constraints on what operations they can do on 
+So a project is really just a way to group people together and to set constraints on what operations they can do on 
 the Research Cloud.
 
 But here’s the interesting thing: you can belong to one or more projects. That’s why a drop down is used. By using it 
@@ -154,9 +158,9 @@ between the projects. The project panes to the left control your access to the r
 **Demonstrate:** If you belong to more than one project, toggle between them to show changes in the menu 
 system to the left of the page.
 
-As mentioned, everyone who logs into the Research Cloud via the AAF gets a small time limited project/tenant. This project 
-is prefaced by the words "pt" ([project/tenant](http://support.rc.nectar.org.au/docs/allocations)) and followed by a 
-number. So mine is, for example, pt-30.
+As mentioned, everyone who logs into the Research Cloud via the AAF gets a small time limited trial project. 
+This project is prefaced by the words "pt" ([**p**roject **t**rial](http://support.rc.nectar.org.au/docs/allocations)) and 
+followed by a number. So mine is, for example, pt-30.
 
 **NB:** If you have multiple projects, get into the habit of always looking at the entry shown in this drop down 
 before you do anything major, simply to confirm that you are in the correct project. You wouldn’t believe the trouble 
@@ -329,7 +333,7 @@ If you change your password under the settings drop down, which is correct?
 
 ## Overview tab
 
-Ok. Now we'll click on the Project tabbed pane, and then the Comput Overview submenu.
+Ok. Now we'll click on the Project tabbed pane, and then the Compute Overview submenu.
 
 **Q:** Does anyone have anything very different from what’s up on the screen in front of them?
 

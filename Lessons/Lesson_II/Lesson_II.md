@@ -23,7 +23,7 @@ notes!
 
 ## The power of Checklists
 
-In 2001 a critical-care specialist at Johns Hopkins Hospital designed a checklist to prevent line infections. 
+In 2001 a critical-care specialist at John Hopkins Hospital designed a checklist to prevent line infections. 
 
 -- *Slide* --
 
@@ -85,8 +85,6 @@ http://tinyurl.com/creating-a-keypair
 *Tip:* Preface the security group name with an "kp_" so that you know that
 its part of a keypair when you see the name...
 
-(Expected time, 5 minutes)
-
 -- *Slide End* --
 
 Please hold up a Red sticky note if you need help
@@ -144,8 +142,6 @@ http://tinyurl.com/creating-a-security-group
 *Tip:* Preface the security group name with an "sg_" so that you know that
 its a security group when you see the name...
 
-(Expected time, 5 minutes)
-
 -- *Slide End* --
 
 Please hold up a Red sticky note if you need help
@@ -197,8 +193,6 @@ Use the launch an instance checklist to launch an instance.
 
 http://tinyurl.com/starting-an-instance
  
-(expected time 15 minutes)
-
 -- *Slide End* --
 
 Please hold up a Red sticky note if you need help
