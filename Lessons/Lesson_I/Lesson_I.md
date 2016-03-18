@@ -1,5 +1,5 @@
 
-# Lesson I: An introduction to the dashboard (45 min)
+# Lesson I: OpenStack, mapped by the dashboard (45 min)
 
 -- *Slide* --
 
