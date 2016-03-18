@@ -7,9 +7,6 @@ We are creating a course that those who take can then take ownership of and spre
 The intent is to create a really good 1 day course. In time we may add a second day for real power users (see [stretch
 goals](stretch_goals.md)).
 
-Alpha course is set to be delivered in August.
-Beta course is set to be delivered in September.
-
 ## Potential Sales pitches
 
 "My other computer is a data center"
