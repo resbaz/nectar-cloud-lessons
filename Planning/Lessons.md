@@ -21,24 +21,24 @@ organize the material they learn themselves. [Because...](http://mindhacks.com/2
 
 > 9am - Start 
 
-* [Lesson I: OpenStack, mapped by the dashboard](#Lesson-I)
-* [Lesson II: Your free computer: up and running](#Lesson-II.md)
-* [Lesson III: Accessing and updating your new computer](#Lesson-III.md)
+* [Lesson I: OpenStack, mapped by the dashboard](#lesson-i)
+* [Lesson II: Your free computer: up and running](#lesson-ii.md)
+* [Lesson III: Accessing and updating your new computer](#lesson-i.md)
 
 > 10h30am - 11h00am: Morning Tea
 
-* [Lesson IV: Moving data to and from your new computer](#Lesson-IV.md)
-* [Lesson V: We can still run our graphical applications](#Lesson-V.md)
+* [Lesson IV: Moving data to and from your new computer](#lesson-iv.md)
+* [Lesson V: We can still run our graphical applications](#lesson-v.md)
 
 > 12h00am - 1h00pm: Lunch
 
-* [Lesson VI: Snapshots: Backups, vertical scaling](#Lesson-VI.md)
-* [Lesson VII: transient storage (don’t rely on it!) and sharing](#Lesson_VII.md)
+* [Lesson VI: Snapshots: Backups, vertical scaling](#lesson-vi.md)
+* [Lesson VII: transient storage (don’t rely on it!) and sharing](#lesson_vii.md)
 
 > 3h00pm - 3h30: Afternoon Tea
 
-* [Lesson VIII: The object store](#Lesson-VIII.md)
-* [Lesson IX: Securing and maintaining your instance](#Lesson-IX.md)
+* [Lesson VIII: The object store](#lesson-viii.md)
+* [Lesson IX: Securing and maintaining your instance](#lesson-ix.md)
 
 If time permits, possibly a "bringing it all together" grand exercise?
 
