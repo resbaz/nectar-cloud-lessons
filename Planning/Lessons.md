@@ -23,7 +23,7 @@ organize the material they learn themselves. [Because...](http://mindhacks.com/2
 
 * [Lesson I: OpenStack, mapped by the dashboard](#lesson-i)
 * [Lesson II: Your free computer: up and running](#lesson-ii)
-* [Lesson III: Accessing and updating your new computer](#lesson-i)
+* [Lesson III: Accessing and updating your new computer](#lesson-iii)
 
 > 10h30am - 11h00am: Morning Tea
 
