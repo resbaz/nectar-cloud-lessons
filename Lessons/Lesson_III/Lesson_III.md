@@ -30,13 +30,27 @@ apt-get update && apt-get -y upgrade
 
 ## The Terminal 
 
-**Q** Anna's virtual machine in the cloud has no keyboard, monitor or mouse. Does she have any hope of updating the 
-software on her machine?
+-- *Slide* --
 
-Hold up a Red sticky note if you think that she is stuck.
-and a Green one if you think that, somehow, somewhere, there is hope for her.
+**Your free PC on the cloud has no keyboard, monitor or mouse. Do you have any hope of installing or removing
+software on it?**
 
-**A** The Greens have it: there's always hope!
+* <span style="color:red">&#9632;</span> = No, doom and gloom!
+* <span style="color:green">&#9632;</span> = Somehow, somewhere, there is hope!
+
+-- *Slide End* --
+
+**Answer:** The Greens have it: there's always hope!
+
+    Try to draw something like the following on a white board as you talk...
+    +-----------------------+                  +------------------------+
+    |     Local PC          |                  |     Remote PC          |
+    |                       |                  |                        |
+    |   +----------+        |                  |   +------------+       |
+    |   |  Terminal|        |     ssh          |   |  Terminal  |       |
+    |   |          +-----------------------------> |            |       |
+    |   +----------+        |                  |   +------------+       |
+    +-----------------------+                  +------------------------+
 
 In the old days, because computing was so expensive, many people would share a single computer by means of terminals. 
 A terminal was a keyboard and a screen, and many terminals could be attached to a single computer.
@@ -189,6 +203,8 @@ It connects a terminal on one machine to another target machine, thus allowing
 you to use the text based interface on the target machine. It kind of teleports the target machine terminal to yours…
 
 You can think of `ssh` as your cloud login command.
+
+Which is why you've been seeing the `ssh` references in the security groups.
 
 `ssh` uses public key cryptography to connect with the target machine. 
 
@@ -447,7 +463,18 @@ sudo apt-get update
 You should now see a whole lot of gets scrolling by, as the operating system updates its lists of installed and 
 available software.
 
-Once done, execute the command:
+-- *Slide* --
+
+## xkcd 149
+
+<img src="http://imgs.xkcd.com/comics/sandwich.png" title="The power of sudo" alt="Sandwich">
+
+-- *Slide End* --
+
+Think of `sudo` as being like a safety catch. When you find yourself using it, double check what you are about to
+do!
+
+Now execute the command:
 
 -- *Slide* --
 
@@ -475,6 +502,37 @@ Now we've replicated the steps Anna had to undertake in order to run the upgrade
 
 `apt-get` is the front end for a program called a package manager. Its rather like the appstore on your phone, and
 allows you to add, remove, and upgrade applications.
+
+To see how easy it is to use the package manager, install the fortune application.
+
+-- *Slide* --
+
+## Install fortune
+
+```bash
+sudo apt-get install fortune-mod
+```
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+-- *Slide End* --
+
+-- *Slide* --
+
+## Run fortune
+
+```bash
+fortune
+```
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+-- *Slide End* --
+
+So what you've just done is used `apt-get`, the front end to the package manager to update the system
+and then to add an application. Feel the power!
 
 When you are finished working on your virtual machine, do the following:
 

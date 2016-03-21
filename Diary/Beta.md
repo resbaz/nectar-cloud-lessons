@@ -9,7 +9,7 @@ bits about their allocation expiring after 3 months, and how to extend them. Whi
 
     Fiona: Can the help stuff come later? It has been 15 mins and I haven't done anything yet
     
-We should rejig somehow?
+Is this valid? If so, we should rejig somehow...
 
     Bernard: How do I calculate how many core hours? What about location?
 

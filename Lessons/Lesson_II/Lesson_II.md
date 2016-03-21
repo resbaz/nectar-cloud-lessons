@@ -23,7 +23,21 @@ notes!
 
 ## The power of Checklists
 
-In 2001 a critical-care specialist at John Hopkins Hospital designed a checklist to prevent line infections. 
+-- *Slide* --
+
+## This is a... ?
+
+<div align="left">
+▢ wash hands with soap, <br/>
+▢ clean the patient’s skin with chlorhexidine antiseptic, <br/>
+▢ put sterile drapes over the entire patient, <br/>
+▢ put on a sterile mask, hat, gown, and gloves, <br/>
+▢ put a sterile dressing over the catheter site once the line is in
+</div>
+
+-- *Slide End* --
+
+**Question:** Does anyone know what this is?
 
 -- *Slide* --
 
@@ -39,7 +53,12 @@ In 2001 a critical-care specialist at John Hopkins Hospital designed a checklist
 
 -- *Slide End* --
 
-These steps have been known and taught for years. 
+**Answer:** In 2001 a critical-care specialist at John Hopkins Hospital designed a checklist to prevent line 
+infections. This is it!
+
+These steps have been known and taught for years. But frustratingly line infections still
+happen. So the specialists gave this checklist to nurses and then asked them to observe the doctors for a 
+month as they put lines into patients, and record how often they completed each step. 
 
 They then asked the nurses to observe the doctors for a month as they put lines into patients, and record how often 
 they completed each step. In more than a third of patients, they skipped at least one of the steps.
@@ -48,11 +67,11 @@ They then asked the nurses stop the doctors whenever a step was skipped.
 
 The ten-day line-infection rate went from eleven per cent to zero. 
 
+So why are you being shown a line infection checklist on a session about the research cloud?
+
 This story inspired a company that I worked at to introduce a checklist for deploying software into production.
 
 We would do it a pairs, one person playing the role of the nurse, the other the surgeon, performing the actual steps.
-
-We had to sign in the date and our names, and each checklist was filed after a deployment.
 
 Our rate of problems encountered during deployment fell to zero.
 
@@ -60,7 +79,7 @@ Our rate of problems encountered during deployment fell to zero.
 |-----------------|-----|
 | "The Checklist" | http://www.newyorker.com/magazine/2007/12/10/the-checklist |
 
-Knowing this, I’ve created a set of checklists for launching a virtual machine that runs the Drupal server Anna is 
+Knowing this, we’ve created a set of checklists for launching a virtual machine that runs the Drupal server Anna is 
 interested in.
 
 ## Key Pairs
@@ -82,8 +101,8 @@ Create a Keypair with the help of the key pair checklist
 
 http://tinyurl.com/creating-a-keypair
 
-*Tip:* Preface the security group name with an "kp_" so that you know that
-its part of a keypair when you see the name...
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on..
 
 -- *Slide End* --
 
@@ -94,17 +113,45 @@ and a Green one once you are done.
 
 Now we’ll move onto security groups.
 
+A security group is a set of rules used to create a firewall for your computer in the cloud. 
+
+-- *Slide* --
+
+## What's a firewall?
+
+1. A wall used to prevent the spread of fire
+1. An attractive wall made from fire
+1. Something that selects what network traffic that can pass
+1. That what's built on top of an ice foundation
+1. A popular barbecue cooking style
+
+-- *Slide End* --
+
+**Answer A and C**
+
 Let's see if I can explain them in a bit more detail.
 
-Network messages destined for a computer are broken up into packets. Once a packet reaches a computer how does the
-computer know which application the packet is intended for? 
+Naturally, on the the Research Cloud a security group selects what network traffic that can pass.
+
+    Try to draw something like the following on a white board as you talk...
+
+    +-----------+    Network              +--------------+
+    |           |                         |              |
+    |           |  +--+  +--+  +--+  +-+  |              |
+    | Server    +--+22+--+22+--+30+--+1+->+     Client   |
+    |           |  +--+  +--+  +--+  +-+  |              |
+    |           |                         |              |
+    +-----------+                         +--------------+
+
+How firewalls work is that network messages destined for a computer are broken up into packets. Once a packet
+reaches a computer how does the computer know which application the packet is intended for? 
 
 Well, the operating system allocates a different number to each running application. Then all network packets that
 carry that number are sent to that application. This number is called a port number.
 
-A security group is a firewall that allows all outgoing network packets to pass, but blocks all incoming network 
-packets by default. But you can open "ports" in the security group, hence allowing inbound network packets with a 
-matching port number through to the application on the instance.
+By default the firewall defined by a security group allows all outgoing network packets to pass, 
+but blocks all incoming network packets. But you can open "ports" in the security group, hence allowing
+inbound network packets with a matching port number through to the application on the instance.
 
     If you get lots of blank looks, the following twisted metaphor might help:
     
@@ -139,8 +186,8 @@ Create a Security Group with the help of the security group checklist
 
 http://tinyurl.com/creating-a-security-group
 
-*Tip:* Preface the security group name with an "sg_" so that you know that
-its a security group when you see the name...
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on..
 
 -- *Slide End* --
 
@@ -200,14 +247,15 @@ and a Green one once you are done.
 
 -- *Slide* --
 
-## Terminate an instance
+## Terminate your free computer!
 
-Terminate the instance you launched!
+Can you work out how to terminate your free computer? 
+Test your discovery by terminating the one you've just started.
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
 
 -- *Slide End* --
-
-Please hold up a Red sticky note if you need help
-and a Green one once you are done.
 
 -- *Slide* --
 

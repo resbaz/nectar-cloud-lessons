@@ -88,6 +88,12 @@ Please hold up a Red sticky note if you haven't
 process. If you do see nothing, be happy. Dependent on the the numbers, just move on and leave the helpers to sort
 those who haven't.
 
+-- *Slide* --
+
+## Trial Projects
+
+-- *Slide End* --
+
 The first time you log on to the Research Cloud dashboard, you get given a **free** trial project, with three-months 
 worth of time if you run the largest computer you are allowed to on it all the time. 
 
@@ -97,7 +103,22 @@ will find that your project/tenant should last far longer.
 But even if your trial project has expired, you can still log in to the dashboard to view and request 
 allocations. You can even fill in an allocation request to extend your existing project/tenant!
 
-Regardless of your path,  your project/tenant should give you the time to learn the Research Cloud ropes!
+Regardless of your path, your project/tenant should give you the time to learn the Research Cloud ropes!
+
+-- *Slide* --
+
+## What's your trial project lifetime?
+
+1. for ever and ever after
+1. three months from today
+1. depends on how much I use it... 
+
+-- *Slide End* --
+
+**Answer: C** But it will be B if run your free computer(s) flat out!
+
+So always **terminate** your free computers once you've finished working with them. That way you can avoid the
+asking for allocation extensions paperwork.
 
 ## Follow my leader
 
@@ -207,6 +228,7 @@ Is it:
 1. help_me@rc.nectar.org.au
 1. do_not_reply@rc.nectar.org.au 
 1. the_big_boss@rc.nectar.org.au
+1. support@amazon.com
 
 -- *Slide End* --
 
@@ -215,25 +237,59 @@ Is it:
 The support site is well worth exploring. But we are not going to do it now.
 Remember, you now know where to go when you want to find helpful documentation.
 
-**Activity:** Close the support tab of the browser.
+-- *Slide* --
 
-**A:** Hold up a Red sticky note if you are not looking at the dashboard!
+### Can you find the NeCTAR training site?
+
+Is it:
+
+1. https://dashboard.rc.nectar.org.au
+1. https://support.nectar.org.au
+1. http://www.nectar.org.au/ 
+1. http://training.nectar.org.au/
+1. http://status.rc.nectar.org.au/
+
+-- *Slide End* --
+
+**Answer:**
+
+Those are all useful NeCTAR website addresses to know. Especially the status site.
+But the answer is D, http://training.nectar.org.au/
+
+This is where you can go once you return to your homes, and look to increase your understanding of
+the Research cloud, the home of your free computer and usb stick!
+
+-- *Slide* --
+
+## Close the support tab of the browser and return to the dashboard.
+
+* <span style="color:red">&#9632;</span> = I've lost the dashboard!
+* <span style="color:green">&#9632;</span> = I'm good to go!
+
+-- *Slide End* --
 
 Between the two drop downs NeCTAR have placed a new item titled "Support Ticket". This is
 where you should go if you need help.
 
-**Activity:** Get everyone to click on the "Support Ticket" link of the top bar of the dashboard.
+-- *Slide* --
 
-This is an important link if you want to reach out and get help!
+### Click on the "Support Ticket" link of the top bar of the dashboard.
 
-The dialogue brought up has a search option. This allows you to try to find the answer to your problem
-yourself before you reach out by completing the form.
+* <span style="color:red">&#9632;</span> = I can't see it!
+* <span style="color:green">&#9632;</span> = I've clicked!
+
+-- *Slide End* --
+
+
+The dialogue you've brought up allows you to directly submit a help request. 
+
+But it has a search option on the right! 
+
+This allows you to try to find the answer to your problem yourself before you reach out by completing the form.
 
 -- *Slide* --
 
-## Question
-
-Try searching the knowledge base for "allocation".
+### Search the knowledge base for "allocation"
 
 What does an approved allocation request become?
 
@@ -241,7 +297,7 @@ What does an approved allocation request become?
 1. a project
 1. a collaboration
 1. an empire
-1. a task
+1. a chore
 
 -- *Slide End* --
 
@@ -667,15 +723,45 @@ Stopped and paused computers are still consuming resources on the host computer!
 Now knowing what's going on under the hood, you can understand why once you hit the "Launch" button there might be a 
 delay before the machine runs - there's quite a lot going on.
 
-So we've explored the dashboard, learnt how to file a support request, and done a dive into the architecture of the
-cloud, and watched me launch a VM.
+-- *Slide* --
+
+### Can you all find the Allocations tab?
+
+* <span style="color:red">&#9632;</span> = No...
+* <span style="color:green">&#9632;</span> = Yes!
+
+-- *Slide End* --
+
+*Allocations* is an important tab: Remember, once you’ve exhausted your trial project, this is where you come. 
+It’s basically an online form that allows you to apply for a project with enough resources to support your research.  
 
 -- *Slide* --
 
-You can think of the Dashboard we've just explored as the cockpit/drivers seat for an entire Data Centre - <br /> 
-BUT it is a car/plane you can crash!!! <br />
+### Is there an option to convert your trial project on the allocation form?
+
+* <span style="color:red">&#9632;</span> = No!
+* <span style="color:green">&#9632;</span> = Yes, I can see it.
+
+-- *Slide End* --
+
+Again, the greens have it.
+
+You can also request to have your  project/tenant extended. 
+You do this by selecting the "Convert project trial" option when filling in the allocation request form.
+
+-- *Slide* --
+
+
+So we've explored the dashboard, learnt how to file a support request, and done a dive into the architecture of the
+cloud, watched me launch a VM - and learnt about allocations.
+
+-- *Slide* --
+
+You can think of the Dashboard we've just explored as the drivers seat for an entire Data Centre: <br />
+The Research Cloud. <br />
+BUT it is a car you can crash! <br />
 And we *want* you to crash it and restart it regularly...<br />
-\#failfast!
+Don't be afraid: **\#failfast**!
 
 -- *Slide End* --
 

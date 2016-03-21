@@ -398,6 +398,33 @@ But if you are a good scout/girl guide, and have a plan, you should be able to c
 And when you put an instance up into the Research Cloud, there are some basic steps you can take to protect yourself.
 
 
+-- *Slide* --
+
+# Homework...
+
+http://tinyurl.com/ResBaz-Links
+
+-- *Slide End* --
+
+We've just introduced the Research Cloud. In order to make use of it effectively do work through the NeCTAR training.
+
+The page referenced here gives links to the NeCTAR training material that covers what we've done today.
+
+-- *Slide* --
+
+#Remember:
+
+You can think of the Dashboard we've just explored as the drivers seat for an entire Data Centre: <br />
+The Research Cloud. <br />
+BUT it is a car you can crash! <br />
+And we *want* you to crash it and restart it regularly...<br />
+Don't be afraid: **\#failfast**!
+
+## Thank you
+
+-- *Slide End* --
+
+
 
 
 

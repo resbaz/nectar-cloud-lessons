@@ -262,3 +262,33 @@ Make your shared snapshot private again!
 Hold up a Red sticky note if you run into problems.
 
 And a Green one once you are done.
+
+-- *Slide* --
+
+## Terminate your free computer!
+
+Check to see if you have any computers running (Compute-Instances).
+
+If so, terminate them.
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+-- *Slide End* --
+
+
+-- *Slide* --
+
+### Why did we terminate our computers?
+
+1. To conserve our trial tenancy
+1. To conserve our trial tenancy
+1. To conserve our trial tenancy
+1. To conserve our trial tenancy
+1. All of the above
+
+-- *Slide End* --
+
+**Answer:** The E's have it!
+
+-- *Slide* --
