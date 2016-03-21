@@ -31,6 +31,8 @@ Worked flawlessly.
 
 A wrapper around cygwin
 
+Advantage is that it is so similar to the OSX shell in use we only need one lesson stream.
+
 Disadvantage is the bizarro /cygdrive/c/Users/IEUser/ dance to get to the users home directory.
 
 Disadvantage is that it ignores file permissions [by design](https://github.com/babun/babun/issues/457).
@@ -42,7 +44,7 @@ To run X11 with Babun, you are supposed to do
 
 In a Babun console. However, when I ran it I get 408 errors: and no packages installed.
 
-Despite this we did trial Babun in a lesson: and found that people struggled with the download times :( 
+Despite the above we did trial Babun in a lesson: and found that people struggled with the download times :( 
 
 ## [Cmder](http://cmder.net/)
 
