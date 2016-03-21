@@ -55,13 +55,27 @@ The directories that make up this project are as follows:
 * [Resources](Resources/) - The resources that students will be using during the course
 * [Diary](Dairy/) - Notes made from giving the course.
 
+# Instructors notes
+
 ## Delivering the lessons
 
 The lessons assume that participants have both red and green coloured sticky notes and cards lettered from "A" through
 to "E" (in the style of Software Carpentry). These are used to answer questions and to show distress if the students
 aren't keeping up or need help.
 
-## Instructors notes
+### When giving the lessons:
+
+Try to engage the audience.  
+
+* Ask them to provide explanations of what has just been done.
+* Or ask questions of them. 
+
+So for, example, 
+
+* each time a bash command previously introduced is used point to people randomly and ask them what the command means...
+* when you are typing bash commands ask for participants to tell you what to type at each space and slash in 
+  the bash script...
+  
 
 ### In general
 
@@ -99,30 +113,97 @@ You will need to write the following words onto cards in big print, one word per
 * USER
 * GROUP
 
-### When giving the lessons:
 
-Try to engage the audience. You can do this by asking questions of them. So for, example, 
+### Prerequisites
 
-* each time a previous bash command is used in lesson 4 point to people randomly to ask them what the command means...
-* when you are typing bash commands ask for participants to tell you what to type at each space and slash in 
-  the bash script...
+* Each student will need a laptop with wifi access.
+* The room must allow students to connect to the Internet via wifi. 
+* Each student on the course must have an AAF logon.
+* The Windows users will need to install [Babun](Resources/Babun.md) (5 minutes. Perhaps they can do this on the day?)
+* Each person must have an allocation on the Research Cloud that they can use.
 
-### Todo
+For those that have expired trial projects we can:
+
+* get to pair up with others
+* have a special tenancy for the lesson, and then them to it on the fly. 
+  This is not a great solution as people in the tenancy will step on each others toes.
+* have someone on hand to extend their trial tenancies on the spot?
+
+If we could get participants AAF credentials before hand, we could:
+
+* pre-create a special allocation for each person on the course that dies the day after the course.
+* run a query to check if they are part of any project, and the status of their project.
+
+
+## Git
+
+If you check this repository out be aware that it uses Git submodules to manage the reveal.js dependency.
+To also checkout reveal.js, you will have to either:
+
+    # fetch it all in one hit
+    git clone --recursive https://github.com/MartinPaulo/ResBazResOS.git
+
+Or:
+
+    # take it step by step
+    git clone https://github.com/MartinPaulo/ResBazResOS.git
+    git submodule init
+    git submodule update
+
+## To regenerate the slides
+
+The SlideExtractor.jar in the root directory will re-create the slides if needed.
+
+To run it ensure that the java version installed is java 8:
+
+```bash
+java -version
+```
+
+should return something along the lines of `java version "1.8.0_65"`.
+
+If it doesn't then install java 8 from here: http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html
+
+Then in a command prompt in the root directory simply issue:
+
+```bash
+java -jar SlideExtractor.jar
+```
+
+You should see something like the following fly by:
+
+```bash
+Working on:  ./Lessons/Lesson_I/Lesson_I.md
+Writing to: ./Presentation/Lesson_1.html
+    .
+    .
+    .
+Working on: ./Lessons/Lesson_VIII/Lesson_VIII.md
+Writing to: ./Presentation/Lesson_VIII.html
+Writing to: ./Presentation/index.html
+```
+
+Remember to always walk through your slides when you regenerate them!
+
+
+# Todo
 
 1. [ ] Update with this years ResBaz feedback
 1. [ ] Check that all red/green questions have the answer rephrase the question, if possible...
-1. [ ] Change guide to help to Freshdesk
-1. [ ] Update for the new support email (support@nectar.org.au) once Freshdesk is launched
+1. [ ] Update for the new support email (support@nectar.org.au) now that Freshdesk is launched
        (confirm email address and process)
+1. [ ] Replace cygwin with putty.
 
-#### Nice to have
+## Nice to have
 
 1. [ ] Possibly add an FAQ of synonym's? Have things like drive, PC, server, IP, Web address, HTTP, link etc...
 1. [ ] As a Chromebook user can I have an online SSH like resbaz.cloud.edu shell tool?
-1. [ ] Could you use three cup game, three card monty, etc. as example of moving data files around on your local and 
+       [Crosh](http://www.howtogeek.com/170648/10-commands-included-in-chrome-oss-hidden-crosh-shell/)
+       Or [Chrome Shell](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo)
+1. [ ] Could we use three cup game, three card monty, etc. as example of moving data files around on your local and 
        remote server?
-1. [ ] Create a booklet for attendees to take away with them - and to use during the session.
+1. [ ] Should we create a booklet for attendees to take away with them - and to use during the session.
 
-### For "Train the Trainer
+## For "Train the Trainer
 
 1. [ ] As in Software Carpentry, should trainers who submit a GitHub correction get a certificate?
