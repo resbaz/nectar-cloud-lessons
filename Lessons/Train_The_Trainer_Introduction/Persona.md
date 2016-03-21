@@ -20,3 +20,6 @@
 * Teaching parallel programming and getting accounts for students would be difficult
 * Heard about the research cloud
 * Initial testing proved difficult and abandoned the idea
+
+
+For a more filled out example, see [Software Carpentry's Personas](http://software-carpentry.org/audience/).
