@@ -71,7 +71,7 @@ Those running Microsoft Windows...
 
 Yes, You!
 
-Did you install Cygwin?
+Did you download Putty?
 
 -- *Slide End* --
 
@@ -84,7 +84,7 @@ the Research Cloud.
 
 Microsoft are planning to change this, but for the time being Windows users have to follow an alternate path.
 
-That's why in the prerequisites we asked Windows users to install Cygwin. It's a tool that gives you a terminal you
+That's why in the prerequisites we asked Windows users to download Putty. It's a tool that gives you a terminal you
 can use on Linux computers.
 
 Ok: Before we go any further, we are going to perform a very bad play.
@@ -110,7 +110,7 @@ Find and run the terminal program, or command line, on your computer.
 
 OSX users can do a Spotlight Search for 'terminal'. 
 
-Cygwin users simply click on the Cygwin desktop icon.
+Putty users simply click on the Putty icon.
 
 -- *Slide End* --
 

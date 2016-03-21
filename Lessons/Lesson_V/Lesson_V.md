@@ -10,7 +10,7 @@
 
 ## X11
 
-As part of the prerequisites, you were supposed to have installed X11 or Cygwin with X11 on your machine.
+As part of the prerequisites, you were supposed to have installed X11 if you use Apple, or Xming if you use Windows.
 
 Hold up a Green card if you've managed to do this.
 And a Red card if you are going to be playing catchup!

@@ -1,21 +1,11 @@
-#MobeXterm on MS-Windows
+#Putty on MS-Windows
 
-## Installing MobaXterm 
+## Installing Putty 
 
-Get the [MobaXterm installer edition]
-(http://mobaxterm.mobatek.net/download-home-edition.html)
+Go to the [Putty download page](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
-When MobaXTerm starts, hit the Session button in the top left corner.
+Then download and run the Windows MSI installer [putty-0.67-installer.msi](https://the.earth.li/~sgtatham/putty/latest/x86/putty-0.67-installer.msi)
+This saves some configuration work if you elect to download the stand alone components.
 
-![Image of MobaXTerm after start](https://raw.githubusercontent.com/resbaz/nectar-cloud-lessons/master/Resources/mobaxterm_ssh_advanced.PNG)
 
-The following instructions are not applicable until after lessons 2 and
-3.
-
-In the hostname box you will put your VM's ip address. You can specify 
-a user name if you like, if you don't, you will be asked every time you
-login.
-
-Because we use a Public/Private Key for security access, you will need 
-to click on the "Advanced SSH settings" tab, tick the "Use private key"
-box and put the location of the key in the field next to it.
+https://github.com/davidheijkamp/docs/wiki/Howto:-Creating-and-using-OpenStack---SSH-keypairs-on-Windows

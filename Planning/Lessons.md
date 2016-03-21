@@ -214,7 +214,7 @@ Bash guide:
 * http://steve-parker.org/sh/sh.shtml 
 * http://code.tutsplus.com/articles/10-terminal-commands-that-will-boost-your-productivity--net-14105
 
-Cygwin isn't the best solution: there are possibly other, easier solutions for us to use...
+Putty isn't the best solution: there are possibly other, easier solutions for us to use...
 
 ##To discuss 
 
