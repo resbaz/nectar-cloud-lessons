@@ -190,8 +190,6 @@ Remember to always walk through your slides when you regenerate them!
 
 1. [ ] Update with this years ResBaz feedback
 1. [ ] Check that all red/green questions have the answer rephrase the question, if possible...
-1. [ ] Update for the new support email (support@nectar.org.au) now that Freshdesk is launched
-       (confirm email address and process)
 1. [ ] Replace cygwin with putty.
 
 ## Nice to have
