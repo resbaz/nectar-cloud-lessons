@@ -17,6 +17,9 @@ goals](stretch_goals.md)).
 
 We have turned Putty/Xming installation into a prerequisite for Windows users...
 
+If you want to test the Windows instructions, but don't have a Windows machine, Microsoft have preconfigured 
+virtual machines for testing their browsers with: https://dev.windows.com/en-us/microsoft-edge/tools/vms/mac/
+
 ## Questions
 
 ### Q: Why not just use Amazon?
@@ -60,3 +63,17 @@ complicated?
 > of scale, and -- like any outsourced task -- you tend to get what you get. A restaurant with a limited menu is 
 > cheaper than a personal chef who can cook anything you want. Fewer options at a much cheaper price: it's a 
 > feature, not a bug." - Bruce Schneier 
+
+
+## Xming
+
+In order to get Xming to work on a later version of Ubuntu I needed to set the following in the remote machines 
+`sshd_config` file:
+
+```bash
+X11Forwarding yes
+X11DisplayOffset 10
+X11UseLocalhost yes
+```
+
+I've not tested if the last line will affect OSX clients...
