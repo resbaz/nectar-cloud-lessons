@@ -1,5 +1,19 @@
 # Creating the workshop image
 
+You have two options: either to use the existing workshop image, or to build a new one from scratch.
+
+If you choose to use the existing workshop image, be aware that it might have not be updated for quite a while. 
+So before running a course, launch the existing image, ssh into it, then run 
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+If it takes too long consider updating it, taking a snapshot and then using the snapshot for the course.
+
+# Build an image from scratch
+
 ## Choose your base Ubuntu image
 
 The course is currently built around an Ubuntu base image.
@@ -8,11 +22,13 @@ On several other presentations we've done there have been issues with the NeCTAR
 doing updates from AARNET. Hence you may prefer to base your image on one provided by Ubuntu, as it
 isolates you from this possible point of failure.
 
-Either way, choose an [Ubuntu LTS](https://wiki.ubuntu.com/LTS) image as your base. This means that you
-won't have to rebuild the image every six months or so: something that has bitten the origanal developers
+Either way, try to choose an [Ubuntu LTS](https://wiki.ubuntu.com/LTS) image as your base. This means that you
+won't have to rebuild the image every six months or so: something that has bitten the original developers
 of this course!
 
 For the purpose of these notes we are using the 14.04 LTS release.
+
+### Ubuntu sourced image
 
 If wanting to use an Ubuntu provided image, go to the images tab of the dashboard: 
 
@@ -22,10 +38,10 @@ Click on the "Create Image" button.
 
 Fill in the requested Name and Description details.
 
-When you get to the image location box, you need to enter the url of the image on the Ubuntu site. To find
-this, go to the Ubuntu cloud image repository at http://cloud-images.ubuntu.com/, open the folder of the
-image you are interested in, then open the "current" folder (current is the most recent). Then scroll all
-the way to the bottom, and copy the url for the amd64 server cloud image. In our case that is:
+Then enter the url of the image on the Ubuntu site into the image location box. 
+To find this, go to the Ubuntu cloud image repository at http://cloud-images.ubuntu.com/, 
+open the folder of the image you are interested in, then open the "current" folder (current is the most recent). 
+Then scroll all the way to the bottom, and copy the url for the amd64 server cloud image. At the moment that is:
 
 https://cloud-images.ubuntu.com/trusty/current/trusty-server-cloudimg-amd64-disk1.img
 
@@ -38,6 +54,8 @@ The architecture is "x86_64".
 Leave all the other fields blank and select the "Create Image" button.
 
 Then wait awhile for the image to be imported.
+
+### NeCTAR sourced image
 
 If wanting to use the NeCTAR provided image, simply select the desired Ubuntu LTS image from the list of
 NeCTAR provided images when launching the instance.
@@ -186,7 +204,7 @@ Select the 'standard' option and continue.
 When you get to the database section, use the `drupal` database, and use the `drupaluser` and password
 you set up earlier.
 
-On the "Configure site" rememember to make a note of the drupal administrator name (say `drupaladmin`)
+On the "Configure site" remember to make a note of the drupal administrator name (say `drupaladmin`)
 and make a note of it (again).
 
 Once configured, 
@@ -247,6 +265,16 @@ chmod 600 info.txt
 
 Anyone who uses this image for anything other than this lesson should change this password the minute they've
 brought the instance up. This can be done via the Drupal web interface.
+
+
+### Ensure that the X11 forwarding is set up correctly for Windows Putty users
+
+Make sure that the file `/etc/ssh/sshd_config` has the following lines in it:
+
+```bash
+X11Forwarding yes
+X11DisplayOffset 10
+```
     
 ### Clean up after yourself
 
