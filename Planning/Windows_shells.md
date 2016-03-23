@@ -5,7 +5,7 @@ I did a basic evaluation of the following windows shells to see which was most s
 In the end we have decided to change the course to use whatever Intersect used in their
 training. 
 
-This is Putty for ssh (http://training.nectar.org.au/package07/sections/connectViaSSH.html) and
+This is PuTTY for ssh (http://training.nectar.org.au/package07/sections/connectViaSSH.html) and
 Xming (http://training.nectar.org.au/package07/sections/guiViaSSH.html)
 
 ## [Git Bash](https://git-for-windows.github.io/)
@@ -55,7 +55,7 @@ of security advisories popped up...
 
 Disadvantage is that it ignores file permissions.
 
-## [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
+## [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
 
 Worked flawlessly.
 

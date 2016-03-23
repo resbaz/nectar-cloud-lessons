@@ -15,7 +15,7 @@ goals](stretch_goals.md)).
 
 ## Prerequisites
 
-We have turned Putty/Xming installation into a prerequisite for Windows users...
+We have turned PuTTY/Xming installation into a prerequisite for Windows users...
 
 If you want to test the Windows instructions, but don't have a Windows machine, Microsoft have preconfigured 
 virtual machines for testing their browsers with: https://dev.windows.com/en-us/microsoft-edge/tools/vms/mac/

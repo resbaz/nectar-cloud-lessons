@@ -71,7 +71,7 @@ Those running Microsoft Windows...
 
 Yes, You!
 
-Did you download Putty?
+Did you download PuTTY?
 
 -- *Slide End* --
 
@@ -84,7 +84,7 @@ the Research Cloud.
 
 Microsoft are planning to change this, but for the time being Windows users have to follow an alternate path.
 
-That's why in the prerequisites we asked Windows users to download Putty. It's a tool that gives you a terminal you
+That's why in the prerequisites we asked Windows users to download PuTTY. It's a tool that gives you a terminal you
 can use on Linux computers.
 
 Ok: Before we go any further, we are going to perform a very bad play.
@@ -110,7 +110,7 @@ Find and run the terminal program, or command line, on your computer.
 
 OSX users can do a Spotlight Search for 'terminal'. 
 
-Putty users simply click on the Putty icon.
+PuTTY users simply click on the PuTTY icon.
 
 -- *Slide End* --
 
@@ -175,15 +175,14 @@ our Drupal servers.
 
 ## Exercise
 
-Gentle people, start your servers!
+Gentle people, start your servers! 
+
+PS: *Reuse* your security group and key... 
+
+* <span style="color:red">&#9632;</span> = I'd quite like some help, please!
+* <span style="color:green">&#9632;</span> = I'm good to go!
 
 -- *Slide End* --
-
-Remember, this time round we don't need to create a security group or a key: they are already there. So reuse them
-when launching your VM.
-
-Hold up a Green Card when you're ready to move on,
-And a Red card if you need help.
 
 -- *Slide* --
 

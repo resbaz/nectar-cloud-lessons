@@ -267,7 +267,7 @@ Anyone who uses this image for anything other than this lesson should change thi
 brought the instance up. This can be done via the Drupal web interface.
 
 
-### Ensure that the X11 forwarding is set up correctly for Windows Putty users
+### Ensure that the X11 forwarding is set up correctly for Windows PuTTY users
 
 Make sure that the file `/etc/ssh/sshd_config` has the following lines in it:
 

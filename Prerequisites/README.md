@@ -13,7 +13,7 @@ These are the steps you need to have taken before arriving at the course.
        of the dashboard and fill in a New Allocation request. Explain that you will be doing the ResOS course and give
        the date on which you will be doing the course.
 1. [ ] You must bring a laptop with you that has a web browser and can support an ssh session.
-       1. [ ] If you are running MS windows, install [Putty and Xming](Windows.md) (the link gives instructions).
+       1. [ ] If you are running MS windows, install [PuTTY and Xming](Windows.md) (the link gives instructions).
        1. [ ] If you are running a Mac, install [X11](OSX.md) (the link gives instructions).
 1. [ ] If not running Linux, install the correct [CyberDuck](https://cyberduck.io/) client that is correct for your laptop.
 

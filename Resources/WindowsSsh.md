@@ -2,8 +2,8 @@
 
 This is a two step process. 
 
-* You need to prepare your key for use with Putty (a one off step)
-* Then use the resultant prepared key with Putty
+* You need to prepare your key for use with PuTTY (a one off step)
+* Then use the resultant prepared key with PuTTY
 
 So follow the instructions below, step by step.
 
