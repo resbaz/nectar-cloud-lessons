@@ -41,6 +41,7 @@ If PuTTY is not installed, follow the [installation instructions](../Prerequisit
 6. In the "Host Name (or IP address) edit box enter:
    `ubuntu@<The IP number of your running VM>`
    For example: `ubuntu@144.6.235.227` <- This is an example IP number, probably not yours!
+   Here `ubuntu is the name of the user account on the remote machine that we are connecting as.  
 7. If you want to, enter a name for the session in the "Saved Sessions" edit box, then click the "Save" button.
    This saves all your settings (including the private key), and allows you simply "Load" them the next time you
    run PuTTY. It's a convenience to save setup time.
