@@ -86,13 +86,6 @@ interested in.
 
 We'll start by creating our key pair.
 
-Walk the students through the key pair checklist, describing each entry
-
-**NB:** you can only download this file once! Don’t lose it!!
-
-**Note:** The checklists are online: so do as we did in our software deployments. One person will use the checklist
-to instruct the other, remembering to fill in the checklists as you go through it. Then swap!
-
 -- *Slide* --
 
 ## Key Pairs
@@ -106,8 +99,7 @@ http://tinyurl.com/creating-a-keypair
 
 -- *Slide End* --
 
-Please hold up a Red sticky note if you need help
-and a Green one once you are done.
+**NB:** you can only download the half of the keypair file once! Don’t lose it!!
 
 ## Security Groups
 
@@ -133,7 +125,7 @@ Let's see if I can explain them in a bit more detail.
 
 Naturally, on the the Research Cloud a security group selects what network traffic that can pass.
 
-    Try to draw something like the following on a white board as you talk...
+**Demonstrate:** Try to draw something like the following on a white board as you talk...
 
     +-----------+    Network              +--------------+
     |           |                         |              |
@@ -172,12 +164,6 @@ inbound network packets with a matching port number through to the application o
     
     Any packets with a different port number don’t even make it to your machine. They are just thrown overboard!
 
-Ok, lets look at the security group checklist.
-
-Walk the students through the security group checklist, describing each entry as you go. 
-
-*If anyone asks, CIDR = Classless Internet Domain Routing, a flexible way of specifying internet address ranges*
-
 -- *Slide* --
 
 ## Security Groups
@@ -191,11 +177,12 @@ http://tinyurl.com/creating-a-security-group
 
 -- *Slide End* --
 
-Please hold up a Red sticky note if you need help
-and a Green one once you are done.
+*If anyone asks, CIDR = Classless Internet Domain Routing, a flexible way of specifying internet address ranges*
 
 **NB:** You can edit a security group at any time.  And the changes will immediately apply to all running virtual 
 machines using that security group.
+
+**Demonstrate:** Draw a view VM's with a shared security group.
 
 **NB:** This also means that if you share security groups amongst VM’s, you have to be careful: if you change rules for 
 one server, you might inadvertently break another.
@@ -215,7 +202,7 @@ project stops "working". Could it be because:
 
 -- *Slide End* --
 
-Walk through each option, describing how it could affect the instance you are trying to reach.
+Walk through each option, asking the audience to explain how it could affect the instance you are trying to reach.
 
 **Answer: E.** Yes, it’s true. The research cloud can experience network issues from time to time. 
 
@@ -249,8 +236,7 @@ and a Green one once you are done.
 
 ## Terminate your free computer!
 
-Can you work out how to terminate your free computer? 
-Test your discovery by terminating the one you've just started.
+We've talked about it: so terminate the one you've just started.
 
 * <span style="color:red">&#9632;</span> = Help me!
 * <span style="color:green">&#9632;</span> = I'm ready to move on...
@@ -307,8 +293,13 @@ we've created a security group to control access to our running machine. And we'
 allow us to communicate with the machine in the next lesson.
 
 These are the three essential skills for building any cloud application for you and all your research colleagues to 
-use!!! When these three steps fail you, the fourth step is the HELP menu item.
+use!!! When these three steps fail you, the fourth step is to reach out for HELP!
  
-Do you remember where it is?
-
-And where do you find the user name that NeCTAR are going to request?
+ -- *Slide* --
+ 
+ ## Do you remember how to get help?
+ 
+ * <span style="color:red">&#9632;</span> = Yes!
+ * <span style="color:green">&#9632;</span> = No. I was a little distracted at that point in time...
+ 
+ -- *Slide End* --
