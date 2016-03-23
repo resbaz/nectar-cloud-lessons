@@ -2,6 +2,10 @@
 
 If Xming is not installed, follow the [installation instructions](../Prerequisites/Windows.md).
 
+Then do the following.
+
+Again, hold up a <span style="color:red">Red</span> card if you need help!
+
 ## Enable X11 forwarding in PuTTY
 
 1. Run PuTTy (Start menu -> All Programs -> PuTTY -> PuTTY)
