@@ -50,3 +50,4 @@ If PuTTY is not installed, follow the [installation instructions](../Prerequisit
    If you are connecting to a new computer is reusing an IP number that you used before you will also get this message.
    Ordinarily you can click "Yes".
 10. You should now have a terminal session on your remote computer!
+11. <span style="color:green">&#9632;</span> = I'm done!
