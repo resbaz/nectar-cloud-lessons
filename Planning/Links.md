@@ -34,6 +34,7 @@ NeCTAR's online training can be found at:
 ### Running X11 applications on an ssh connection
 
 * http://training.nectar.org.au/package07/sections/guiViaSSH.html
+* http://askubuntu.com/questions/35512/what-is-the-difference-between-ssh-y-trusted-x11-forwarding-and-ssh-x-u
 
 ### apt-get and apt-update
 
