@@ -12,12 +12,13 @@
 > Remembering that she is responsible for her web server, she decides that the software running on the machine needs 
 > to be urgently updated.
 > 
-> Remembering the checklist used to launch a machine performs an update by issuing the following commands:
+> She asks her local IT guru for help: and gets a scribbled bit of paper with a cryptic command set thrust in her 
+> direction
 > 
 
 -- *Slide* --
 
-## Anna wants to run
+## Run this on your machine, ASAP!
 
 ```bash
 apt-get update && apt-get -y upgrade
@@ -25,14 +26,12 @@ apt-get update && apt-get -y upgrade
 
 -- *Slide End* --
 
-> 
-> She knows that she has to issue this set of commands again - this time on the instance.
 
 ## The Terminal 
 
 -- *Slide* --
 
-**Your free PC on the cloud has no keyboard, monitor or mouse. Do you have any hope of installing or removing
+**Anna's free PC on the cloud has no keyboard, monitor or mouse. Do she have any hope of installing or removing
 software on it?**
 
 * <span style="color:red">&#9632;</span> = No, doom and gloom!
@@ -63,109 +62,9 @@ one computer could act as the terminal for another computer - or even itself!
 So you can run a terminal application on your computer to do work on your own computer. You might recognize it as the
 "Command Line"
 
--- *Slide* --
+But the main advantage for us is that a terminal program can also be used to connect to another computer.
 
-## Question
-
-Those running Microsoft Windows...
-
-Yes, You!
-
-Did you download PuTTY?
-
--- *Slide End* --
-
-Hold up a Red sticky note if you didn't.
-
-**A** We are hoping to see none. If there are some, well. Sigh.  Get them to install it whilst we plough on.
-
-To all you Windows users: the Windows command line doesn't work with the Linux operating system that Anna is using on 
-the Research Cloud.
-
-Microsoft are planning to change this, but for the time being Windows users have to follow an alternate path.
-
-That's why in the prerequisites we asked Windows users to download PuTTY. It's a tool that gives you a terminal you
-can use on Linux computers.
-
-Ok: Before we go any further, we are going to perform a very bad play.
-
--- *Slide* --
-
-# A Play!
-
--- *Slide End* --
-
-
-I need at least 8 volunteers. 
-
-**Activity** Hand out copies of the [play](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Play.md)
-
-Run through the play.
-
--- *Slide* --
-
-## Exercise
-
-Find and run the terminal program, or command line, on your computer.
-
-OSX users can do a Spotlight Search for 'terminal'. 
-
-PuTTY users simply click on the PuTTY icon.
-
--- *Slide End* --
-
--- *Slide* --
-
-## Exercise
-
-Once you've opened it, remember PWD in our play?
-
-Try the following command:
-
-```bash
-pwd
-```
-
-`pwd` is shorthand for **p**rint **w**orking **d**irectory
-
--- *Slide End* --
-
-The working directory is simply the folder within your file system that you are currently positioned in.
-
-Remember that Finder or File Explorer gives you a hierarchical tree view of your file system. 
-
-> (Demonstrate by opening the finder and clicking through on some of the folders)
-
-As the terminal can't give you the same view, it simply has the concept of being positioned in one of those folders. 
-And that's the working directory that you see with the `pwd` command.
-
--- *Slide* --
-
-## Exercise
-
-We are going to replay our play!
-
-There's a command line cheat sheet at: http://tinyurl.com/command-line-cheat-sheet
-
-Use it to step the through the following tasks:  http://tinyurl.com/play-task
-
--- *Slide End* --
-
-As ever, hold up a Green card when you're done.
-
-And a Red card if you need help. But remember to ask your neighbours first!
-
-Commands issued via terminals have the following advantages:
-
-* They are terse
-* If you know what you’re doing it’s faster to type than to point with a mouse
-* They keep a history of your commands
-* You can easily replay commands
-* It is simple to automate
-
-But the main advantage for us is that your terminal program can also be used to connect to another computer.
-
-So Anna's hope comes in the form of the terminal application: She can run it on her local machine, and connect to 
+So Anna's hope comes in the form of a terminal application: She can run it on her local machine, and connect to 
 her remote Drupal server.
 
 Now in the last session we shut down own servers. If we're going to follow in Anna's footsteps, we need to relaunch
@@ -184,11 +83,12 @@ PS: *Reuse* your security group and key...
 
 -- *Slide End* --
 
+
 -- *Slide* --
 
 ## ssh
 
-The program we are going to connect to the server with is: 
+The program/protocol we are going to connect to the server with is: 
 
 ```bash
 ssh
@@ -236,18 +136,26 @@ And they can go on using that inner envelope for the rest of the conversation.
 
 This is essentially what ssh is doing with the public and private key pairs.
 
-Thank the volunteers.
+**Thank the volunteers**
  
 Why aren't we using passwords?
 
 Well, they have problems:
 
+-- *Slide* --
+
+## The problem with passwords
+
 * One more thing to remember (and forget)
 * Need to be ever more complex
 * Easy to crack (especially social engineering)
 * Prone to being shared
-* Cascade to other devices if *you* use the same password across devices. And if you’re spawning multiple computers
-  on the cloud are you going to give them all the same password, or somehow ‘remember’ different ones?
+* Cascade to other devices
+ 
+-- *Slide End* --
+
+They cascade if *you* use the same password across devices. And if you’re spawning multiple computers
+on the cloud are you going to give them all the same password, or somehow ‘remember’ different ones?
 
 If it’s your machine, what happens if you forget your password? There is no higher authority to unlock it for you…
 
@@ -255,162 +163,105 @@ And if it’s your machine, it’s granting access to the whole machine. If some
 the security services knocking on your door at some early hour. And if that prospect doesn't scare you, you're a 
 better person than I!
 
-Ok. This is the basic form our `ssh` command will take:
-
--- *Slide* --
-
-## ssh
-
-```bash
-ssh  -i <key> <user>@<address>
-```
-
-Eg: Along the lines of:
-
-```bash
-ssh -i tut_dev.pem ubuntu@144.6.225.224
-```
-
--- *Slide End* --
-
-So here:
-
-* the `key` is the path to and the key file itself
-* the `user` is the name of the user account on the remote machine that we are connecting as.  
-  Different operating systems have different default user accounts.
-* the `address` is the IP address of the Virtual Machine that we read off of the dashboard.
-
 -- *Slide* --
 
 ## Question
 
-Research Cloud have a catalogue that gives information about the images that they provide. It can be found at:
+Those running Microsoft Windows...
 
-https://wiki.rc.nectar.org.au/wiki/Image_Catalog
- 
-Have a look at it. What operating system do you think the Drupal server is based on?
+Yes, You!
 
-1. Fedora
-1. Debian
-1. Centos
-1. Ubuntu
-1. Scientific Linux
+Did you download and install PuTTY?
 
 -- *Slide End* --
 
-**Answer D**  Ubuntu
+Hold up a Red sticky note if you didn't.
+
+**A** We are hoping to see none. If there are some, well. Sigh. 
+
+To all you Windows users: the Windows command line is incompatible with the Linux operating system that Anna is using on 
+the Research Cloud.
+
+Microsoft are planning to change this, but for the time being Windows users have to follow an alternate path.
+
+That's why in the prerequisites we asked Windows users to download PuTTY. It's a tool that gives you a terminal you
+can use on Linux computers.
+
+And so this is where our worlds diverge. Apple computers are compatible and come with the needed 
+software already installed.
+
+So we are going to split up into two streams:
 
 -- *Slide* --
 
-**Exercise**
+## Walk through the following steps
 
-## Connect to your remote instance via ssh. E.G.:
-
-```bash
-ssh -i tut_dev.pem ubuntu@144.6.225.224
-```
-
-### PS: Windows users... 
-
-To find your key file, 
-prefix `/cygdrive/c/` to the directory 
-that you saved your key file in...
+* Apple: [http://tinyurl.com/apple-ssh-md](http://tinyurl.com/apple-ssh-md)
+* Windows: [http://tinyurl.com/windows-ssh-md](http://tinyurl.com/windows-ssh-md)
 
 -- *Slide End* --
 
-If everyone could try to connect to their server using the ssh command, that would be wonderful.
+Ok: now we are going take a break and perform a very bad play.
 
 -- *Slide* --
 
-## When you are asked:
-
-```bash
-The authenticity of host '144.6.225.224 (144.6.225.224)' can't be established.
-RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
-Are you sure you want to continue connecting (yes/no)?
-```
-
-simply type "yes".
+# A Play!
 
 -- *Slide End* --
 
-BTW, I'm hoping that you all fail - with an error message!
- 
-Hold up a Green card when you've reached this error message.
-And a Red card if you need help
+I need at least 8 volunteers. 
+
+**Activity** Hand out copies of the [play](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Play.md)
+
+Run through the play.
 
 -- *Slide* --
 
-## Is this your error message?
+## In your ssh session
+
+Try the following command:
 
 ```bash
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-Permissions 0777 for '.ssh/tut_dev.pem' are too open.
-It is required that your private key files are NOT accessible by others.
-This private key will be ignored.
-bad permissions: ignore key: .ssh/nectar_dev.pem
-ubuntu@144.6.225.224's password: 
+pwd
 ```
+
+`pwd` is shorthand for **p**rint **w**orking **d**irectory
 
 -- *Slide End* --
 
-Hold up a Green card when you've reached this error message.
-And a Red card if you need help.
+The working directory is simply the folder within your file system that you are currently positioned in.
 
-What's going on here? Anyone want to hazard an explanation?
+Remember that Finder or File Explorer gives you a hierarchical tree view of your file system. 
 
-The error message is very descriptive. ```ssh``` is rejecting your key file because anyone who has access to your
-machine can read it. You need to tighten up the permissions on this file so that only you can access it.
+> (Demonstrate by opening the finder and clicking through on some of the folders)
 
-Hit control-c to exit the password prompt.
-
-This is where `chmod` comes to the rescue!
-
-In my case, allowing me (the current **u**ser) to be able to **r**ead and **w**rite the file, and to exclude the 
-**g**roup and **o**thers from being able to **r**ead, **w**rite or try to run (e**x**ecute) it, the command would be:
+As the terminal can't give you the same view, it simply has the concept of being positioned in one of those folders. 
+And that's the working directory that you see with the `pwd` command.
 
 -- *Slide* --
 
 ## Exercise
 
-This works for me:
+We are going to replay our play!
 
-```bash
-chmod u=rw,go-rwx keys/tut_dev.pem 
-```
+There's a command line cheat sheet at: http://tinyurl.com/command-line-cheat-sheet
 
-Modify the permissions on your key file so that only you can read or write it.
+Use it to step the through the following tasks:  http://tinyurl.com/play-task
 
--- *Slide End* --
-
-Then issue the `pwd` command to see what directory you are in.
-
-Retry the ssh command.
-
-Hopefully, you are now met with something along following lines
-
--- *Slide* --
-
-## Does this look familiar?
-
-```bash
-Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-36-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com/
-Last login: Mon Mar 30 01:27:13 2015 from hqrouter.vpac.org
-ubuntu@drupal:~$ 
-```
+* <span style="color:red">&#9632;</span> = My thespian career needs some help!
+* <span style="color:green">&#9632;</span> = I'm done!
 
 -- *Slide End* --
 
-Re-issue the `pwd` command to convince yourself that are indeed now teleported into the remote machine.
+But remember to ask your neighbours first!
 
-Hold up a Green card when you are convinced you have a shell into the remote machine.
-And a Red card if you need help.
+Commands issued via terminals have the following advantages:
 
--- *Slide* --
+* They are terse
+* If you know what you’re doing it’s faster to type than to point with a mouse
+* They keep a history of your commands
+* You can easily replay commands
+* They are simple to automate
 
 ## Exercise
 
@@ -639,14 +490,16 @@ RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
 Are you sure you want to continue connecting (yes/no)?
 ```
 
+Um: Windows users: that's the: "Do you trust...." dialogue
+
 -- *Slide End* --
 
-When you replied 'yes' that fingerprint for the server was stored as a line in a file called the known_hosts file.
+When you replied 'yes' that fingerprint for the server was stored as a line in a file.
 
 From this point on, whenever you connect to the server, that fingerprint checked against the entry in
-the known_hosts file. If they remain in sync, then everything is sweet.
+the file. If they remain in sync, then everything is sweet.
 
-But if they change, then ssh will refuse to give you a connection, showing the error:
+But if they change, then ssh will refuse to give you a connection, showing an error:
 
 -- *Slide* --
 
@@ -669,9 +522,11 @@ ECDSA host key for mdcs-256-w14 has changed and you have requested strict checki
 Host key verification failed.
 ```
 
+Um: Windows users: that's the: "Do you trust...." dialogue
+
 -- *Slide End* --
 
-The error message is very helpful: it even gives you the location of your known hosts file, and the
+The error message is very helpful: it even gives you the location of your file, and the
 exact command required to fix it!
 
 Note that earlier versions of the ssh software don't show the command required to fix this warning!
@@ -691,9 +546,9 @@ number as an old one. It's then that you'll see this error message.
 
 -- *Slide* --
 
-## Exercise
+## The fix:
 
-The command to fix this problem is:
+OSX: 
 
 ```bash
 ssh-keygen -R <hostname>
@@ -701,9 +556,11 @@ ssh-keygen -R <hostname>
 
 Where `<hostname>` can also be the IP number of your affected machine.
 
+Um: Windows users: Just click the "Yes I Trust This Computer" button.
+
 -- *Slide End* --
 
-This command is in your cheat sheet: remember it - because you will need it!
+This command is in your cheat sheet if you ever need it!
 
 To recap: in this lesson we learnt about terminals and how to use one to connect to a running system using ssh, and 
 then how to update the software on the Ubuntu based system using the package manager. 
