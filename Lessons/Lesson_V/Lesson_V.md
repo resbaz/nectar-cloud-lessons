@@ -15,37 +15,11 @@ As part of the prerequisites, you were supposed to have installed X11 if you use
 Hold up a Green card if you've managed to do this.
 And a Red card if you are going to be playing catchup!
 
-Now Anna will need to connect to the server once again via ssh.
-
-This time however, she's going to add -Y to the `ssh` command.
-
--- *Slide* --
-
-# Anna's ssh command
-
-```bash
-ssh -i key.pem -Y ubuntu@115.146.84.207
-```
-
--- *Slide End* --
-
--- *Slide* --
-
-## Pop quiz: first answers wins... 
-
-Who can use their friend `man` the quickest to find out what the `-Y` is doing?
-
--- *Slide End* --
-
--- *Slide* --
-
-## Answer
-
-The `-Y` enables trusted X11 forwarding when using the `man` command
-
--- *Slide End* --
+Now Anna will need to connect to the server once again via ssh, but this time using X11 forwarding
 
 _What on earth is X11 forwarding?_, I hear you ask.
+
+**Demonstrate** Draw the following on the whiteboard
 
 X-Windows is the name of the presentation system used on the Research Cloud servers. One of the cool things about it
 is that it allows an application to run on one machine, and the applications graphical user interface to appear
@@ -55,31 +29,76 @@ being run on the remote machine.
 
 It's kind of like TV: the server is broadcasting the user interface to your local machine.
 
+So we need to connect to the remote machine with X11 forwaring enabled.
+
+Sadly again we are going to split up into two streams:
+
+-- *Slide* --
+
+## Walk through the following steps
+
+* Apple: [http://tinyurl.com/apple-x11-md](http://tinyurl.com/apple-x11-md)
+* Windows: [http://tinyurl.com/windows-x11-md](http://tinyurl.com/windows-x11-md)
+
+-- *Slide End* --
+
+-- *Slide* --
+
+## Before we get going with Firefox
+
+In your newly opened connection use the package manger to install some apps...
+
+```bash
+sudo apt-get install xauth
+sudo apt-get install x11-apps
+```
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+-- *Slide End* --
+
+-- *Slide* --
+
+## Test it all
+
+Run a calulator remotely!
+
+```bash
+xcalc &
+```
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+-- *Slide End* --
+
+Automagically, although it is running on a remote server,
+the calculator interface appears on your local machine!
+
 ## Browsing the web via Firefox
 
 Having connected to her remote server, Anna then needs to install Firefox, a web browser. To do this she simply uses
 the package manager, and asks it to install Firefox for her.
 
-```bash
-sudo apt-get install firefox
-```
-
 Once Firefox is installed, she simply needs to run it, and automagically, although it is running on her remote server,
 the interface appears on her local machine!
 
-```bash
-firefox
-```
 -- *Slide* --
 
-## Exercise
+# Install and run Firefox
 
-Connect to your running server via ssh, and install and run Firefox.
+```bash
+sudo apt-get install firefox
+firefox &
+```
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm browsing the Internet.
+
+-- *Slide End* --
 
 Note that the GLTK errors that are reported are acceptable, and are not of concern. 
 
-Hold up a Green card when you've managed to do this.
-And a Red card if you need help.
 
 -- *Slide End* --
 
@@ -91,18 +110,22 @@ And a Red card if you need help.
 ```bash
 sudo apt-get install gedit
 ```
+
 -- *Slide* --
 
-## Exercise
-
-Install gedit and edit today.txt as you see fit using the command:
+## Install gedit and edit today.txt
 
 ```bash
+sudo apt-get install gedit
 gedit today.txt 
 ```
 
+-- *Slide End* --
+
 Once you've done this, save the file and exit gedit. Confirm that your changes have have been saved by using the 
 `more` command:
+
+-- *Slide* --
 
 ```bash
 more today.txt
