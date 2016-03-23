@@ -1,5 +1,5 @@
-# X11 on OSX
+# X11 with OSX
 
-Go to https://support.apple.com/downloads/X11_for_Mac_OS_X_1_0 and select the **X11 for Mac OS X 1.0** package.
+Go to http://www.xquartz.org/ and select the **XQuartz-2.7.8.dmg** package.
 
 Download and install the package.
