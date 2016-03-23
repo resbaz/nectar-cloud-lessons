@@ -82,11 +82,11 @@ know where to go for support when things turn to custard!
 **Q:** It's part of the [prerequisites](../../Prerequisites/README.md), but just to check: has everyone here logged
 into the Research Cloud dashboard before today? 
 
-Please hold up a Red sticky note if you haven't
+* <span style="color:red">&#9632;</span> = No, I haven't :(
+* <span style="color:green">&#9632;</span> = Yes, I have!
 
-**A:** You are hoping to see nothing here, as this means helpers are going to have to walk these people through the
-process. If you do see nothing, be happy. Dependent on the the numbers, just move on and leave the helpers to sort
-those who haven't.
+**A:** You are hoping to see green here, as this means helpers are going to have to possibly walk red people through
+the process later on. If you do see only green, be happy.
 
 -- *Slide* --
 
@@ -128,11 +128,10 @@ asking for allocation extensions paperwork.
 
 Can you log into: [https://dashboard.rc.nectar.org.au](https://dashboard.rc.nectar.org.au)? 
 
+* <span style="color:green">&#9632;</span> = I'm logged on!
+* <span style="color:red">&#9632;</span> = I'm having issues. Help!
+
 -- *Slide End* --
-
-Please hold up a Green sticky note once you are done!
-
-And a Red one if you need help.
 
 Now that everyone has logged in, we are going to play a short game of "[follow my leader](http://www.thefreedictionary.com/follow-my-leader)".  
 As I have the big screen, I’m going to be the leader. So there!
@@ -212,8 +211,6 @@ A new tab has opened, taking you to the homepage of the Research Cloud support s
 The support site has loads of useful documentation. It has beginners guides, online training,
 and knowledge bases.
 
-Scroll down to see the quick links to all this goodness.
-
 There's also a handy link that if followed tells you how to contact Support.
 
 -- *Slide* --
@@ -224,10 +221,10 @@ Can you find the support email address?
 
 Is it:
 
-1. support@rc.nectar.org.au
-1. help_me@rc.nectar.org.au
-1. do_not_reply@rc.nectar.org.au 
-1. the_big_boss@rc.nectar.org.au
+1. support@nectar.org.au
+1. help_me@nectar.org.au
+1. do_not_reply@nectar.org.au 
+1. the_big_boss@nectar.org.au
 1. support@amazon.com
 
 -- *Slide End* --
@@ -268,8 +265,8 @@ the Research cloud, the home of your free computer and usb stick!
 
 -- *Slide End* --
 
-Between the two drop downs NeCTAR have placed a new item titled "Support Ticket". This is
-where you should go if you need help.
+Between the two drop downs NeCTAR have placed a new item titled "Support Ticket". 
+This is your first port of call if you need help.
 
 -- *Slide* --
 
@@ -279,7 +276,6 @@ where you should go if you need help.
 * <span style="color:green">&#9632;</span> = I've clicked!
 
 -- *Slide End* --
-
 
 The dialogue you've brought up allows you to directly submit a help request. 
 
@@ -333,7 +329,7 @@ the timezone you are in.
 
 These changes affect only you, as a user, but they do cover all projects! 
 
-**Activity** Go ahead, and change the language to, oh say Chinese! (to see the effect).
+**Activity** Go ahead, and change the language to, oh say Polski! (to see the effect).
 
 The so that we will all see the same interface today, change your language and time settings to match mine. 
 "British English (en-au)" and "Australia/Melbourne (UTC + 11:00) 
@@ -415,10 +411,8 @@ The top level tabs within on your personal project should be
 * Orchestration
 * Allocations
 
-**Activity:** Just click around on these tabs and their children seeing how they expand and contract, and how the 
+Click around on these tabs and their children to show how they expand and contract, and how the 
 screens change according which tab is selected. They only change when the leaf tabs are selected.
-
-Please hold up a Green sticky note once you've clicked on all of these tabs and their child tabs.
 
 The *Compute* tab is where you manage all of your computer resources.
 
@@ -484,7 +478,9 @@ have provided. So you have to either do a lot of maintenance on your running mac
 basis.
 
 One common way of working is to start up a machine based on a NeCTAR image, then to install your own software onto it, 
-and then to make a copy of its hard drive as it runs. This process is called "snapshotting". 
+and then to make a copy of its hard drive as it runs. This copy is written back to the images store. 
+
+This process is called "snapshotting". 
 
 This saves you from having to reinstall the software next time you launch a machine. 
 
@@ -513,10 +509,11 @@ you know and trust the people behind the image.
 
 ## Walk through of a launch
 
-Let's stop the game of "follow my leader".
-
 I'm going to demonstrate the steps required to turn one of those images into a running machine. As I do so, I'm going
-to describe what's going on. So just watch what I do.
+to describe what's going on. 
+
+You are welcome to try to follow along, or to just sit and watch. If you do follow along, don't panic. We are going
+to revisit this very shortly.
 
 ### Project -> Access & Security Tab
 
@@ -597,6 +594,8 @@ Which I now do by clicking on the "Launch Instance" button.
 
 Ok, while that starts up, lets walk through what’s happening behind the scenes.
 
+**Demonstrate:** Refer to the whiteboard drawing of this
+
 The image file that I’ve chosen to be the basis of my hard drive is copied from where it is being stored to the 
 physical machine on which it is going to be used. This physical machine is called the host. 
 
@@ -630,7 +629,7 @@ What happens to your hard drive when you terminate your Virtual Machine (VM)?
 
 ---
 
-**Demonstrate:** Refer to earlier whiteboard drawing of this.
+**Demonstrate:** Refer to the whiteboard drawing of this
 
 **Answer D:** The image is simply wiped.
 
