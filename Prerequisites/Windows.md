@@ -11,5 +11,3 @@ This saves some configuration work if you elect to download the stand alone comp
 
 Go to the [Xming download page](https://sourceforge.net/projects/xming/). Then download the Xming installer. 
 Run the installer, accepting all of the defaults as you step through the wizard.
-
-https://github.com/davidheijkamp/docs/wiki/Howto:-Creating-and-using-OpenStack---SSH-keypairs-on-Windows
