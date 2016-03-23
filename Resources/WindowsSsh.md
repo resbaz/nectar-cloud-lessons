@@ -9,8 +9,8 @@ So follow the instructions below, step by step.
 
 As ever, hold up a card as follows: 
 
-* <span style="color:red">&#9632;</span> = Won't you please, please help me!
-* <span style="color:green">&#9632;</span> = I'm done!
+* <span style="color:red">Red</span> = Won't you please, please help me!
+* <span style="color:green">Green</span> = I'm done!
 
 If PuTTY is not installed, follow the [installation instructions](../Prerequisites/Windows.md)
 
@@ -50,4 +50,4 @@ If PuTTY is not installed, follow the [installation instructions](../Prerequisit
    If you are connecting to a new computer is reusing an IP number that you used before you will also get this message.
    Ordinarily you can click "Yes".
 10. You should now have a terminal session on your remote computer!
-11. <span style="color:green">&#9632;</span> = I'm done!
+11. <span style="color:green">Green Card</span>!
