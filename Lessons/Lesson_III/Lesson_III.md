@@ -125,7 +125,7 @@ The second volunteer then passes the two envelopes to the first volunteer.
 Make the point that they have used the public key to encrypt the message, and only someone with the private key can
 unwrap it. Hence only the first volunteer can!
 
-Which he/she does. And then puts a message into the second envelop: which is then passed back to the second volunteer.
+Which he/she does. And then puts a message into the second envelope: which is then passed back to the second volunteer.
 
 They read the message and put a new one in and pass it back. 
 
@@ -236,7 +236,7 @@ Remember that Finder or File Explorer gives you a hierarchical tree view of your
 > (Demonstrate by opening the finder and clicking through on some of the folders)
 
 As the terminal can't give you the same view, it simply has the concept of being positioned in one of those folders. 
-And that's the working directory that you see with the `pwd` command.
+And that's the working directory on the server that you see with the `pwd` command.
 
 -- *Slide* --
 
