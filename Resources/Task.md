@@ -2,7 +2,7 @@
 
 Using the [Command Line Cheat Sheet](CommandLineCheatSheet.md) to the following steps in the [play](Play.md)
 
-1. [ ] Open a terminal
+1. [ ] Open a terminal to your remote server
 1. [ ] Establish where you are in the file system
 1. [ ] Create a directory named "reading_room"
 1. [ ] Navigate into the reading_room directory
