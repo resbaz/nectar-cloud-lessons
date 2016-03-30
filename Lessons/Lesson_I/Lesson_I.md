@@ -748,9 +748,6 @@ Again, the greens have it.
 You can also request to have your  project/tenant extended. 
 You do this by selecting the "Convert project trial" option when filling in the allocation request form.
 
--- *Slide* --
-
-
 So we've explored the dashboard, learnt how to file a support request, and done a dive into the architecture of the
 cloud, watched me launch a VM - and learnt about allocations.
 

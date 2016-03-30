@@ -267,6 +267,8 @@ Commands issued via terminals have the following advantages:
 
 Finally, we are going try and update our web server. Try to execute the first command in the set:
 
+-- *Slide* --
+
 ```bash
 apt-get update
 ```

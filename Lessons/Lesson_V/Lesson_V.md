@@ -99,9 +99,6 @@ firefox &
 
 Note that the GLTK errors that are reported are acceptable, and are not of concern. 
 
-
--- *Slide End* --
-
 # Editing Files
 
 > Anna noticed that the people who set up her Drupal server have left a file named 'today.txt' in the home directory

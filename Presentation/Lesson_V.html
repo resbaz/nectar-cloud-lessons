@@ -51,51 +51,64 @@
 </script></section>
 <section data-markdown><script type="text/template">
 
-# Anna's ssh command
+## Walk through the following steps
+
+* Apple: [http://tinyurl.com/apple-x11-md](http://tinyurl.com/apple-x11-md)
+* Windows: [http://tinyurl.com/windows-x11-md](http://tinyurl.com/windows-x11-md)
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Before we get going with Firefox
+
+In your newly opened connection use the package manger to install some apps...
 
 ```bash
-ssh -i key.pem -Y ubuntu@115.146.84.207
+sudo apt-get install xauth
+sudo apt-get install x11-apps
+```
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Test it all
+
+Run a calulator remotely!
+
+```bash
+xcalc &
 ```
 
-</script></section>
-<section data-markdown><script type="text/template">
-
-## Pop quiz: first answers wins... 
-
-Who can use their friend `man` the quickest to find out what the `-Y` is doing?
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
 
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Answer
-
-The `-Y` enables trusted X11 forwarding when using the `man` command
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## Exercise
-
-Connect to your running server via ssh, and install and run Firefox.
-
-Note that the GLTK errors that are reported are acceptable, and are not of concern. 
-
-Hold up a Green card when you've managed to do this.
-And a Red card if you need help.
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## Exercise
-
-Install gedit and edit today.txt as you see fit using the command:
+# Install and run Firefox
 
 ```bash
+sudo apt-get install firefox
+firefox &
+```
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm browsing the Internet.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Install gedit and edit today.txt
+
+```bash
+sudo apt-get install gedit
 gedit today.txt 
 ```
 
-Once you've done this, save the file and exit gedit. Confirm that your changes have have been saved by using the 
-`more` command:
+</script></section>
+<section data-markdown><script type="text/template">
 
 ```bash
 more today.txt

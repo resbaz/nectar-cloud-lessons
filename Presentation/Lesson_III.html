@@ -51,7 +51,7 @@
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Anna wants to run
+## Run this on your machine, ASAP!
 
 ```bash
 apt-get update && apt-get -y upgrade
@@ -60,12 +60,48 @@ apt-get update && apt-get -y upgrade
 </script></section>
 <section data-markdown><script type="text/template">
 
-**Your free PC on the cloud has no keyboard, monitor or mouse. Do you have any hope of installing or removing
+**Anna's free PC on the cloud has no keyboard, monitor or mouse. Do she have any hope of installing or removing
 software on it?**
 
 * <span style="color:red">&#9632;</span> = No, doom and gloom!
 * <span style="color:green">&#9632;</span> = Somehow, somewhere, there is hope!
 
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+Gentle people, start your servers! 
+
+PS: *Reuse* your security group and key... 
+
+* <span style="color:red">&#9632;</span> = I'd quite like some help, please!
+* <span style="color:green">&#9632;</span> = I'm good to go!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## ssh
+
+The program/protocol we are going to connect to the server with is: 
+
+```bash
+ssh
+```
+
+`ssh` stands for **s**ecure **sh**ell. 
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## The problem with passwords
+
+* One more thing to remember (and forget)
+* Need to be ever more complex
+* Easy to crack (especially social engineering)
+* Prone to being shared
+* Cascade to other devices
+ 
 </script></section>
 <section data-markdown><script type="text/template">
 
@@ -75,7 +111,15 @@ Those running Microsoft Windows...
 
 Yes, You!
 
-Did you download PuTTY?
+Did you download and install PuTTY?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Walk through the following steps
+
+* Apple: [http://tinyurl.com/apple-ssh-md](http://tinyurl.com/apple-ssh-md)
+* Windows: [http://tinyurl.com/windows-ssh-md](http://tinyurl.com/windows-ssh-md)
 
 </script></section>
 <section data-markdown><script type="text/template">
@@ -85,20 +129,7 @@ Did you download PuTTY?
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise
-
-Find and run the terminal program, or command line, on your computer.
-
-OSX users can do a Spotlight Search for 'terminal'. 
-
-PuTTY users simply click on the PuTTY icon.
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## Exercise
-
-Once you've opened it, remember PWD in our play?
+## In your ssh session
 
 Try the following command:
 
@@ -119,141 +150,11 @@ There's a command line cheat sheet at: http://tinyurl.com/command-line-cheat-she
 
 Use it to step the through the following tasks:  http://tinyurl.com/play-task
 
-</script></section>
-<section data-markdown><script type="text/template">
-
-## Exercise
-
-Gentle people, start your servers! 
-
-PS: *Reuse* your security group and key... 
-
-* <span style="color:red">&#9632;</span> = I'd quite like some help, please!
-* <span style="color:green">&#9632;</span> = I'm good to go!
+* <span style="color:red">&#9632;</span> = My thespian career needs some help!
+* <span style="color:green">&#9632;</span> = I'm done!
 
 </script></section>
 <section data-markdown><script type="text/template">
-
-## ssh
-
-The program we are going to connect to the server with is: 
-
-```bash
-ssh
-```
-
-`ssh` stands for **s**ecure **sh**ell. 
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## ssh
-
-```bash
-ssh  -i <key> <user>@<address>
-```
-
-Eg: Along the lines of:
-
-```bash
-ssh -i tut_dev.pem ubuntu@144.6.225.224
-```
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## Question
-
-Research Cloud have a catalogue that gives information about the images that they provide. It can be found at:
-
-https://wiki.rc.nectar.org.au/wiki/Image_Catalog
- 
-Have a look at it. What operating system do you think the Drupal server is based on?
-
-1. Fedora
-1. Debian
-1. Centos
-1. Ubuntu
-1. Scientific Linux
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-**Exercise**
-
-## Connect to your remote instance via ssh. E.G.:
-
-```bash
-ssh -i tut_dev.pem ubuntu@144.6.225.224
-```
-
-### PS: Windows users... 
-
-To find your key file, 
-prefix `/cygdrive/c/` to the directory 
-that you saved your key file in...
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## When you are asked:
-
-```bash
-The authenticity of host '144.6.225.224 (144.6.225.224)' can't be established.
-RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
-Are you sure you want to continue connecting (yes/no)?
-```
-
-simply type "yes".
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## Is this your error message?
-
-```bash
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-Permissions 0777 for '.ssh/tut_dev.pem' are too open.
-It is required that your private key files are NOT accessible by others.
-This private key will be ignored.
-bad permissions: ignore key: .ssh/nectar_dev.pem
-ubuntu@144.6.225.224's password: 
-```
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## Exercise
-
-This works for me:
-
-```bash
-chmod u=rw,go-rwx keys/tut_dev.pem 
-```
-
-Modify the permissions on your key file so that only you can read or write it.
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## Does this look familiar?
-
-```bash
-Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-36-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com/
-Last login: Mon Mar 30 01:27:13 2015 from hqrouter.vpac.org
-ubuntu@drupal:~$ 
-```
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## Exercise
-
-Finally, we are going try and update our web server. Try to execute the first command in the set:
 
 ```bash
 apt-get update
@@ -370,6 +271,8 @@ RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
 Are you sure you want to continue connecting (yes/no)?
 ```
 
+Um: Windows users: that's the: "Do you trust...." dialogue
+
 </script></section>
 <section data-markdown><script type="text/template">
 
@@ -392,18 +295,22 @@ ECDSA host key for mdcs-256-w14 has changed and you have requested strict checki
 Host key verification failed.
 ```
 
+Um: Windows users: that's the: "Do you trust...." dialogue
+
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise
+## The fix:
 
-The command to fix this problem is:
+OSX: 
 
 ```bash
 ssh-keygen -R <hostname>
 ```
 
 Where `<hostname>` can also be the IP number of your affected machine.
+
+Um: Windows users: Just click the "Yes I Trust This Computer" button.
 
 </script></section>
     </div>
