@@ -1,4 +1,4 @@
-# NeCTAR cloud lesson plan [V1.0.0](#Versioning)
+# NeCTAR cloud lesson plan [V1.0.0](#versioning)
 
 This course aims to teach the basics of the NeCTAR cloud to researchers over a one day workshop.
 
@@ -206,8 +206,12 @@ Remember to always walk through your slides when you regenerate them!
 # Versioning
 
 Each version below will have an associated tag: hence enabling people to switch to a particular
-point in time, if need be. But development continues unabated on the master branch...
+point in time, if need be. But development will continue unabated on the master branch...
 
-| Version | Description |
-| ------- | ----------- |
-| 1.0.0   | First release |
+We have a whimsical 3 digit version number: but the truth is that there is no real schema in play.
+The version number simply indicates a point in time. This is done so that if you want to teach
+to a particular version of the material, you can.
+
+| Version | Description | Date |
+| ------- | ----------- | ---- |
+| 1.0.0   | First release | 30<sup>th</sup> March 2016 |
