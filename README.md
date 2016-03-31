@@ -1,4 +1,4 @@
-# NeCTAR cloud lesson plan
+# NeCTAR cloud lesson plan [V1.0.0](#Versioning)
 
 This course aims to teach the basics of the NeCTAR cloud to researchers over a one day workshop.
 
@@ -186,12 +186,11 @@ Writing to: ./Presentation/index.html
 Remember to always walk through your slides when you regenerate them!
 
 
-# Todo
+# Todo's
+
+## Nice to have's
 
 1. [ ] Check that all red/green questions have the answer rephrase the question, if possible...
-
-## Nice to have
-
 1. [ ] Possibly add an FAQ of synonym's? Have things like drive, PC, server, IP, Web address, HTTP, link etc...
 1. [ ] As a Chromebook user can I have an online SSH like resbaz.cloud.edu shell tool?
        [Crosh](http://www.howtogeek.com/170648/10-commands-included-in-chrome-oss-hidden-crosh-shell/)
@@ -203,3 +202,12 @@ Remember to always walk through your slides when you regenerate them!
 ## For "Train the Trainer
 
 1. [ ] As in Software Carpentry, should trainers who submit a GitHub correction get a certificate?
+
+# Versioning
+
+Each version below will have an associated tag: hence enabling people to switch to a particular
+point in time, if need be. But development continues unabated on the master branch...
+
+| Version | Description |
+| ------- | ----------- |
+| 1.0.0   | First release |
