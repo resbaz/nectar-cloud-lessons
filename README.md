@@ -141,12 +141,12 @@ If you check this repository out be aware that it uses Git submodules to manage 
 To also checkout reveal.js, you will have to either:
 
     # fetch it all in one hit
-    git clone --recursive https://github.com/MartinPaulo/ResBazResOS.git
+    git clone --recursive https://github.com/resbaz/nectar-cloud-lessons.git
 
 Or:
 
     # take it step by step
-    git clone https://github.com/MartinPaulo/ResBazResOS.git
+    git clone https://github.com/resbaz/nectar-cloud-lessons.git
     git submodule init
     git submodule update
 
