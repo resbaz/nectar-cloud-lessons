@@ -85,7 +85,6 @@ You will need to write the following words onto cards in big print, one word per
 * Each student will need a laptop with wifi access.
 * The room must allow students to connect to the Internet via wifi. 
 * Each student on the course must have an AAF logon.
-* The Windows users will need to install [Babun](Resources/Babun.md) (5 minutes. Perhaps they can do this on the day?)
 * Each person must have an allocation on the Research Cloud that they can use.
 
 For those that have expired trial projects we can:
@@ -153,6 +152,8 @@ Remember to always walk through your slides when you regenerate them!
 
 
 # Todo's
+
+1. [ ] Update the prerequisites on this page.
 
 ## Nice to have's
 
