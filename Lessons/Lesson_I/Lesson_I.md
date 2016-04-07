@@ -19,7 +19,7 @@ your tour guide is ...
 
 Two researchers at a well known University, who and which shall remain nameless to protect the innocent, needed to 
 do some fairly complex statistical analysis. So out of their grant money they bought two powerful computers, at a 
-cost of $10 000 per machine to run[ MatLab](http://au.mathworks.com/products/matlab/?nocookie=true) on. 
+cost of $10 000 per machine to run [MatLab](http://au.mathworks.com/products/matlab/?nocookie=true) on.
 
 But on the first run, they found that the machines couldn’t work with their data sets. The machines were underpowered! 
 They were forced to iteratively spend money on upgrading those machines, until finally, one was able to perform the 
@@ -56,6 +56,15 @@ Currently, how much does it cost a researcher to use the Research Cloud?
 **Answer E**
 
 ---
+
+-- *Slide* --
+
+## Wait: there's more
+
+### Storage!
+
+-- *Slide End* --
+
 
 There's another powerful reason to use the Research Cloud: access to storage which is kept locally in Australia and 
 available on the high speed [AARNET](https://www.aarnet.edu.au/about-us) backbone. Think of it as a USB stick on
