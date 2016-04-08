@@ -1,6 +1,8 @@
+# Lesson III:  (45 min)
+
 -- *Slide* --
 
-# Lesson III: Accessing and updating your new computer (45 min)
+## Accessing and updating your new computer
 
 -- *Slide End* --
 
@@ -18,7 +20,7 @@
 
 -- *Slide* --
 
-## Run this on your machine, ASAP!
+## Anna, run this on your machine, ASAP!
 
 ```bash
 apt-get update && apt-get -y upgrade
@@ -116,23 +118,30 @@ be able to communicate and control that machine. ... You want to keep your priva
 
 **Demo**
 
-Ask for two volunteers. Give the second one the two envelopes, one inside the other. 
+Ask for a volunteer. Give them two envelopes, one inside the other.
 
-The first volunteer is going to shout at the second "Oi - I want to talk to you!"
+Then shout at the volunteer "Oi - I want to talk to you!"
 
-The second volunteer then passes the two envelopes to the first volunteer. 
+The volunteer then passes the two envelopes to the you.
 
-Make the point that they have used the public key to encrypt the message, and only someone with the private key can
-unwrap it. Hence only the first volunteer can!
+Make the point that they have used your public key to encrypt their response, and only someone with the private key can
+unwrap it. Hence only you can!
 
-Which he/she does. And then puts a message into the second envelope: which is then passed back to the second volunteer.
+Which you do.
+
+To reveal the inner envelope: a shared secret wrapper, that is to be used for this conversation only.
+
+And then put a piece of paper with a message into the inner envelope: which you then passed back to
+the second volunteer.
 
 They read the message and put a new one in and pass it back. 
 
-Make it clear that they are the only two people who can read what's in that inner envelop. Edward Snowden tells us
-that this is still true!
+Make it clear that the two of you are the only two people who can read what's in that inner envelope.
 
-And they can go on using that inner envelope for the rest of the conversation.
+Edward Snowden tells us that this is still true!
+
+And they can go on using that inner envelope for the rest of the conversation. And that this is done like this
+because it's computationally expensive to use public and private keys.
 
 This is essentially what ssh is doing with the public and private key pairs.
 
@@ -196,8 +205,8 @@ So we are going to split up into two streams:
 
 ## Walk through the following steps
 
-* Apple: [http://tinyurl.com/apple-ssh-md](http://tinyurl.com/apple-ssh-md)
-* Windows: [http://tinyurl.com/windows-ssh-md](http://tinyurl.com/windows-ssh-md)
+* Apple: [http://tinyurl.com/apple-ssh-md](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/AppleSsh.md)
+* Windows: [http://tinyurl.com/windows-ssh-md](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/WindowsSsh.md)
 
 -- *Slide End* --
 
@@ -244,7 +253,7 @@ And that's the working directory on the server that you see with the `pwd` comma
 
 We are going to replay our play!
 
-There's a command line cheat sheet at: http://tinyurl.com/command-line-cheat-sheet
+There's a command line cheat sheet at: [http://tinyurl.com/command-line-cheat-sheet](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/CommandLineCheatSheet.md)
 
 Use it to step the through the following tasks:  http://tinyurl.com/play-task
 
@@ -269,10 +278,19 @@ Finally, we are going try and update our web server. Try to execute the first co
 
 -- *Slide* --
 
+## Execute
+
 ```bash
 apt-get update
 ```
+
+* <span style="color:red">&#9632;</span> = I have errors!
+* <span style="color:green">&#9632;</span> = I'm done!
+
 -- *Slide End* --
+
+    You are very much hoping for a sea of Red's here...
+    You might have to call out
 
 -- *Slide* --
 
@@ -325,6 +343,22 @@ available software.
 
 Think of `sudo` as being like a safety catch. When you find yourself using it, double check what you are about to
 do!
+
+-- *Slide* --
+
+## Or:
+
+System administrator to pharmacist:
+
+*"Ephedrine, please."*
+
+Pharmacist: *"I'm afraid I can't sell you that."*
+
+*"Sudo ephedrine, please."*
+
+Pharmacist: "Certainly sir!"
+
+-- *Slide End* --
 
 Now execute the command:
 
