@@ -1,8 +1,8 @@
 # Command Line Cheat Sheet
 
 
-| Command   | Abbreviation For                        | Is/Does | research scenario use   |
-|-----------|-----------------------------------------|---------|--------------------------|
+| Command   | Abbreviation For                        | Is/Does |
+|-----------|-----------------------------------------|---------|
 | [`apt-get`](#apt-get) | **A**dvanced **P**ackage **T**ool - get | the command line app store |
 | [`cd`](#cd)       | **C**hange working **D**irectory        | changes directory |
 | [`chmod`](#chmod) | **Ch**ange file **MOD**e                | protects your junk |
