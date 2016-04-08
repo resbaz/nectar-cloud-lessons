@@ -337,7 +337,9 @@ available software.
 
 ## xkcd 149
 
+<a href="https://xkcd.com/149/">
 <img src="http://imgs.xkcd.com/comics/sandwich.png" title="The power of sudo" alt="Sandwich">
+</a>
 
 -- *Slide End* --
 
