@@ -1,6 +1,8 @@
+# Lesson II (25 - 35 min)
+
 -- *Slide* --
 
-# Lesson II: Your free computer: up and running (25 - 35 min)
+## Your free computer: up and running
 
 -- *Slide End* --
 
