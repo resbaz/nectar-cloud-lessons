@@ -75,11 +75,11 @@ And all of this is backed by a research facing organization that is not driven b
 But before you go rushing to the Research Cloud, there are some important gotchas that you have to understand. 
 The cloud environment is a not quite the same as dedicated computer on your desktop! 
 
-What I hope to do is to give you enough information to get your own machines up and running on the Research Cloud, 
-and to explain the gotcha’s.
+What I hope to do today is to give you enough information to get your own machines up and running on the
+Research Cloud, and to explain the gotcha’s.
 
 How I’m going to do this is, is to start with an overview the Research Cloud parts through a very high level drive 
-through of the Research Cloud dashboard. Hence the Research Cloud mystery tour title.
+through of the Research Cloud web dashboard. Hence the Research Cloud mystery tour title for this session.
 
 Then in the following session we’ll launch and access a machine.
 
@@ -91,8 +91,14 @@ know where to go for support when things turn to custard!
 **Q:** It's part of the [prerequisites](../../Prerequisites/README.md), but just to check: has everyone here logged
 into the Research Cloud dashboard before today? 
 
+-- *Slide* --
+
+## Have you logged into the NeCTAR dashboard before today?
+
 * <span style="color:red">&#9632;</span> = No, I haven't :(
 * <span style="color:green">&#9632;</span> = Yes, I have!
+
+-- *Slide End* --
 
 **A:** You are hoping to see green here, as this means helpers are going to have to possibly walk red people through
 the process later on. If you do see only green, be happy.
@@ -192,7 +198,7 @@ This project is prefaced by the words "pt" ([**p**roject **t**rial](http://suppo
 followed by a number. So mine is, for example, pt-30.
 
 **NB:** If you have multiple projects, get into the habit of always looking at the entry shown in this drop down 
-before you do anything major, simply to confirm that you are in the correct project. You wouldn’t believe the trouble 
+before you do anything major, simply to confirm that you are in the correct project. You wouldn’t believe the trouble
 I’ve got into by launching VM’s in the wrong project!
 
 **Q:** Can all those people who have multiple projects make sure they have their personal project selected?
@@ -240,14 +246,13 @@ Is it:
 
 **Answer: A**
 
-The support site is well worth exploring. But we are not going to do it now.
-Remember, you now know where to go when you want to find helpful documentation.
+The support site is well worth exploring.
 
 -- *Slide* --
 
 ### Can you find the NeCTAR training site?
 
-Is it:
+Is its URL:
 
 1. https://dashboard.rc.nectar.org.au
 1. https://support.nectar.org.au
@@ -264,6 +269,11 @@ But the answer is D, http://training.nectar.org.au/
 
 This is where you can go once you return to your homes, and look to increase your understanding of
 the Research cloud, the home of your free computer and usb stick!
+
+But we are not explore the support site now.
+
+Remember, you now know where to go when you want to find helpful documentation.
+
 
 -- *Slide* --
 
@@ -296,7 +306,7 @@ This allows you to try to find the answer to your problem yourself before you re
 
 ### Search the knowledge base for "allocation"
 
-What does an approved allocation request become?
+When managing an allocation, what does an approved allocation request become?
 
 1. a tenancy
 1. a project
@@ -313,9 +323,20 @@ submit your support request.
 
 The one "gotcha" is the **default email address is the one shown in the dashboard settings drop down**. 
 
+-- *Slide* --
+
+### Is the default email address the one you want to use?
+
+* <span style="color:red">&#9632;</span> = No!
+* <span style="color:green">&#9632;</span> = Yes
+
+-- *Slide End* --
+
 If you want responses to go to a different address, change it!
 
-To close the dialogue without sending anything just click on the dashboard behind it.
+To close the dialogue without sending anything just click on cross to the left **or** the dashboard behind it.
+
+Accidental clicks on the dashboard can be annoying!
 
 **Activity:** Get people to close the dialog and return to the dashboard.
 
@@ -340,8 +361,7 @@ These changes affect only you, as a user, but they do cover all projects!
 
 **Activity** Go ahead, and change the language to, oh say Polski! (to see the effect).
 
-The so that we will all see the same interface today, change your language and time settings to match mine. 
-"British English (en-au)" and "Australia/Melbourne (UTC + 11:00) 
+So that we will all see the same interface today, change your language and time settings to match mine.
 
 **Q:** Does anyone have anything very different from what’s up on the screen in front of them?
 
@@ -351,8 +371,20 @@ and a Green one if the answer is "they are about the same".
 **Activity:** Select the "Reset Password" tab
 
 **NB:** Do not try to use this password to log into the dashboard. This password has nothing to do with the dashboard!
+
 You log into the dashboard using your AAF credentials. However, the AAF doesn’t work too well with command line 
 applications. So here you generate a password to use with command line applications.
+
+-- *Slide* --
+
+### If you reset this password
+
+* <span style="color:red">&#9632;</span> = All applications using it will stop working!
+* <span style="color:green">&#9632;</span> = Nothing happens to applications using it...
+
+-- *Slide End* --
+
+**Answer:** The Red's have it: your applications will need their password reset, across all projects!
 
 So that’s the Settings tab and its children. Site wide changes that work across all projects.
 
@@ -380,12 +412,12 @@ Which one of these can’t you do with your settings dropdown?
 
 ## Question
 
-If you change your password under the settings drop down, which is correct?
+If you reset your password under the settings drop down, which is correct?
 
 1. You are free of the AAF requirement!
 1. Your AAF password is changed
 1. Your institutions password is changed!
-1. Tools that interface with the cloud will be affected 
+1. Applications that interface with the cloud will be affected
 1. None of the above
   
 -- *Slide End* --
@@ -402,14 +434,14 @@ Please hold up a Red sticky not if the answer is "Yes"
 and a Green one if the answer is "they are about the same".
 
 The overview tab simply gives an overview of your projects usage of its allocated resources. When a pie chart is full, 
-your project has exceeded its quota for that resource type. And they are colour coded, so problems should stand out.
+your project is at its quota limit for that resource type. And they are colour coded, so problems should stand out.
 
 The project overview tab is your default home page when you log in. So these limits are put fairly and squarely in 
 front of your face.
 
 ## Project Tab
 
-Going back to the project tab:
+Going back to the project tabs to the left:
 
 You should be able to see that it’s essentially a menu system made out of nested tabs.
 
@@ -439,8 +471,6 @@ data store. They are not linked in any way, and can be run without the other.
 
 ### Project -> Compute -> Images Tab
 
-Ok. Back to the "Follow my leader game" 
-
 **Activity:** If you could all join me on the Images sub-tab of the Project tab.
 
 **Q:** Is everyone on the same tab as me?
@@ -456,6 +486,9 @@ launch your machine. That file is copied across to wherever your machine is goin
 basis of your new machine's hard drive.
 
 **Demonstrate:** Do a whiteboard drawing of this.
+
+And also note: If that image file is in Melbourne, and your computer you are launching is in Tasmania, it might
+take quite a while for the copy to get to Tasmania...
 
 Across the top of the list of images are four filters that are reasonably self explanatory.
 
@@ -518,11 +551,7 @@ you know and trust the people behind the image.
 
 ## Walk through of a launch
 
-I'm going to demonstrate the steps required to turn one of those images into a running machine. As I do so, I'm going
-to describe what's going on. 
-
-You are welcome to try to follow along, or to just sit and watch. If you do follow along, don't panic. We are going
-to revisit this very shortly.
+We are going to walk through wha'ts required to turn one of those images into a running machine.
 
 ### Project -> Access & Security Tab
 
@@ -540,13 +569,13 @@ can’t reach in.
 
 Security Groups simply allow you to specify what network traffic is allowed to reach your machine in the cloud..
 
-So I create a security group that specifies what network traffic is going to reach it. In this case, I want to create 
-one that allows both ssh and http. 
+So I need to make sure that there are security groups that specify what network traffic is going to reach a machine
+I launch. In this case, I want a security group (or groups) that allow both ssh and http.
 
 HTTP is required to allow web browsers to access the running instance.
 
-SSH is required to allow us to access the instance to manage it. You can see it giving us access to the administrator
-interface.
+SSH is required to allow us to access the instance to manage it. You can see it as giving us access to the
+administrator interface.
 
 ###Project -> Access & Security Tab -> Key Pairs
 
@@ -575,7 +604,7 @@ When NeCTAR fire up a machine for you, they inject the public key into your mach
 be able to communicate with and control that machine. Like the clay seals of yesteryear, you want to keep your private
 key in a secure location. 
 
-Now I'm going to generate the keypair that I'm going to use to access the instance to manage it.
+Now I've got lot's of keypairs to choose from: If I didn't I'd either have to generate one, or import one.
 
 **Q:** You fire up your machine. Days later, you realise that you’ve lost your private key. Will you ever be able to 
 access and control your machine from that point onward?
@@ -587,7 +616,7 @@ and a Green one if the answer is "Yes".
 
 ### Project -> Instances Tab
 
-Having set up the environment that controls access to the the machine I'm now going to launch it.
+Having set up the environment that controls access to the the machine I'm next need to launch it.
 
 I do this by going back to the instances tab.
 
@@ -599,7 +628,10 @@ It is also one of the places that you can use to launch your free computer.
 
 Which I now do by clicking on the "Launch Instance" button.
 
-**Action** Do a walk through of the dialogue, remembering to add your keypair and security groups! Then launch it.
+**Action** Do a walk through of the dialogue, remembering to add your keypair and security groups!
+Show the Flavour changes, and also that some images don't work with some flavors...
+
+Then launch it.
 
 Ok, while that starts up, lets walk through what’s happening behind the scenes.
 
@@ -659,7 +691,7 @@ This only works for small machines. It’s not the worlds greatest way of doing 
 I've seen this ephemeral storage take grown developers by surprise when they first start using the Research Cloud. 
 It has just about reduced them to tears. Don’t be like them - trust nothing on the cloud!
 
-Now, I've been saying "terminating", but if you look at the running instance you can see that you have many different
+Now, I've been saying "terminating", but if you look at a running instance you will see that you have many different
 options for halting it. Which begs the question:
 
 -- *Slide* --
@@ -682,8 +714,8 @@ Pick out the wrong answers first to provide explanations of what they are!
 
 A paused VM is simply halted in memory, ready to be started again.
 A stopped VM has its state written to the host machines disk, ready to be resumed from there.
-A soft reboot tries to do a graceful reboot.
-A hard reboot just reboots the machine!
+A soft reboot tries to do a graceful reboot (you ask the OS to reboot).
+A hard reboot just reboots the machine! (you press the button)
 
 **Answer: B** 
 
@@ -745,17 +777,16 @@ It’s basically an online form that allows you to apply for a project with enou
 
 -- *Slide* --
 
-### Is there an option to convert your trial project on the allocation form?
+## Question
+
+Can you find the option to convert your trial project on the allocation form?
 
 * <span style="color:red">&#9632;</span> = No!
 * <span style="color:green">&#9632;</span> = Yes, I can see it.
 
 -- *Slide End* --
 
-Again, the greens have it.
-
-You can also request to have your  project/tenant extended. 
-You do this by selecting the "Convert project trial" option when filling in the allocation request form.
+For the Reds: its the the "Convert project trial" option.
 
 So we've explored the dashboard, learnt how to file a support request, and done a dive into the architecture of the
 cloud, watched me launch a VM - and learnt about allocations.
