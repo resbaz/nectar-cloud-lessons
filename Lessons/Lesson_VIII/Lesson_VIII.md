@@ -1,4 +1,4 @@
-# Lesson VIII: (15 min)
+# Lesson VIII: (20 min)
 
 -- *Slide* --
 
@@ -170,6 +170,6 @@ Is hands down better than a USB stick!
 
 -- *Slide End* --
 
-If ther
+If there are any doubters, be prepared to argue...
 
 
