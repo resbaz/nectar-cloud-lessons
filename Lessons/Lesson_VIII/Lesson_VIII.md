@@ -1,8 +1,10 @@
+# Lesson VIII: (15 min)
+
 -- *Slide* --
 
-# Lesson VIII: The object store (15 min)
+## The object store 
 
-Your supercharged USB stick
+Your supercharged USB stick!
 
 -- *Slide End* --
 
@@ -10,8 +12,9 @@ Your supercharged USB stick
 [Borrow?](https://developer.rackspace.com/blog/mysql-backup-to-rackspace-cloud-files/)
 
 There's another powerful reason to use the Research Cloud: access to storage which is kept locally in Australia and 
-available on the high speed [AARNET](https://www.aarnet.edu.au/about-us) backbone. There are different forms of
-storage available: but we are only going to look at the Object Store.
+available on the high speed [AARNET](https://www.aarnet.edu.au/about-us) backbone. 
+
+There are different forms of storage available: but we are only going to look at the Object Store today.
 
 The *Object Store* is an ideal replacement for the usb sticks that some people tend to carry 
 around with them: You can upload and download files to it from any browser: and you can keep those files private,
@@ -22,13 +25,38 @@ Some people even publish whole websites from the object store!
 On top of that, any file that you give it is backed up in triplicate, and each of the the copies is monitored for 
 degradation.
 
+
+    Try to draw something like the following on a white board as you talk...
+    +------------+  +------------+  +------------+
+    |   Copy 1   |  |   Copy 1   |  |   Copy 1   |
+    +------------+  +------------+  +------------+
+        ^               ^               ^
+        |               |               |
+        +---------------+---------------+------ Monitor
+
 Any bit rot, and the faulty file is replaced with a good copy. 
+
+    Update your drawing to show that a bad copy is replaced...
+
+-- *Slide* --
+
+## Who's scared of a big bad Cosmic Ray?
+
+[http://tinyurl.com/cosmic-ray-wiki](https://en.wikipedia.org/wiki/Cosmic_ray#Effect_on_electronics)
+
+* <span style="color:red">&#9632;</span> = Yes: me!
+* <span style="color:green">&#9632;</span> = What me, worry?
+
+-- *Slide End* --
+
+So the Object Store is a lot safer than than a random usb: not only do you not run the risk of losing it, you also
+are safer from the occasional cosmic ray!
 
 There is some terminology that you need to know.
 
 Files are called objects. Unsurprisingly, since it's called the object store.
  
-And objects go into containers.
+And objects go into ?
 
 -- *Slide* --
 
@@ -47,47 +75,45 @@ Otherwise, hold up your answer...
 
 **Answer:** C: Containers.
 
-This tab is where you create containers, and then put files (or objects) into the containers.
+Yes, objects go into containers.
+
+And this tab is where you create containers, and then put files (or objects) into the containers.
 
 It is a very, very simple interface. So simple it's actually clunky IMHO. 
-
-Ok: just watch what I do.
-
->  (demonstrate creating a container, uploading a file into it)
-
-And the way that you share with the public, is to mark the container as being "public". If you click on the resultant 
-"public" link you get some well formed xml. Just take the name of the object and append it to the url in the title bar 
-to make a public handle that you can share with the world.
-
->  (demonstrate making the container public, and viewing the image in a browser)
 
 Now for a challenge. There is no checklist!
 
 -- *Slide* --
 
-## Activity 1:
+## Save an image to the object store
 
 Can you create a container named **resbaz**
 in the Object Store and upload a picture to it? 
 
-**NB:** preserve the file extension as you name it.
+Then download and view the picture?
 
-Once your done, can you delete it all?
+Once you are done, can you delete it all?
 
 -- *Slide End* --
 
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
 
+Having done that we are next going to upload and share an image with the world.
+
+And yes, we have another checklist for you to follow.
+
 -- *Slide* --
 
 ## Share an image
 
 <div align="left">
-▢ Create a container (make it public)<br/>
+▢ Create a container (make it private)<br/>
 ▢ Upload a picture into it <br/>
+▢ Make sure you preserve the file extension when you name the object!<br/>
+▢ Make the container public<br/>
 ▢ Click on the resultant public link <br/>
-▢ Append '/' and the object name to the browser address <br/>
+▢ Append '/' and the object name in the browser address bar<br/>
 ▢ Do you see the image in your browser? <br/>
 </div>
 
@@ -117,3 +143,33 @@ files.
 **Answer:** D: all of the files in the container. So you need to use this feature with care!
 
 - - - 
+
+Remember that at the start of this training today I pointed you to the NeCTAR training website?
+
+Now for a challenge: are you able to use that training material to connect with CyberDuck?
+
+-- *Slide* --
+
+### CyberDuck and Swift!
+
+[http://tinyurl.com/with-cyberduck](http://training.nectar.org.au/package07/sections/objectStorage.html#windowsmac-access-with-cyberduck)
+
+* <span style="color:red">&#9632;</span> = Yelp!
+* <span style="color:green">&#9632;</span> = All done.
+
+-- *Slide End* --
+
+-- *Slide* --
+
+### The Object Store
+
+Is hands down better than a USB stick!
+
+* <span style="color:red">&#9632;</span> = Yes, I agree!
+* <span style="color:green">&#9632;</span> = No, you've not convinced me...
+
+-- *Slide End* --
+
+If ther
+
+
