@@ -270,10 +270,9 @@ But the answer is D, http://training.nectar.org.au/
 This is where you can go once you return to your homes, and look to increase your understanding of
 the Research cloud, the home of your free computer and usb stick!
 
-But we are not explore the support site now.
+But we are not going to explore the support site now.
 
 Remember, you now know where to go when you want to find helpful documentation.
-
 
 -- *Slide* --
 
