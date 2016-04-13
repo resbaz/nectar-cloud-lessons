@@ -632,6 +632,8 @@ Find the notification mailing lists for the software they are using, and know ho
 
 ## Notes 
 
+Most of the tasks above aren't actually covered in the lesson...
+
 
 ## To discuss 
 
