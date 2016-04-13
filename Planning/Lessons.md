@@ -227,6 +227,8 @@ Bash guide:
 PuTTY isn't the best solution: there are other, easier solutions for us to use. But we need to fit into Intersect's
 training...
 
+I don't like the play: and want to ditch it...
+
 ## To discuss
 
 Password access, its downsides, keys and ssh, encryption of network access (and why) scp. 
