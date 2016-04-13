@@ -1,4 +1,4 @@
-# Linking NeCTAR Training to ResOS
+# Linking NeCTAR Training to this material
 
 NeCTAR's online training can be found at:
 

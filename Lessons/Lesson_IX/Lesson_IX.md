@@ -402,7 +402,7 @@ And when you put an instance up into the Research Cloud, there are some basic st
 
 # Homework...
 
-[http://tinyurl.com/ResBaz-Links](https://github.com/MartinPaulo/ResBazResOS/blob/master/Resources/Links.md)
+[http://tinyurl.com/ResBaz-Links](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Links.md)
 
 -- *Slide End* --
 
