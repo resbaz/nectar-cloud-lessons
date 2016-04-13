@@ -47,14 +47,18 @@ If time permits, possibly a "bringing it all together" grand exercise?
 We have a list of [stretch goals](stretch_goals.md) that we thought we might get to if time permitted. It would
 appear that time doesn't permit...
 
-#Lesson I 
+# Lesson I
 
 **Topic:** OpenStack, mapped by the dashboard
 
 ## Learning objectives 
 
 By the end of this lesson participants will be familiar with the basic parts of OpenStack and be able to 
-locate them on the dashboard. They will also understand that the machines they launch are virtual.
+locate them on the dashboard. They will also understand that
+
+* the machines they launch are virtual
+* the hard drives are based on files named images
+* the reason for ephemeral drives.
 
 ## Motivation
 
@@ -84,12 +88,14 @@ Modular nature of OpenStack, Glance, Nova, Allocations, Virtualization, Key Pair
 
 ## To discuss
 
-The basics of virtualization, the parts of OpenStack at a very high level, and the allocations screen. 
+Its worthwhile driving home that to use the cloud, you do need to get your head around some key concepts; and that they
+are not difficult.
+
+The basics of virtualization, the parts of OpenStack at a very high level, and the allocations screen.
 
 How the image is passed from Glance to Nova.
 
-Its worthwhile driving home that to use the cloud, you do need to get your head around some key concepts; and that they 
-are not difficult
+That the image, once running, does not get NeCTAR updates.
 
 Where to go to get help if you need it.
 
@@ -107,71 +113,75 @@ Introduce the concepts of Key Pairs and Security Groups, and IP allocation.
 * a web browser
 
 
-#Lesson II
+# Lesson II
 
 **Topic:** Your free computer: up and running
 
-##Learning objectives
+## Learning objectives
 
-By the end of this lesson, participants will be able to locate and launch an image on the NeCTAR cloud.
+By the end of this lesson, participants will be able to:
 
-##Motivation 
+* create a keypair
+* create a security group
+* locate and launch an image
+
+## Motivation
 
 These are the basic steps required to successfully run a VM on the NeCTAR cloud. 
 
-##Story
+## Story
 
 A researcher, Anna Prentice wants to set up a simple website, to share some data with the world. 
 
 Now knowing the parts of the NeCTAR cloud, Anna decides to see if she can find an image available on the 
 NeCTAR cloud can do this for her - and launch and play with it.
 
-##Tasks
+## Tasks
 
-Create a security group, find the correct image, spin it up, connect to it with a web browser and then take it down
+Create a keypair, create a security group, find the correct image, spin it up, connect to it with a web browser and
+then take it down
 
-##Covers
+## Covers
 
 Glance, Nova, Security Groups, Key Pairs, but now hands on.
 
-##Concepts
+## Concepts
 
-Just goes over Lesson I again, but cover Security Groups in more detail
+Just goes over Lesson I again, but covers Security Groups in more detail
 
-##Notes 
+## Notes
 
 We'll do this by creating and using checklists to get the students through the steps.
 
-
-##To discuss 
+## To discuss
 
 Security groups and CIDR's 
 
-##Links for students 
+## Links for students
 
 * [An introduction to checklists](http://www.newyorker.com/magazine/2007/12/10/the-checklist)
 
-##Supporting material
+## Supporting material
 
 * An image that will launch a server of some kind (res_os_drupal7), made by the following recipe:
   [Creating The Image For The Workshop](../Resources/CreatingTheIMageForTheWorkshop.md)
 * Checklists, placed in the [Resources](../Resources/) directory.
 
-##Preconditions
+## Preconditions
 
 * A web browser. Preferably a modern one that renders the PDF checklists.
 
-#Lesson III
+# Lesson III
 
 **Topic:** Accessing and updating your new computer
 
-##Learning objectives 
+## Learning objectives
 
 By the end of this lesson, participants will be able to securely access a running VM via ssh (without using passwords).
 They will also be able to update their Ubuntu/Debian based VM's to the latest versions of the installed software, and
 know how to add and remove rules to their security groups, hence blocking and allowing access to the VM.
 
-##Motivation 
+## Motivation
 
 In order to work with NeCTAR VM's, researchers need to know to access their VM's so that they can do basic
 maintenance.
@@ -182,26 +192,26 @@ Hence improving the security of their VM's.
 This knowledge is also a foundation for securely moving files between a VM and the researchers desktop, which is
 covered in a later lesson.
 
-##Story
+## Story
 
 Anna Prentice has found that her Drupal instance is suitable for the publishing that she wants to do. 
 
 But she is becoming a little worried that she hasn't done any security upgrades on it since she launched it. 
 
-##Tasks
+## Tasks
 
 The students will relaunch the machine that they shut down in the previous example, then they will ssh into it, and
 perform the needed security upgrades.
 
-##Covers
+## Covers
 
 SSH, `apt-get`, `sudo`, bash commands
 
-##Concepts
+## Concepts
 
-The shell, some shell commands, how to update a linux server, and the power of `sudo`
+The shell, some shell commands, how to update a linux server, the package manager, and the power of `sudo`
 
-##Notes 
+## Notes
 
 The problem with passwords (sample password guessing program?)
 
@@ -214,9 +224,10 @@ Bash guide:
 * http://steve-parker.org/sh/sh.shtml 
 * http://code.tutsplus.com/articles/10-terminal-commands-that-will-boost-your-productivity--net-14105
 
-PuTTY isn't the best solution: there are possibly other, easier solutions for us to use...
+PuTTY isn't the best solution: there are other, easier solutions for us to use. But we need to fit into Intersect's
+training...
 
-##To discuss 
+## To discuss
 
 Password access, its downsides, keys and ssh, encryption of network access (and why) scp. 
 
@@ -228,7 +239,7 @@ Also point out that it’s the whole machine at risk here, not just a users acco
 When discussing ssh access, make sure to point out that we are connecting to the remote machine via the network. 
 That the keyboard isn’t driving the VM locally: that the terminal is more a screen scrape of a remote machine.
 
-##Links for students 
+## Links for students
 
 * http://code.tutsplus.com/tutorials/ssh-what-and-how--net-25138
 * http://software-carpentry.org/v5/novice/shell/index.html
@@ -242,84 +253,84 @@ That the keyboard isn’t driving the VM locally: that the terminal is more a sc
 A great link on debugging ssh issues on the NeCTAR cloud:
 https://espaces.edu.au/vwrangler/nectar-topics/troubleshooting/troubleshooting-ssh-access-to-a-nectar-instance
 
-##Supporting material 
+## Supporting material
 
 * An image that will launch Drupal (res_os_drupal7), made by the following recipe:
   [Creating The Image For The Workshop](../Resources/CreatingTheIMageForTheWorkshop.md)
 
-##Preconditions 
+## Preconditions
 
 * A web browser
 * Ssh/scp support in a command line shell on the students desktop.
 * Some disk space.
-* If on windows, the ability to install Cygwin
+* If on windows, the ability to install Putty
 
-#Lesson IV
+# Lesson IV
 
 **Topic:** Moving data to and from your new computer
 
-##Learning objectives 
+## Learning objectives
 
 By the end of this lesson, participants will be able to securely move files to and from a running VM using scp and 
 Cyberduck. This knowledge means that from now on moving data to and from NeCTAR servers should be simple to do!
 
-##Motivation 
+## Motivation
 
 In order to work with NeCTAR VM's, researchers need to know how to securely move files between a VM and their desktop.
 
-##Story
+## Story
 
 Anna Prentice knows that there are files on the VM that should be backed up off of the machine. 
 So she uses Cyberduck to bring them down to her local desktop, where they can be kept as an off-site backup.
 
-##Tasks
+## Tasks
 
 The students will first move a file to the server from their local machine by means of scp.
 
 Next they will install Cyberduck, and use it to move files between the two machines.
 
-##Covers
+## Covers
 
 SCP, Cyberduck
 
-##Concepts
+## Concepts
 
 Using the shell to transfer files, and using Cyberduck to move files.
 
-##Notes 
+## Notes
 
 
 
-##To discuss 
+## To discuss
 
 
 
-##Links for students 
+## Links for students
 
  [CyberDuck](https://cyberduck.io/)
 
-##Supporting material 
+## Supporting material
 
 * An image that will launch Drupal (res_os_drupal7), made by the following recipe:
   [Creating The Image For The Workshop](../Resources/CreatingTheIMageForTheWorkshop.md)
 
-##Preconditions 
+## Preconditions
 
 * A web browser
 * Ssh/scp support in a command line shell on the students desktop.
 * Some disk space.
 * The ability to install CyberDuck
 
-#Lesson V
+# Lesson V
 
 **Topic:** We can still run our graphical applications
 
-##Learning objectives 
+## Learning objectives
 
 By the end of this lesson participants will know that they can, if need be, use graphical applications on the remote
 systems.
 
-##Motivation 
+## Motivation
 
 This is of use if a researcher wants to
 
@@ -327,7 +338,7 @@ This is of use if a researcher wants to
 * browse the internet from the remote server (can avoid local blocks)
 * etc.
  
-##Story
+## Story
 
 Anna Prentice wants to view a website that her local institution has blocked. She realizes that she can do this via
 her remote server, so this is what she sets out to do.
@@ -335,58 +346,58 @@ her remote server, so this is what she sets out to do.
 Anna then wants to edit a file she finds on the remote server. Rather than doing this with a command line editor she
 opts to use a one of the nice friendly GUI editors that she is familiar with.
 
-##Tasks
+## Tasks
 
-How to install applications on the server in the NeCTAR cloud, and how to run graphical ones using XWindows over ssh.
+Install applications on the server in the NeCTAR cloud, and then run graphical ones using XWindows over ssh.
 
-##Covers
+## Covers
 
-SSH, X-windows, `apt-get install`
+SSH & X-windows
 
-##Concepts
+## Concepts
 
-How to install applications on the server, how to use X-windows to run applications that require graphics support. 
+How to install applications on the server, how to use X-windows to run applications that require graphics support.
+Installing and removing applications using the package manager
 
-##Notes 
-
-
-
-##To discuss 
+## Notes
 
 
 
-##Links for students 
+## To discuss
+
+That this can be slow on poor performing networks...
+
+## Links for students
 
 https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding
 
-##Supporting material 
+## Supporting material
 
 
 
-##Preconditions 
+## Preconditions
 
-* ssh/scp support in a command line shell on the students desktop.
-* Some disk space.
-* The ability to install XWindows
+* ssh/scp support in a command line shell on the students computer.
+* The ability to install XWindows support on the students computer.
 
 
-#Lesson VI
+# Lesson VI
 
 **Topic:** Snapshots, backups and vertical scaling
 
-##Learning objectives 
+## Learning objectives
 
 By the end of this lesson participants will understand what happens when you make a snapshot of a running instance.
 They will know why snapshots are a somewhat imperfect backup medium.
 
 They will also see how to scale their machine to a larger one, and of course, shrink it down again. 
 
-##Motivation 
+## Motivation
 
 The ability to make a copy of a running instance confers a whole lot of benefits: the ability to switch to a larger
 machine if needed, the ability to share copies with others, and to make somewhat imperfect backups. 
 
-##Story
+## Story
 
 Anna is aware that she needs to make backups of her site: so she chooses to do this using snapshots, even though its
 not an ideal way of doing this.
@@ -394,15 +405,15 @@ not an ideal way of doing this.
 Her kitten picture is taking the internet by storm, and she needs to move to a bigger server to cope with the load.
 She does this by scaling her instance up.
 
-##Tasks
+## Tasks
 
 They will make a snapshot of a running VM.
 
-##Covers
+## Covers
 
 Snapshots, vertical scaling.
 
-##Concepts
+## Concepts
 
 That a snapshot is simply a copy of the images file system: but that making them does have an impact on the instance.
 Not only that, if there are writes to the drive in progress, they can leave the copy in a faulty state. So to get a
@@ -410,44 +421,44 @@ high quality snapshot, disk activity has to be stopped and any buffers flushed.
 
 Snapshots can be used to move to a larger or smaller machine (vertical scaling).
 
-##Notes 
+## Notes
 
 Snapshots can take a fair amount of time depending on the system load. So the lesson might drag out because of this :(
 
-##To discuss 
+## To discuss
 
 
 
-##Links for students 
+## Links for students
 
 http://wiki.libvirt.org/page/Snapshots
 http://docs.openstack.org/openstack-ops/content/snapshots.html
 http://physics.stackexchange.com/questions/32663/what-are-the-effects-of-cosmic-rays-on-consumer-electronics
 
-##Supporting material 
+## Supporting material
 
 
 
-##Preconditions 
+## Preconditions
 
 
-#Lesson VII
+# Lesson VII
 
 **Topic:** Transient storage (don’t rely on it!) and sharing
 
-##Learning objectives 
+## Learning objectives
 
 By the end of this lesson participants will know that transient storage is not saved when a snapshot is made.
 
 They also learn how to share their snapshots with the greater world.
 
-##Motivation 
+## Motivation
 
 Transient storage can take even experienced developers by surprise. Researchers should know that whilst it's
 a great resource, it's not one that should be taken for granted: there is the risk that if you use transient
 storage you could lose your data. Not something you would desire!
 
-##Story
+## Story
 
 Disaster strikes: Anna had some notes on the transient file store. When her server dies, she finds that they are no
 longer on the replacement instance. Oh woes!
@@ -455,72 +466,76 @@ longer on the replacement instance. Oh woes!
 Then a colleague wants to user her site has a foundation for his own kitten extravaganza. Anna gladly shares her backup
 with him.
 
-##Tasks
+## Tasks
 
 They will write a file to transient storage, then snapshot their instance. After that they will kill the instance
 and then start up a new one based on the snapshot. The file on transient storage will be gone.
 
-##Covers
+## Covers
 
 Transient storage and sharing snapshots.
 
-##Concepts
+## Concepts
 
 Transient storage is not captured as part of the snapshot process.
 
 Snapshots can also be shared.
 
-##Notes 
+## Notes
 
 Snapshots can take a fair amount of time depending on the system load. So the lesson might drag out because of this :(
 
 The effort required to create the file on the transient storage is large. Can it be simplified in any way?
 
-##To discuss 
+The lesson as it stands is a bit long winded and torturous. Needs to be cleaned up and simplified.
+
+## To discuss
 
 
 
-##Links for students 
+## Links for students
 
 http://wiki.libvirt.org/page/Snapshots
 http://docs.openstack.org/openstack-ops/content/snapshots.html
 http://physics.stackexchange.com/questions/32663/what-are-the-effects-of-cosmic-rays-on-consumer-electronics
 
-##Supporting material 
+## Supporting material
 
 
 
-##Preconditions 
+## Preconditions
 
 
-#Lesson VIII
+# Lesson VIII
 
 **Topic:** The object store
 
-##Learning objectives 
+## Learning objectives
 
 By the end of this lesson participants will understand and be able to use the object store, and know some of the 
 advantages that it confers.
 
-##Motivation 
+## Motivation
 
 Having seen the horrors of transient storage, the researchers now want a more secure location for their data. 
 The object store it is!
 
-##Story
+## Story
 
-Anna Prentice wants a more secure storage location for her data. Knowing that the Object store makes redunant copies
+Anna Prentice wants a more secure storage location for her data. Knowing that the Object store makes redundant copies
 she decides to put her data there.
 
-##Tasks
+## Tasks
 
-The students need to upload their backup that they downloaded to their desktop to the Swift 
-object repository. 
-
-To do this this time they will user CyberDuck
+The students need to create a container, then upload an image to the object store.
+Then delete it all.
+Then recreate the whole thing and make the image public.
+Finally, connect via cyberduck
 
 ## Covers
 
+The object store
+Accessing it via a browser
 Using CyberDuck to connect to the object store.
 
 ## Concepts
@@ -529,23 +544,30 @@ Object Storage, redundancy etc..
 
 ## Notes 
 
-## To discuss 
+Can possibly move the backup that they downloaded to their desktop via scp to the Swift object repository.
+We don't mention its eventually consistent nature: should we?
 
-Swift, its three copies, out of 5, its eventually consistent nature, the differences between Swift and a hard drive. 
+* [Ideas](https://developer.rackspace.com/blog/openstack-swift-use-cases-in-rackspace-private-cloud/)
+* [Borrow?](https://developer.rackspace.com/blog/mysql-backup-to-rackspace-cloud-files/)
+
+## To discuss
+
+Swift, its three copies, the differences between Swift and a hard drive.
 Also, the importance of an off site copy and the encryption of backups.
 
-##Links for students 
+## Links for students
 
 * https://trac.cyberduck.io/wiki/help/en/howto/openstack
 * https://community.runabove.com/kb/en/object-storage/how-to-distribute-static-content-with-object-storage.html
 
-##Supporting material 
+## Supporting material
 
 CyberDuck needs to be configured to work with Swift
 
-##Preconditions 
+## Preconditions
 
-#Lesson IX
+
+# Lesson IX
 
 **Topic:** Securing and maintaining your instance
 
@@ -604,19 +626,15 @@ Find the notification mailing lists for the software they are using, and know ho
 
 ## Covers
 
-What material is covered?
 
 ## Concepts
 
-What concepts are covered?
 
 ## Notes 
 
-Anything that the presenter should be aware of.
 
 ## To discuss 
 
-The points of knowledge that the students should understand in order to master the topic
 
 ## Links for students 
 
@@ -629,9 +647,7 @@ http://askubuntu.com/questions/81585/what-is-dist-upgrade-and-why-does-it-upgrad
 
 ## Supporting material 
 
-What is needed to do the task
 
 ## Preconditions 
 
-What the students need to bring to the table.
 
