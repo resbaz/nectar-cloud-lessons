@@ -5,20 +5,11 @@
 
 # Roll up to the Research Cloud mystery tour!
 
-your tour guide is Martin Paulo
+Your tour guide is ...
 
 -- *Slide End* --
 
 (First: Do a personal introduction. Who am I, and why am qualified to teach this course?)
-
--- *Slide* --
-
-# An etherpad link...
-
-https://public.etherpad-mozilla.org/p/NeCTAR_Cloud_1.0.1
-
--- *Slide End* --
-
 
 -- *Slide* --
 
