@@ -1,6 +1,8 @@
+# Lesson VII: (45 min)
+
 -- *Slide* --
 
-# Lesson VII: Transient storage (don’t rely on it!) and sharing
+## Transient storage (don’t rely on it!) and sharing
 
 -- *Slide End* --
 
@@ -158,7 +160,7 @@ and a Green one once you are done.
 
 ## Question
 
-Anna's snapshot was made with her public still on the image.
+Anna's snapshot was made with her public key still on the image.
 
 Will she be able to ssh into her colleagues instance once he launches it?
 

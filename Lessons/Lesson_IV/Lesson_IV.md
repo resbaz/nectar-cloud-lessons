@@ -1,6 +1,8 @@
+# Lesson IV: (30min)
+
 -- *Slide* --
 
-# Lesson IV: Moving data to and from your new computer (30min)
+## Moving data to and from your new computer
 
 -- *Slide End* --
 
@@ -24,7 +26,7 @@ from, different machines. It is built on top of `ssh`.
 
 -- *Slide* --
 
-## Example
+## scp
 
 ```bash
 $ scp USER_NAME@remote_machine_address:notes.txt . 
@@ -44,7 +46,7 @@ The dot on its own simply means the current directory in your machine.
 
 -- *Slide* --
 
-## Example
+## scp
 
 ```bash
 $ scp notes.txt USER_NAME@remote_machine_address: 

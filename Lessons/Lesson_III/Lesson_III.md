@@ -255,7 +255,7 @@ We are going to replay our play!
 
 There's a command line cheat sheet at: [http://tinyurl.com/command-line-cheat-sheet](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/CommandLineCheatSheet.md)
 
-Use it to step the through the following tasks:  http://tinyurl.com/play-task
+Use it to step the through the following tasks: [http://tinyurl.com/play-task](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Task.md)
 
 * <span style="color:red">&#9632;</span> = My thespian career needs some help!
 * <span style="color:green">&#9632;</span> = I'm done!

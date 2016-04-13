@@ -1,6 +1,8 @@
+#  Lesson VI:  (30 min)
+
 -- *Slide* --
 
-## Lesson VI: Snapshots, backups and vertical scaling (30 min)
+## Snapshots, backups and vertical scaling
 
 -- *Slide End* --
 

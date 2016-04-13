@@ -8,9 +8,6 @@ Your supercharged USB stick!
 
 -- *Slide End* --
 
-[Ideas](https://developer.rackspace.com/blog/openstack-swift-use-cases-in-rackspace-private-cloud/)
-[Borrow?](https://developer.rackspace.com/blog/mysql-backup-to-rackspace-cloud-files/)
-
 There's another powerful reason to use the Research Cloud: access to storage which is kept locally in Australia and 
 available on the high speed [AARNET](https://www.aarnet.edu.au/about-us) backbone. 
 
@@ -142,7 +139,7 @@ files.
 
 **Answer:** D: all of the files in the container. So you need to use this feature with care!
 
-- - - 
+- - -
 
 Remember that at the start of this training today I pointed you to the NeCTAR training website?
 

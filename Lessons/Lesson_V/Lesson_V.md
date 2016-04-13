@@ -1,6 +1,8 @@
+# Lesson V: (30min)
+
 -- *Slide* --
 
-# Lesson V: We can still run our graphical applications (30min)
+## We can still run our graphical applications!
 
 -- *Slide End* --
 
@@ -37,8 +39,8 @@ Sadly again we are going to split up into two streams:
 
 ## Walk through the following steps
 
-* Apple: [http://tinyurl.com/apple-x11-md](http://tinyurl.com/apple-x11-md)
-* Windows: [http://tinyurl.com/windows-x11-md](http://tinyurl.com/windows-x11-md)
+* Apple: [http://tinyurl.com/apple-x11-md](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/AppleX11.md)
+* Windows: [http://tinyurl.com/windows-x11-md](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/WindowsX11.md)
 
 -- *Slide End* --
 

@@ -94,7 +94,7 @@ We'll start by creating our key pair.
 
 Create a Keypair with the help of the key pair checklist
 
-http://tinyurl.com/creating-a-keypair
+[http://tinyurl.com/creating-a-keypair](https://github.com/resbaz/nectar-cloud-lessons/raw/master/Resources/ChecklistCreatingAKeypair.pdf)
 
 * <span style="color:red">&#9632;</span> = Help me!
 * <span style="color:green">&#9632;</span> = I'm ready to move on..
@@ -172,10 +172,10 @@ inbound network packets with a matching port number through to the application o
 
 Create a Security Group with the help of the security group checklist
 
-http://tinyurl.com/creating-a-security-group
+[http://tinyurl.com/creating-a-security-group](https://github.com/resbaz/nectar-cloud-lessons/raw/master/Resources/ChecklistCreatingASecurityGroup.pdf)
 
 * <span style="color:red">&#9632;</span> = Help me!
-* <span style="color:green">&#9632;</span> = I'm ready to move on..
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
 
 -- *Slide End* --
 
@@ -227,12 +227,12 @@ on someone else's computers.
 
 Use the launch an instance checklist to launch an instance.
 
-http://tinyurl.com/starting-an-instance
+[http://tinyurl.com/starting-an-instance](https://github.com/resbaz/nectar-cloud-lessons/raw/master/Resources/ChecklistStartingAnInstance.pdf)
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
  
 -- *Slide End* --
-
-Please hold up a Red sticky note if you need help
-and a Green one once you are done.
 
 -- *Slide* --
 

@@ -1,6 +1,8 @@
+# Lesson IX: (45 min)
+
 -- *Slide* --
 
-# Lesson IX: Securing and maintaining your instance (45 min)
+## Securing and maintaining your instance
 
 -- *Slide End* --
 
@@ -41,7 +43,7 @@ But that's true of all the computers and software that you use.
 
 ## Be paranoid!
 
->  "Just because you're paranoid, don't mean they're not after you" ― Nirvana, [Territorial Pissings](http://www.azlyrics.com/lyrics/nirvana/territorialpissings.html)  
+>  "Just because you're paranoid, don't mean they're not after you" ― [Nirvana](http://www.azlyrics.com/lyrics/nirvana/territorialpissings.html)
 
 -- *Slide End* --
 
@@ -241,11 +243,7 @@ That way scanners automated scanners won't ordinarily see the port, and also won
 
 NeCTAR has a set of security guidelines that can be found at:
  
-* https://support.nectar.org.au/support/solutions/articles/6000070469-introduction
-
-Ok: that's too long for normal people. Try
-
-* http://tinyurl.com/nectar-security-guidelines
+* [http://tinyurl.com/nectar-security-guidelines](https://support.nectar.org.au/support/solutions/articles/6000070469-introduction)
 
 -- *Slide End* --
 
@@ -262,8 +260,10 @@ use services such as [Mandrill](http://mandrill.com/)
 
 # Avoid mail servers
 
-* Use a service such as Mandrill
-  http://mandrill.com/
+* Use a service such as Mandrill (http://mandrill.com/)
+
+<small>**NB** This is not a recommendation. We've never used it, and have no idea as to how good it actually is.
+We are just holding it up as an example of the type of service you can use. Is this enough small print?</small>
 
 -- *Slide End* --
 
@@ -324,7 +324,7 @@ And a green one when you are done.
 
 So how do you know if you need to reboot your VM?
 
-Most popular software issue security advisories.
+Most popular software issue security advisories tell you.
 
 -- *Slide* --
 
@@ -402,7 +402,7 @@ And when you put an instance up into the Research Cloud, there are some basic st
 
 # Homework...
 
-http://tinyurl.com/ResBaz-Links
+[http://tinyurl.com/ResBaz-Links](https://github.com/MartinPaulo/ResBazResOS/blob/master/Resources/Links.md)
 
 -- *Slide End* --
 
