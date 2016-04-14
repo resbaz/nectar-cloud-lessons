@@ -19,7 +19,6 @@ The directories that make up this project are as follows:
 * [Lessons](Lessons/) - The lessons themselves
 * [Planning](Planning/Lessons.md) - The planning material that we used to develop the course
 * [Resources](Resources/) - The resources that students will be using during the course
-* [Diary](Dairy/) - Notes made from giving the course.
 
 # Instructors notes
 
@@ -154,6 +153,7 @@ Remember to always walk through your slides when you regenerate them!
 # Todo's
 
 1. [ ] Update the prerequisites on this page.
+1. [ ] Add a note about the google group.
 
 ## Nice to have's
 
@@ -162,14 +162,10 @@ Remember to always walk through your slides when you regenerate them!
 1. [ ] As a Chromebook user can I have an online SSH like resbaz.cloud.edu shell tool?
        [Crosh](http://www.howtogeek.com/170648/10-commands-included-in-chrome-oss-hidden-crosh-shell/)
        Or [Chrome Shell](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo)
-1. [ ] Could we use three cup game, three card monty, etc. as example of moving data files around on your local and 
+1. [ ] Could we use three cup game, three card monty, etc. as example of moving data files around on your local and
        remote server?
 1. [ ] Should we create a booklet for attendees to take away with them - and to use during the session?
 1. [ ] Remove or improve the play!
-
-## For "Train the Trainer
-
-1. [ ] As in Software Carpentry, should trainers who submit a GitHub correction get a certificate?
 
 # Versioning
 
