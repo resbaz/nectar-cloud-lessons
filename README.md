@@ -16,8 +16,8 @@ The directories that make up this project are as follows:
 
 * [Promotion](Promotion/README.md) - Promotional material to use in advance of the course
 * [Prerequisites](Prerequisites/) - What we would like students and trainers to do before they step through the door
-* [Lessons](Lessons/) - The lessons themselves
 * [Planning](Planning/Lessons.md) - The planning material that we used to develop the course
+* [Lessons](Lessons/) - The lessons themselves
 * [Resources](Resources/) - The resources that students will be using during the course
 
 # Instructors notes
@@ -48,7 +48,8 @@ Each person being taught needs to be given
 
 * a red sticky note 
 * a green sticky note.
-* A set of answer cards, lettered 'A', 'B', 'C', 'D' and 'E' respectively.
+* A set of answer cards, lettered 'A', 'B', 'C', 'D' and 'E' respectively. It is useful if each letter is on a
+  different colour card.
 
 The image used for the lessons is named `res_os_drupal7`. Check that it is still around and works
 as expected before the lesson. If you need to rebuild it, there are instructions in the file
