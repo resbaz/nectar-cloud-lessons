@@ -50,6 +50,8 @@ Each person being taught needs to be given
 * a green sticky note.
 * A set of answer cards, lettered 'A', 'B', 'C', 'D' and 'E' respectively. It is useful if each letter is on a
   different colour card.
+* a set of three envelopes, at least one of which fits inside the other two, to describe ssh and man in the middle
+  attacks.
 
 The image used for the lessons is named `res_os_drupal7`. Check that it is still around and works
 as expected before the lesson. If you need to rebuild it, there are instructions in the file

@@ -58,7 +58,13 @@ locate them on the dashboard. They will also understand that
 
 * the machines they launch are virtual
 * the hard drives are based on files named images
-* the reason for ephemeral drives.
+* a snapshot is really just an image by another name
+* why launching an instance can take time
+* the reason for ephemeral disks: and it's implications
+
+They will be introduced to key pairs and security groups.
+
+They will also know how to reach out for help, and how to extend their trial project.
 
 ## Motivation
 
@@ -180,6 +186,9 @@ Security groups and CIDR's
 By the end of this lesson, participants will be able to securely access a running VM via ssh (without using passwords).
 They will also be able to update their Ubuntu/Debian based VM's to the latest versions of the installed software, and
 know how to add and remove rules to their security groups, hence blocking and allowing access to the VM.
+
+They need to know that different operating systems have different package managers: and that the commands we use
+are specific to the Ubuntu operating system in play.
 
 ## Motivation
 
