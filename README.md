@@ -164,7 +164,8 @@ Remember to always walk through your slides when you regenerate them!
        Or [Chrome Shell](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo)
 1. [ ] Could we use three cup game, three card monty, etc. as example of moving data files around on your local and 
        remote server?
-1. [ ] Should we create a booklet for attendees to take away with them - and to use during the session.
+1. [ ] Should we create a booklet for attendees to take away with them - and to use during the session?
+1. [ ] Remove or improve the play!
 
 ## For "Train the Trainer
 
