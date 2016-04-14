@@ -63,7 +63,7 @@ sudo apt-get install x11-apps
 
 ## Test it all
 
-Run a calulator remotely!
+Run a calculator remotely!
 
 ```bash
 xcalc &
