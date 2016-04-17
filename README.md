@@ -1,4 +1,4 @@
-# NeCTAR cloud lesson plan [V1.0.0](#versioning)
+# NeCTAR cloud lesson plan [V1.0.1](#versioning)
 
 This course aims to teach the basics of the NeCTAR cloud to researchers over a one day workshop.
 
@@ -182,3 +182,4 @@ to a particular version of the material, you can.
 | Version | Description | Date |
 | ------- | ----------- | ---- |
 | 1.0.0   | First release | 30<sup>th</sup> March 2016 |
+| 1.0.1   | Incorporated feedback from delivery at UniMelb | 17<sup>th</sup> April 2016 |
