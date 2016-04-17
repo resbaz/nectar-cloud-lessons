@@ -99,9 +99,7 @@ who is using her site at the time they taken.
 
 -- *Slide* --
 
-## Question 
-
-Why does Ben think snapshots are broken?
+### Why does Ben think snapshots are broken?
 
 1. They are just too easy to do: suspicious enough!
 1. The magic nostrums aren't up to the task!
