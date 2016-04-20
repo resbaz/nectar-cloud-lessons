@@ -29,7 +29,7 @@ from, different machines. It is built on top of `ssh`.
 ## scp
 
 ```bash
-$ scp USER_NAME@remote_machine_address:notes.txt . 
+$ scp USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
 `scp` is shorthand for **s**ecure **c**o**p**y
@@ -37,32 +37,30 @@ $ scp USER_NAME@remote_machine_address:notes.txt .
 -- *Slide End* --
 
 This `scp` command will copy the file named `notes.txt` from the home directory of the USER_NAME user on the remote 
-machine to the local directory in which `scp` is being run:
+machine to a file named `notes.txt` in the local directory in which `scp` is being run:
 
 Where of course `USER_NAME` is the default account on the remote machine, and `remote_machine_address` is either its
 IP number or its domain name.
-
-The dot on its own simply means the current directory in your machine.
 
 -- *Slide* --
 
 ## scp
 
 ```bash
-$ scp notes.txt USER_NAME@remote_machine_address: 
+$ scp notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
 -- *Slide End* --
 
-This scp command will copy the file named notes.txt from the current directory of the local machine to the remote 
-machine's USER_NAME home directory:
+This scp command will copy the file named notes.txt from the current directory of the local machine to a file
+named notes.txt in the remote machine's USER_NAME home directory:
 
 -- *Slide* --
 
 ## Question
 
 ```bash
-$ scp USER_NAME@remote_machine_address:notes.txt . 
+$ scp USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
 Is the file: 
@@ -79,7 +77,7 @@ Is the file:
 ## Question
 
 ```bash
-$ scp notes.txt USER_NAME@remote_machine_address: 
+$ scp notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
 Is the file: 
@@ -97,10 +95,10 @@ Is the file:
 
 ```bash
 # From remote machine to local machine
-$ scp USER_NAME@remote_machine_address:notes.txt . 
+$ scp USER_NAME@remote_machine_address:notes.txt notes.txt
 
 # From local machine to remote machine
-$ scp notes.txt USER_NAME@remote_machine_address: 
+$ scp notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
 Is the source file 
@@ -117,14 +115,42 @@ So the answer is A. The original file is on the left, the target machine on the 
 
 You can use a wildcard denoted by the asterisk character (*) to copy multiple files in one go.
 
+You don't have to type out the target file name. `scp` is very flexible!
+
 -- *Slide* --
 
-## A gotcha!
+### `scp` examples
+
+**Copy the file "notes.txt" into a directory on the remote VM**
+
+```bash
+$ scp notes.txt USER_NAME@remote_machine_address:/some/remote/directory/
+```
+
+**Copy the files "notes1.txt" and "notes2.txt" to the users home directory on the remote VM**
+
+```bash
+$ scp notes1.txt notes2.txt  USER_NAME@remote_machine_address:~
+```
+
+**Copy the file "notes.txt" from the remote VM into your current local directory**
+
+```bash
+$ scp USER_NAME@remote_machine_address:/some/remote/directory/notes.txt .
+```
+
+-- *Slide End* --
+
+As ever, `man` is your friend. But be warned!
+
+-- *Slide* --
+
+### A gotcha!
 
 ```bash
 scp -i key.pem temp.txt ubuntu@115.146.92.130 
 ```
-## Does not work: it needs the colon!
+### Does not work: it needs the colon!
 
 e.g.:
 
@@ -172,7 +198,7 @@ I want everyone to create a file named, say, `whyme.txt` and then copy it onto t
 
 ## Exercise
 
-For non existent bonus points, bring it back again!
+For non existent bonus points, bring it back again with a different name!
 
 -- *Slide End* --
 

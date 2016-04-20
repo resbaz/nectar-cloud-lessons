@@ -54,7 +54,7 @@
 ## scp
 
 ```bash
-$ scp USER_NAME@remote_machine_address:notes.txt . 
+$ scp USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
 `scp` is shorthand for **s**ecure **c**o**p**y
@@ -65,7 +65,7 @@ $ scp USER_NAME@remote_machine_address:notes.txt .
 ## scp
 
 ```bash
-$ scp notes.txt USER_NAME@remote_machine_address: 
+$ scp notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
 </script></section>
@@ -74,7 +74,7 @@ $ scp notes.txt USER_NAME@remote_machine_address:
 ## Question
 
 ```bash
-$ scp USER_NAME@remote_machine_address:notes.txt . 
+$ scp USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
 Is the file: 
@@ -88,7 +88,7 @@ Is the file:
 ## Question
 
 ```bash
-$ scp notes.txt USER_NAME@remote_machine_address: 
+$ scp notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
 Is the file: 
@@ -103,10 +103,10 @@ Is the file:
 
 ```bash
 # From remote machine to local machine
-$ scp USER_NAME@remote_machine_address:notes.txt . 
+$ scp USER_NAME@remote_machine_address:notes.txt notes.txt
 
 # From local machine to remote machine
-$ scp notes.txt USER_NAME@remote_machine_address: 
+$ scp notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
 Is the source file 
@@ -117,12 +117,35 @@ Is the source file
 </script></section>
 <section data-markdown><script type="text/template">
 
-## A gotcha!
+### `scp` examples
+
+**Copy the file "notes.txt" into a directory on the remote VM**
+
+```bash
+$ scp notes.txt USER_NAME@remote_machine_address:/some/remote/directory/
+```
+
+**Copy the files "notes1.txt" and "notes2.txt" to the users home directory on the remote VM**
+
+```bash
+$ scp notes1.txt notes2.txt  USER_NAME@remote_machine_address:~
+```
+
+**Copy the file "notes.txt" from the remote VM into your current local directory**
+
+```bash
+$ scp USER_NAME@remote_machine_address:/some/remote/directory/notes.txt .
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### A gotcha!
 
 ```bash
 scp -i key.pem temp.txt ubuntu@115.146.92.130 
 ```
-## Does not work: it needs the colon!
+### Does not work: it needs the colon!
 
 e.g.:
 
@@ -139,7 +162,7 @@ I want everyone to create a file named, say, `whyme.txt` and then copy it onto t
 
 ## Exercise
 
-For non existent bonus points, bring it back again!
+For non existent bonus points, bring it back again with a different name!
 
 </script></section>
 <section data-markdown><script type="text/template">
@@ -194,7 +217,7 @@ See if you can edit it in place!
         progress: true,
         history: true,
         center: true,
-
+        slideNumber: 'c/t',
         transition: 'slide', // none/fade/slide/convex/concave/zoom
 
         // Optional reveal.js plugins
