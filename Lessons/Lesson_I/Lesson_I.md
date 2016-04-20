@@ -636,7 +636,7 @@ Ok, while that starts up, lets walk through what’s happening behind the scenes
 
 **Demonstrate:** Refer to the whiteboard drawing of this
 
-The image file that I’ve chosen to be the basis of my hard drive is copied from where it is being stored to the 
+The image file that I’ve chosen to be the basis of my boot disk is copied from where it is being stored to the
 physical machine on which it is going to be used. This physical machine is called the host. 
 
 We say "host" because the free machine you are launching is ordinarily going to be a "virtual machine". 
@@ -651,14 +651,14 @@ But you also have a very big closet - the server: into which you can either put 
 lots of copies of the smaller closet, thus giving you better space utilization, and the ability to have different
 people securely share the larger closet.
 
-So here’s a question. You have a virtual machine running. It makes all kinds of changes to its hard drives. Which are 
+So here’s a question. You have a virtual machine running. It makes all kinds of changes to its boot disk. Which are
 simply files on the host server. What happens to those changes when you terminate your virtual computer?
 
 -- *Slide* --
 
 ## Question
 
-What happens to your hard drive when you terminate your Virtual Machine (VM)?
+What happens to your Virtual Machine's boot disk when you **terminate** it?
 
 1. It gets copied back to the image store
 1. It gets ‘snapshotted’ for you to use again
@@ -675,17 +675,18 @@ What happens to your hard drive when you terminate your Virtual Machine (VM)?
 
 ---
 
-So your virtual machine has what is termed "ephemeral" drives. Anything written to these drives will be lost if it’s 
-associated virtual machine is terminated.
+So by default your virtual machine has what is termed "ephemeral" drives. Anything written to these drives will be
+lost if it’s associated virtual machine is terminated.
 
 Rebooting or restarting its associated virtual machine does not cause your data to vanish. But if you 
-terminate it, then, whatever you wrote to this drive will be lost the minute your virtual machine exits. 
+terminate it, then, whatever you wrote to these drives will be lost the minute your virtual machine exits.
 All upgrades, security patches, whatever data you wrote, everything is lost.
 
 This is one of the reasons why people like snapshot images so much. You work with your machine a little, you make a 
 snapshot. The next time you start up from the snapshot, work with it, snapshot it when you are done.
 
-This only works for small machines. It’s not the worlds greatest way of doing things, but it works for small machines.
+This only works for the boot disk. It’s not the worlds greatest way of doing things as any other ephemeral disk
+beyond the boot disk won't have its data saved.
 
 I've seen this ephemeral storage take grown developers by surprise when they first start using the Research Cloud. 
 It has just about reduced them to tears. Don’t be like them - trust nothing on the cloud!
