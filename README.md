@@ -105,7 +105,7 @@ If we could get participants AAF credentials before hand, we could:
 ## Git
 
 If you check this repository out be aware that it uses Git submodules to manage the reveal.js dependency.
-To also checkout reveal.js, you will have to either:
+To also clone reveal.js, you will have to either:
 
     # fetch it all in one hit
     git clone --recursive https://github.com/resbaz/nectar-cloud-lessons.git
