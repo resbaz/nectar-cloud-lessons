@@ -630,13 +630,17 @@ Which I now do by clicking on the "Launch Instance" button.
 **Action** Do a walk through of the dialogue, remembering to add your keypair and security groups!
 Show the Flavour changes, and also that some images don't work with some flavors...
 
+**NB:** Make a point of of showing that the boot disk is called the 'root disk'.
+
+**NB:** Make a point of noting that some of the flavours have extra "ephemeral" disk
+
 Then launch it.
 
 Ok, while that starts up, lets walk through what’s happening behind the scenes.
 
 **Demonstrate:** Refer to the whiteboard drawing of this
 
-The image file that I’ve chosen to be the basis of my boot disk is copied from where it is being stored to the
+The image file that I’ve chosen to be the basis of my root disk is copied from where it is being stored to the
 physical machine on which it is going to be used. This physical machine is called the host. 
 
 We say "host" because the free machine you are launching is ordinarily going to be a "virtual machine". 
@@ -651,14 +655,14 @@ But you also have a very big closet - the server: into which you can either put 
 lots of copies of the smaller closet, thus giving you better space utilization, and the ability to have different
 people securely share the larger closet.
 
-So here’s a question. You have a virtual machine running. It makes all kinds of changes to its boot disk. Which are
+So here’s a question. You have a virtual machine running. It makes all kinds of changes to its root disk. Which are
 simply files on the host server. What happens to those changes when you terminate your virtual computer?
 
 -- *Slide* --
 
 ## Question
 
-What happens to your Virtual Machine's boot disk when you **terminate** it?
+What happens to your Virtual Machine's root disk when you **terminate** it?
 
 1. It gets copied back to the image store
 1. It gets ‘snapshotted’ for you to use again
@@ -676,7 +680,7 @@ What happens to your Virtual Machine's boot disk when you **terminate** it?
 ---
 
 So by default your virtual machine has what is termed "ephemeral" drives. Anything written to these drives will be
-lost if it’s associated virtual machine is terminated.
+lost if the associated virtual machine is terminated.
 
 Rebooting or restarting its associated virtual machine does not cause your data to vanish. But if you 
 terminate it, then, whatever you wrote to these drives will be lost the minute your virtual machine exits.
@@ -685,8 +689,8 @@ All upgrades, security patches, whatever data you wrote, everything is lost.
 This is one of the reasons why people like snapshot images so much. You work with your machine a little, you make a 
 snapshot. The next time you start up from the snapshot, work with it, snapshot it when you are done.
 
-This only works for the boot disk. It’s not the worlds greatest way of doing things as any other ephemeral disk
-beyond the boot disk won't have its data saved.
+This only works for the root disk. It’s not the worlds greatest way of doing things as any other ephemeral disk
+beyond the root disk won't have its data saved.
 
 I've seen this ephemeral storage take grown developers by surprise when they first start using the Research Cloud. 
 It has just about reduced them to tears. Don’t be like them - trust nothing on the cloud!
