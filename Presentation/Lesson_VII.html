@@ -60,41 +60,30 @@ df -h
 
 (**d**isplay **f**ile usage)
 
-And sees that she has 30 Gig of free space on `/mnt`
+And sees that she has free space on `/mnt`
 
 She decided to put her new files there. Has Anna made a mistake?
 
 </script></section>
 <section data-markdown><script type="text/template">
 
-## A command line torture test
+### A command line torture test
 
-```bash
-df -h
-# check file permissions and make usable
-ls -al /mnt/
-sudo chmod a+rw /mnt/  
-# Create two files
-echo "This is file one" > /mnt/temp.txt
-echo "This is file two" > home.txt
-# Confirm their contents:
-more /mnt/temp.txt
-more home.txt
-```
+Do as I have done, then:
 
-When done, make a snapshot of this machine.
+When finished, make a snapshot of this machine.
 
 </script></section>
 <section data-markdown><script type="text/template">
 
 ## A command line torture test, continued
 
-Launch a new instance of the same flavor as the last from your new snapshot.
+Launch a new instance of the same flavor as the last based on your new snapshot.
 
 `ssh` into the new instance and run the following commands:
 
 ```bash
-sudo chmod a+rw /mnt/ 
+sudo chown ubuntu /mnt
 more home.txt
 more /mnt/temp.txt
 ```
@@ -104,7 +93,7 @@ What's missing?
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise
+### Exercise
 
 On the images tab of the dashboard, click the drop down button next to the "Launch" button. Select the 'Edit' option.
 
@@ -113,7 +102,7 @@ In the resultant dialogue give the image a description and check the public flag
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Question
+### Question
 
 Anna's snapshot was made with her public key still on the image.
 
@@ -125,14 +114,14 @@ Will she be able to ssh into her colleagues instance once he launches it?
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise
+### Exercise
 
 Get someone else to launch your shared snapshot, then ssh into it. Do the same for them.
 
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Question
+### Question
 
 Is having other peoples keys on your instance a potential problem?
 
@@ -142,30 +131,29 @@ Is having other peoples keys on your instance a potential problem?
 </script></section>
 <section data-markdown><script type="text/template">
 
-## PS: The keys live in the authorized_keys file
+### PS: The keys live in the authorized_keys file
 
 ```bash
 more ~/.ssh/authorized_keys
 ```
-## *For each user!*
+### *For each user!*
 
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Question
+### Question
 
 Beware the size ratchet!
 
-> Anna made a snapshot of a 10Gig machine: and is now trying to launch it as a 5Gig flavor. 
+> Anna made a snapshot of a 10Gig machine: and the snapshot is also 10Gig in size.
+> She is now trying to launch it as a 5Gig flavor.
 
 What happens?
 
 </script></section>
 <section data-markdown><script type="text/template">
 
-**Answer**
-
-Yep: the tears have it:
+### The tears may have it:
 
 > Anna will get the error: "Error: Flavor's disk is too small for requested image..."
 
@@ -174,14 +162,14 @@ You can't cram a bigger snapshot down into a smaller instance.
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Exercise
+### Exercise
 
 Make your shared snapshot private again!
 
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Terminate your free computer!
+### Terminate your free computer!
 
 Check to see if you have any computers running (Compute-Instances).
 

@@ -39,7 +39,7 @@ their project that’s $20 000 of grant money that could have been used elsewher
 
 -- *Slide* --
 
-## Question
+### Question
 
 Currently, how much does it cost a researcher to use the Research Cloud?
 
@@ -51,11 +51,7 @@ Currently, how much does it cost a researcher to use the Research Cloud?
 
 -- *Slide End* --
 
----
-
 **Answer E**
-
----
 
 -- *Slide* --
 
@@ -93,7 +89,7 @@ into the Research Cloud dashboard before today?
 
 -- *Slide* --
 
-## Have you logged into the NeCTAR dashboard before today?
+### Have you logged into the NeCTAR dashboard before today?
 
 * <span style="color:red">&#9632;</span> = No, I haven't :(
 * <span style="color:green">&#9632;</span> = Yes, I have!
@@ -105,7 +101,7 @@ the process later on. If you do see only green, be happy.
 
 -- *Slide* --
 
-## Trial Projects
+### Trial Projects
 
 -- *Slide End* --
 
@@ -122,7 +118,7 @@ Regardless of your path, your project/tenant should give you the time to learn t
 
 -- *Slide* --
 
-## What's your trial project lifetime?
+### What's your trial project lifetime?
 
 1. for ever and ever after
 1. three months from today
@@ -139,7 +135,7 @@ asking for allocation extensions paperwork.
 
 -- *Slide* --
 
-## Question
+### Question
 
 Can you log into: [https://dashboard.rc.nectar.org.au](https://dashboard.rc.nectar.org.au)? 
 
@@ -230,7 +226,7 @@ There's also a handy link that if followed tells you how to contact Support.
 
 -- *Slide* --
 
-## Question
+### Question
 
 Can you find the support email address?
 
@@ -276,7 +272,7 @@ Remember, you now know where to go when you want to find helpful documentation.
 
 -- *Slide* --
 
-## Close the support tab of the browser and return to the dashboard.
+### Close the support tab of the browser and return to the dashboard.
 
 * <span style="color:red">&#9632;</span> = I've lost the dashboard!
 * <span style="color:green">&#9632;</span> = I'm good to go!
@@ -393,7 +389,7 @@ And that the password is for **applications only**!
 
 -- *Slide* --
 
-## Question
+### Question
 
 Which one of these can’t you do with your settings dropdown?
 
@@ -409,7 +405,7 @@ Which one of these can’t you do with your settings dropdown?
 
 -- *Slide* --
 
-## Question
+### Question
 
 If you reset your password under the settings drop down, which is correct?
 
@@ -660,7 +656,7 @@ simply files on the host server. What happens to those changes when you terminat
 
 -- *Slide* --
 
-## Question
+### Question
 
 What happens to your Virtual Machine's root disk when you **terminate** it?
 
@@ -671,13 +667,9 @@ What happens to your Virtual Machine's root disk when you **terminate** it?
 
 -- *Slide End* --
 
----
-
 **Demonstrate:** Refer to the whiteboard drawing of this
 
 **Answer D:** The image is simply wiped.
-
----
 
 So by default your virtual machine has what is termed "ephemeral" drives. Anything written to these drives will be
 lost if the associated virtual machine is terminated.
@@ -700,7 +692,7 @@ options for halting it. Which begs the question:
 
 -- *Slide* --
 
-## Question
+### Question
 
 When does my free PC on the Research Cloud get destroyed (along with all its data)?
 
@@ -712,8 +704,6 @@ When does my free PC on the Research Cloud get destroyed (along with all its dat
 
 -- *Slide End* --
 
----
-
 Pick out the wrong answers first to provide explanations of what they are!
 
 A paused VM is simply halted in memory, ready to be started again.
@@ -722,8 +712,6 @@ A soft reboot tries to do a graceful reboot (you ask the OS to reboot).
 A hard reboot just reboots the machine! (you press the button)
 
 **Answer: B** 
-
----
 
 (Once the machine is finally launched, point out the IP address in the dashboard)
 
@@ -737,7 +725,7 @@ starts up. But like the transient file system, it is not lost during reboots.
 
 -- *Slide* --
 
-## Question
+### Question
 
 When do I lose my IP number?
  
@@ -749,11 +737,7 @@ When do I lose my IP number?
  
 -- *Slide End* --
 
----
-
 **Answer: B** 
-
----
 
 Also know that if you **don't terminate your computer** then it will still be running down your allocation clock!
 Stopped and paused computers are still consuming resources on the host computer!
@@ -781,7 +765,7 @@ It’s basically an online form that allows you to apply for a project with enou
 
 -- *Slide* --
 
-## Question
+### Question
 
 Can you find the option to convert your trial project on the allocation form?
 

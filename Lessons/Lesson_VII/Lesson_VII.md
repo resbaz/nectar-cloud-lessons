@@ -6,15 +6,19 @@
 
 -- *Slide End* --
 
-In the last lesson, we launched our image based on our snapshot with the largest size possible.
+In the last lesson, we launched our image based on our snapshot with the largest size possible and with
+extra ephemeral disk.
 
-Did any of you notice the ephemeral disk in the flavor details?
+Did any of you forget to check the ephemeral disk in the flavor details?
 
 **Demonstrate**
 
-Bring up the launch dialogue and show the changing ephemeral disk as different flavors are selected. 
+Bring up the launch dialogue and show the changing ephemeral disk as different flavors are selected.
 
-That's what we are going to be looking at in this lesson. 
+If you forgot to make sure that you had extra ephemeral disk you will need to terminate your instance
+and launch a new one, this time with extra ephemeral storage.
+
+As that's what we are going to be looking at in this lesson.
 
 -- *Slide* --
 
@@ -27,13 +31,11 @@ df -h
 
 (**d**isplay **f**ile usage)
 
-And sees that she has 30 Gig of free space on `/mnt`
+And sees that she has free space on `/mnt`
 
 She decided to put her new files there. Has Anna made a mistake?
 
 -- *Slide End* --
-
----
 
 Hold up a Red sticky note if you think she has.
 Otherwise a green one if you think all is well.
@@ -46,20 +48,16 @@ Ssh into your running instance.
 
 Do as Anna did and issue a `df -h`. You should see the same result as her.
 
----
-
 Hold up a Red sticky note if you don't.
 Otherwise a green one if you do.
 
--- *Slide* --
-
-## A command line torture test
+**Demonstrate**  A command line torture test
 
 ```bash
 df -h
 # check file permissions and make usable
-ls -al /mnt/
-sudo chmod a+rw /mnt/  
+ls -al /mnt
+sudo chown ubuntu /mnt
 # Create two files
 echo "This is file one" > /mnt/temp.txt
 echo "This is file two" > home.txt
@@ -68,30 +66,32 @@ more /mnt/temp.txt
 more home.txt
 ```
 
-When done, make a snapshot of this machine.
+-- *Slide* --
+
+### A command line torture test
+
+Do as I have done, then:
+
+When finished, make a snapshot of this machine.
 
 -- *Slide End* --
 
----
-
-Anyone want to hazard a guess as to what chmod does, and why is it needed?
+Anyone want to hazard a guess as to what `chown` does, and why is it needed?
 
 Remember to make the snapshot of your running instance following our new best practices!
 
-When it is complete then delete the original instance.
-
----
+When it is complete then terminate the original instance that you have just snapshotted.
 
 -- *Slide* --
 
 ## A command line torture test, continued
 
-Launch a new instance of the same flavor as the last from your new snapshot.
+Launch a new instance of the same flavor as the last based on your new snapshot.
 
 `ssh` into the new instance and run the following commands:
 
 ```bash
-sudo chmod a+rw /mnt/ 
+sudo chown ubuntu /mnt
 more home.txt
 more /mnt/temp.txt
 ```
@@ -100,14 +100,10 @@ What's missing?
 
 -- *Slide End* --
 
----
-
 All being well, you should get a "No such file" error when you try to look at file1.txt.
 
 Hold up a Red sticky note if you need help,
 Otherwise a green one when you are done.
-
----
 
 So where's the missing `temp.txt`?
 
@@ -134,10 +130,9 @@ I'm hoping to see a sea of Red...
 > Anna has now got quite a cat collection on the go: and would like to share it with a colleague. 
 > How would she do this?
 
-
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 On the images tab of the dashboard, click the drop down button next to the "Launch" button. Select the 'Edit' option.
 
@@ -145,20 +140,15 @@ In the resultant dialogue give the image a description and check the public flag
 
 -- *Slide End* --
 
----
-
 Once it's saved go to the list of public images and see if you can find it in there. Yes, that's the whole world who
 can now start an instance based on your image!
 
 Hold up a Red sticky note if you need help,
 and a Green one once you are done.
 
----
-
-
 -- *Slide* --
 
-## Question
+### Question
 
 Anna's snapshot was made with her public key still on the image.
 
@@ -175,7 +165,7 @@ Yes, she can. Her key is on the image, so she can access it.
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 Get someone else to launch your shared snapshot, then ssh into it. Do the same for them.
 
@@ -183,7 +173,7 @@ Get someone else to launch your shared snapshot, then ssh into it. Do the same f
 
 -- *Slide* --
 
-## Question
+### Question
 
 Is having other peoples keys on your instance a potential problem?
 
@@ -202,39 +192,34 @@ other users for you.
 
 -- *Slide* --
 
-## PS: The keys live in the authorized_keys file
+### PS: The keys live in the authorized_keys file
 
 ```bash
 more ~/.ssh/authorized_keys
 ```
-## *For each user!*
+### *For each user!*
 
 -- *Slide End* --
 
 -- *Slide* --
 
-## Question
+### Question
 
 Beware the size ratchet!
 
-> Anna made a snapshot of a 10Gig machine: and is now trying to launch it as a 5Gig flavor. 
+> Anna made a snapshot of a 10Gig machine: and the snapshot is also 10Gig in size.
+> She is now trying to launch it as a 5Gig flavor.
 
 What happens?
 
 -- *Slide End* --
 
----
-
 Hold up a Red sticky note if you think it's going to end in tears.
 And a Green one if you think that it will launch.
 
----
-
 -- *Slide* --
 
-**Answer**
-
-Yep: the tears have it:
+### The tears may have it:
 
 > Anna will get the error: "Error: Flavor's disk is too small for requested image..."
 
@@ -255,7 +240,7 @@ example to put large data sets on, you will not backup that data with a snapshot
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 Make your shared snapshot private again!
 
@@ -267,7 +252,7 @@ And a Green one once you are done.
 
 -- *Slide* --
 
-## Terminate your free computer!
+### Terminate your free computer!
 
 Check to see if you have any computers running (Compute-Instances).
 

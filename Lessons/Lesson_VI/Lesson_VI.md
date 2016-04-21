@@ -17,7 +17,7 @@
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 Can you make a snapshot of your running VM?
 
@@ -26,12 +26,8 @@ that will allow you to know what it is when you come back to it weeks later.
 
 -- *Slide End* --
 
----
-
 Hold up a Green card once the creation of the snapshot of your instance has started.
 And a Red card if you need help.
-
----
 
 Whilst your snapshots are being taken, lets talk about what has just gone on under the hood.
 
@@ -47,7 +43,7 @@ If all has gone well, the dashboard will take you to this tab automatically.
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 In home directory, run the script `loop.sh` by:
 
@@ -60,8 +56,6 @@ Watch the output as you make a snapshot of your instance!
 When done kill the script by hitting the `Ctrl` and `C` keys together. 
 
 -- *Slide End* --
-
----
 
 This exercise gives you a feel for the duration of the suspension. The script will start to count up, at the rate of one
 count every half second or so. Readjust the windows on your desktop so that you can see the output in the terminal 
@@ -76,11 +70,9 @@ Remember, to stop `loop.sh` from running, simply press the 'Ctrl' and the 'c' ke
 Hold up a Green card once you have seen the output pause.
 And a Red card if you need help.
 
----
-
 -- *Slide* --
 
-## Thought experiment
+### Thought experiment
 
 Why does the loop resume well before the dashboard shows the snapshot is complete?
 
@@ -109,11 +101,7 @@ who is using her site at the time they taken.
 
 -- *Slide End* --
 
----
-
 **Answer D** Whilst E is a topic for a good debate, the answer is: D. The state of the machine is not captured 
-
----
 
 Let's take a look at this for a moment. The machine is paused, and then a copy of the hard drive is made. So any data
 transfers that are happening between the machines drive and processor will be stopped mid flow. And then resumed
@@ -131,18 +119,14 @@ data has been corrupted in this way.
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 Delete your older, possibly unreliable, snapshot.
 
 -- *Slide End* --
 
----
-
 Hold up a Red sticky note if you need help,
 Otherwise a green one when you are done.
-
----
 
 > Alarmed by what Ben has told her, Anna does her research. And finds that in order to take good snapshots, she has
 > to make sure that running programs have all written their contents to disk before the snapshot is made. There are
@@ -152,7 +136,7 @@ Otherwise a green one when you are done.
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 Power down your vm *by shutting it off!*
 
@@ -162,19 +146,15 @@ Then when it is in the shutoff state, make a snapshot of it.
 
 -- *Slide End* --
 
----
-
 Power down your instance by shutting it off, then make a snapshot of it. Remember to wait till your instance is in the
 shut off state before you try to make your snapshot.
 
 Hold up a Red sticky note if you need help,
 Otherwise a green one when you are done.
 
----
-
 -- *Slide* --
 
-## Question 
+### Question
 
 What's a big problem with Anna's new approach?
 
@@ -186,11 +166,7 @@ What's a big problem with Anna's new approach?
 
 -- *Slide End* --
 
----
-
 **Answer A** You may forget to start your instance up again
-
----
 
 Yes: not only are you taking your site offline for a longer period than the momentary pause of a regular snapshot,
 you are opening yourself to the possibility of forgetting to start it up again when you are done.
@@ -205,7 +181,7 @@ scheduled event.
 
 -- *Slide* --
 
-## Group Exercise 
+### Group Exercise
 
 Create a checklist for creating a snapshot of a running machine. 
 Don't forget to notify your users!
@@ -222,7 +198,7 @@ This is where the rubber meets the road.
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 Terminate your running instance, then go to the images tab of your project
 and launch a new instance using the snapshot that you have just created.
@@ -233,23 +209,19 @@ Confirm that `today.txt` has your edits in it...
 
 -- *Slide End* --
 
----
-
 You can use the checklist from Lesson II as a memory jogger.
 
 Hold up a Red sticky note if you need help,
 Otherwise a green one when you are done.
 
----
-
-## Vertical Scaling
+### Vertical Scaling
 
 > Anna's site is becoming increasingly popular, and some of her visitors are complaining that it's getting slow under
 > the load.
 
 -- *Slide* --
 
-## Question
+### Question
 
 Anna's raft of kitten photographs has made it to the front page of the internet. Her server is struggling under the 
 load. What can Anna do to solve this problem?
@@ -262,11 +234,7 @@ load. What can Anna do to solve this problem?
 
 -- *Slide End* --
 
----
-
 **Answe B** Upgrade to a more powerful machine
-
----
 
 Remember the two nameless researchers whom I told you about at the start of these lessons, the two who spent over 
 $20000 of their grant money on buying and upgrading their machines to complete their research? Well, if the 
@@ -275,7 +243,7 @@ resolve their problem.
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 Terminate your running instance, and launch a new one 
 using the snapshot that you have just created. 
@@ -283,9 +251,9 @@ using the snapshot that you have just created.
 But this time round, use the largest flavor
 that your project will allow you.
 
--- *Slide End* --
+**NB:** Make sure that this machine has an Ephemeral Disk with more than 0G of space!
 
----
+-- *Slide End* --
 
 Once you are done make sure that your site is back up, and that you can ssh into the instance again.
 
@@ -294,11 +262,9 @@ Again, you can use the checklist from Lesson II as a memory jogger.
 Hold up a Red sticky note if you need help,
 Otherwise a green one when you are done.
 
----
-
 -- *Slide* --
 
-## Question 
+### Question
 
 You'll notice that in your personal tenancy you can't run the largest machine image that you might want to.
 What can you do to remedy this situation?
@@ -311,16 +277,11 @@ What can you do to remedy this situation?
 
 -- *Slide End* --
 
----
-
 **Answer E** Go to the allocation tab and complete an allocation request
-
----
-
 
 -- *Slide* --
 
-## Question
+### Question
 
 A volunteer please: to describe an image, an instance, and the difference between the two...
 

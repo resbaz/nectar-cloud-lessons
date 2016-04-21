@@ -155,8 +155,13 @@ Remember to always walk through your slides when you regenerate them!
 
 # Todo's
 
-1. [ ] Update the prerequisites on this page.
+1. [ ] Update the prerequisites on this page (also make more clear the skills expected of the trainer).
 1. [ ] Add a note about the google group.
+1. [ ] Check and add putty's scp to lesson 4
+1. [ ] Make the VM auto-mount the extra transient drive on start up...
+1. [ ] Investigate the alternate to XWindows suggested by the brisbane course
+1. [ ] What about a code of conduct: http://software-carpentry.org/conduct/
+1. [ ] Add a suitable etherpad/set of etherpads
 
 ## Nice to have's
 
