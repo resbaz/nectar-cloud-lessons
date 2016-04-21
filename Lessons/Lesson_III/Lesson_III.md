@@ -20,7 +20,7 @@
 
 -- *Slide* --
 
-## Anna, run this on your machine, ASAP!
+### Anna, run this on your machine, ASAP!
 
 ```bash
 apt-get update && apt-get -y upgrade
@@ -74,7 +74,7 @@ our Drupal servers.
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 Gentle people, start your servers! 
 
@@ -88,7 +88,7 @@ PS: *Reuse* your security group and key...
 
 -- *Slide* --
 
-## ssh
+### ssh
 
 The program/protocol we are going to connect to the server with is: 
 
@@ -153,7 +153,7 @@ Well, they have problems:
 
 -- *Slide* --
 
-## The problem with passwords
+### The problem with passwords
 
 * One more thing to remember (and forget)
 * Need to be ever more complex
@@ -174,7 +174,7 @@ better person than I!
 
 -- *Slide* --
 
-## Question
+### Question
 
 Those running Microsoft Windows...
 
@@ -203,7 +203,7 @@ So we are going to split up into two streams:
 
 -- *Slide* --
 
-## Walk through the following steps
+### Walk through the following steps
 
 * Apple: [http://tinyurl.com/apple-ssh-md](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/AppleSsh.md)
 * Windows: [http://tinyurl.com/windows-ssh-md](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/WindowsSsh.md)
@@ -214,7 +214,7 @@ Ok: now we are going take a break and perform a very bad play.
 
 -- *Slide* --
 
-# A Play!
+## A Play!
 
 -- *Slide End* --
 
@@ -226,7 +226,7 @@ Run through the play.
 
 -- *Slide* --
 
-## In your ssh session
+### In your ssh session
 
 Try the following command:
 
@@ -249,7 +249,7 @@ And that's the working directory on the server that you see with the `pwd` comma
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 We are going to replay our play!
 
@@ -272,13 +272,13 @@ Commands issued via terminals have the following advantages:
 * You can easily replay commands
 * They are simple to automate
 
-## Exercise
+**Activity**
 
 Finally, we are going try and update our web server. Try to execute the first command in the set:
 
 -- *Slide* --
 
-## Execute
+### Execute
 
 ```bash
 apt-get update
@@ -294,7 +294,7 @@ apt-get update
 
 -- *Slide* --
 
-## Help!
+### Help!
 
 Again, something has gone wrong! You should be met with the message:
 
@@ -317,7 +317,7 @@ But don't panic!
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 The `sudo` command (**s**uper **u**ser **do**) comes to your help. It allows the ubuntu user to run commands with
 the security privileges of the super user.
@@ -335,7 +335,7 @@ available software.
 
 -- *Slide* --
 
-## xkcd 149
+### xkcd 149
 
 <a href="https://xkcd.com/149/">
 <img src="http://imgs.xkcd.com/comics/sandwich.png" title="The power of sudo" alt="Sandwich">
@@ -348,7 +348,7 @@ do!
 
 -- *Slide* --
 
-## Or:
+### Or:
 
 System administrator to pharmacist:
 
@@ -366,7 +366,7 @@ Now execute the command:
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 ```bash
 sudo apt-get upgrade
@@ -395,7 +395,7 @@ To see how easy it is to use the package manager, install the fortune applicatio
 
 -- *Slide* --
 
-## Install fortune
+### Install fortune
 
 ```bash
 sudo apt-get install fortune-mod
@@ -408,7 +408,7 @@ sudo apt-get install fortune-mod
 
 -- *Slide* --
 
-## Run fortune
+### Run fortune
 
 ```bash
 fortune
@@ -426,7 +426,7 @@ When you are finished working on your virtual machine, do the following:
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 Type `exit`
 
@@ -477,7 +477,7 @@ trying to access your machine.
 
 -- *Slide* --
 
-## Question
+### Question
 
 You remove ssh from a security group shared by many servers. 
 Will you be able to ssh into any of the servers?
@@ -520,7 +520,7 @@ is a unique fingerprint to you. That was when you got asked the question:
 
 -- *Slide* --
 
-## Remember this?
+### Remember this?
 
 ```bash
 The authenticity of host '144.6.225.224 (144.6.225.224)' can't be established.
@@ -541,7 +541,7 @@ But if they change, then ssh will refuse to give you a connection, showing an er
 
 -- *Slide* --
 
-## There is possibly a man in the middle!
+### There is possibly a man in the middle!
 
 ```bash
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -584,7 +584,7 @@ number as an old one. It's then that you'll see this error message.
 
 -- *Slide* --
 
-## The fix:
+### The fix:
 
 OSX: 
 
