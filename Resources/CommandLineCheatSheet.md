@@ -164,9 +164,9 @@ Form: `scp <from> <to>`
 
 ```bash
 scp ubuntu@144.6.226.144:notes.txt .  # copy the file named notes.txt from the home directory of the ubuntu user on the
-                                      # remote machine to the current directory on the local machine
+                                      # remote machine at 144.6.226.144 to the current directory on the local machine
 scp notes.txt ubuntu@144.6.226.144:   # copy the file named notes.txt from the current directory on the local machine
-                                      # to the home directory of the ubuntu user on the remote machine 
+                                      # to the home directory of the ubuntu user on the remote machine at 144.6.226.144
 ```
 
 ### ssh
