@@ -33,7 +33,7 @@ organize the material they learn themselves. [Because...](http://mindhacks.com/2
 > 12h00am - 1h00pm: Lunch
 
 * [Lesson VI: Snapshots: Backups, vertical scaling](#lesson-vi)
-* [Lesson VII: transient storage (don’t rely on it!) and sharing](#lesson_vii)
+* [Lesson VII: Transient storage (don’t rely on it!) and sharing](#lesson_vii)
 
 > 3h00pm - 3h30: Afternoon Tea
 
@@ -166,6 +166,7 @@ Security groups and CIDR's
 ## Links for students
 
 * [An introduction to checklists](http://www.newyorker.com/magazine/2007/12/10/the-checklist)
+* [Troubleshooting instance launch failure](https://espaces.edu.au/vwrangler/nectar-topics/troubleshooting/troubleshooting-instance-launch-failure)
 
 ## Supporting material
 
@@ -262,7 +263,8 @@ That the keyboard isn’t driving the VM locally: that the terminal is more a sc
 * https://www.digitalocean.com/community/tutorials/understanding-the-ssh-encryption-and-connection-process
 
 A great link on debugging ssh issues on the NeCTAR cloud:
-https://espaces.edu.au/vwrangler/nectar-topics/troubleshooting/troubleshooting-ssh-access-to-a-nectar-instance
+
+* [Troubleshooting SSH access to a NeCTAR instance](https://espaces.edu.au/vwrangler/nectar-topics/troubleshooting/troubleshooting-ssh-access-to-a-nectar-instance)
 
 ## Supporting material
 
@@ -442,9 +444,10 @@ Snapshots can take a fair amount of time depending on the system load. So the le
 
 ## Links for students
 
-http://wiki.libvirt.org/page/Snapshots
-http://docs.openstack.org/openstack-ops/content/snapshots.html
-http://physics.stackexchange.com/questions/32663/what-are-the-effects-of-cosmic-rays-on-consumer-electronics
+* http://wiki.libvirt.org/page/Snapshots
+* http://docs.openstack.org/openstack-ops/content/snapshots.html
+* http://physics.stackexchange.com/questions/32663/what-are-the-effects-of-cosmic-rays-on-consumer-electronics
+* [Troubleshooting Instance Snapshots](https://espaces.edu.au/vwrangler/nectar-topics/troubleshooting/troubleshooting-instance-snapshots)
 
 ## Supporting material
 
