@@ -5,20 +5,23 @@
 |-----------|-----------------------------------------|---------|
 | [`apt-get`](#apt-get) | **A**dvanced **P**ackage **T**ool - get | the command line app store |
 | [`cd`](#cd)       | **C**hange working **D**irectory        | changes directory |
-| [`chmod`](#chmod) | **Ch**ange file **MOD**e                | protects your junk |
+| [`chmod`](#chmod) | **CH**ange file **MOD**e                | protects your junk |
+| [`chown`](#chown) | **CH**ange file **OWN**er               | change file owner and group |
+| [`cp`](#cp)       | **C**o**P**y                            | copy files and directories
 | [`echo`](#echo)   | **ECHO**                                | just echoes a string |
 | `exit`            | EXIT                                    | terminates the current process |
 | [`ls`](#ls)       | **L**i**S**t directory contents         | lets you see whats in the directory |
-| [`man`](#man)     | **MAN**ual                              | gives help |
+| [`man`](#man)     | **MAN**ual pages                        | gives help |
 | [`mkdir`](#mkdir) | **M**a**K**e **DIR**ectory              | create a directory |
 | [`more`](#more)   | **MORE**                                | list the contents of a file |
-| [`pwd`](#pwd)     | **P**rint **W**orking **D**irectory     | shows where you are |
+| [`pwd`](#pwd)     | **P**rint **W**orking **D**irectory     | shows where you are in the file system |
 | [`rm`](#rm)       | **R**e**M**ove                          | remove a file |
 | [`rmdir`](#rmdir) | **R**e**M**ove **DIR**irectory          | remove a directory |
 | [`scp`](#scp)     | **S**ecure **C**o**P**y                 | copy files securely between computers |
-| [`ssh`](#ssh)     | **S**ecure **Sh**ell                    | teleports you to another machine |
-| [`ssh-keygen`](#ssh-keygen) | **S**ecure **Sh**ell - **KEY** **GEN**erate | Allows you manage your keys |
+| [`ssh`](#ssh)     | **S**ecure **SH**ell                    | teleports you to another machine |
+| [`ssh-keygen`](#ssh-keygen) | **S**ecure **SH**ell - **KEY** **GEN**erate | Allows you manage your keys |
 | [`sudo`](#sudo)   | **S**uper **U**ser **DO**               | lets you run administrative commands |
+| [`whoami`](#whoami) | **WHO** **AM** **I**                  | display your effective user ID as a name |
 
 ## Useful keyboard short cuts
 
@@ -56,7 +59,11 @@ If the file doesn't exist, it will be created. If it does exist, its contents wi
 
 ## Examples
 
-Note: A hash in the examples marks the start of a note. So: `# this is a note`
+**Note:** In the terminal everything after a hash mark is ignored. We can use this to comment our examples:
+
+```bash
+# this is a comment that is ignored
+```
 
 ### apt-get
 
@@ -81,7 +88,7 @@ cd tmp      # go to the directory named tmp that is a child of the current direc
 
 ### chmod
  
- Form: `chmod <mode> <file>`
+Form: `chmod <mode> <file>`
 
 ```bash
 chmod u=rw,go-rwx tut_dev.pem   # allow the current user to read and write, 
@@ -92,9 +99,28 @@ chmod ug=rw,o-rwx tut_dev.pem   # allow the current user and the group to read a
                                 # the file named tut_dev.pem
 ```
 
+### chmod
+
+Form: `chown <owner><:><group>`
+
+```bash
+chown ubuntu /mnt               # change the owner of the `/mnt` directory to be the `ubuntu` user
+chown :webapps edit.txt         # change the group that the file named `edit.txt` belongs to to `webapps`
+chown ubuntu:webapps edit.txt   # change both the owner and the group that the file named `edit.txt` belongs to
+```
+
+### cp
+
+Form: `cp <source> <destination>`
+
+```bash
+cp today.txt yesterday.txt      # copy the file named `today.txt` to the file named `yesterday.txt`
+cp -r today yesterday           # recursively copy the directory named `today` to the directory named `yesterday`
+```
+
 ### echo
  
- Form: `echo <string>`
+Form: `echo <string>`
 
 ```bash
 echo "hello there!" # puts "hello there" on the console...
@@ -193,4 +219,12 @@ Form: `sudo <command>`
 
 ```bash
 sudo apt-get update # run the apt-get update command as the super user
+```
+
+### whoami
+
+Form: `whoami`
+
+```bash
+whoami      # display your effective user ID as a name
 ```
