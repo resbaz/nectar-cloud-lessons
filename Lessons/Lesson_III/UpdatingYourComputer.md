@@ -1,4 +1,4 @@
-# Updating your new computer (?min)
+# Updating your new computer (? min)
 
 -- *Slide* --
 

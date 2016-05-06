@@ -138,9 +138,6 @@ Read:
 
 -- *Slide End* --
 
-
-"file extensions are essentially there to help computers (and human readers) understand file content and are not a requirement of files"
-
 -- *Slide* --
 
 ### Exercise
@@ -156,12 +153,35 @@ Use it to step the through the following tasks: [http://tinyurl.com/play-task](h
 
 -- *Slide End* --
 
-But remember to ask your neighbours first!
+But if you have problems remember to ask your neighbours first!
 
-Commands issued via terminals have the following advantages:
+Interesting point about this exercise:
 
-* They are terse
+-- *Slide* --
+
+##  Why do files have extensions?
+
+1. To help humans and computers know what's in the file
+1. Because they aren't directories
+1. Files don't have extensions. How dare you!
+1. ANSI standard C12.22 mandates it.
+1. All of the above...
+
+-- *Slide End* --
+
+**Answer A:** They are just there to help humans and computers know what's inside the file. Note that these days
+graphical interfaces hide extensions on certain categories of files.
+
+-- *Slide* --
+
+# What's a disadvantage of terminal commands?
+
 * If you know what you’re doing it’s faster to type than to point with a mouse
 * They keep a history of your commands
 * You can easily replay commands
 * They are simple to automate
+* They are verbose!
+
+-- *Slide End* --
+
+**Answer E:** They aren't verbose!
