@@ -64,24 +64,6 @@ if they have problems in following them.
 Contact the allocation approver for the node where the course will be delivered in advance of the course to
 let them know that there might be some people requesting an allocation in order to be able to take part.
 
-### Preparation for lesson III
-
-You will need a few copies of the [play](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Play.md) for lesson 3.
-People will have to crowd round and share. The goal here is to get people moving and interacting, as they become 
-familiar with some concepts.
-
-You will need to write the following words onto cards in big print, one word per card:
-
-* PWD
-* LS
-* MKDIR
-* CD
-* CHMOD
-* OTHER
-* USER
-* GROUP
-
-
 ### Prerequisites
 
 * Each student will need a laptop with wifi access.
@@ -173,7 +155,6 @@ Remember to always walk through your slides when you regenerate them!
 1. [ ] Could we use three cup game, three card monty, etc. as example of moving data files around on your local and
        remote server?
 1. [ ] Should we create a booklet for attendees to take away with them - and to use during the session?
-1. [ ] Remove or improve the play!
 
 # Versioning
 
