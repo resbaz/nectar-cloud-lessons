@@ -1,0 +1,167 @@
+# An introduction to the command line  (? min)
+
+-- *Slide* --
+
+## An introduction to the command line
+
+-- *Slide End* --
+
+> Anna has now managed to connect to her computer in the cloud: but what's this? A text based interface!
+> Anna needs to know how to use this interface if she is to apply the needed security updates!
+
+Files and Directories
+
+When you open your Explorer (Windows) or Finder (OsX) you can see that the contents on your
+hard drive are organized as files stored inside of folders.
+
+**Demonstrate**
+
+And that the folders can be contained within other folders.
+
+When you open a terminal window you are opening a text based interface into that system.
+
+There is a terminology change though:
+
+Folders are called 'directories'. And files are called, well, 'files'
+
+So how to navigate it?
+
+As the terminal can't give you the same view, it simply has the concept of being positioned in one of those folders.
+And that directory that it is positioned in is termed the 'working directory'
+
+And you have this concept in your Explorer/Finder as well. Each window you open is positioned on a given
+directory. And you can move in or out along the directory tree.
+
+You can think of this directory that the Explorer/Finder window is positioned on as being the working directory for
+that Explorer/Finder window.
+
+**Demonstrate**
+
+Similarly each terminal window you open is positioned on a given directory.
+
+Because the terminal is text based, you need to type in instructions as to what is to happen.
+
+These instructions are called 'commands'.
+
+You type in the command, then when you hit the enter key, the command is executed by the computer.
+
+-- *Slide* --
+
+### In your ssh session
+
+Try the following command:
+
+```bash
+pwd
+```
+
+`pwd` is shorthand for **p**rint **w**orking **d**irectory
+
+-- *Slide End* --
+
+When a user logs into a Unix like system they ordinarily start with the working directory positioned
+in a directory called their home directory:
+
+-- *Slide* --
+### The home directory
+
+```bash
+/home/<<username>>
+```
+-- *Slide End* --
+
+This is the directory where that users personal files, directories and programs are located.
+
+-- *Slide* --
+### The home directory
+
+When you typed in `pwd` is this what you saw?
+
+```bash
+/home/ubuntu
+```
+
+* <span style="color:red">&#9632;</span> = No!
+* <span style="color:green">&#9632;</span> = Yes
+
+-- *Slide End* --
+
+Remember, you ssh'd into the instance as the ubuntu user, and hence this is why your terminal session is
+positioned here.
+
+-- *Slide* --
+### Comments
+
+**Note:** In the terminal everything after a hash mark is ignored. We can use this fact to comment our examples:
+
+```bash
+# this is a comment that is ignored
+```
+-- *Slide End* --
+
+-- *Slide* --
+### Options
+
+Commands often have options
+
+ ```bash
+ <command> -<option[s]>
+ ```
+-- *Slide End* --
+
+**Demonstrate**
+
+ eg:
+
+ ```bash
+ ls -alrt   # list directory contents with options all, long and reverse time
+ ```
+
+BTW, `ls` is an abbreviation for "list"
+
+
+The "man" command provides a description of the meaning and options for a command
+
+'q' quits the man command, <space> pages.
+
+Ok: now we are going take a break and perform a very bad play.
+
+-- *Slide* --
+
+## A Story!
+
+Read:
+
+* [http://tinyurl.com/resOsStory](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Story.md)
+
+* <span style="color:green">&#9632;</span> = I'm finished reading it.
+
+-- *Slide End* --
+
+
+"file extensions are essentially there to help computers (and human readers) understand file content and are not a requirement of files"
+
+-- *Slide* --
+
+### Exercise
+
+Agent 00? - we are going to relive your story!
+
+There's a command line cheat sheet at: [http://tinyurl.com/command-line-cheat-sheet](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/CommandLineCheatSheet.md)
+
+Use it to step the through the following tasks: [http://tinyurl.com/play-task](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Task.md)
+
+* <span style="color:red">&#9632;</span> = My undercover career needs some help!
+* <span style="color:green">&#9632;</span> = I'm done!
+
+-- *Slide End* --
+
+But remember to ask your neighbours first!
+
+Commands issued via terminals have the following advantages:
+
+* They are terse
+* If you know what you’re doing it’s faster to type than to point with a mouse
+* They keep a history of your commands
+* You can easily replay commands
+* They are simple to automate

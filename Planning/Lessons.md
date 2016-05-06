@@ -23,7 +23,10 @@ organize the material they learn themselves. [Because...](http://mindhacks.com/2
 
 * [Lesson I: OpenStack, mapped by the dashboard](#lesson-i)
 * [Lesson II: Your free computer: up and running](#lesson-ii)
-* [Lesson III: Accessing and updating your new computer](#lesson-iii)
+* Lesson III: Broken into 3, for delivery on an "as needs" basis
+    * [Accessing your new computer](#accessing-your-new-computer)
+    * [An introduction to the command line](#an-introduction-to-the-command-line)
+    * [Updating your new computer](#updating-your-new-computer)
 
 > 10h30am - 11h00am: Morning Tea
 
@@ -46,6 +49,7 @@ If time permits, possibly a "bringing it all together" grand exercise?
 
 We have a list of [stretch goals](stretch_goals.md) that we thought we might get to if time permitted. It would
 appear that time doesn't permit...
+
 
 # Lesson I
 
@@ -91,7 +95,6 @@ Modular nature of OpenStack, Glance, Nova, Allocations, Virtualization, Key Pair
 
 ## Notes 
 
-
 ## To discuss
 
 Its worthwhile driving home that to use the cloud, you do need to get your head around some key concepts; and that they
@@ -109,9 +112,7 @@ Introduce the concepts of Key Pairs and Security Groups, and IP allocation.
 
 ## Links for students
 
-
 ## Supporting material
-
 
 ## Preconditions
 
@@ -178,26 +179,20 @@ Security groups and CIDR's
 
 * A web browser. Preferably a modern one that renders the PDF checklists.
 
-# Lesson III
 
-**Topic:** Accessing and updating your new computer
+# Accessing your new computer
 
 ## Learning objectives
 
 By the end of this lesson, participants will be able to securely access a running VM via ssh (without using passwords).
-They will also be able to update their Ubuntu/Debian based VM's to the latest versions of the installed software, and
-know how to add and remove rules to their security groups, hence blocking and allowing access to the VM.
 
-They need to know that different operating systems have different package managers: and that the commands we use
-are specific to the Ubuntu operating system in play.
+They need to know that different operating systems have different default users managers: and that the ubuntu
+user we use is specific to the Ubuntu operating system in play.
 
 ## Motivation
 
 In order to work with NeCTAR VM's, researchers need to know to access their VM's so that they can do basic
 maintenance.
-
-They will also know the commands to use on Debian and Ubuntu based VM's to keep the installed software up to date.
-Hence improving the security of their VM's.
 
 This knowledge is also a foundation for securely moving files between a VM and the researchers desktop, which is
 covered in a later lesson.
@@ -210,16 +205,15 @@ But she is becoming a little worried that she hasn't done any security upgrades 
 
 ## Tasks
 
-The students will relaunch the machine that they shut down in the previous example, then they will ssh into it, and
-perform the needed security upgrades.
+The students will relaunch the machine that they shut down in the previous example, then they will ssh into it.
 
 ## Covers
 
-SSH, `apt-get`, `sudo`, bash commands
+`ssh`
 
 ## Concepts
 
-The shell, some shell commands, how to update a linux server, the package manager, and the power of `sudo`
+The shell, encryption of communications via public/private keys.
 
 ## Notes
 
@@ -228,27 +222,160 @@ The problem with passwords (sample password guessing program?)
 * http://www.hashhunters.net/
 * http://www.md5hashgenerator.com/
 
-Bash guide:
-
-* http://mywiki.wooledge.org/BashGuide
-* http://steve-parker.org/sh/sh.shtml 
-* http://code.tutsplus.com/articles/10-terminal-commands-that-will-boost-your-productivity--net-14105
-
 PuTTY isn't the best solution: there are other, easier solutions for us to use. But we need to fit into Intersect's
 training...
 
-I don't like the play: and want to ditch it...
-
 ## To discuss
 
-Password access, its downsides, keys and ssh, encryption of network access (and why) scp. 
+Password access, its downsides, keys and ssh, encryption of network access (and why).
 
 In discussing passwords, do discuss why passwords are deemed acceptable for web sites, but not here. 
 Discuss automated attacks, how passwords are salted, and how they easy they are to reverse engineer these days. 
 Perhaps run a demo password cracking program to frighten them... 
 
-Also point out that it’s the whole machine at risk here, not just a users account. 
+Also point out that it’s the whole machine at risk here when using passwords, not just a users account.
 When discussing ssh access, make sure to point out that we are connecting to the remote machine via the network. 
+That the keyboard isn’t driving the VM locally: that the terminal is more a screen scrape of a remote machine.
+
+## Links for students
+
+* http://code.tutsplus.com/tutorials/ssh-what-and-how--net-25138
+* http://en.wikipedia.org/wiki/Secure_Shell
+* [NeCTAR's image catalogue](https://wiki.rc.nectar.org.au/wiki/Image_Catalog)
+* http://en.wikipedia.org/wiki/Superuser
+* http://www.slashroot.in/secure-shell-how-does-ssh-work
+* https://www.digitalocean.com/community/tutorials/understanding-the-ssh-encryption-and-connection-process
+
+A great link on debugging ssh issues on the NeCTAR cloud:
+
+* [Troubleshooting SSH access to a NeCTAR instance](https://espaces.edu.au/vwrangler/nectar-topics/troubleshooting/troubleshooting-ssh-access-to-a-nectar-instance)
+
+## Supporting material
+
+* An image that will launch Drupal (res_os_drupal7), made by the following recipe:
+  [Creating The Image For The Workshop](../Resources/CreatingTheIMageForTheWorkshop.md)
+
+## Preconditions
+
+* A web browser
+* Ssh/scp support on the students desktop.
+
+
+# An introduction to the command line
+
+## Learning objectives
+
+Students new to the Linux command line should be able to navigate it and to be able to copy and delete files.
+
+## Motivation
+
+If you are to have a server on the NeCTAR cloud, you need to be able to do some basic maintenance on it.
+To do that, you need to be able to use the command line.
+
+This knowledge is also a foundation for securely moving files between a VM and the researchers desktop, which is
+covered in a later lesson.
+
+## Story
+
+Having connected to her computer, Anna Prentice finds that she is a little lost. What should she do now?
+
+## Tasks
+
+After a brief introduction to the concepts behind the shell, the learner will read a story, then relive it
+via a set list of tasks to follow.
+
+## Covers
+
+Some basic bash commands
+
+## Concepts
+
+The concept of each terminal session having a working directory.
+That you can change the current working directory
+That you can create and delete items via the shell
+
+## Notes
+
+## To discuss
+
+That the current working directory concept is replicated by the Explorer/Finder
+That text commands are terse and repeatable.
+
+## Links for students
+
+* http://explainshell.com/
+* http://mywiki.wooledge.org/BashGuide
+* http://steve-parker.org/sh/sh.shtml
+* http://code.tutsplus.com/articles/10-terminal-commands-that-will-boost-your-productivity--net-14105
+
+## Supporting material
+
+* An image that will launch Drupal (res_os_drupal7), made by the following recipe:
+  [Creating The Image For The Workshop](../Resources/CreatingTheIMageForTheWorkshop.md)
+
+## Preconditions
+
+The students must have a terminal prompt open onto the server instance built from the image that accompanies
+this course.
+
+Thus all everything required to get them to this point!
+
+
+# Updating your new computer
+
+## Learning objectives
+
+By the end of this lesson, learners will be able to update their Ubuntu/Debian based VM's to the latest versions of
+the installed software, and know how to add and remove rules to their security groups, hence blocking and allowing
+access to the VM.
+
+They need to know that different operating systems have different package managers: and that the commands we use
+are specific to the Ubuntu operating system in play.
+
+## Motivation
+
+In order to work with NeCTAR VM's, researchers need to know the commands to use on Debian and Ubuntu based VM's to
+keep the installed software up to date. Hence improving the security of their VM's.
+
+## Story
+
+The final part in the the story launched in the "Accessing your computer" lesson.
+
+Anna Prentice now wants to run the command that she was given by her admin friend!
+
+## Tasks
+
+The learners will perform the needed security upgrades on the machine they are currently ssh'd into.
+
+## Covers
+
+`apt-get`, `sudo`, and hands on repetition of earlier security group learning
+
+## Concepts
+
+How to update a linux server, the package manager, and the power of `sudo`
+
+## Notes
+
+Bash guide:
+
+* http://mywiki.wooledge.org/BashGuide
+* http://steve-parker.org/sh/sh.shtml
+* http://code.tutsplus.com/articles/10-terminal-commands-that-will-boost-your-productivity--net-14105
+
+PuTTY isn't the best solution: there are other, easier solutions for us to use. But we need to fit into Intersect's
+training...
+
+## To discuss
+
+Password access, its downsides, keys and ssh, encryption of network access (and why) scp.
+
+In discussing passwords, do discuss why passwords are deemed acceptable for web sites, but not here.
+Discuss automated attacks, how passwords are salted, and how they easy they are to reverse engineer these days.
+Perhaps run a demo password cracking program to frighten them...
+
+Also point out that it’s the whole machine at risk here, not just a users account.
+When discussing ssh access, make sure to point out that we are connecting to the remote machine via the network.
 That the keyboard isn’t driving the VM locally: that the terminal is more a screen scrape of a remote machine.
 
 ## Links for students
@@ -277,6 +404,7 @@ A great link on debugging ssh issues on the NeCTAR cloud:
 * Ssh/scp support in a command line shell on the students desktop.
 * Some disk space.
 * If on windows, the ability to install Putty
+
 
 # Lesson IV
 
