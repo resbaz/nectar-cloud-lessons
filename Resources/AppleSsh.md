@@ -24,20 +24,23 @@ ssh
 This is the basic form our `ssh` command will take:
 
 ```bash
-ssh  -i <key> <user>@<address>
+ssh  -i <path/to/key/keyfile> <user>@<address>
 ```
 
-Eg: Along the lines of:
+Where:
+
+* the `path/to/key/keyfile` is the path to and the key file itself
+* the `user` is the name of the user account on the remote machine that we are connecting as.
+* the `address` is the IP address of the Virtual Machine that we read off of the dashboard.
+
+So for a key file named `tut_dev.pem` in the `keys` subdirectory, connecting as the `ubuntu` user to the
+machine running at the IP address `144.6.225.224`, the command would appear as follows:
 
 ```bash
-ssh -i tut_dev.pem ubuntu@144.6.225.224
+ssh -i keys/tut_dev.pem ubuntu@144.6.225.224
 ```
 
-Remember:
-
-* the `key` is the path to and the key file itself
-* the `user` is the name of the user account on the remote machine that we are connecting as.  
-* the `address` is the IP address of the Virtual Machine that we read off of the dashboard.
+Remember, you need to put in your values when you enter the command. Not the example ones above!
 
 Give it a go!
 
@@ -85,7 +88,7 @@ If the padlock icon is closed, click on it to unlock it. You will have to enter 
 
 Select the line that says "everyone" and choose "No Access"
 
-If there is a group between your username and the "everyone" label, select it and then remove it by hitting 
+**NB** If there is a group between your username and the "everyone" label, select it and then remove it by hitting
 the button with the "-" label. 
 
 You should now be able to try to reissue your `ssh` command in the terminal.
