@@ -124,13 +124,11 @@ The "man" command provides a description of the meaning and options for a comman
 
 'q' quits the man command, <space> pages.
 
-Ok: now we are going take a break and perform a very bad play.
+Ok: time to put our feet up: we are going take a break and read a very bad story.
 
 -- *Slide* --
 
 ## A Story!
-
-Read:
 
 * [http://tinyurl.com/resOsStory](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Story.md)
 
