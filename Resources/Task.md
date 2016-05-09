@@ -9,6 +9,7 @@ Using the [Command Line Cheat Sheet](CommandLineCheatSheet.md) to the following 
 1. [ ] Navigate into the top secret directory
 1. [ ] List the contents of that directory
 1. [ ] View the contents of "plan.txt"
+1. [ ] Note the code words!
 1. [ ] Delete the file named "plan.txt"
 1. [ ] Create a directory named "plan.txt"
 1. [ ] Copy the file named "important.txt" into the new directory named "plan.txt"

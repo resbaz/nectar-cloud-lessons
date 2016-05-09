@@ -69,6 +69,13 @@ Once you have launched your chosen image, `ssh` into it.
 
 ## On your instance
 
+### Update it
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+```
+
 ### Set up `loop.sh`
 
 Set up the required files in the ubuntu users home directory. First, `loop.sh`:
@@ -78,9 +85,9 @@ cat > loop.sh <<- EndOfMessage
 #!/bin/bash
 COUNTER=0
 while [ \$COUNTER -lt 10000000 ]; do
-	echo The counter is \$COUNTER
-	let COUNTER=COUNTER+1
-	sleep .5
+    echo The counter is \$COUNTER
+    let COUNTER=COUNTER+1
+    sleep .5
 done
 EndOfMessage
 ```
@@ -90,6 +97,13 @@ Then make it executable:
 ```bash
 chmod +x loop.sh 
 ```
+
+Test it by running it:
+
+```bash
+./loop.sh
+```
+
 ### Set up `today.txt`
 
 Then [`today.txt`](http://johnhenrymuller.com/today):
@@ -104,11 +118,16 @@ If I do this and only this, today will be a good day.
 EndOfMessage
 ```
 
+Make it useable by Windows users:
+
+```bash
+sudo apt install dos2unix
+unix2dos today.txt
+```
+
 ### Install apache2
 
 ```bash
-sudo apt-get update
-sudo apt-get upgrade
 sudo apt-get install apache2
 # check to see if installed by going to http://<your instance IP address>
 # note that check this you need to have port 80 open in your security groups
@@ -118,7 +137,7 @@ sudo apt-get install apache2
 
 ```bash
 # install mysql and the php files to access it
-sudo apt-get install mysql-server php5-mysql
+sudo apt-get install mysql-server
 # make a note of the password you selected for the root mysql user
 # then tell mysql to make its tables
 sudo mysql_install_db
@@ -142,10 +161,10 @@ FLUSH PRIVILEGES;
 exit
 ```
 
-### Install php5
+### Install needed php5 libraries
 
 ```bash
-sudo apt-get install php5-gd php5-curl libssh2-php
+sudo apt-get install php5-gd php5-curl libssh2-php php5-mysql
 sudo nano /etc/php5/apache2/php.ini
 ```
 
@@ -183,7 +202,7 @@ And finding the url for the latest 7.x series recommended release.
 Back on your instance `wget` that release:
 
 ```bash
-wget http://ftp.drupal.org/files/projects/drupal-7.41.tar.gz
+wget http://ftp.drupal.org/files/projects/drupal-7.43.tar.gz
 tar xzvf drupal*
 cd drupal*
 sudo rsync -avz . /var/www/html
@@ -266,7 +285,6 @@ chmod 600 info.txt
 Anyone who uses this image for anything other than this lesson should change this password the minute they've
 brought the instance up. This can be done via the Drupal web interface.
 
-
 ### Ensure that the X11 forwarding is set up correctly for Windows PuTTY users
 
 Make sure that the file `/etc/ssh/sshd_config` has the following lines in it:
@@ -275,14 +293,37 @@ Make sure that the file `/etc/ssh/sshd_config` has the following lines in it:
 X11Forwarding yes
 X11DisplayOffset 10
 ```
-    
+
+### Prepare for the story
+
+```bash
+cd ~                # return to the ubuntu user's home directory
+mkdir TopSecret     # create the top secret directory
+# create the plan file
+cat > TopSecret/plan.txt <<- EndOfMessage
+
+We plan to take over the world. To do this we have hacked into all the computers in the Internet of things.
+
+Enter "CAFEBABE" into the command console to start their shutdown.
+
+Enter "DEADBEEF" into the command console to abort the mission.
+
+EndOfMessage
+# create the important file.
+cat > TopSecret/important.txt <<- EndOfMessage
+
+Make sure to do something about that pesky agent Double Oh Who and their sidekick.
+
+EndOfMessage
+```
+
 ### Clean up after yourself
 
 Remove the Drupal gumph that you've downloaded into the home directory...
 
 ```bash
-rm /home/ubuntu/drupal-7.41.tar.gz
-rm -r /home/ubuntu/drupal-7.41/
+rm /home/ubuntu/drupal-7.43.tar.gz
+rm -r /home/ubuntu/drupal-7.43/
 ```
 
 Remove the keys you used to launch the instance:
@@ -291,13 +332,17 @@ Remove the keys you used to launch the instance:
 > /home/ubuntu/.ssh/authorized_keys
 ```
 
+**NB** From this point you will not be able to `ssh` into this instance! If you think this might be a problem,
+snapshot the instance, then delete your keys from a running copy of the snapshot, then make a snapshot of the
+snapshot...
+
 ### Make the snapshot
 
 Then **shut the instance off** (do not terminate it) and make a snapshot of it named `res_os_drupal7`.
 
 Go to the snapshot and edit it:
 
-* change its description to "The ResBaz cloud workshop image"
+* change its description to "The ResBaz cloud workshop image as at <Date>"
 * make it public
 
 Once that is done, start it and test that all works as expected.

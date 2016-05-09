@@ -47,7 +47,10 @@ You view its contents.
 
 It contains instructions on the evil empire's master plan!
 
-You foil the plan by deleting the file.
+And there are secret code words that are needed to both execute and stop their software!
+
+You make a note of the them. Then you make sure that the plan can't be followed by
+anyone else by deleting the file.
 
 Then, with a delicious cackle, you make a directory with same name the file used to have! That should confuse
 someone!

@@ -14,7 +14,7 @@ Files and Directories
 When you open your Explorer (Windows) or Finder (OsX) you can see that the contents on your
 hard drive are organized as files stored inside of folders.
 
-**Demonstrate**
+**Demonstrate using your Finder**
 
 And that the folders can be contained within other folders.
 
@@ -35,7 +35,7 @@ directory. And you can move in or out along the directory tree.
 You can think of this directory that the Explorer/Finder window is positioned on as being the working directory for
 that Explorer/Finder window.
 
-**Demonstrate**
+**Demonstrate using your Finder**
 
 Similarly each terminal window you open is positioned on a given directory.
 
@@ -92,10 +92,10 @@ positioned here.
 -- *Slide* --
 ### Comments
 
-**Note:** In the terminal everything after a hash mark is ignored. We can use this fact to comment our examples:
+In the terminal everything after a hash mark is ignored. We can use this to comment our examples:
 
 ```bash
-# this is a comment that is ignored
+cmd     # this is a comment that is ignored
 ```
 -- *Slide End* --
 
@@ -121,6 +121,12 @@ BTW, `ls` is an abbreviation for "list"
 
 
 The "man" command provides a description of the meaning and options for a command
+
+**Demonstrate**
+
+ ```bash
+ man ls
+ ```
 
 'q' quits the man command, <space> pages.
 
@@ -172,7 +178,21 @@ graphical interfaces hide extensions on certain categories of files.
 
 -- *Slide* --
 
-# What's a disadvantage of terminal commands?
+### What's command are you going to enter to save the world?
+
+1. `CAFEBABE`
+1. `BADBEAD`
+1. `DEADCAFE`
+1. `CAFEBEEF`
+1. `DEADBEEF`
+
+-- *Slide End* --
+
+**Answer E:** Any "A's" will be a major worry!
+
+-- *Slide* --
+
+### What's a disadvantage of terminal commands?
 
 * If you know what you’re doing it’s faster to type than to point with a mouse
 * They keep a history of your commands
@@ -182,4 +202,4 @@ graphical interfaces hide extensions on certain categories of files.
 
 -- *Slide End* --
 
-**Answer E:** They aren't verbose!
+**Answer E:** They certainly aren't verbose!
