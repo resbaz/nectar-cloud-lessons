@@ -517,7 +517,7 @@ basis.
 One common way of working is to start up a machine based on a NeCTAR image, then to install your own software onto it, 
 and then to make a copy of its hard drive as it runs. This copy is written back to the images store. 
 
-This process is called "snapshotting". 
+This process is called "making a snapshot".
 
 This saves you from having to reinstall the software next time you launch a machine. 
 
@@ -601,13 +601,16 @@ key in a secure location.
 
 Now I've got lot's of keypairs to choose from: If I didn't I'd either have to generate one, or import one.
 
-**Q:** You fire up your machine. Days later, you realise that you’ve lost your private key. Will you ever be able to 
-access and control your machine from that point onward?
+-- *Slide* --
 
-Please hold up a Red sticky note if the answer is "No" 
-and a Green one if the answer is "Yes".
+### You’ve lost your private key. Will you be able to access machines you've launched with it?
 
-**A:** No, the chances are extremely high that you've lost your machine for good.
+* <span style="color:red">&#9632;</span> = No!
+* <span style="color:green">&#9632;</span> = There's always hope
+
+-- *Slide End* --
+
+**A:** The reds have it! The chances are extremely high that you've lost your machine for good.
 
 ### Project -> Instances Tab
 
