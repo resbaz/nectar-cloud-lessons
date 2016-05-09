@@ -36,6 +36,7 @@ $ scp  -i <path/to/key/keyfile>  USER_NAME@remote_machine_address:notes.txt note
 ## Windows
 
 ```bash
+# You have to run "cmd.exe" and the enter this command in the resultant console window
 $ pscp  -i <path\to\key\keyfile>  USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
@@ -152,11 +153,20 @@ rm newname.txt
 
 -- *Slide* --
 
-## Exercise
+### Windows Users
+
+Can you find and run `cmd.ext`:
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = All done
+
+-- *Slide End* --
+
+-- *Slide* --
+
+### Exercise
 
 I want everyone to create a file named, say, `whyme.txt` and then copy it onto their remote server.
-
-## Exercise
 
 For non existent bonus points, can you bring it back again with a different name?
 
