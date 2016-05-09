@@ -30,18 +30,20 @@ Of course, on Windows its provided by Putty, and hence is called `pscp`
 ### OSX
 
 ```bash
-$ scp  -i <path/to/key/keyfile>  USER_NAME@remote_machine_address:notes.txt notes.txt
+$ scp  -i <key>  USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
 ### Windows
 
 ```bash
-# You have to run "cmd.exe" and the enter this command in the resultant console window
-$ pscp  -i <path\to\key\puttykeyfile>  USER_NAME@remote_machine_address:notes.txt notes.txt
+# You have to run "cmd.exe"
+# then enter this command in the resultant console window
+$ pscp  -i <pkey>  USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
 `scp` is shorthand for **s**ecure **c**o**p**y
 
+`pscp` is **p**utty **s**ecure **c**o**p**y
 -- *Slide End* --
 
 As shown this command will copy the file named `notes.txt` from the home directory of the USER_NAME user on the remote
@@ -55,13 +57,13 @@ IP number or its domain name.
 ### OSX
 
 ```bash
-$ scp -i <path/to/key/keyfile> notes.txt USER_NAME@remote_machine_address:notes.txt
+$ scp -i <key> notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
 ### Windows
 
 ```bash
-$ pscp -i <path\to\key\puttykeyfile> notes.txt   USER_NAME@remote_machine_address:notes.txt
+$ pscp -i <pkey> notes.txt   USER_NAME@remote_machine_address:notes.txt
 ```
 
 -- *Slide End* --
@@ -74,7 +76,7 @@ named notes.txt in the remote machine's USER_NAME home directory:
 ### Question
 
 ```bash
-$ scp  -i <path/to/key/keyfile> USER_NAME@remote_machine_address:notes.txt notes.txt
+$ scp  -i <key> USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
 Is the file: 
@@ -91,7 +93,7 @@ Is the file:
 ### Question
 
 ```bash
-$ scp  -i <path/to/key/keyfile>  notes.txt USER_NAME@remote_machine_address:notes.txt
+$ scp  -i <pkey>  notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
 Is the file: 
@@ -109,10 +111,10 @@ Is the file:
 
 ```bash
 # From remote machine to local machine
-$ scp -i <path/to/key/keyfile> USER_NAME@remote_machine_address:notes.txt notes.txt
+$ scp -i <key> USER_NAME@remote_machine_address:notes.txt notes.txt
 
 # From local machine to remote machine
-$ scp -i <path/to/key/keyfile> notes.txt USER_NAME@remote_machine_address:notes.txt
+$ scp -i <key> notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
 Is the source file 
@@ -182,13 +184,13 @@ Once the question is asked, show the following slide for people to copy.
 ### If it helps!
 
 ```bash
-echo "hello from afar" > temp.txt  # directs the message to a file named temp.txt
+echo "hello from afar" > temp.txt  # echo to a file named temp.txt
 scp -i keys/key.pem temp.txt ubuntu@115.146.92.130:temp.txt
 ssh -i keys/key.pem ubuntu@115.146.92.130
     more temp.txt
-    pwd                             # to show that we are not on our local machine
+    pwd                             # we are not on our local machine
     exit
-pwd                                 # just to prove we are back on our local machine
+pwd                                 # we are back on our local machine
 rm temp.txt                         # rm = remove!
 ```
 -- *Slide End* --
