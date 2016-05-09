@@ -502,7 +502,7 @@ Installing and removing applications using the package manager
 
 ## Notes
 
-
+Rather than using xwindows it has been suggested that we use [Guacamole](http://guac-dev.org/)
 
 ## To discuss
 
