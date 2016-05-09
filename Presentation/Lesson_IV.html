@@ -51,10 +51,16 @@
 </script></section>
 <section data-markdown><script type="text/template">
 
-## scp
+## OSX
 
 ```bash
-$ scp USER_NAME@remote_machine_address:notes.txt notes.txt
+$ scp  -i <path/to/key/keyfile>  USER_NAME@remote_machine_address:notes.txt notes.txt
+```
+
+## Windows
+
+```bash
+$ pscp  -i <path\to\key\keyfile>  USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
 `scp` is shorthand for **s**ecure **c**o**p**y
@@ -62,10 +68,16 @@ $ scp USER_NAME@remote_machine_address:notes.txt notes.txt
 </script></section>
 <section data-markdown><script type="text/template">
 
-## scp
+## OSX
 
 ```bash
-$ scp notes.txt USER_NAME@remote_machine_address:notes.txt
+$ scp -i <path/to/key/keyfile> notes.txt USER_NAME@remote_machine_address:notes.txt
+```
+
+## Windows
+
+```bash
+$ pscp -i <path\to\key\keyfile> notes.txt   USER_NAME@remote_machine_address:notes.txt
 ```
 
 </script></section>
@@ -74,7 +86,7 @@ $ scp notes.txt USER_NAME@remote_machine_address:notes.txt
 ## Question
 
 ```bash
-$ scp USER_NAME@remote_machine_address:notes.txt notes.txt
+$ scp  -i <path/to/key/keyfile> USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
 Is the file: 
@@ -88,7 +100,7 @@ Is the file:
 ## Question
 
 ```bash
-$ scp notes.txt USER_NAME@remote_machine_address:notes.txt
+$ scp  -i <path/to/key/keyfile>  notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
 Is the file: 
@@ -103,10 +115,10 @@ Is the file:
 
 ```bash
 # From remote machine to local machine
-$ scp USER_NAME@remote_machine_address:notes.txt notes.txt
+$ scp -i <path/to/key/keyfile> USER_NAME@remote_machine_address:notes.txt notes.txt
 
 # From local machine to remote machine
-$ scp notes.txt USER_NAME@remote_machine_address:notes.txt
+$ scp -i <path/to/key/keyfile> notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
 Is the source file 
@@ -117,76 +129,59 @@ Is the source file
 </script></section>
 <section data-markdown><script type="text/template">
 
-### `scp` examples
-
-**Copy the file "notes.txt" into a directory on the remote VM**
-
-```bash
-$ scp notes.txt USER_NAME@remote_machine_address:/some/remote/directory/
-```
-
-**Copy the files "notes1.txt" and "notes2.txt" to the users home directory on the remote VM**
-
-```bash
-$ scp notes1.txt notes2.txt  USER_NAME@remote_machine_address:~
-```
-
-**Copy the file "notes.txt" from the remote VM into your current local directory**
-
-```bash
-$ scp USER_NAME@remote_machine_address:/some/remote/directory/notes.txt .
-```
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-### A gotcha!
-
-```bash
-scp -i key.pem temp.txt ubuntu@115.146.92.130 
-```
-### Does not work: it needs the colon!
-
-e.g.:
-
-```bash
-scp -i key.pem temp.txt ubuntu@115.146.92.130:
-```
-
-</script></section>
-<section data-markdown><script type="text/template">
-
 ## Exercise
 
 I want everyone to create a file named, say, `whyme.txt` and then copy it onto their remote server.
 
 ## Exercise
 
-For non existent bonus points, bring it back again with a different name!
+For non existent bonus points, can you bring it back again with a different name?
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = All done
 
 </script></section>
 <section data-markdown><script type="text/template">
 
-# PS: if it helps...
+### If it helps!
 
 ```bash
-echo "hello from afar"             # just echos the message back to us.
 echo "hello from afar" > temp.txt  # directs the message to a file named temp.txt
-more temp.txt
-scp -i key.pem temp.txt ubuntu@115.146.92.130: 
-ssh -i key.pem ubuntu@115.146.92.130
-    ls
+scp -i keys/key.pem temp.txt ubuntu@115.146.92.130:temp.txt
+ssh -i keys/key.pem ubuntu@115.146.92.130
     more temp.txt
     pwd                             # to show that we are not on our local machine
     exit
 pwd                                 # just to prove we are back on our local machine
-ls
 rm temp.txt                         # rm = remove!
-ls                                  # file is gone!
-scp -i key.pem ubuntu@115.146.92.130:temp.txt .
-more temp.txt
-rm temp.txt
 ```
+</script></section>
+<section data-markdown><script type="text/template">
+
+### OSX: A gotcha!
+
+```bash
+scp -i keys/key.pem temp.txt ubuntu@115.146.92.130
+```
+### Does not work: it needs the colon!
+
+e.g.:
+
+```bash
+scp -i keys/key.pem temp.txt ubuntu@115.146.92.130:
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+I want everyone to create a file named, say, `simple.txt` and then copy it onto their remote server.
+
+And bring it back again with a different name...
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = All done
 
 </script></section>
 <section data-markdown><script type="text/template">

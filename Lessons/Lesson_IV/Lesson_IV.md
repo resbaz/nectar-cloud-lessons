@@ -23,36 +23,49 @@ e.g.:
 There is a command line program you can use called `scp` (**s**ecure **c**o**p**y) to move files to, or fetch files 
 from, different machines. It is built on top of `ssh`.
 
+Of course, on Windows its provided by Putty, and hence is called `pscp`
 
 -- *Slide* --
 
-## scp
+## OSX
 
 ```bash
-$ scp USER_NAME@remote_machine_address:notes.txt notes.txt
+$ scp  -i <path/to/key/keyfile>  USER_NAME@remote_machine_address:notes.txt notes.txt
+```
+
+## Windows
+
+```bash
+$ pscp  -i <path\to\key\keyfile>  USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
 `scp` is shorthand for **s**ecure **c**o**p**y
 
 -- *Slide End* --
 
-This `scp` command will copy the file named `notes.txt` from the home directory of the USER_NAME user on the remote 
-machine to a file named `notes.txt` in the local directory in which `scp` is being run:
+As shown this command will copy the file named `notes.txt` from the home directory of the USER_NAME user on the remote
+machine to a file named `notes.txt` in the local directory in which the command is being run:
 
 Where of course `USER_NAME` is the default account on the remote machine, and `remote_machine_address` is either its
 IP number or its domain name.
 
 -- *Slide* --
 
-## scp
+## OSX
 
 ```bash
-$ scp notes.txt USER_NAME@remote_machine_address:notes.txt
+$ scp -i <path/to/key/keyfile> notes.txt USER_NAME@remote_machine_address:notes.txt
+```
+
+## Windows
+
+```bash
+$ pscp -i <path\to\key\keyfile> notes.txt   USER_NAME@remote_machine_address:notes.txt
 ```
 
 -- *Slide End* --
 
-This scp command will copy the file named notes.txt from the current directory of the local machine to a file
+This command will copy the file named notes.txt from the current directory of the local machine to a file
 named notes.txt in the remote machine's USER_NAME home directory:
 
 -- *Slide* --
@@ -60,7 +73,7 @@ named notes.txt in the remote machine's USER_NAME home directory:
 ## Question
 
 ```bash
-$ scp USER_NAME@remote_machine_address:notes.txt notes.txt
+$ scp  -i <path/to/key/keyfile> USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
 Is the file: 
@@ -77,7 +90,7 @@ Is the file:
 ## Question
 
 ```bash
-$ scp notes.txt USER_NAME@remote_machine_address:notes.txt
+$ scp  -i <path/to/key/keyfile>  notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
 Is the file: 
@@ -95,10 +108,10 @@ Is the file:
 
 ```bash
 # From remote machine to local machine
-$ scp USER_NAME@remote_machine_address:notes.txt notes.txt
+$ scp -i <path/to/key/keyfile> USER_NAME@remote_machine_address:notes.txt notes.txt
 
 # From local machine to remote machine
-$ scp notes.txt USER_NAME@remote_machine_address:notes.txt
+$ scp -i <path/to/key/keyfile> notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
 Is the source file 
@@ -113,70 +126,17 @@ Is the source file
 Looking at the two commands you can see that the source for the transfer is on the left, and the target on the right.
 So the answer is A. The original file is on the left, the target machine on the right.
 
-You can use a wildcard denoted by the asterisk character (*) to copy multiple files in one go.
+**Demonstrate**
 
-You don't have to type out the target file name. `scp` is very flexible!
-
--- *Slide* --
-
-### `scp` examples
-
-**Copy the file "notes.txt" into a directory on the remote VM**
-
-```bash
-$ scp notes.txt USER_NAME@remote_machine_address:/some/remote/directory/
-```
-
-**Copy the files "notes1.txt" and "notes2.txt" to the users home directory on the remote VM**
-
-```bash
-$ scp notes1.txt notes2.txt  USER_NAME@remote_machine_address:~
-```
-
-**Copy the file "notes.txt" from the remote VM into your current local directory**
-
-```bash
-$ scp USER_NAME@remote_machine_address:/some/remote/directory/notes.txt .
-```
-
--- *Slide End* --
-
-As ever, `man` is your friend. But be warned!
-
--- *Slide* --
-
-### A gotcha!
-
-```bash
-scp -i key.pem temp.txt ubuntu@115.146.92.130 
-```
-### Does not work: it needs the colon!
-
-e.g.:
-
-```bash
-scp -i key.pem temp.txt ubuntu@115.146.92.130:
-```
-
--- *Slide End* --
-
-The colon is used by scp to indicate that this is a remote transfer. If you dont include it, the chances are
-that you have a file named "ubuntu@115.146.92.130" on your local machine!
-
-Ok: by way of example, I'm going to create a file locally, move it to the remote machine, then bring it back.
-
-**PS** 
-
-As you work through the following ask the audience where the file is now...
+As you work through the following ask the audience what the command does and where the file is now...
 Also ask questions, such as "how do I list files?"
 
 ```bash
 echo "hello from afar"             # just echos the message back to us.
 echo "hello from afar" > temp.txt  # directs the message to a file named temp.txt
 more temp.txt
-scp -i key.pem temp.txt ubuntu@115.146.92.130 # Does not work: needs colons!
-scp -i key.pem temp.txt ubuntu@115.146.92.130: 
-ssh -i key.pem ubuntu@115.146.92.130
+scp -i keys/key.pem temp.txt ubuntu@115.146.92.130:temp.txt
+ssh -i keys/key.pem ubuntu@115.146.92.130
     ls
     more temp.txt
     pwd                             # to show that we are not on our local machine
@@ -185,9 +145,9 @@ pwd                                 # just to prove we are back on our local mac
 ls
 rm temp.txt                         # rm = remove!
 ls                                  # file is gone!
-scp -i key.pem ubuntu@115.146.92.130:temp.txt .
-more temp.txt
-rm temp.txt
+scp -i keys/key.pem ubuntu@115.146.92.130:temp.txt newname.txt
+more newname.txt
+rm newname.txt
 ```
 
 -- *Slide* --
@@ -198,37 +158,97 @@ I want everyone to create a file named, say, `whyme.txt` and then copy it onto t
 
 ## Exercise
 
-For non existent bonus points, bring it back again with a different name!
+For non existent bonus points, can you bring it back again with a different name?
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = All done
 
 -- *Slide End* --
 
+Once the question is asked, show the following slide for people to copy.
+
 -- *Slide* --
 
-# PS: if it helps...
+### If it helps!
 
 ```bash
-echo "hello from afar"             # just echos the message back to us.
 echo "hello from afar" > temp.txt  # directs the message to a file named temp.txt
-more temp.txt
-scp -i key.pem temp.txt ubuntu@115.146.92.130: 
-ssh -i key.pem ubuntu@115.146.92.130
-    ls
+scp -i keys/key.pem temp.txt ubuntu@115.146.92.130:temp.txt
+ssh -i keys/key.pem ubuntu@115.146.92.130
     more temp.txt
     pwd                             # to show that we are not on our local machine
     exit
 pwd                                 # just to prove we are back on our local machine
-ls
 rm temp.txt                         # rm = remove!
-ls                                  # file is gone!
-scp -i key.pem ubuntu@115.146.92.130:temp.txt .
-more temp.txt
-rm temp.txt
+```
+-- *Slide End* --
+
+### `scp` examples
+
+**Demonstrate**
+
+You don't have to type out the target file name. `scp` is very flexible!
+
+From my machine to the remote instance:
+
+```bash
+$ scp  -i <path/to/key/keyfile> notes.txt USER_NAME@remote_machine_address:/some/remote/directory/
+```
+
+From the remote instance to the local directory
+
+```bash
+$ scp  -i <path/to/key/keyfile> USER_NAME@remote_machine_address:/some/remote/directory/notes.txt .
+```
+
+You can copy multiple files at once! Here the `~` means the home directory...
+
+```bash
+$ scp  -i <path/to/key/keyfile> notes1.txt notes2.txt  USER_NAME@remote_machine_address:~
+```
+
+You can use a wildcard denoted by the asterisk character (*) to copy multiple files in one go.
+
+```bash
+$ scp  -i <path/to/key/keyfile> *.txt  USER_NAME@remote_machine_address:~
+```
+
+As ever, `man` is your friend. But OSX users: be warned!
+
+-- *Slide* --
+
+### OSX: A gotcha!
+
+```bash
+scp -i keys/key.pem temp.txt ubuntu@115.146.92.130
+```
+### Does not work: it needs the colon!
+
+e.g.:
+
+```bash
+scp -i keys/key.pem temp.txt ubuntu@115.146.92.130:
 ```
 
 -- *Slide End* --
 
-Hold up a Green card when you've managed to do this.
-And a Red card if you need help.
+The colon is used by scp to indicate that this is a remote transfer. If you don't include it, the chances are
+that you have a file named "ubuntu@115.146.92.130" on your local machine!
+
+Just repeating the exercise
+
+-- *Slide* --
+
+## Exercise
+
+I want everyone to create a file named, say, `simple.txt` and then copy it onto their remote server.
+
+And bring it back again with a different name...
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = All done
+
+-- *Slide End* --
 
 ## CyberDuck
 
