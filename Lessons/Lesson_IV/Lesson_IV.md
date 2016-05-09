@@ -27,17 +27,17 @@ Of course, on Windows its provided by Putty, and hence is called `pscp`
 
 -- *Slide* --
 
-## OSX
+### OSX
 
 ```bash
 $ scp  -i <path/to/key/keyfile>  USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
-## Windows
+### Windows
 
 ```bash
 # You have to run "cmd.exe" and the enter this command in the resultant console window
-$ pscp  -i <path\to\key\keyfile>  USER_NAME@remote_machine_address:notes.txt notes.txt
+$ pscp  -i <path\to\key\puttykeyfile>  USER_NAME@remote_machine_address:notes.txt notes.txt
 ```
 
 `scp` is shorthand for **s**ecure **c**o**p**y
@@ -52,16 +52,16 @@ IP number or its domain name.
 
 -- *Slide* --
 
-## OSX
+### OSX
 
 ```bash
 $ scp -i <path/to/key/keyfile> notes.txt USER_NAME@remote_machine_address:notes.txt
 ```
 
-## Windows
+### Windows
 
 ```bash
-$ pscp -i <path\to\key\keyfile> notes.txt   USER_NAME@remote_machine_address:notes.txt
+$ pscp -i <path\to\key\puttykeyfile> notes.txt   USER_NAME@remote_machine_address:notes.txt
 ```
 
 -- *Slide End* --
@@ -71,7 +71,7 @@ named notes.txt in the remote machine's USER_NAME home directory:
 
 -- *Slide* --
 
-## Question
+### Question
 
 ```bash
 $ scp  -i <path/to/key/keyfile> USER_NAME@remote_machine_address:notes.txt notes.txt
@@ -88,7 +88,7 @@ Is the file:
 
 -- *Slide* --
 
-## Question
+### Question
 
 ```bash
 $ scp  -i <path/to/key/keyfile>  notes.txt USER_NAME@remote_machine_address:notes.txt
@@ -105,7 +105,7 @@ Is the file:
 
 -- *Slide* --
 
-## Question
+### Question
 
 ```bash
 # From remote machine to local machine
@@ -249,7 +249,7 @@ Just repeating the exercise
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 I want everyone to create a file named, say, `simple.txt` and then copy it onto their remote server.
 
@@ -299,19 +299,21 @@ You should now be able to drag and drop files between the two machines!
 
 -- *Slide* --
 
-## Exercise
+### Exercise
 
 See if you can configure CyberDuck and then drag `whyme.txt` (the file you created earlier) back to your
-local machine. 
+local machine.
+
+**NB** Windows users: use the original key you downloaded, and not your putty imported one!
 
 ### More imaginary bonus points
 
-See if you can edit it in place!
+See if you can edit it in place on the remote machine!
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = All done
 
 -- *Slide End* --
-
-Hold up a Green card when you've managed to do this.
-And a Red card if you need help.
 
 In this lesson we've learnt two different ways of moving files between our remote server and our local machine.
 
