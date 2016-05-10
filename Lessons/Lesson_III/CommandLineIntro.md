@@ -1,4 +1,4 @@
-# An introduction to the command line  (? min)
+# An introduction to the command line  (20 min)
 
 -- *Slide* --
 
@@ -56,6 +56,9 @@ pwd
 ```
 
 `pwd` is shorthand for **p**rint **w**orking **d**irectory
+
+* <span style="color:red">&#9632;</span> = Help!
+* <span style="color:green">&#9632;</span> = I'm done
 
 -- *Slide End* --
 

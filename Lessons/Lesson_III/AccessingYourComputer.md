@@ -1,4 +1,4 @@
-# Accessing your new computer (? min)
+# Accessing your new computer (20 min)
 
 -- *Slide* --
 
