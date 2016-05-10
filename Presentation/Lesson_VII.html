@@ -69,16 +69,27 @@ She decided to put her new files there. Has Anna made a mistake?
 
 ### A command line torture test
 
-Do as I have done, then:
+Do as I have done.
+
+```bash
+sudo chown ubuntu /mnt
+echo "This is file one" > /mnt/temp.txt
+echo "This is file two" > home.txt
+```
 
 When finished, make a snapshot of this machine.
+
+* <span style="color:red">&#9632;</span> = Help!
+* <span style="color:green">&#9632;</span> = I've made my snapshot.
 
 </script></section>
 <section data-markdown><script type="text/template">
 
-## A command line torture test, continued
+## The torture test, continued
 
-Launch a new instance of the same flavor as the last based on your new snapshot.
+Terminate your running instance.
+
+Launch a new instance with the same flavor using your new snapshot.
 
 `ssh` into the new instance and run the following commands:
 
@@ -98,6 +109,9 @@ What's missing?
 On the images tab of the dashboard, click the drop down button next to the "Launch" button. Select the 'Edit' option.
 
 In the resultant dialogue give the image a description and check the public flag. Then save it.
+
+* <span style="color:red">&#9632;</span> = Help!
+* <span style="color:green">&#9632;</span> = I'm done.
 
 </script></section>
 <section data-markdown><script type="text/template">
@@ -131,16 +145,6 @@ Is having other peoples keys on your instance a potential problem?
 </script></section>
 <section data-markdown><script type="text/template">
 
-### PS: The keys live in the authorized_keys file
-
-```bash
-more ~/.ssh/authorized_keys
-```
-### *For each user!*
-
-</script></section>
-<section data-markdown><script type="text/template">
-
 ### Question
 
 Beware the size ratchet!
@@ -148,7 +152,8 @@ Beware the size ratchet!
 > Anna made a snapshot of a 10Gig machine: and the snapshot is also 10Gig in size.
 > She is now trying to launch it as a 5Gig flavor.
 
-What happens?
+* <span style="color:red">&#9632;</span> = It will end in tears
+* <span style="color:green">&#9632;</span> = It will all just work
 
 </script></section>
 <section data-markdown><script type="text/template">
@@ -165,6 +170,9 @@ You can't cram a bigger snapshot down into a smaller instance.
 ### Exercise
 
 Make your shared snapshot private again!
+
+* <span style="color:red">&#9632;</span> = Help!
+* <span style="color:green">&#9632;</span> = I'm done.
 
 </script></section>
 <section data-markdown><script type="text/template">

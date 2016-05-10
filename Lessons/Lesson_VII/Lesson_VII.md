@@ -70,9 +70,18 @@ more home.txt
 
 ### A command line torture test
 
-Do as I have done, then:
+Do as I have done.
+
+```bash
+sudo chown ubuntu /mnt
+echo "This is file one" > /mnt/temp.txt
+echo "This is file two" > home.txt
+```
 
 When finished, make a snapshot of this machine.
+
+* <span style="color:red">&#9632;</span> = Help!
+* <span style="color:green">&#9632;</span> = I've made my snapshot.
 
 -- *Slide End* --
 
@@ -84,9 +93,11 @@ When it is complete then terminate the original instance that you have just snap
 
 -- *Slide* --
 
-## A command line torture test, continued
+## The torture test, continued
 
-Launch a new instance of the same flavor as the last based on your new snapshot.
+Terminate your running instance.
+
+Launch a new instance with the same flavor using your new snapshot.
 
 `ssh` into the new instance and run the following commands:
 
@@ -100,7 +111,7 @@ What's missing?
 
 -- *Slide End* --
 
-All being well, you should get a "No such file" error when you try to look at file1.txt.
+All being well, you should get a "No such file" error when you try to look at `temp.txt`.
 
 Hold up a Red sticky note if you need help,
 Otherwise a green one when you are done.
@@ -116,12 +127,12 @@ ephemeral drive is not saved.
 You can get and run some fairly grunty machines on the Research Cloud cloud. But snapshots will only save your small 
 primary drive. If you use the extra drive space you will not be able to back it up by means of snapshots!
 
-**Q** So to repeat: has Anna made a mistake?
+**Question** So to repeat: has Anna made a mistake?
 
 Hold up a Red sticky note if you think she has.
 Otherwise a green one if you think all is well.
 
-**A**
+**Answer**
 
 I'm hoping to see a sea of Red...
 
@@ -138,13 +149,13 @@ On the images tab of the dashboard, click the drop down button next to the "Laun
 
 In the resultant dialogue give the image a description and check the public flag. Then save it.
 
+* <span style="color:red">&#9632;</span> = Help!
+* <span style="color:green">&#9632;</span> = I'm done.
+
 -- *Slide End* --
 
 Once it's saved go to the list of public images and see if you can find it in there. Yes, that's the whole world who
 can now start an instance based on your image!
-
-Hold up a Red sticky note if you need help,
-and a Green one once you are done.
 
 -- *Slide* --
 
@@ -161,7 +172,7 @@ Will she be able to ssh into her colleagues instance once he launches it?
 
 **Answer B**
 
-Yes, she can. Her key is on the image, so she can access it.
+Yes, she can. Her key is on the image under the ubuntu user, so she can access it.
 
 -- *Slide* --
 
@@ -192,17 +203,6 @@ other users for you.
 
 -- *Slide* --
 
-### PS: The keys live in the authorized_keys file
-
-```bash
-more ~/.ssh/authorized_keys
-```
-### *For each user!*
-
--- *Slide End* --
-
--- *Slide* --
-
 ### Question
 
 Beware the size ratchet!
@@ -210,12 +210,10 @@ Beware the size ratchet!
 > Anna made a snapshot of a 10Gig machine: and the snapshot is also 10Gig in size.
 > She is now trying to launch it as a 5Gig flavor.
 
-What happens?
+* <span style="color:red">&#9632;</span> = It will end in tears
+* <span style="color:green">&#9632;</span> = It will all just work
 
 -- *Slide End* --
-
-Hold up a Red sticky note if you think it's going to end in tears.
-And a Green one if you think that it will launch.
 
 -- *Slide* --
 
@@ -244,11 +242,10 @@ example to put large data sets on, you will not backup that data with a snapshot
 
 Make your shared snapshot private again!
 
+* <span style="color:red">&#9632;</span> = Help!
+* <span style="color:green">&#9632;</span> = I'm done.
+
 -- *Slide End* --
-
-Hold up a Red sticky note if you run into problems.
-
-And a Green one once you are done.
 
 -- *Slide* --
 
