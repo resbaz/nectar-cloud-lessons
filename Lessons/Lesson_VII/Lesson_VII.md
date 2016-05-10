@@ -263,7 +263,7 @@ If so, terminate them.
 
 -- *Slide* --
 
-### Why did we terminate our computers?
+### Why did we terminate our running computers?
 
 1. To conserve our trial tenancy
 1. To conserve our trial tenancy
@@ -274,5 +274,3 @@ If so, terminate them.
 -- *Slide End* --
 
 **Answer:** The E's have it!
-
--- *Slide* --
