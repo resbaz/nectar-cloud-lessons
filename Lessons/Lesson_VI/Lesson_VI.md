@@ -45,7 +45,7 @@ If all has gone well, the dashboard will take you to this tab automatically.
 
 ### Exercise
 
-In home directory, run the script `loop.sh` by:
+In home directory of your ssh session, run the script `loop.sh` by:
 
 ``` bash
 ./loop.sh
@@ -108,12 +108,10 @@ transfers that are happening between the machines drive and processor will be st
 afterwards. So if its a file being read, all well and good. But what about files that are being written? Well, they 
 might be caught mid write: which means that they won't be correctly captured.
 
-**Q**  
-
-Hold up a Red sticky note if you agree with Ben, 
+**Question**  Hold up a Red sticky note if you agree with Ben,
 and a Green one if you think that, snapshots are good to go.
 
-**A** The reds have it. Sadly, Ben is right. Snapshots, although seductively easy to do, are prone to occasional 
+**Answer** The reds have it. Sadly, Ben is right. Snapshots, although seductively easy to do, are prone to occasional
 failure due to writes not being captured. The interesting thing about this is that you might never notice that your 
 data has been corrupted in this way.
 
@@ -123,10 +121,10 @@ data has been corrupted in this way.
 
 Delete your older, possibly unreliable, snapshot.
 
--- *Slide End* --
+* <span style="color:red">&#9632;</span> = Help!
+* <span style="color:green">&#9632;</span> = It's gone...
 
-Hold up a Red sticky note if you need help,
-Otherwise a green one when you are done.
+-- *Slide End* --
 
 > Alarmed by what Ben has told her, Anna does her research. And finds that in order to take good snapshots, she has
 > to make sure that running programs have all written their contents to disk before the snapshot is made. There are
@@ -144,13 +142,13 @@ Power down your vm *by shutting it off!*
  
 Then when it is in the shutoff state, make a snapshot of it.
 
+* <span style="color:red">&#9632;</span> = Help!
+* <span style="color:green">&#9632;</span> = I've made my snapshot.
+
 -- *Slide End* --
 
 Power down your instance by shutting it off, then make a snapshot of it. Remember to wait till your instance is in the
 shut off state before you try to make your snapshot.
-
-Hold up a Red sticky note if you need help,
-Otherwise a green one when you are done.
 
 -- *Slide* --
 
@@ -181,12 +179,17 @@ scheduled event.
 
 -- *Slide* --
 
-### Group Exercise
+### Exercise
 
 Create a checklist for creating a snapshot of a running machine. 
+
 Don't forget to notify your users!
 
+* <span style="color:green">&#9632;</span> = I'm done
+
 -- *Slide End* --
+
+Ask one or two learners to read out their checklists, and for others to shout out if they've left anything out...
 
 ## Restore
 
@@ -207,12 +210,11 @@ Once you are done make sure that your site is back up, and that you can ssh into
 
 Confirm that `today.txt` has your edits in it...
 
+* <span style="color:red">&#9632;</span> = Help!
+* <span style="color:green">&#9632;</span> = Yep: the edits are there.
 -- *Slide End* --
 
 You can use the checklist from Lesson II as a memory jogger.
-
-Hold up a Red sticky note if you need help,
-Otherwise a green one when you are done.
 
 ### Vertical Scaling
 
@@ -234,7 +236,7 @@ load. What can Anna do to solve this problem?
 
 -- *Slide End* --
 
-**Answe B** Upgrade to a more powerful machine
+**Answer B** Upgrade to a more powerful machine
 
 Remember the two nameless researchers whom I told you about at the start of these lessons, the two who spent over 
 $20000 of their grant money on buying and upgrading their machines to complete their research? Well, if the 
@@ -278,11 +280,3 @@ What can you do to remedy this situation?
 -- *Slide End* --
 
 **Answer E** Go to the allocation tab and complete an allocation request
-
--- *Slide* --
-
-### Question
-
-A volunteer please: to describe an image, an instance, and the difference between the two...
-
--- *Slide End* --
