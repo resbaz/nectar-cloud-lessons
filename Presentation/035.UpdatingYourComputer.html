@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>NeCTAR Cloud Lessons</title>
+
+    <meta name="description" content="Slides for an introductory course on the NeCTAR cloud.">
+    <meta name="author" content="Martin Paulo">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="revealjs/css/reveal.css">
+    <link rel="stylesheet" href="revealjs/css/theme/solarized.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="revealjs/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+<!-- to give this presentation list items numbered A, B, C etc.. for use in questions -->
+<style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
+<!-- Slides go here -->
+<section data-markdown><script type="text/template">
+
+## Updating your new computer
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Execute
+
+```bash
+apt-get update
+```
+
+* <span style="color:red">&#9632;</span> = I have errors!
+* <span style="color:green">&#9632;</span> = I'm done!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Help!
+
+Again, something has gone wrong! You should be met with the message:
+
+```bash
+E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+E: Unable to lock directory /var/lib/apt/lists/
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Exercise
+
+The `sudo` command (**s**uper **u**ser **do**) comes to your help. It allows the ubuntu user to run commands with
+the security privileges of the super user.
+
+Try to execute the command again, this time with `sudo`:
+
+```bash
+sudo apt-get update
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### xkcd 149
+
+<a href="https://xkcd.com/149/">
+<img src="http://imgs.xkcd.com/comics/sandwich.png" title="The power of sudo" alt="Sandwich">
+</a>
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Or:
+
+System administrator to pharmacist:
+
+*"Ephedrine, please."*
+
+Pharmacist: *"I'm afraid I can't sell you that."*
+
+*"Sudo ephedrine, please."*
+
+Pharmacist: "Certainly sir!"
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Exercise
+
+```bash
+sudo apt-get upgrade
+```
+
+If your system has software on it that needs an upgrade you will be met by a request to perform the upgrade. Something
+like:
+
+```bash
+After this operation, 4,096 B of additional disk space will be used.
+Do you want to continue? [Y/n]
+```
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Install fortune
+
+```bash
+sudo apt-get install fortune-mod
+```
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Run fortune
+
+```bash
+fortune
+```
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Exercise
+
+Type `exit`
+
+You should see the following:
+
+```bash
+logout
+Connection to <some_ip_number> closed
+```
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Question
+
+You remove ssh from a security group shared by many servers.
+Will you be able to ssh into any of the servers?
+
+1. Yes
+1. No
+1. Only if there is another security group applied to the server
+   that has ssh enabled.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Remember this?
+
+```bash
+The authenticity of host '144.6.225.224 (144.6.225.224)' can't be established.
+RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
+Are you sure you want to continue connecting (yes/no)?
+```
+
+Um: Windows users: that's the: "Do you trust...." dialogue
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### There is possibly a man in the middle!
+
+```bash
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+20:db:ea:9c:66:9a:ee:07:e6:1b:d8:a4:9d:d0:99:bc.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /root/.ssh/known_hosts:87
+  remove with: ssh-keygen -f "/root/.ssh/known_hosts" -R mdcs-256-w14
+ECDSA host key for mdcs-256-w14 has changed and you have requested strict checking.
+Host key verification failed.
+```
+
+Um: Windows users: that's the: "Do you trust...." dialogue
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### The fix:
+
+OSX:
+
+```bash
+ssh-keygen -R <hostname>
+```
+
+Where `<hostname>` can also be the IP number of your affected machine.
+
+Um: Windows users: Just click the "Yes I Trust This Computer" button.
+
+</script></section>
+    </div>
+
+</div>
+
+<script src="revealjs/lib/js/head.min.js"></script>
+<script src="revealjs/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: 'c/t',
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'revealjs/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'revealjs/plugin/zoom-js/zoom.js', async: true},
+            {src: 'revealjs/plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>

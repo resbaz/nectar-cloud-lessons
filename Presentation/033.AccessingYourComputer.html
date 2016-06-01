@@ -44,20 +44,84 @@
 <!-- to give this presentation list items numbered A, B, C etc.. for use in questions -->
 <style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
 <!-- Slides go here -->
-<ul>
-<li><a href="010.Openstack.mapped.by.the.dashboard.html#/">010.Openstack.mapped.by.the.dashboard</a></li>
-<li><a href="020.Your.free.computer.html#/">020.Your.free.computer</a></li>
-<li><a href="033.AccessingYourComputer.html#/">033.AccessingYourComputer</a></li>
-<li><a href="034.CommandLineIntro.html#/">034.CommandLineIntro</a></li>
-<li><a href="035.UpdatingYourComputer.html#/">035.UpdatingYourComputer</a></li>
-<li><a href="040.moving.data.into.and.from.your.computer.html#/">040.moving.data.into.and.from.your.computer</a></li>
-<li><a href="050.we.can.still.run.graphics.XFORWARD.html#/">050.we.can.still.run.graphics.XFORWARD</a></li>
-<li><a href="051.we.can.still.run.graphics.x2go.html#/">051.we.can.still.run.graphics.x2go</a></li>
-<li><a href="060.snapshots.and.backups.html#/">060.snapshots.and.backups</a></li>
-<li><a href="070.transient.storage.and.sharing.html#/">070.transient.storage.and.sharing</a></li>
-<li><a href="080.the.object.store.html#/">080.the.object.store</a></li>
-<li><a href="090.securing.and.maintaining.html#/">090.securing.and.maintaining</a></li>
-</ul>
+<section data-markdown><script type="text/template">
+
+## Accessing your new computer
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Anna, run this on your machine, ASAP!
+
+```bash
+apt-get update && apt-get -y upgrade
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+**Anna's free PC on the cloud has no keyboard, monitor or mouse. Do she have any hope of installing or removing
+software on it?**
+
+* <span style="color:red">&#9632;</span> = No, doom and gloom!
+* <span style="color:green">&#9632;</span> = Somehow, somewhere, there is hope!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Exercise
+
+Gentle people, start your servers! 
+
+PS: *Reuse* your security group and key... 
+
+* <span style="color:red">&#9632;</span> = I'd quite like some help, please!
+* <span style="color:green">&#9632;</span> = I'm good to go!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### ssh
+
+The program/protocol we are going to connect to the server with is: 
+
+```bash
+ssh
+```
+
+`ssh` stands for **s**ecure **sh**ell. 
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### The problem with passwords
+
+* One more thing to remember (and forget)
+* Need to be ever more complex
+* Easy to crack (especially social engineering)
+* Prone to being shared
+* Cascade to other devices
+ 
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Question
+
+Those running Microsoft Windows...
+
+Yes, You!
+
+Did you download and install PuTTY?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Walk through the following steps
+
+* Apple: [http://tinyurl.com/apple-ssh-md](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/AppleSsh.md)
+* Windows: [http://tinyurl.com/windows-ssh-md](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/WindowsSsh.md)
+
+</script></section>
     </div>
 
 </div>

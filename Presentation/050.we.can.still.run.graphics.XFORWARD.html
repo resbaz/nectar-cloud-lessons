@@ -44,20 +44,84 @@
 <!-- to give this presentation list items numbered A, B, C etc.. for use in questions -->
 <style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
 <!-- Slides go here -->
-<ul>
-<li><a href="010.Openstack.mapped.by.the.dashboard.html#/">010.Openstack.mapped.by.the.dashboard</a></li>
-<li><a href="020.Your.free.computer.html#/">020.Your.free.computer</a></li>
-<li><a href="033.AccessingYourComputer.html#/">033.AccessingYourComputer</a></li>
-<li><a href="034.CommandLineIntro.html#/">034.CommandLineIntro</a></li>
-<li><a href="035.UpdatingYourComputer.html#/">035.UpdatingYourComputer</a></li>
-<li><a href="040.moving.data.into.and.from.your.computer.html#/">040.moving.data.into.and.from.your.computer</a></li>
-<li><a href="050.we.can.still.run.graphics.XFORWARD.html#/">050.we.can.still.run.graphics.XFORWARD</a></li>
-<li><a href="051.we.can.still.run.graphics.x2go.html#/">051.we.can.still.run.graphics.x2go</a></li>
-<li><a href="060.snapshots.and.backups.html#/">060.snapshots.and.backups</a></li>
-<li><a href="070.transient.storage.and.sharing.html#/">070.transient.storage.and.sharing</a></li>
-<li><a href="080.the.object.store.html#/">080.the.object.store</a></li>
-<li><a href="090.securing.and.maintaining.html#/">090.securing.and.maintaining</a></li>
-</ul>
+<section data-markdown><script type="text/template">
+
+## We can still run our graphical applications!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Walk through the following steps
+
+* Apple: [http://tinyurl.com/apple-x11-md](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/AppleX11.md)
+* Windows: [http://tinyurl.com/windows-x11-md](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/WindowsX11.md)
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Before we get going with Firefox
+
+In your newly opened connection use the package manger to install some apps...
+
+```bash
+sudo apt-get install xauth
+sudo apt-get install x11-apps
+```
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Test it all
+
+Run a calculator remotely!
+
+```bash
+xcalc &
+```
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+# Install and run Firefox
+
+```bash
+sudo apt-get install firefox
+firefox &
+```
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm browsing the Internet.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Install gedit and edit today.txt
+
+```bash
+sudo apt-get install gedit
+gedit today.txt 
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+```bash
+more today.txt
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+Remove gedit from your systems, and exit your ssh sessions.
+
+</script></section>
     </div>
 
 </div>

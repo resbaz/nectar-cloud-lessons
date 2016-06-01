@@ -44,20 +44,121 @@
 <!-- to give this presentation list items numbered A, B, C etc.. for use in questions -->
 <style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
 <!-- Slides go here -->
-<ul>
-<li><a href="010.Openstack.mapped.by.the.dashboard.html#/">010.Openstack.mapped.by.the.dashboard</a></li>
-<li><a href="020.Your.free.computer.html#/">020.Your.free.computer</a></li>
-<li><a href="033.AccessingYourComputer.html#/">033.AccessingYourComputer</a></li>
-<li><a href="034.CommandLineIntro.html#/">034.CommandLineIntro</a></li>
-<li><a href="035.UpdatingYourComputer.html#/">035.UpdatingYourComputer</a></li>
-<li><a href="040.moving.data.into.and.from.your.computer.html#/">040.moving.data.into.and.from.your.computer</a></li>
-<li><a href="050.we.can.still.run.graphics.XFORWARD.html#/">050.we.can.still.run.graphics.XFORWARD</a></li>
-<li><a href="051.we.can.still.run.graphics.x2go.html#/">051.we.can.still.run.graphics.x2go</a></li>
-<li><a href="060.snapshots.and.backups.html#/">060.snapshots.and.backups</a></li>
-<li><a href="070.transient.storage.and.sharing.html#/">070.transient.storage.and.sharing</a></li>
-<li><a href="080.the.object.store.html#/">080.the.object.store</a></li>
-<li><a href="090.securing.and.maintaining.html#/">090.securing.and.maintaining</a></li>
-</ul>
+<section data-markdown><script type="text/template">
+
+## An introduction to the command line
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### In your ssh session
+
+Try the following command:
+
+```bash
+pwd
+```
+
+`pwd` is shorthand for **p**rint **w**orking **d**irectory
+
+* <span style="color:red">&#9632;</span> = Help!
+* <span style="color:green">&#9632;</span> = I'm done
+
+</script></section>
+<section data-markdown><script type="text/template">
+### The home directory
+
+```bash
+/home/<<username>>
+```
+</script></section>
+<section data-markdown><script type="text/template">
+### The home directory
+
+When you typed in `pwd` is this what you saw?
+
+```bash
+/home/ubuntu
+```
+
+* <span style="color:red">&#9632;</span> = No!
+* <span style="color:green">&#9632;</span> = Yes
+
+</script></section>
+<section data-markdown><script type="text/template">
+### Comments
+
+In the terminal everything after a hash mark is ignored. We can use this to comment our examples:
+
+```bash
+cmd     # this is a comment that is ignored
+```
+</script></section>
+<section data-markdown><script type="text/template">
+### Options
+
+Commands often have options
+
+ ```bash
+ <command> -<option[s]>
+ ```
+</script></section>
+<section data-markdown><script type="text/template">
+
+## A Story!
+
+* [http://tinyurl.com/resOsStory](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Story.md)
+
+* <span style="color:green">&#9632;</span> = I'm finished reading it.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Exercise
+
+Agent 00? - we are going to relive your story!
+
+There's a command line cheat sheet at: [http://tinyurl.com/command-line-cheat-sheet](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/CommandLineCheatSheet.md)
+
+Use it to step the through the following tasks: [http://tinyurl.com/play-task](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Task.md)
+
+* <span style="color:red">&#9632;</span> = My undercover career needs some help!
+* <span style="color:green">&#9632;</span> = I'm done!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+##  Why do files have extensions?
+
+1. To help humans and computers know what's in the file
+1. Because they aren't directories
+1. Files don't have extensions. How dare you!
+1. ANSI standard C12.22 mandates it.
+1. All of the above...
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### What's command are you going to enter to save the world?
+
+1. `CAFEBABE`
+1. `BADBEAD`
+1. `DEADCAFE`
+1. `CAFEBEEF`
+1. `DEADBEEF`
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### What's a disadvantage of terminal commands?
+
+* If you know what you’re doing it’s faster to type than to point with a mouse
+* They keep a history of your commands
+* You can easily replay commands
+* They are simple to automate
+* They are verbose!
+
+</script></section>
     </div>
 
 </div>
