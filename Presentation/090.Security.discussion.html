@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>NeCTAR Cloud Lessons</title>
+
+    <meta name="description" content="Slides for an introductory course on the NeCTAR cloud.">
+    <meta name="author" content="Martin Paulo">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="revealjs/css/reveal.css">
+    <link rel="stylesheet" href="revealjs/css/theme/solarized.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="revealjs/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+<!-- to give this presentation list items numbered A, B, C etc.. for use in questions -->
+<style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
+<!-- Slides go here -->
+<section data-markdown><script type="text/template">
+
+## A Security Discussion
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Shared Responsibility Model
+
+NeCTAR look after the cloud
+
+**You** look after the stuff you put in that cloud
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Be paranoid!
+
+>  "Just because you're paranoid, don't mean they're not after you" ― [Nirvana](http://www.azlyrics.com/lyrics/nirvana/territorialpissings.html)
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+Reinstall and run firefox on your server.
+
+Then in the browser go to:
+
+Shields up: https://www.grc.com/shieldsup
+
+Click on the 'Proceed' button, then select 'All Service Ports' and stand back.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Be prepared!
+
+A good scout always:
+
+* Knows what's the worst that can happen
+* Takes steps to contain the fallout
+* Knows what do in an emergency
+* Makes sure they have a first aid kit!
+ 
+</script></section>
+<section data-markdown><script type="text/template">
+
+##Exercise
+
+* Remove ssh from the security group on your VM
+* Try to ssh in – and fail!
+* Create a special ssh only security group
+* Add it to your running VM
+* Try to ssh in: success?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+# A recommendation
+ 
+Have a dedicated security group for ssh. 
+
+Only enable it for a VM if you want to ssh into the machine. 
+
+**AND THEN REMOVE IT ONCE YOU ARE DONE**
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## NeCTAR's security guidelines
+
+NeCTAR has a set of security guidelines that can be found at:
+ 
+* [http://tinyurl.com/nectar-security-guidelines](https://support.nectar.org.au/support/solutions/articles/6000070469-introduction)
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+# Avoid mail servers
+
+* Use a service such as Mandrill (http://mandrill.com/)
+
+<small>**NB** This is not a recommendation. We've never used it, and have no idea as to how good it actually is.
+We are just holding it up as an example of the type of service you can use. Is this enough small print?</small>
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+Enable automatic updates:
+
+``` bash
+sudo dpkg-reconfigure unattended-upgrades
+```
+
+And answer yes.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+Using the dashboard, reboot the running VM.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+Can you find the security advisories for the Ubuntu operating system?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+On http://www.ubuntu.com/usn/ can you find a kernel advisory, and click through to it?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+Follow the link to the instructions and apply the advisory.
+
+At the end, reboot your instance from inside the ssh shell by issuing the command:
+
+```bash
+sudo reboot
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## upgrade vs dist-upgrade
+
+```bash
+apt-get upgrade
+apt-get dist-upgrade
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+# Homework...
+
+[http://tinyurl.com/ResBaz-Links](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Links.md)
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+#Remember:
+
+You can think of the Dashboard we've just explored as the drivers seat for an entire Data Centre: <br />
+The Research Cloud. <br />
+BUT it is a car you can crash! <br />
+And we *want* you to crash it and restart it regularly...<br />
+Don't be afraid: **\#failfast**!
+
+## Thank you
+
+</script></section>
+    </div>
+
+</div>
+
+<script src="revealjs/lib/js/head.min.js"></script>
+<script src="revealjs/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: 'c/t',
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'revealjs/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'revealjs/plugin/zoom-js/zoom.js', async: true},
+            {src: 'revealjs/plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>

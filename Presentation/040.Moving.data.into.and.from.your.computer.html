@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>NeCTAR Cloud Lessons</title>
+
+    <meta name="description" content="Slides for an introductory course on the NeCTAR cloud.">
+    <meta name="author" content="Martin Paulo">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="revealjs/css/reveal.css">
+    <link rel="stylesheet" href="revealjs/css/theme/solarized.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="revealjs/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+<!-- to give this presentation list items numbered A, B, C etc.. for use in questions -->
+<style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
+<!-- Slides go here -->
+<section data-markdown><script type="text/template">
+
+## Moving data to and from your new computer
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### OSX
+
+```bash
+$ scp  -i <key>  USER_NAME@remote_machine_address:notes.txt notes.txt
+```
+
+### Windows
+
+```bash
+# You have to run "cmd.exe"
+# then enter this command in the resultant console window
+$ pscp  -i <pkey>  USER_NAME@remote_machine_address:notes.txt notes.txt
+```
+
+`scp` is shorthand for **s**ecure **c**o**p**y
+
+`pscp` is **p**utty **s**ecure **c**o**p**y
+</script></section>
+<section data-markdown><script type="text/template">
+
+### OSX
+
+```bash
+$ scp -i <key> notes.txt USER_NAME@remote_machine_address:notes.txt
+```
+
+### Windows
+
+```bash
+$ pscp -i <pkey> notes.txt   USER_NAME@remote_machine_address:notes.txt
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Question
+
+```bash
+$ scp  -i <key> USER_NAME@remote_machine_address:notes.txt notes.txt
+```
+
+Is the file: 
+
+1. Being copied from the remote machine to the local machine
+1. Being copied from the local machine to the remote machine
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Question
+
+```bash
+$ scp  -i <pkey>  notes.txt USER_NAME@remote_machine_address:notes.txt
+```
+
+Is the file: 
+
+1. Being copied from the remote machine to the local machine
+1. Being copied from the local machine to the remote machine
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Question
+
+```bash
+# From remote machine to local machine
+$ scp -i <key> USER_NAME@remote_machine_address:notes.txt notes.txt
+
+# From local machine to remote machine
+$ scp -i <key> notes.txt USER_NAME@remote_machine_address:notes.txt
+```
+
+Is the source file 
+
+1. Named on the left
+1. Named on the right
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Windows Users
+
+Can you find and run `cmd.ext`:
+
+* <span style="color:white;background:red">R</span> = Help me!
+* <span style="color:white;background:green">G</span> = All done
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Exercise
+
+I want everyone to create a file named, say, `whyme.txt` and then copy it onto their remote server.
+
+For non existent bonus points, can you bring it back again with a different name?
+
+* <span style="color:white;background:red">R</span> = Help me!
+* <span style="color:white;background:green">G</span> = All done
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### If it helps!
+
+```bash
+echo "hello from afar" > temp.txt  # echo to a file named temp.txt
+scp -i keys/key.pem temp.txt ubuntu@115.146.92.130:temp.txt
+ssh -i keys/key.pem ubuntu@115.146.92.130
+    more temp.txt
+    pwd                             # we are not on our local machine
+    exit
+pwd                                 # we are back on our local machine
+rm temp.txt                         # rm = remove!
+```
+</script></section>
+<section data-markdown><script type="text/template">
+
+### OSX: A gotcha!
+
+```bash
+scp -i keys/key.pem temp.txt ubuntu@115.146.92.130
+```
+### Does not work: it needs the colon!
+
+e.g.:
+
+```bash
+scp -i keys/key.pem temp.txt ubuntu@115.146.92.130:
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Exercise
+
+I want everyone to create a file named, say, `simple.txt` and then copy it onto their remote server.
+
+And bring it back again with a different name...
+
+* <span style="color:white;background:red">R</span> = Help me!
+* <span style="color:white;background:green">G</span> = All done
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Exercise
+
+See if you can configure CyberDuck and then drag `whyme.txt` (the file you created earlier) back to your
+local machine.
+
+**NB** Windows users: use the original key you downloaded, and not your putty imported one!
+
+### More imaginary bonus points
+
+See if you can edit it in place on the remote machine!
+
+* <span style="color:white;background:red">R</span> = Help me!
+* <span style="color:white;background:green">G</span> = All done
+
+</script></section>
+    </div>
+
+</div>
+
+<script src="revealjs/lib/js/head.min.js"></script>
+<script src="revealjs/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: 'c/t',
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'revealjs/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'revealjs/plugin/zoom-js/zoom.js', async: true},
+            {src: 'revealjs/plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>

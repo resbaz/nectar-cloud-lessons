@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>NeCTAR Cloud Lessons</title>
+
+    <meta name="description" content="Slides for an introductory course on the NeCTAR cloud.">
+    <meta name="author" content="Martin Paulo">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="revealjs/css/reveal.css">
+    <link rel="stylesheet" href="revealjs/css/theme/solarized.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="revealjs/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+<!-- to give this presentation list items numbered A, B, C etc.. for use in questions -->
+<style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
+<!-- Slides go here -->
+<section data-markdown><script type="text/template">
+
+## Transient storage (don’t rely on it!) and sharing
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+Anna needs some extra disk space over and above the 10G image size. While she's ssh'd into her larger instance she
+types 
+
+```bash
+df -h
+```
+
+(**d**isplay **f**ile usage)
+
+And sees that she has free space on `/mnt`
+
+She decided to put her new files there. Has Anna made a mistake?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### A command line torture test
+
+Do as I have done.
+
+```bash
+sudo chown ubuntu /mnt
+echo "This is file one" > /mnt/temp.txt
+echo "This is file two" > home.txt
+```
+
+When finished, make a snapshot of this machine.
+
+* <span style="color:white;background:red">R</span> = Help!
+* <span style="color:white;background:green">G</span> = I've made my snapshot.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## The torture test, continued
+
+Terminate your running instance.
+
+Launch a new instance with the same flavor using your new snapshot.
+
+`ssh` into the new instance and run the following commands:
+
+```bash
+sudo chown ubuntu /mnt
+more home.txt
+more /mnt/temp.txt
+```
+
+What's missing?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Exercise
+
+On the images tab of the dashboard, click the drop down button next to the "Launch" button. Select the 'Edit' option.
+
+In the resultant dialogue give the image a description and check the public flag. Then save it.
+
+* <span style="color:white;background:red">R</span> = Help!
+* <span style="color:white;background:green">G</span> = I'm done.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Question
+
+Anna's snapshot was made with her public key still on the image.
+
+Will she be able to ssh into her colleagues instance once he launches it?
+
+1. No
+1. Yes
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Exercise
+
+Get someone else to launch your shared snapshot, then ssh into it. Do the same for them.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Question
+
+Is having other peoples keys on your instance a potential problem?
+
+1. Yes
+1. Yes
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Question
+
+Beware the size ratchet!
+
+> Anna made a snapshot of a 10Gig machine: and the snapshot is also 10Gig in size.
+> She is now trying to launch it as a 5Gig flavor.
+
+* <span style="color:white;background:red">R</span> = It will end in tears
+* <span style="color:white;background:green">G</span> = It will all just work
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### The tears may have it:
+
+> Anna will get the error: "Error: Flavor's disk is too small for requested image..."
+
+You can't cram a bigger snapshot down into a smaller instance.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Exercise
+
+Make your shared snapshot private again!
+
+* <span style="color:white;background:red">R</span> = Help!
+* <span style="color:white;background:green">G</span> = I'm done.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Terminate your free computer!
+
+Check to see if you have any computers running (Compute-Instances).
+
+If so, terminate them.
+
+* <span style="color:white;background:red">R</span> = Help me!
+* <span style="color:white;background:green">G</span> = I'm ready to move on...
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Why did we terminate our running computers?
+
+1. To conserve our trial tenancy
+1. To conserve our trial tenancy
+1. To conserve our trial tenancy
+1. To conserve our trial tenancy
+1. All of the above
+
+</script></section>
+    </div>
+
+</div>
+
+<script src="revealjs/lib/js/head.min.js"></script>
+<script src="revealjs/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: 'c/t',
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'revealjs/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'revealjs/plugin/zoom-js/zoom.js', async: true},
+            {src: 'revealjs/plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>
