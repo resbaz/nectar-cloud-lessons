@@ -12,7 +12,7 @@ These are the steps you need to have taken before arriving at the course.
        1. [ ] **request** an extension for this course. To request an extension, go to the [Allocations tab](https://dashboard.rc.nectar.org.au/allocation/) of the dashboard and fill in a New Allocation request. Explain that you will be doing this course and give the date on which you will be doing the course.
        1  [ ] **request** to be temporarily added to a specific allocation created for this training.
 1. [ ] You must bring a laptop with you that has a web browser and can support an ssh session.
-       1. [ ] Install the [x2go client](http://wiki.x2go.org/doku.php/download:start) for your operating system.
+       1. [ ] Install the [x2go client](http://tinyurl.com/x2go-client) for your operating system.
        1. [ ] If you are running MS windows, install [PuTTY and Xming](Windows.md) (the link gives instructions).
        1. [ ] If you are running a Mac, install [X11](OSX.md) (the link gives instructions).
 1. [ ] If not running Linux, install the correct [CyberDuck](https://cyberduck.io/) client that is correct for your laptop.

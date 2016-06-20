@@ -65,7 +65,7 @@
 </script></section>
 <section data-markdown><script type="text/template">
 
-## .. x2go demo here ..
+## .. demo here ..
 
 </script></section>
 <section data-markdown><script type="text/template">
@@ -75,25 +75,56 @@
 1. your computer:
   * running x2go client 
   * running an X server
-</script></section>
-<section data-markdown><script type="text/template">
-## Did you complete the pre-requisites?
+
+TPAC produce images preinstalled with x2go.
 
 </script></section>
 <section data-markdown><script type="text/template">
-##Install the stuff
-* Apple: [http://tinyurl.com/apple-x11-md](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/AppleX11.md)
-* Windows: [http://tinyurl.com/windows-x11-md](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/WindowsX11.md)
+## Current TPAC x2go images:
+* TPAC core.005 1463983923
+* TPAC matlab.003 1464047938
+* TPAC rstudio.005 1464141034
+
+Based on Ubuntu 14.04 and MATE window manager.
+
+</script></section>
+<section data-markdown><script type="text/template">
+## Start an x2go enabled instance 
+1. Image: `TPAC core.005 1463983923`
+1. Name: `m2.xsmall`
+1. Allow ssh via Security Group
+1. Use your existing ssh keypair
+1. Leave your instance running
+
+When it starts, note the ip address; you will need it later
 
 <br>
 <span style="color:white;background:red">R</span> = Help me!<br>
 <span style="color:white;background:green">G</span> = Ask me for help!
 </script></section>
 <section data-markdown><script type="text/template">
-##Configure a session as follows;
-?????????
-?????????
-?????????
+## x2go stuff on your computer
+## x2go client
+  * [http://tinyurl.com/x2go-client](http://wiki.x2go.org/doku.php/download:start)
+
+## x11 server
+* Apple users: [https://www.xquartz.org/](https://www.xquartz.org/)
+* Windows users: [https://sourceforge.net/projects/xming/](https://sourceforge.net/projects/xming/)
+* Linux users rock (you have one already)
+
+<br>
+<span style="color:white;background:red">R</span> = Help me!<br>
+<span style="color:white;background:green">G</span> = Ask me for help!
+</script></section>
+<section data-markdown><script type="text/template">
+# Setup the x2go client
+1. start x2go
+1. Session > New Session
+1. Session Name: `x2go test`
+1. Host: `your_instance_ip_address`
+1. Login: `ubuntu`
+1. Try auto login: `enabled`
+(or you may need to browse to your ssh key)
 
 <br>
 <span style="color:white;background:red">R</span> = Help me!<br>
@@ -104,6 +135,9 @@
 1. Connect using x2go
 1. Start firefox
 1. visit http://www.whatismyip.com
+1. Logout of your MATE session
+1. Quit x2go
+1. Leave your instance running
 
 <br>
 <span style="color:white;background:red">R</span> = Help me!<br>
@@ -116,7 +150,7 @@
 1. Start calculator
 1. Do some math
 1. Quit the x2go client
-1. Start x2go & re-connect 
+1. Connect using x2go
 1. Check your calc
 
 <br>
@@ -125,17 +159,33 @@
 
 </script></section>
 <section data-markdown><script type="text/template">
-
-# Can i install x2go on an existing instance?
+## Q: Now what?  
+## A: Do mad science
+![mad nerd scientist](http://solutionsreview.com/data-integration/files/2015/10/oie_12171919WIPeA3tS.jpg)
+</script></section>
+<section data-markdown><script type="text/template">
+## Is there some better doco?
 Yes.  
 
-TPAC x2go doco at [http://tinyurl.com/hymbbar](http://tinyurl.com/hymbbar)
+TPAC x2go doco at [http://tinyurl.com/tpac-x2go](https://support.nectar.org.au/support/solutions/articles/6000090909-tpac-remote-desktop-user-guide)
+</script></section>
+<section data-markdown><script type="text/template">
+## Can i install x2go on an existing instance?
+Yes.  
+
+TPAC x2go doco at [http://tinyurl.com/tpac-x2go](https://support.nectar.org.au/support/solutions/articles/6000090909-tpac-remote-desktop-user-guide)
+</script></section>
+<section data-markdown><script type="text/template">
+## Can i add named accounts to a TPAC instance?
+Yes.  
+
+TPAC x2go doco at [http://tinyurl.com/tpac-x2go](https://support.nectar.org.au/support/solutions/articles/6000090909-tpac-remote-desktop-user-guide)
 </script></section>
 <section data-markdown><script type="text/template">
 
-# It' all too much
-helpdesk@tpac.org.au
-http://helpdesk.tpac.org.au
+# What if i get stuck?
+## helpdesk@tpac.org.au
+## http://helpdesk.tpac.org.au
 
 </script></section>
     </div>
