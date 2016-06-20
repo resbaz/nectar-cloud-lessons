@@ -21,27 +21,28 @@ organize the material they learn themselves. [Because...](http://mindhacks.com/2
 
 > 9am - Start 
 
-* [Lesson I: OpenStack, mapped by the dashboard](#lesson-i)
-* [Lesson II: Your free computer: up and running](#lesson-ii)
-* Lesson III: Broken into 3, for delivery on an "as needs" basis
-    * [Accessing your new computer](#accessing-your-new-computer)
-    * [An introduction to the command line](#an-introduction-to-the-command-line)
-    * [Updating your new computer](#updating-your-new-computer)
+* [Lesson 010: OpenStack, mapped by the dashboard](#lesson-010)
+* [Lesson 020: Your free computer: up and running](#lesson-020)
+* Lesson 030: Broken into 3, for delivery on an "as needs" basis
+    * [033: Accessing your new computer](#lesson-033)
+    * [034: An introduction to the command line](#lesson-034)
+    * [035: Updating your new computer](#lesson-035)
 
 > 10h30am - 11h00am: Morning Tea
 
-* [Lesson IV: Moving data to and from your new computer](#lesson-iv)
-* [Lesson V: We can still run our graphical applications](#lesson-v)
+* [Lesson 040: Moving data to and from your new computer](#lesson-040)
+* [Lesson 050: We can still run our graphical applications, xforward](#lesson-050) ||
+  [Lesson 051: We can still run our graphical applications, x2go](#lesson-050)
 
 > 12h00am - 1h00pm: Lunch
 
-* [Lesson VI: Snapshots: Backups, vertical scaling](#lesson-vi)
-* [Lesson VII: Transient storage (don’t rely on it!) and sharing](#lesson_vii)
+* [Lesson 060: Snapshots: Backups, vertical scaling](#lesson-060)
+* [Lesson 070: Transient storage (don’t rely on it!) and sharing](#lesson_070)
 
 > 3h00pm - 3h30: Afternoon Tea
 
-* [Lesson VIII: The object store](#lesson-viii)
-* [Lesson IX: Securing and maintaining your instance](#lesson-ix)
+* [Lesson 080: The object store](#lesson-080)
+* [Lesson 090: A security discussion](#lesson-090)
 
 If time permits, possibly a "bringing it all together" grand exercise?
 
@@ -51,7 +52,7 @@ We have a list of [stretch goals](stretch_goals.md) that we thought we might get
 appear that time doesn't permit...
 
 
-# Lesson I
+# Lesson 010
 
 **Topic:** OpenStack, mapped by the dashboard
 
@@ -120,7 +121,7 @@ Introduce the concepts of Key Pairs and Security Groups, and IP allocation.
 * a web browser
 
 
-# Lesson II
+# Lesson 020
 
 **Topic:** Your free computer: up and running
 
@@ -179,8 +180,9 @@ Security groups and CIDR's
 
 * A web browser. Preferably a modern one that renders the PDF checklists.
 
+# Lesson 033
 
-# Accessing your new computer
+**Topic:** Accessing your new computer
 
 ## Learning objectives
 
@@ -260,8 +262,9 @@ A great link on debugging ssh issues on the NeCTAR cloud:
 * A web browser
 * Ssh/scp support on the students desktop.
 
+# Lesson 034
 
-# An introduction to the command line
+**Topic:** An introduction to the command line
 
 ## Learning objectives
 
@@ -320,8 +323,9 @@ this course.
 
 Thus all everything required to get them to this point!
 
+# Lesson 035
 
-# Updating your new computer
+**Topic:** Updating your new computer
 
 ## Learning objectives
 
@@ -406,7 +410,7 @@ A great link on debugging ssh issues on the NeCTAR cloud:
 * If on windows, the ability to install Putty
 
 
-# Lesson IV
+# Lesson 040
 
 **Topic:** Moving data to and from your new computer
 
@@ -462,7 +466,7 @@ Using the shell to transfer files, and using Cyberduck to move files.
 * Some disk space.
 * The ability to install CyberDuck
 
-# Lesson V
+# Lesson 050
 
 **Topic:** We can still run our graphical applications
 
@@ -522,7 +526,7 @@ https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding
 * The ability to install XWindows support on the students computer.
 
 
-# Lesson VI
+# Lesson 060
 
 **Topic:** Snapshots, backups and vertical scaling
 
@@ -584,7 +588,7 @@ Snapshots can take a fair amount of time depending on the system load. So the le
 ## Preconditions
 
 
-# Lesson VII
+# Lesson 070
 
 **Topic:** Transient storage (don’t rely on it!) and sharing
 
@@ -648,7 +652,7 @@ http://physics.stackexchange.com/questions/32663/what-are-the-effects-of-cosmic-
 ## Preconditions
 
 
-# Lesson VIII
+# Lesson 080
 
 **Topic:** The object store
 
@@ -709,7 +713,7 @@ CyberDuck needs to be configured to work with Swift
 ## Preconditions
 
 
-# Lesson IX
+# Lesson 090
 
 **Topic:** Securing and maintaining your instance
 

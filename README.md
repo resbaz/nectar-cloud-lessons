@@ -122,13 +122,13 @@ java -jar SlideExtractor.jar
 You should see something like the following fly by:
 
 ```bash
-Working on:  ./Lessons/Lesson_I/Lesson_I.md
-Writing to: ./Presentation/Lesson_1.html
+Working on: ./Lessons/010.Openstack.mapped.by.the.dashboard.md
+Writing to: ./Presentation/010.Openstack.mapped.by.the.dashboard.html
     .
     .
     .
-Working on: ./Lessons/Lesson_VIII/Lesson_VIII.md
-Writing to: ./Presentation/Lesson_VIII.html
+Working on: ./Lessons/090.Security.discussion.md
+Writing to: ./Presentation/090.Security.discussion.html
 Writing to: ./Presentation/index.html
 ```
 
