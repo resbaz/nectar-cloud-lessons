@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>NeCTAR Cloud Lessons</title>
+
+    <meta name="description" content="Slides for an introductory course on the NeCTAR cloud.">
+    <meta name="author" content="Martin Paulo">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="revealjs/css/reveal.css">
+    <link rel="stylesheet" href="revealjs/css/theme/solarized.css" id="theme">
+     <link rel="shortcut icon" href="images/favicon.ico"/>
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="revealjs/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+<!-- to give this presentation list items numbered A, B, C etc.. for use in questions -->
+<style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
+<!-- Slides go here -->
+<section data-markdown><script type="text/template">
+
+# A Security Discussion
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## A Shared Responsibility Model
+
+NeCTAR look after the cloud
+
+**You** look after the stuff you put in it
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## A good scout always:
+* Knows what can happen
+* Is prepared for it
+</script></section>
+<section data-markdown><script type="text/template">
+## But i'm not a scout.. 
+NeCTAR images do alot for you already:
+* Blocks SSH access after N failed attempts
+* Password auth is disabled
+* Provides up to date images
+* Default security group is empty
+
+..but there is a lot left up to you
+</script></section>
+<section data-markdown><script type="text/template">
+## It is true:
+the minute you put a server onto the internet, automated scanners start probing it 
+for weaknesses.
+</script></section>
+<section data-markdown><script type="text/template">
+## Exercise
+
+1. Run firefox on your instance
+1. Go to: https://www.grc.com/shieldsup
+1. Click on the 'Proceed' button
+1. then select 'All Service Ports'
+
+what do we see?
+
+<br>
+<span style="color:white;background:red">R</span> = Help me!<br>
+<span style="color:white;background:green">G</span> = Ask me for help!<br>
+</script></section>
+<section data-markdown><script type="text/template">
+## The red dots are open ports
+
+A port is like a door to your instance.  That's the conduit through which the baddies will get in.
+
+Ideally you should have:
+* As few open ports as possible
+* Each locked up nice and tight
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Q: If all you need is SSH, do you need 10 ports open?
+
+## A: No
+ 
+</script></section>
+<section data-markdown><script type="text/template">
+## Security groups
+
+They control which ports are open to your instance.
+
+(port are like the doors and windows to your home)
+</script></section>
+<section data-markdown><script type="text/template">
+##Exercise: Blocking the front door
+
+* Remove ssh from the security group on your VM
+* Try to ssh in – and fail!
+* Create a special ssh only security group
+* Add it to your running VM
+* Try to ssh in: success?
+
+<br>
+<span style="color:white;background:red">R</span> = Help me!<br>
+<span style="color:white;background:green">G</span> = Ask me for help!<br>
+</script></section>
+<section data-markdown><script type="text/template">
+## A recommendation
+ 
+Have a dedicated security group for ssh
+
+(Adding ssh to the default security group can have unintended consequences)
+</script></section>
+<section data-markdown><script type="text/template">
+## A recommendation
+
+### Don't share your private SSH key
+
+Q: Who do you let into your home?
+A: Only people you trust.
+
+
+</script></section>
+<section data-markdown><script type="text/template">
+### Disclaimer
+Excercises assume you are running Ubuntu.  
+
+Other operating systems will be conceptually similar, but the commands and syntax will be different
+</script></section>
+<section data-markdown><script type="text/template">
+## Exercise
+
+Apply system updates:
+
+``` bash
+sudo apt-get update && sudo apt-get upgrade
+```
+
+<br>
+<span style="color:white;background:red">R</span> = Help me!<br>
+<span style="color:white;background:green">G</span> = Ask me for help!
+</script></section>
+<section data-markdown><script type="text/template">
+## Q: Why would you not enable unattended-upgrades?
+
+### A: Because upgraded packages can break your workflow
+</script></section>
+<section data-markdown><script type="text/template">
+## Exercise
+Consider enabling automatic updates:
+
+``` bash
+sudo dpkg-reconfigure unattended-upgrades
+```
+(TPAC images have this done already)
+
+<br>
+<span style="color:white;background:red">R</span> = Help me!<br>
+<span style="color:white;background:green">G</span> = Ask me for help!<br>
+</script></section>
+<section data-markdown><script type="text/template">
+## Avoid running mail server
+
+* Use ssmtp (server email via imap)
+* Use a paid service such as MailChimp
+* Talk to TPAC via helpdesk@tpac.org.au
+</script></section>
+<section data-markdown><script type="text/template">
+## NeCTAR's security guidelines
+
+NeCTAR has a set of security guidelines that can be found at:
+ 
+* [http://tinyurl.com/nectar-security-guidelines](https://support.nectar.org.au/support/solutions/articles/6000070469-introduction)
+</script></section>
+<section data-markdown><script type="text/template">
+## Homework...
+
+[http://tinyurl.com/ResBaz-Links](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Links.md)
+</script></section>
+    </div>
+
+</div>
+
+<script src="revealjs/lib/js/head.min.js"></script>
+<script src="revealjs/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: 'c/t',
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'revealjs/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'revealjs/plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'revealjs/plugin/zoom-js/zoom.js', async: true},
+            {src: 'revealjs/plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>
