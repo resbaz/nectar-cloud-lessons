@@ -115,7 +115,7 @@ Ideally you should have:
 
 They control which ports are open to your instance.
 
-(port are like the doors and windows to your home)
+Ports are like the doors and windows to your home
 </script></section>
 <section data-markdown><script type="text/template">
 ##Exercise: Blocking the front door
@@ -135,26 +135,32 @@ They control which ports are open to your instance.
  
 Have a dedicated security group for ssh
 
-(Adding ssh to the default security group can have unintended consequences)
+Every new instance will use the default security group.  Changing it thusly effects every instance.
+</script></section>
+<section data-markdown><script type="text/template">
+Q: Who do you let into your home?
+
+A: Only people you trust.
+
 </script></section>
 <section data-markdown><script type="text/template">
 ## A recommendation
 
-### Don't share your private SSH key
-
-Q: Who do you let into your home?
-A: Only people you trust.
-
+### Don't share your private SSH key to anyone
 
 </script></section>
 <section data-markdown><script type="text/template">
-### Disclaimer
-Excercises assume you are running Ubuntu.  
-
-Other operating systems will be conceptually similar, but the commands and syntax will be different
+abracadabra
 </script></section>
 <section data-markdown><script type="text/template">
-## Exercise
+## A recommendation
+
+### Don't enable password auth
+
+it's much easier to crack
+</script></section>
+<section data-markdown><script type="text/template">
+## Exercise: Batten down the hatches
 
 Apply system updates:
 
@@ -167,29 +173,34 @@ sudo apt-get update && sudo apt-get upgrade
 <span style="color:white;background:green">G</span> = Ask me for help!
 </script></section>
 <section data-markdown><script type="text/template">
-## Q: Why would you not enable unattended-upgrades?
+## Q: Why would you not enable automatic upgrades?
 
-### A: Because upgraded packages can break your workflow
+### A: Upgraded packages might break your software
 </script></section>
 <section data-markdown><script type="text/template">
-## Exercise
-Consider enabling automatic updates:
+## Exercise: enable automatic updates
 
 ``` bash
 sudo dpkg-reconfigure unattended-upgrades
 ```
-(TPAC images have this done already)
-
 <br>
 <span style="color:white;background:red">R</span> = Help me!<br>
 <span style="color:white;background:green">G</span> = Ask me for help!<br>
 </script></section>
 <section data-markdown><script type="text/template">
-## Avoid running mail server
+## A recommendation
+
+### Apply package updates
+
+Or at very least, just security updates
+</script></section>
+<section data-markdown><script type="text/template">
+## A recommendation
+### Avoid running mail server
 
 * Use ssmtp (server email via imap)
 * Use a paid service such as MailChimp
-* Talk to TPAC via helpdesk@tpac.org.au
+* Talk to TPAC via [mailto:helpdesk@tpac.org.au](mailto:helpdesk@tpac.org.au)
 </script></section>
 <section data-markdown><script type="text/template">
 ## NeCTAR's security guidelines
@@ -199,9 +210,9 @@ NeCTAR has a set of security guidelines that can be found at:
 * [http://tinyurl.com/nectar-security-guidelines](https://support.nectar.org.au/support/solutions/articles/6000070469-introduction)
 </script></section>
 <section data-markdown><script type="text/template">
-## Homework...
+## Do you have some better doco on all this?
 
-[http://tinyurl.com/ResBaz-Links](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Links.md)
+* [http://tinyurl.com/ResBaz-Links](https://github.com/resbaz/nectar-cloud-lessons/blob/master/Resources/Links.md)
 </script></section>
     </div>
 
