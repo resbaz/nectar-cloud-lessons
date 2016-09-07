@@ -1,4 +1,4 @@
-# x2go 
+# x2go install, setup and usage.
 
 ## Start an x2go enabled instance 
 1. [ ] Login to the dashboard
@@ -15,28 +15,28 @@ stop there.
 ## Install stuff on your computer
 1. [ ] install the x2go client [http://tinyurl.com/x2go-client](http://wiki.x2go.org/doku.php/download:start)
 1. [ ] now install the x11 server
-* Apple users: [https://www.xquartz.org/](https://www.xquartz.org/)
-* Windows users: [https://sourceforge.net/projects/xming/](https://sourceforge.net/projects/xming/)
-* Linux users rock (you have one already)
+- Apple users: [https://www.xquartz.org/](https://www.xquartz.org/)
+- Windows users: [https://sourceforge.net/projects/xming/](https://sourceforge.net/projects/xming/)
+- Linux users rock (you have one already)
 
 stop there.
 
 ## Setup the x2go client
 1. [ ] Start x2go
-1. Then configure the client as follows
+- Then configure the client as follows
 1. [ ] Session > New Session
 1. [ ] Session Name: `x2go test`
 1. [ ] Host: `your_instance_ip_address`
 1. [ ] Login: `ubuntu`
 1. [ ] Try auto login: `enabled`
 1. [ ] Session type: Custom Desktop .. MATE
-
+1. [ ] Hit OK
+1. [ ] Click on the session named `x2go test` to connect 
 (or you may need to browse to your ssh key)
 
-stop there.
+please stop there.
 
 ## Observe your instance ip address
-1. [ ] Connect using x2go
 1. [ ] Start firefox
 1. [ ] visit http://www.whatismyip.com
 1. [ ] Leave firefox running
@@ -49,9 +49,10 @@ stop there.
 1. [ ] Connect to your instance using x2go
 1. [ ] Notice firefox still running?
 1. [ ] Start calculator and do some math
+1. [ ] Do some random stuff
 1. [ ] Quit the x2go client
 1. [ ] Connect using x2go
-1. [ ] Check your math is still there.
+1. [ ] Check your stuff is still running OK.
 
 stop there.
 
