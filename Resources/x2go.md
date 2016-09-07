@@ -17,7 +17,9 @@ stop there.
 1. [ ] now install the x11 server using one of:
 
 Apple users: [https://www.xquartz.org/](https://www.xquartz.org/)
+
 Windows users: [https://sourceforge.net/projects/xming/](https://sourceforge.net/projects/xming/)
+
 Linux users rock (you have one already)
 
 stop there.
