@@ -14,16 +14,16 @@ stop there.
 
 ## Install stuff on your computer
 1. [ ] install the x2go client [http://tinyurl.com/x2go-client](http://wiki.x2go.org/doku.php/download:start)
-1. [ ] now install the x11 server
-- Apple users: [https://www.xquartz.org/](https://www.xquartz.org/)
-- Windows users: [https://sourceforge.net/projects/xming/](https://sourceforge.net/projects/xming/)
-- Linux users rock (you have one already)
+1. [ ] now install the x11 server using one of:
+Apple users: [https://www.xquartz.org/](https://www.xquartz.org/)
+Windows users: [https://sourceforge.net/projects/xming/](https://sourceforge.net/projects/xming/)
+Linux users rock (you have one already)
 
 stop there.
 
 ## Setup the x2go client
 1. [ ] Start x2go
-- Then configure the client as follows
+Then configure the client as follows:
 1. [ ] Session > New Session
 1. [ ] Session Name: `x2go test`
 1. [ ] Host: `your_instance_ip_address`
@@ -58,7 +58,7 @@ stop there.
 
 ## Advanced, launching from the terminal
 1. [ ] Start x2go
-1. Then configure the client as follows
+Then configure the client as follows:
 1. [ ] Session > New Session
 1. [ ] Session Name: `x2go terminal test`
 1. [ ] Host: `your_instance_ip_address`
@@ -66,8 +66,8 @@ stop there.
 1. [ ] Try auto login: `enabled`
 1. [ ] Session type: Single Application .. Terminal
 1. [ ] Connect to the instance via this session
-1. A terminal window should appear.
+A terminal window should appear.
 1. [ ] Type `xeyes`
-1. Did you get some googly eyes appearing?
+Did you get some googly eyes appearing?
 1. [ ] Type `firefox`
 1. [ ] Google "what is my ip"
