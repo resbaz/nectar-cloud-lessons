@@ -81,3 +81,13 @@ Did you get some googly eyes appearing?
 
 1. [ ] Type `firefox`
 1. [ ] Google "what is my ip"
+
+## Ultra advanced ;)
+Q: Can i install x2go on an existing instance?
+A: Yes.  
+
+``` bash
+sudo apt-get install ansible curl python-pycurl
+curl -O https://raw.githubusercontent.com/hooliowobbits/packer/master/extras/install.x2go.and.mate.yml
+ansible-playbook -i "localhost," -c local install.x2go.and.mate.yml
+```
