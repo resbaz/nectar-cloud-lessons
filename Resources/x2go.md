@@ -16,11 +16,9 @@ stop there.
 1. [ ] install the x2go client [http://tinyurl.com/x2go-client](http://wiki.x2go.org/doku.php/download:start)
 1. [ ] now install the x11 server using one of:
 
-Apple users: [https://www.xquartz.org/](https://www.xquartz.org/)
-
-Windows users: [https://sourceforge.net/projects/xming/](https://sourceforge.net/projects/xming/)
-
-Linux users rock (you have one already)
+Apple users: [https://www.xquartz.org/](https://www.xquartz.org/)  
+Windows users: [https://sourceforge.net/projects/xming/](https://sourceforge.net/projects/xming/)  
+Linux users rock (you have one already)  
 
 stop there.
 
